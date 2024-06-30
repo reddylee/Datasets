@@ -18,6 +18,7 @@ Autocoup <- read_excel("Autocoup.xlsx")
 # write_data
 autocoup <- Autocoup |> 
   select(1:14) |>
+  mutate(entry_date = as.Date(entry_date)) |> 
   write_csv("autocoup.csv")
 # str(autocoup)
 ```
