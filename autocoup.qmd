@@ -1,0 +1,18 @@
+```{r}
+#| label: setup
+library(tidyverse)
+ library(readxl)
+```
+
+```{r}
+#| label: read_data
+Autocoup <- read_excel("Autocoup.xlsx")
+```
+
+```{r}
+#| label: write_data
+
+autocoup <- Autocoup |> 
+  select(1:14) |>
+  write_csv("autocoup.csv")
+```
