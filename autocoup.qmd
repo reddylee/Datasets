@@ -46,6 +46,6 @@ write_csv(Archigos, "archigos.csv")
 #| label: upload
 
 git add .
-git commit -m "Version $(date +%Y-%m-%d)"
+git commit -m "Version $date"
 git push
 ```
