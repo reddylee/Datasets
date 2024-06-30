@@ -1,0 +1,1090 @@
+idacr,leader,plad_id,archigos_id,startdate,enddate,entry,exit,gender,yrborn,birthdate
+AFG,Najibullah,AFG_1986_1,8243611b-1e42-11e4-b4cd-db5882bf8def,1986-05-04,1992-04-16,Irregular,Irregular,M,1947,1947-08-06
+AFG,Burhanuddin Rabbani,AFG_1992_2,8243611d-1e42-11e4-b4cd-db5882bf8def,1992-06-28,1996-09-27,Regular,Irregular,M,1939,NA
+AFG,Mullah Omar,AFG_1996_1,8243611e-1e42-11e4-b4cd-db5882bf8def,1996-09-27,2001-11-13,Irregular,Irregular,M,1959,NA
+AFG,Hamid Karzai,AFG_2001_1,8243611f-1e42-11e4-b4cd-db5882bf8def,2001-12-22,2014-09-29,Foreign Imposition,Regular,M,1957,1957-12-24
+AFG,Ashraf Ghani Ahmadzai,AFG_2014_1,14a038b0-aae0-11e4-b3bc-29f2fa19767e,2014-09-29,2021-08-14,Regular,Irregular,M,1949,1949-05-19
+AFG,Hibatullah Akhundzada,AFG_2021_1,.,2021-08-14,2024-06-30,Irregular,Still in Office,M,NA,NA
+ALB,Alia,ALB_1985_1,821a8f09-1e42-11e4-b4cd-db5882bf8def,1985-04-13,1992-04-03,Regular,Regular,M,1925,1925-10-18
+ALB,Berisha,ALB_1992_1,35b38fe8-3bbd-11e5-afeb-eb6f07f9fec7,1992-04-09,1997-07-24,Regular,Regular,M,1944,1944-10-15
+ALB,Fatos Nano,ALB_1997_1,821abfda-1e42-11e4-b4cd-db5882bf8def,1997-07-24,1998-10-02,Regular,Regular,M,1952,1952-09-16
+ALB,Majko,ALB_1998_1,821abfdb-1e42-11e4-b4cd-db5882bf8def,1998-10-02,1999-10-29,Regular,Regular,M,1967,1967-11-15
+ALB,Meta,ALB_1999_1,821abfdc-1e42-11e4-b4cd-db5882bf8def,1999-10-29,2002-02-22,Regular,Regular,M,1969,NA
+ALB,Fatos Nano,ALB_2002_2,821abfda-1e42-11e4-b4cd-db5882bf8def,2002-07-31,2005-09-11,Regular,Regular,M,1952,1952-09-16
+ALB,Berisha,ALB_2005_1,35b38fe8-3bbd-11e5-afeb-eb6f07f9fec7,2005-09-11,2013-09-15,Regular,Regular,M,1944,1944-10-15
+ALB,Rama,ALB_2013_1,149e63e7-aae0-11e4-b3bc-29f2fa19767e,2013-09-15,2024-06-30,Regular,Still in Office,M,1964,1964-07-04
+ALG,Benjedid,ALG_1979_1,823bf0a6-1e42-11e4-b4cd-db5882bf8def,1979-02-07,1992-01-11,Regular,Irregular,M,1929,1929-04-14
+ALG,Kafi,ALG_1992_2,823bf0a8-1e42-11e4-b4cd-db5882bf8def,1992-07-02,1994-01-31,Regular,Regular,M,1928,NA
+ALG,Zeroual,ALG_1994_1,823bf0a9-1e42-11e4-b4cd-db5882bf8def,1994-01-31,1999-04-27,Regular,Regular,M,1941,NA
+ALG,Bouteflika,ALG_1999_1,823bf0aa-1e42-11e4-b4cd-db5882bf8def,1999-04-27,2019-04-02,Regular,Irregular,M,1937,1937-03-02
+ALG,Abdelmadjid Tebboune,ALG_2019_2,.,2019-12-19,2024-06-30,Regular,Still in Office,M,1945,1945-11-17
+ANG,Dos Santos,ANG_1979_1,8233edb6-1e42-11e4-b4cd-db5882bf8def,1979-09-10,2017-09-25,Regular,Regular,M,1942,1942-08-28
+ANG,Joao Lourenco,ANG_2017_1,.,2017-09-25,2024-06-30,Regular,Still in Office,M,1954,1954-03-05
+ARG,Menem,ARG_1989_1,82046e88-1e42-11e4-b4cd-db5882bf8def,1989-07-08,1999-12-10,Regular,Regular,M,1930,1930-07-02
+ARG,de la Rua,ARG_1999_1,82046e89-1e42-11e4-b4cd-db5882bf8def,1999-12-10,2001-12-21,Regular,Regular,M,1937,1937-09-15
+ARG,Eduardo Duhalde,ARG_2002_1,82049f5d-1e42-11e4-b4cd-db5882bf8def,2002-01-02,2003-05-25,Regular,Regular,M,1941,1941-10-05
+ARG,Nestor Kirchner,ARG_2003_1,82049f5e-1e42-11e4-b4cd-db5882bf8def,2003-05-25,2007-12-10,Regular,Regular,M,1950,NA
+ARG,Fernandez de Kirchner,ARG_2007_1,8250bb5e-1e42-11e4-b4cd-db5882bf8def,2007-12-10,2015-12-10,Regular,Regular,F,1953,1953-02-19
+ARG,Mauricio Macri,ARG_2015_1,43f5aea2-de6a-11e5-ba44-bb6d7c1a9a58,2015-12-10,2019-12-10,Regular,Regular,M,1959,1959-02-08
+ARG,Alberto Fernandez,ARG_2019_1,.,2019-12-10,2023-12-10,Regular,Regular,M,1959,1959-04-02
+ARM,Ter-Petrosyan,ARM_1991_1,82235551-1e42-11e4-b4cd-db5882bf8def,1991-10-16,1998-02-03,Regular,Regular,M,1945,NA
+ARM,Kocharian,ARM_1998_1,82235552-1e42-11e4-b4cd-db5882bf8def,1998-02-04,2008-04-09,Regular,Regular,M,1954,1954-08-31
+ARM,Sargsyan,ARM_2008_1,82530552-1e42-11e4-b4cd-db5882bf8def,2008-04-09,2018-04-09,Regular,Regular,M,1954,1954-06-30
+ARM,Armen Sarkissian,ARM_2018_1,.,2018-04-09,2022-02-01,Regular,Regular,M,1953,1953-06-23
+ARM,Vahagn Khachaturyan,ARM_2022_2,.,2022-03-13,2024-06-30,Regular,Still in Office,M,1959,1959-04-22
+AUL,Hawke,AUL_1983_1,824e4085-1e42-11e4-b4cd-db5882bf8def,1983-03-11,1991-12-19,Regular,Regular,M,1929,1929-12-09
+AUL,Keating,AUL_1991_1,824e4086-1e42-11e4-b4cd-db5882bf8def,1991-12-19,1996-03-11,Regular,Regular,M,1945,1945-01-18
+AUL,Howard,AUL_1996_1,824e715e-1e42-11e4-b4cd-db5882bf8def,1996-03-11,2007-12-03,Regular,Regular,M,1939,1939-07-26
+AUL,Rudd,AUL_2007_1,8255e1cb-1e42-11e4-b4cd-db5882bf8def,2007-12-03,2010-06-24,Regular,Regular,M,1957,1957-09-21
+AUL,Gillard,AUL_2010_1,8255e1cc-1e42-11e4-b4cd-db5882bf8def,2010-06-24,2013-06-27,Regular,Regular,F,1961,1961-09-29
+AUL,Abbott,AUL_2013_2,2b3ec881-3481-11e4-8dba-bbcd9ed46413,2013-09-18,2015-09-15,Regular,Regular,M,1957,1957-11-04
+AUL,Malcolm Turnbull,AUL_2015_1,43fcd2be-de6a-11e5-ba44-bb6d7c1a9a58,2015-09-15,2018-08-24,Regular,Regular,M,1954,1954-10-24
+AUL,Scott Morrison,AUL_2018_1,.,2018-08-24,2022-05-22,Regular,Regular,M,1968,1968-05-13
+AUL,Anthony Norman Albanese,AUL_2022_1,.,2022-05-22,2024-06-30,Regular,Still in Office,M,1963,1963-03-02
+AUS,Vranitzky,AUS_1986_1,8216ef36-1e42-11e4-b4cd-db5882bf8def,1986-06-16,1997-01-28,Regular,Regular,M,1937,1937-10-04
+AUS,Klima,AUS_1997_1,8216ef37-1e42-11e4-b4cd-db5882bf8def,1997-01-28,2000-02-04,Regular,Regular,M,1947,1947-06-04
+AUS,Schussel,AUS_2000_1,8216ef38-1e42-11e4-b4cd-db5882bf8def,2000-02-05,2007-01-11,Regular,Regular,M,1945,1945-06-07
+AUS,Gusenbauer,AUS_2007_1,8251af7d-1e42-11e4-b4cd-db5882bf8def,2007-01-11,2008-12-02,Regular,Regular,M,1960,NA
+AUS,Faymann,AUS_2008_1,8251af7e-1e42-11e4-b4cd-db5882bf8def,2008-12-02,2016-05-09,Regular,Regular,M,1960,1960-05-04
+AUS,Kern,AUS_2016_2,.,2016-05-17,2017-12-18,Regular,Regular,M,1966,1966-01-04
+AUS,Kurz,AUS_2017_1,.,2017-12-18,2019-05-28,Regular,Regular,M,1986,1986-08-27
+AUS,Kurz,AUS_2020_1,.,2020-01-07,2021-12-06,Regular,Regular,M,1986,1986-08-27
+AUS,Nehammer,AUS_2021_2,.,2021-12-06,2024-06-30,Regular,Still in Office,M,1972,1972-10-18
+AZE,Abulfaz Elchibey,AZE_1992_4,8223e7cc-1e42-11e4-b4cd-db5882bf8def,1992-06-16,1993-06-18,Irregular,Irregular,M,1938,1938-06-07
+AZE,H. Aliyev,AZE_1993_1,8223e7cd-1e42-11e4-b4cd-db5882bf8def,1993-06-24,2003-08-04,Regular,Retired Due to Ill Health,M,1923,1923-05-10
+AZE,Ilhma Aliyev,AZE_2003_1,8223e7ce-1e42-11e4-b4cd-db5882bf8def,2003-08-04,2024-06-30,Regular,Still in Office,M,1961,1961-12-24
+BAH,Isa Ibn Al-Khalifah,BAH_1971_1,82423c1a-1e42-11e4-b4cd-db5882bf8def,1971-08-15,1999-03-06,Regular,Natural Death,M,1933,1933-07-03
+BAH,Hamad Isa Ibn Al-Khalifah,BAH_1999_1,82423c1b-1e42-11e4-b4cd-db5882bf8def,1999-03-06,2024-06-30,Regular,Still in Office,M,1950,1950-01-28
+BAR,Sandiford,BAR_1987_1,81e39f6e-1e42-11e4-b4cd-db5882bf8def,1987-06-01,1994-09-07,Regular,Regular,M,1937,1937-03-24
+BAR,Arthur,BAR_1994_1,81e39f6f-1e42-11e4-b4cd-db5882bf8def,1994-09-07,2008-01-16,Regular,Regular,M,1949,NA
+BAR,Thompson,BAR_2008_1,825028d5-1e42-11e4-b4cd-db5882bf8def,2008-01-16,2010-10-23,Regular,Natural Death,M,1961,NA
+BAR,Stuart,BAR_2010_1,825028d6-1e42-11e4-b4cd-db5882bf8def,2010-10-23,2018-05-25,Regular,Regular,M,1951,1951-04-27
+BAR,Mottley,BAR_2018_1,.,2018-05-25,2024-06-30,Regular,Still in Office,F,1965,1965-10-01
+BEL,Martens,BEL_1981_2,820ab9fe-1e42-11e4-b4cd-db5882bf8def,1981-12-17,1992-03-07,Regular,Regular,M,1936,1936-04-19
+BEL,Dehaene,BEL_1992_1,820aeace-1e42-11e4-b4cd-db5882bf8def,1992-03-07,1999-07-12,Regular,Regular,M,1940,1940-08-07
+BEL,Verhofstadt,BEL_1999_1,820aeacf-1e42-11e4-b4cd-db5882bf8def,1999-07-12,2008-03-20,Regular,Regular,M,1953,NA
+BEL,Leterme,BEL_2008_1,82511d02-1e42-11e4-b4cd-db5882bf8def,2008-03-20,2008-12-30,Regular,Regular,M,1960,NA
+BEL,van Rompuy,BEL_2008_2,82511d03-1e42-11e4-b4cd-db5882bf8def,2008-12-30,2009-11-25,Regular,Regular,M,1947,NA
+BEL,Leterme,BEL_2009_1,82511d02-1e42-11e4-b4cd-db5882bf8def,2009-11-25,2011-12-06,Regular,Regular,M,1960,NA
+BEL,Di Rupo,BEL_2011_1,82511d04-1e42-11e4-b4cd-db5882bf8def,2011-12-06,2014-10-11,Regular,Regular,M,1951,1951-07-18
+BEL,Charles Michel,BEL_2014_1,149e3ccc-aae0-11e4-b3bc-29f2fa19767e,2014-10-11,2019-10-27,Regular,Regular,M,1975,1975-12-21
+BEL,Sophie Wilmes,BEL_2019_1,.,2019-10-27,2020-10-01,Regular,Regular,F,1975,1975-01-15
+BEL,Alexander De Croo,BEL_2020_1,.,2020-10-01,2024-06-30,Regular,Still in Office,M,1975,1975-11-03
+BEN,Kerekou,BEN_1972_2,822c1b9b-1e42-11e4-b4cd-db5882bf8def,1972-10-27,1991-04-04,Irregular,Regular,M,1933,1933-09-02
+BEN,"Soglo, N",BEN_1991_1,822c4c6e-1e42-11e4-b4cd-db5882bf8def,1991-04-04,1996-04-04,Regular,Regular,M,1934,1934-11-29
+BEN,Kerekou,BEN_1996_1,822c1b9b-1e42-11e4-b4cd-db5882bf8def,1996-04-04,2006-04-06,Regular,Regular,M,1933,1933-09-02
+BEN,Yayi Boni,BEN_2006_1,82533627-1e42-11e4-b4cd-db5882bf8def,2006-04-06,2016-04-06,Regular,Regular,M,1952,1952-07-01
+BEN,Patrice Talon,BEN_2016_1,.,2016-04-06,2024-06-30,Regular,Still in Office,M,1985,1985-05-01
+BFO,Campaore,BFO_1987_1,822e6595-1e42-11e4-b4cd-db5882bf8def,1987-10-15,2014-10-31,Irregular,Regular,M,1951,1951-02-03
+BFO,Kafando,BFO_2014_3,149f7558-aae0-11e4-b3bc-29f2fa19767e,2014-11-18,2015-12-29,Regular,Regular,M,1957,1957-09-28
+BFO,Roch Marc Christian Kabore,BFO_2015_1,43fa715c-de6a-11e5-ba44-bb6d7c1a9a58,2015-12-29,2022-01-30,Regular,Irregular,M,1957,1957-04-25
+BFO,Ibrahim Traore,BFO_2022_2,.,2022-09-30,2024-06-30,Irregular,Still in Office,M,1988,1988-03-14
+BHM,Pindling,BHM_1967_1,81dea9cc-1e42-11e4-b4cd-db5882bf8def,1967-01-16,1992-08-21,Regular,Regular,M,1930,NA
+BHM,Ingraham,BHM_1992_1,3500baa8-3bbd-11e5-afeb-eb6f07f9fec7,1992-08-21,2002-05-03,Regular,Regular,M,1947,NA
+BHM,Christie,BHM_2002_1,81deda9d-1e42-11e4-b4cd-db5882bf8def,2002-05-03,2005-05-04,Regular,Regular,M,1943,NA
+BHM,Christie,BHM_2005_2,81deda9d-1e42-11e4-b4cd-db5882bf8def,2005-06-22,2007-05-04,Regular,Regular,M,1943,1943-08-21
+BHM,Ingraham,BHM_2007_1,3500baa8-3bbd-11e5-afeb-eb6f07f9fec7,2007-05-04,2012-05-08,Regular,Regular,M,1947,NA
+BHM,Christie,BHM_2012_1,81deda9d-1e42-11e4-b4cd-db5882bf8def,2012-05-08,2017-05-11,Regular,Regular,M,1943,1943-08-21
+BHM,Minnis,BHM_2017_1,.,2017-05-11,2021-09-17,Regular,Regular,M,1954,1954-05-11
+BHM,Philip Brave Davis,BHM_2021_1,.,2021-09-17,2024-06-30,Regular,Still in Office,M,1951,1951-06-07
+BHU,"Wangchuck, Jigme Singye",BHU_1972_1,8247f510-1e42-11e4-b4cd-db5882bf8def,1972-07-21,1998-07-20,Regular,Regular,M,1955,1955-11-11
+BHU,Lyonpo Jigme Thinley,BHU_1998_1,8247f511-1e42-11e4-b4cd-db5882bf8def,1998-07-20,1999-07-09,Regular,Regular,M,1952,NA
+BHU,Lyonpo Sangay Ngedup,BHU_1999_1,8247f512-1e42-11e4-b4cd-db5882bf8def,1999-07-09,2000-07-20,Regular,Regular,M,1953,NA
+BHU,Lyonpo Yeshey Zimba,BHU_2000_1,8247f513-1e42-11e4-b4cd-db5882bf8def,2000-07-20,2001-08-08,Regular,Regular,M,1952,NA
+BHU,Lyonpo Khandu Wangchuk,BHU_2001_1,824825e2-1e42-11e4-b4cd-db5882bf8def,2001-08-08,2002-08-14,Regular,Regular,M,1950,NA
+BHU,Lyonpo Kinzang Dorji,BHU_2002_1,824825e3-1e42-11e4-b4cd-db5882bf8def,2002-08-14,2003-08-30,Regular,Regular,M,1951,NA
+BHU,Lyonpo Jigme Thinley,BHU_2003_1,8247f511-1e42-11e4-b4cd-db5882bf8def,2003-08-30,2004-08-18,Regular,Regular,M,1952,NA
+BHU,Lyonpo Yeshey Zimba,BHU_2004_1,8247f513-1e42-11e4-b4cd-db5882bf8def,2004-08-18,2005-09-05,Regular,Regular,M,1952,NA
+BHU,Lyonpo Sangay Ngedup,BHU_2005_1,8247f512-1e42-11e4-b4cd-db5882bf8def,2005-09-05,2006-09-07,Regular,Regular,M,1953,NA
+BHU,Lyonpo Khandu Wangchuk,BHU_2006_1,824825e2-1e42-11e4-b4cd-db5882bf8def,2006-09-07,2007-07-31,Regular,Regular,M,1950,NA
+BHU,Lyonpo Jigme Thinley,BHU_2008_1,8247f511-1e42-11e4-b4cd-db5882bf8def,2008-04-09,2013-07-30,Regular,Regular,M,1952,NA
+BHU,Tobgay,BHU_2013_1,2b3ec87c-3481-11e4-8dba-bbcd9ed46413,2013-07-30,2018-08-09,Regular,Regular,M,1965,1965-09-19
+BHU,Lotay Tshering,BHU_2018_2,.,2018-11-07,2024-06-30,Regular,Still in Office,M,1969,1969-05-10
+BLR,Shushkevich,BLR_1991_1,8222f3a9-1e42-11e4-b4cd-db5882bf8def,1991-09-18,1994-01-26,Regular,Regular,M,1934,1934-12-15
+BLR,Lukashenko,BLR_1994_3,82235550-1e42-11e4-b4cd-db5882bf8def,1994-07-20,2024-06-30,Regular,Still in Office,M,1954,1954-08-30
+BLZ,Price,BLZ_1989_1,81e4f53c-1e42-11e4-b4cd-db5882bf8def,1989-11-07,1993-07-03,Regular,Regular,M,1919,1919-01-15
+BLZ,Esquivel,BLZ_1993_1,81e4f53d-1e42-11e4-b4cd-db5882bf8def,1993-07-03,1998-08-28,Regular,Regular,M,1940,1940-05-02
+BLZ,Musa,BLZ_1998_1,81e4f53e-1e42-11e4-b4cd-db5882bf8def,1998-08-28,2008-02-08,Regular,Regular,M,1944,1944-03-19
+BLZ,D.Barrow,BLZ_2008_1,825059b0-1e42-11e4-b4cd-db5882bf8def,2008-02-08,2020-11-12,Regular,Regular,M,1951,1951-03-02
+BLZ,Juan Briceno,BLZ_2020_1,.,2020-11-12,2024-06-30,Regular,Still in Office,M,1960,1960-07-17
+BNG,Ershad,BNG_1982_1,8248e93f-1e42-11e4-b4cd-db5882bf8def,1982-03-27,1990-12-06,Irregular,Irregular,M,1930,1930-02-01
+BNG,Khaleda Zia,BNG_1991_1,3651f2c8-3bbd-11e5-afeb-eb6f07f9fec7,1991-03-20,1996-03-30,Regular,Regular,F,1945,NA
+BNG,Hasina Wazed,BNG_1996_2,365240e8-3bbd-11e5-afeb-eb6f07f9fec7,1996-06-23,2001-07-15,Regular,Regular,F,1947,1947-09-28
+BNG,Khaleda Zia,BNG_2001_2,3651f2c8-3bbd-11e5-afeb-eb6f07f9fec7,2001-10-10,2006-10-29,Regular,Regular,F,1945,NA
+BNG,Fakhruddin,BNG_2007_1,82554f4c-1e42-11e4-b4cd-db5882bf8def,2007-01-12,2009-01-06,Regular,Regular,M,1940,NA
+BNG,Hasina Wazed,BNG_2009_1,365240e8-3bbd-11e5-afeb-eb6f07f9fec7,2009-01-06,2024-06-30,Regular,Still in Office,F,1947,1947-09-28
+BOL,Paz Zamora,BOL_1989_1,81fe53ee-1e42-11e4-b4cd-db5882bf8def,1989-08-06,1993-08-06,Regular,Regular,M,1939,1939-04-15
+BOL,Gonzalo Sanchez de Lozada,BOL_1993_1,81fe53ef-1e42-11e4-b4cd-db5882bf8def,1993-08-06,1997-08-06,Regular,Regular,M,1930,NA
+BOL,Banzer Suarez,BOL_1997_1,81fe230d-1e42-11e4-b4cd-db5882bf8def,1997-08-06,2001-08-07,Regular,Retired Due to Ill Health,M,1926,1926-07-10
+BOL,Jorge Quiroga Ramirez,BOL_2001_1,81fe84be-1e42-11e4-b4cd-db5882bf8def,2001-08-07,2002-08-06,Regular,Regular,M,1960,NA
+BOL,Gonzalo Sanchez de Lozada,BOL_2002_1,81fe53ef-1e42-11e4-b4cd-db5882bf8def,2002-08-08,2003-10-17,Regular,Regular,M,1930,NA
+BOL,Carlos Mesa,BOL_2003_1,81fe84bf-1e42-11e4-b4cd-db5882bf8def,2003-10-17,2005-06-09,Regular,Regular,M,1953,1953-08-12
+BOL,Juan Morales,BOL_2006_1,8250bb5b-1e42-11e4-b4cd-db5882bf8def,2006-01-22,2019-11-10,Regular,Irregular,M,1959,1959-10-26
+BOL,Jeanine Anez,BOL_2019_1,.,2019-11-12,2020-11-08,Regular,Regular,F,1967,1967-08-13
+BOL,Luis Arce,BOL_2020_1,.,2020-11-08,2024-06-30,Regular,Still in Office,M,1963,1963-09-28
+BOS,Alija Izetbegovic,BOS_1990_1,35bae2e8-3bbd-11e5-afeb-eb6f07f9fec7,1990-12-20,1998-10-13,Regular,Regular,M,1925,1925-08-08
+BOS,Zeljko Komsic,BOS_2011_1,82524203-1e42-11e4-b4cd-db5882bf8def,2011-07-10,2014-03-10,Regular,Regular,M,1964,1964-01-20
+BOS,Zeljko Komsic,BOS_2023_1,.,2023-07-16,2024-06-30,Regular,Still in Office,M,1964,1964-01-20
+BOT,Masire,BOT_1980_1,823a9ad5-1e42-11e4-b4cd-db5882bf8def,1980-07-13,1998-03-31,Regular,Regular,M,1925,1925-07-23
+BOT,Mogae,BOT_1998_1,823acba4-1e42-11e4-b4cd-db5882bf8def,1998-03-31,2008-04-01,Regular,Regular,M,1939,NA
+BOT,Ian Khama,BOT_2008_1,82542a54-1e42-11e4-b4cd-db5882bf8def,2008-04-01,2018-03-31,Regular,Regular,M,1953,1953-02-27
+BOT,Mokgweetsi Masisi,BOT_2018_1,.,2018-03-31,2024-06-30,Regular,Still in Office,M,1962,1962-07-21
+BRA,Sarney,BRA_1985_1,81fccd40-1e42-11e4-b4cd-db5882bf8def,1985-03-21,1990-03-15,Regular,Regular,M,1930,1930-04-30
+BRA,Mello,BRA_1990_1,81fccd41-1e42-11e4-b4cd-db5882bf8def,1990-03-15,1992-10-02,Regular,Regular,M,1949,1949-08-12
+BRA,"Franco, Itamar",BRA_1992_1,81fccd42-1e42-11e4-b4cd-db5882bf8def,1992-10-02,1994-12-31,Regular,Regular,M,1930,1930-06-28
+BRA,Cardoso,BRA_1995_1,81fcfe14-1e42-11e4-b4cd-db5882bf8def,1995-01-01,2003-01-01,Regular,Regular,M,1931,1931-06-18
+BRA,Lula da Silva,BRA_2003_1,81fcfe15-1e42-11e4-b4cd-db5882bf8def,2003-01-01,2011-01-01,Regular,Regular,M,1945,NA
+BRA,Rousseff,BRA_2011_1,8250bb59-1e42-11e4-b4cd-db5882bf8def,2011-01-01,2016-05-12,Regular,Regular,F,1947,1947-12-14
+BRA,Michel Temer,BRA_2016_1,.,2016-05-12,2018-12-31,Regular,Regular,M,1940,1940-09-23
+BRA,Jair Bolsonaro,BRA_2018_1,.,2018-12-31,2022-12-31,Regular,Regular,M,1955,1955-03-21
+BRA,Lula da Silva,BRA_2022_1,.,2022-12-31,2024-06-30,Regular,Still in Office,M,1945,1931-06-18
+BRU,Hassanal Bolkiah,BRU_1967_1,824c8911-1e42-11e4-b4cd-db5882bf8def,1967-10-04,2024-06-30,Regular,Still in Office,M,1946,1946-07-15
+BUI,Buyoya,BUI_1987_1,8232c8b7-1e42-11e4-b4cd-db5882bf8def,1987-09-03,1993-07-10,Irregular,Regular,M,1949,1949-11-24
+BUI,Ntibantunganya,BUI_1994_2,8232f98a-1e42-11e4-b4cd-db5882bf8def,1994-04-06,1996-07-25,Regular,Irregular,M,1956,1956-05-08
+BUI,Buyoya,BUI_1996_1,8232c8b7-1e42-11e4-b4cd-db5882bf8def,1996-07-25,2003-04-30,Irregular,Regular,M,1949,1949-11-24
+BUI,Ndayizeye,BUI_2003_1,8232f98b-1e42-11e4-b4cd-db5882bf8def,2003-04-30,2005-08-26,Regular,Regular,M,1953,NA
+BUI,Nkurunziza,BUI_2005_1,8253c8a7-1e42-11e4-b4cd-db5882bf8def,2005-08-26,2020-06-08,Regular,Natural Death,M,1963,1963-12-18
+BUI,Evariste Ndayishiyme,BUI_2020_1,.,2020-06-18,2024-06-30,Regular,Still in Office,M,1968,1968-06-18
+BUL,Popov,BUL_1990_2,821f2306-1e42-11e4-b4cd-db5882bf8def,1990-12-07,1991-11-08,Regular,Regular,M,1927,NA
+BUL,Filip Dimitrov,BUL_1991_1,43f81000-de6a-11e5-ba44-bb6d7c1a9a58,1991-11-08,1992-12-30,Regular,Regular,M,1955,1955-03-31
+BUL,Berov,BUL_1992_1,821f2308-1e42-11e4-b4cd-db5882bf8def,1992-12-30,1994-10-17,Regular,Regular,M,1925,NA
+BUL,Videnov,BUL_1995_1,821f53d9-1e42-11e4-b4cd-db5882bf8def,1995-01-25,1997-02-13,Regular,Regular,M,1959,NA
+BUL,Kostov,BUL_1997_2,821f53db-1e42-11e4-b4cd-db5882bf8def,1997-05-21,2001-07-21,Regular,Regular,M,1949,NA
+BUL,Saksgoburggotski,BUL_2001_1,821f53dc-1e42-11e4-b4cd-db5882bf8def,2001-07-24,2005-08-16,Regular,Regular,M,1937,NA
+BUL,Stanishev,BUL_2005_1,825272da-1e42-11e4-b4cd-db5882bf8def,2005-08-16,2009-07-27,Regular,Regular,M,1966,NA
+BUL,Boyko Borisov,BUL_2009_1,8252a3aa-1e42-11e4-b4cd-db5882bf8def,2009-07-27,2013-03-13,Regular,Regular,M,1959,1959-06-13
+BUL,Oresharski,BUL_2013_2,2b3a05b1-3481-11e4-8dba-bbcd9ed46413,2013-05-29,2014-08-05,Regular,Regular,M,1960,1960-02-21
+BUL,Boyko Borisov,BUL_2014_2,8252a3aa-1e42-11e4-b4cd-db5882bf8def,2014-11-07,2017-01-27,Regular,Regular,M,1959,1959-06-13
+BUL,Boyko Borisov,BUL_2017_2,.,2017-05-04,2021-05-12,Regular,Regular,M,1959,1959-06-13
+BUL,Galab Donev,BUL_2022_1,.,2022-08-02,2023-06-06,Regular,Regular,M,1967,1967-02-28
+BUL,Nikolai Denkov,BUL_2023_1,.,2023-06-06,2024-06-30,Regular,Still in Office,M,1962,1962-09-03
+CAM,Hun Sen,CAM_1985_1,824b640b-1e42-11e4-b4cd-db5882bf8def,1985-01-14,1993-09-21,Regular,Regular,M,1952,1952-08-05
+CAM,Ranariddh,CAM_1993_1,197a8688-3bbd-11e5-afeb-eb6f07f9fec7,1993-09-21,1997-07-06,Regular,Irregular,M,1944,NA
+CAM,Hun Sen,CAM_1997_1,824b640b-1e42-11e4-b4cd-db5882bf8def,1997-07-06,2023-08-22,Irregular,Regular,M,1952,1952-08-05
+CAM,Hun Manet,CAM_2023_1,.,2023-08-22,2024-06-30,Irregular,Still in Office,M,1977,1977-10-20
+CAN,Mulroney,CAN_1984_2,81dea9c8-1e42-11e4-b4cd-db5882bf8def,1984-09-17,1993-06-25,Regular,Regular,M,1939,1939-03-20
+CAN,Chretien,CAN_1993_2,81dea9ca-1e42-11e4-b4cd-db5882bf8def,1993-11-04,2003-12-12,Regular,Regular,M,1939,NA
+CAN,Paul Martin,CAN_2003_1,81dea9cb-1e42-11e4-b4cd-db5882bf8def,2003-12-12,2006-02-06,Regular,Regular,M,1938,NA
+CAN,Harper,CAN_2006_1,824ff7fe-1e42-11e4-b4cd-db5882bf8def,2006-02-06,2015-11-04,Regular,Regular,M,1959,1959-04-30
+CAN,Justin Trudeau,CAN_2015_1,43f5ae9c-de6a-11e5-ba44-bb6d7c1a9a58,2015-11-04,2024-06-30,Regular,Still in Office,M,1971,1971-12-25
+CAO,Biya,CAO_1982_1,82304de9-1e42-11e4-b4cd-db5882bf8def,1982-11-06,2024-06-30,Regular,Still in Office,M,1933,1933-02-13
+CAP,Pires,CAP_1975_1,82290e46-1e42-11e4-b4cd-db5882bf8def,1975-07-08,1991-04-04,Regular,Regular,M,1934,NA
+CAP,Veiga,CAP_1991_1,82290e47-1e42-11e4-b4cd-db5882bf8def,1991-04-04,2000-07-29,Regular,Regular,M,1949,NA
+CAP,Neves,CAP_2001_1,82293f1b-1e42-11e4-b4cd-db5882bf8def,2001-02-01,2016-04-22,Regular,Regular,M,1960,1960-03-28
+CAP,Correia e Silva,CAP_2016_1,.,2016-04-22,2024-06-30,Regular,Still in Office,M,1962,1962-06-04
+CDI,Houphouet-Boigny,CDI_1960_1,822d7168-1e42-11e4-b4cd-db5882bf8def,1960-08-07,1993-12-07,Regular,Natural Death,M,1905,1905-10-18
+CDI,Konan Bedie,CDI_1993_1,822da23a-1e42-11e4-b4cd-db5882bf8def,1993-12-07,1999-12-25,Regular,Irregular,M,1934,NA
+CDI,Guei,CDI_1999_1,822da23b-1e42-11e4-b4cd-db5882bf8def,1999-12-25,2000-10-25,Irregular,Irregular,M,1941,1941-03-16
+CDI,Laurent Gbagbo,CDI_2000_1,822dd30e-1e42-11e4-b4cd-db5882bf8def,2000-10-26,2011-04-11,Irregular,Irregular,M,1945,1945-05-31
+CDI,Ouattara,CDI_2011_1,825366fc-1e42-11e4-b4cd-db5882bf8def,2011-04-11,2024-06-30,Irregular,Still in Office,M,1942,1942-01-01
+CEN,Kolingba,CEN_1981_1,82311138-1e42-11e4-b4cd-db5882bf8def,1981-09-01,1993-10-22,Irregular,Regular,M,1935,1935-08-12
+CEN,Patasse,CEN_1993_1,82311139-1e42-11e4-b4cd-db5882bf8def,1993-10-22,2003-03-15,Regular,Irregular,M,1937,1937-01-25
+CEN,Francois Bozize,CEN_2003_1,8231420a-1e42-11e4-b4cd-db5882bf8def,2003-03-15,2013-03-24,Regular,Irregular,M,1953,NA
+CEN,Djotodia,CEN_2013_1,2b3c671b-3481-11e4-8dba-bbcd9ed46413,2013-03-24,2014-01-10,Irregular,Regular,M,1949,NA
+CEN,Catherine Samba-Panza,CEN_2014_2,149f9c66-aae0-11e4-b3bc-29f2fa19767e,2014-01-23,2016-03-30,Regular,Regular,F,1954,1954-06-26
+CEN,Touadéra,CEN_2016_1,.,2016-03-30,2024-06-30,Regular,Still in Office,M,1957,1957-04-21
+CHA,Habre,CHA_1982_1,8231420e-1e42-11e4-b4cd-db5882bf8def,1982-06-19,1990-12-02,Irregular,Irregular,M,1942,NA
+CHA,Deby,CHA_1990_1,823172de-1e42-11e4-b4cd-db5882bf8def,1990-12-02,2021-04-20,Irregular,Assassination,M,1952,1952-06-18
+CHA,Mahamat Déby,CHA_2021_1,.,2021-04-20,2024-06-30,Irregular,Still in Office,M,1984,1984-04-04
+CHL,Pinochet,CHL_1973_1,8201c2dc-1e42-11e4-b4cd-db5882bf8def,1973-09-11,1990-03-11,Irregular,Regular,M,1915,1915-11-25
+CHL,Aylwin,CHL_1990_1,8201c2dd-1e42-11e4-b4cd-db5882bf8def,1990-03-11,1994-03-11,Regular,Regular,M,1918,1918-11-26
+CHL,Frei Ruiz-Tagle,CHL_1994_1,8201c2de-1e42-11e4-b4cd-db5882bf8def,1994-03-11,2000-03-11,Regular,Regular,M,1942,NA
+CHL,Ricardo Lagos Escobar,CHL_2000_1,8201f3b0-1e42-11e4-b4cd-db5882bf8def,2000-03-12,2006-03-11,Regular,Regular,M,1928,NA
+CHL,Michelle Bachelet,CHL_2006_1,8250bb5d-1e42-11e4-b4cd-db5882bf8def,2006-03-11,2010-03-11,Regular,Regular,F,1951,1951-09-29
+CHL,Sebastian Pinera,CHL_2010_1,149e15be-aae0-11e4-b3bc-29f2fa19767e,2010-03-11,2014-03-11,Regular,Regular,M,1949,1949-12-01
+CHL,Michelle Bachelet,CHL_2014_1,8250bb5d-1e42-11e4-b4cd-db5882bf8def,2014-03-11,2018-03-11,Regular,Regular,F,1951,1951-09-29
+CHL,Sebastian Pinera,CHL_2018_1,.,2018-03-11,2022-03-11,Regular,Regular,M,1949,1949-12-02
+CHL,Gabriel Boric,CHL_2022_1,.,2022-03-11,2024-06-30,Regular,Still in Office,M,1986,1986-02-11
+CHN,Deng Xiaoping,CHN_1980_1,8244553e-1e42-11e4-b4cd-db5882bf8def,1980-09-10,1997-02-19,Regular,Natural Death,M,1904,1904-08-22
+CHN,Jiang Zemin,CHN_1997_1,8244553f-1e42-11e4-b4cd-db5882bf8def,1997-02-19,2003-03-15,Regular,Regular,M,1926,1926-08-17
+CHN,Hu Jintao,CHN_2003_1,82445540-1e42-11e4-b4cd-db5882bf8def,2003-03-15,2012-11-15,Regular,Regular,M,1942,NA
+CHN,Xi Jinping,CHN_2012_1,2b3ec879-3481-11e4-8dba-bbcd9ed46413,2012-11-15,2024-06-30,Regular,Still in Office,M,1953,1953-06-15
+COL,Vargas,COL_1986_1,81f4ca52-1e42-11e4-b4cd-db5882bf8def,1986-08-07,1990-08-07,Regular,Regular,M,1921,1921-09-17
+COL,César Gaviria Trujillo,COL_1990_1,43f5ae9e-de6a-11e5-ba44-bb6d7c1a9a58,1990-08-07,1994-08-07,Regular,Regular,M,1947,1947-03-31
+COL,Pizano,COL_1994_1,81f4fb24-1e42-11e4-b4cd-db5882bf8def,1994-08-07,1998-08-07,Regular,Regular,M,1950,NA
+COL,Arango,COL_1998_1,81f4fb25-1e42-11e4-b4cd-db5882bf8def,1998-08-07,2002-08-07,Regular,Regular,M,1954,NA
+COL,Alvaro Uribe Velez,COL_2002_1,81f4fb26-1e42-11e4-b4cd-db5882bf8def,2002-08-08,2010-08-07,Regular,Regular,M,1952,NA
+COL,Santos Calderon,COL_2010_1,82508a86-1e42-11e4-b4cd-db5882bf8def,2010-08-07,2018-08-07,Regular,Regular,M,1951,1951-08-10
+COL,Ivan Duque Marquez,COL_2018_1,.,2018-08-07,2022-08-07,Regular,Regular,M,1976,1976-08-01
+COL,Gustavo Petro,COL_2022_1,.,2022-08-07,2024-06-30,Regular,Still in Office,M,1960,1960-04-19
+COM,Djohar,COM_1989_1,823b2d51-1e42-11e4-b4cd-db5882bf8def,1989-12-18,1995-09-29,Regular,Irregular,M,1918,NA
+COM,Abdoulkarim,COM_1996_2,1978ffe8-3bbd-11e5-afeb-eb6f07f9fec7,1996-03-25,1998-11-06,Regular,Natural Death,M,1936,NA
+COM,Azali Assoumani,COM_1999_1,823b5e2c-1e42-11e4-b4cd-db5882bf8def,1999-04-30,2002-01-21,Irregular,Regular,M,1959,1959-01-01
+COM,Azali Assoumani,COM_2002_2,823b5e2c-1e42-11e4-b4cd-db5882bf8def,2002-05-27,2006-05-26,Regular,Regular,M,1959,1959-01-01
+COM,Sambi,COM_2006_1,82542a56-1e42-11e4-b4cd-db5882bf8def,2006-05-26,2011-05-26,Regular,Regular,M,1958,1958-06-05
+COM,Dhoinine,COM_2011_1,82542a57-1e42-11e4-b4cd-db5882bf8def,2011-05-26,2016-05-26,Regular,Regular,M,1962,1962-08-14
+COM,Azali Assoumani,COM_2016_1,.,2016-05-26,2019-02-03,Regular,Regular,M,1959,1959-01-01
+COM,Azali Assoumani,COM_2019_2,.,2019-05-26,2024-06-30,Regular,Still in Office,M,1959,1959-01-01
+CON,Nguesso,CON_1979_1,8231a3b5-1e42-11e4-b4cd-db5882bf8def,1979-02-08,1992-08-20,Irregular,Regular,M,1943,1943-11-23
+CON,Lissouba,CON_1992_1,8231d490-1e42-11e4-b4cd-db5882bf8def,1992-08-31,1997-10-15,Regular,Irregular,M,1931,1931-11-29
+CON,Nguesso,CON_1997_1,8231a3b5-1e42-11e4-b4cd-db5882bf8def,1997-10-15,2024-06-30,Irregular,Still in Office,M,1943,1943-11-23
+COS,Arias,COS_1986_1,81ec34da-1e42-11e4-b4cd-db5882bf8def,1986-05-08,1990-05-08,Regular,Regular,M,1941,1941-09-13
+COS,Calderon Fournier,COS_1990_1,81ec34db-1e42-11e4-b4cd-db5882bf8def,1990-05-08,1994-05-08,Regular,Regular,M,1949,NA
+COS,Figueres Olsen,COS_1994_1,81ec65ae-1e42-11e4-b4cd-db5882bf8def,1994-05-08,1998-05-08,Regular,Regular,M,1954,NA
+COS,Rodriguez Echeverria,COS_1998_1,81ec65af-1e42-11e4-b4cd-db5882bf8def,1998-05-08,2002-05-08,Regular,Regular,M,1940,NA
+COS,de la Espriella,COS_2002_1,81ec9682-1e42-11e4-b4cd-db5882bf8def,2002-05-09,2006-05-08,Regular,Regular,M,1933,NA
+COS,Arias,COS_2006_1,81ec34da-1e42-11e4-b4cd-db5882bf8def,2006-05-08,2010-05-08,Regular,Regular,M,1941,1941-09-13
+COS,Laura Chinchilla Miranda,COS_2010_1,82508a84-1e42-11e4-b4cd-db5882bf8def,2010-05-08,2014-05-08,Regular,Regular,F,1959,1959-03-28
+COS,Solis Rivera,COS_2014_1,149e15bc-aae0-11e4-b3bc-29f2fa19767e,2014-05-08,2018-05-08,Regular,Regular,M,1958,1958-04-25
+COS,Carlos Alvarado Quesada,COS_2018_1,.,2018-05-08,2022-05-08,Regular,Regular,M,1980,1980-01-14
+COS,Rodrigo Chaves Robles,COS_2022_1,.,2022-05-08,2024-06-30,Regular,Still in Office,M,1961,1961-06-10
+CRO,Tudjman,CRO_1990_1,821b2190-1e42-11e4-b4cd-db5882bf8def,1990-05-30,1999-11-26,Regular,Natural Death,M,1922,NA
+CRO,Mesic,CRO_2000_2,821b5262-1e42-11e4-b4cd-db5882bf8def,2000-02-18,2010-02-18,Regular,Regular,M,1934,1934-12-24
+CRO,Josipovic,CRO_2010_1,82521127-1e42-11e4-b4cd-db5882bf8def,2010-02-18,2015-02-18,Regular,Regular,M,1957,1957-08-28
+CRO,Kolinda Grabar-Kitarovic,CRO_2015_1,43f5aea6-de6a-11e5-ba44-bb6d7c1a9a58,2015-02-19,2020-02-18,Regular,Regular,F,1968,1968-04-29
+CRO,Zoran Milanovic,CRO_2020_1,.,2020-02-18,2024-06-30,Regular,Still in Office,M,1966,1966-10-30
+CUB,Castro,CUB_1959_1,81df6d18-1e42-11e4-b4cd-db5882bf8def,1959-01-02,2008-02-24,Irregular,Retired Due to Ill Health,M,1927,1927-08-13
+CUB,Raul Castro,CUB_2008_1,824ff801-1e42-11e4-b4cd-db5882bf8def,2008-02-24,2019-10-10,Regular,Regular,M,1931,1931-06-03
+CUB,Díaz-Canel,CUB_2019_1,.,2019-10-10,2024-06-30,Regular,Still in Office,M,1960,1960-04-20
+CYP,Vassiliou,CYP_1988_1,821ec15c-1e42-11e4-b4cd-db5882bf8def,1988-02-28,1993-02-28,Regular,Regular,M,1931,NA
+CYP,Clerides,CYP_1993_1,821e9081-1e42-11e4-b4cd-db5882bf8def,1993-02-28,2003-02-28,Regular,Regular,M,1919,1919-04-24
+CYP,Tassos Nikolaou Papadopoulos,CYP_2003_1,821ec15d-1e42-11e4-b4cd-db5882bf8def,2003-02-28,2008-02-28,Regular,Regular,M,1934,NA
+CYP,Dimitris Christofias,CYP_2008_1,825272d9-1e42-11e4-b4cd-db5882bf8def,2008-02-28,2013-02-28,Regular,Regular,M,1946,NA
+CYP,Anastasiades,CYP_2013_1,2b3a05b0-3481-11e4-8dba-bbcd9ed46413,2013-02-28,2023-02-28,Regular,Regular,M,1946,1946-09-27
+CYP,Nikos Christodoulides,CYP_2023_1,.,2023-02-28,2024-06-30,Regular,Still in Office,M,1973,1973-12-06
+CZE,Calfa,CZE_1989_1,82181438-1e42-11e4-b4cd-db5882bf8def,1989-12-17,1992-07-01,Regular,Regular,M,1946,NA
+CZR,Klaus,CZR_1993_1,8218143a-1e42-11e4-b4cd-db5882bf8def,1993-01-01,1997-12-17,Regular,Regular,M,1941,1941-06-19
+CZR,Zeman,CZR_1998_1,8218143c-1e42-11e4-b4cd-db5882bf8def,1998-07-17,2002-07-12,Regular,Regular,M,1944,NA
+CZR,Spidla,CZR_2002_1,8218450c-1e42-11e4-b4cd-db5882bf8def,2002-07-12,2004-07-26,Regular,Regular,M,1951,1951-04-22
+CZR,Stanislav Gross,CZR_2004_1,8218450d-1e42-11e4-b4cd-db5882bf8def,2004-07-26,2005-04-25,Regular,Regular,M,1969,1969-10-30
+CZR,Paroubek,CZR_2005_1,8251af80-1e42-11e4-b4cd-db5882bf8def,2005-04-25,2006-09-04,Regular,Regular,M,1952,NA
+CZR,Topolanek,CZR_2006_1,8251af81-1e42-11e4-b4cd-db5882bf8def,2006-09-04,2009-05-08,Regular,Regular,M,1956,NA
+CZR,Fischer,CZR_2009_1,8251e050-1e42-11e4-b4cd-db5882bf8def,2009-05-08,2010-07-13,Regular,Regular,M,1951,NA
+CZR,Necas,CZR_2010_1,8251e051-1e42-11e4-b4cd-db5882bf8def,2010-07-13,2013-07-10,Regular,Regular,M,1964,NA
+CZR,Sobotka,CZR_2014_1,149e3ccf-aae0-11e4-b3bc-29f2fa19767e,2014-01-29,2017-12-06,Regular,Regular,M,1971,1971-10-23
+CZR,Babis,CZR_2017_1,.,2017-12-06,2020-12-17,Regular,Regular,M,1954,1954-09-02
+CZR,Fiala,CZR_2021_1,.,2021-12-17,2024-06-30,Regular,Still in Office,M,1964,1964-09-01
+DEN,Schluter,DEN_1982_1,82281a18-1e42-11e4-b4cd-db5882bf8def,1982-09-10,1993-01-25,Regular,Regular,M,1929,1929-04-03
+DEN,Nyrup Rasmussen,DEN_1993_1,82281a19-1e42-11e4-b4cd-db5882bf8def,1993-01-25,2001-11-27,Regular,Regular,M,1943,1943-06-15
+DEN,Fogh Rasmussen,DEN_2001_1,82281a1a-1e42-11e4-b4cd-db5882bf8def,2001-11-27,2009-04-05,Regular,Regular,M,1953,1953-01-26
+DEN,Lars L<U+FFFD>kke Rasmussen,DEN_2009_1,82530554-1e42-11e4-b4cd-db5882bf8def,2009-04-05,2011-10-03,Regular,Regular,M,1964,1964-05-15
+DEN,Thorning-Schmidt,DEN_2011_1,82530555-1e42-11e4-b4cd-db5882bf8def,2011-10-03,2015-06-28,Regular,Regular,F,1966,1966-12-14
+DEN,Lars L<U+FFFD>kke Rasmussen,DEN_2015_1,43f81006-de6a-11e5-ba44-bb6d7c1a9a58,2015-06-28,2019-06-27,Regular,Regular,M,1964,1964-05-15
+DEN,Mette Frederiksen,DEN_2019_1,.,2019-06-27,2024-06-30,Regular,Still in Office,F,1977,1977-11-19
+DJI,Gouled Aptidon,DJI_1977_1,82335b30-1e42-11e4-b4cd-db5882bf8def,1977-06-27,1999-05-08,Regular,Regular,M,1916,NA
+DJI,Guelleh,DJI_1999_1,82335b31-1e42-11e4-b4cd-db5882bf8def,1999-05-08,2024-06-30,Regular,Still in Office,M,1947,1947-11-27
+DOM,Balaguer,DOM_1986_1,81e1b71c-1e42-11e4-b4cd-db5882bf8def,1986-08-16,1996-08-16,Regular,Regular,M,1907,1907-09-01
+DOM,Fernandez Reyna,DOM_1996_1,81e2dc15-1e42-11e4-b4cd-db5882bf8def,1996-08-16,2000-08-16,Regular,Regular,M,1953,1953-12-26
+DOM,Hipolito Mejia,DOM_2000_1,81e30ce8-1e42-11e4-b4cd-db5882bf8def,2000-08-17,2004-08-16,Regular,Regular,M,1941,1941-02-22
+DOM,Fernandez Reyna,DOM_2004_1,81e2dc15-1e42-11e4-b4cd-db5882bf8def,2004-08-16,2012-08-16,Regular,Regular,M,1953,1953-12-26
+DOM,Medina,DOM_2012_1,2b37a44e-3481-11e4-8dba-bbcd9ed46413,2012-08-16,2020-08-16,Regular,Regular,M,1951,1951-11-10
+DOM,Luis Abinader,DOM_2020_1,.,2020-08-16,2024-06-30,Regular,Still in Office,M,1967,1967-07-12
+DRC,Mobutu,DRC_1965_1,8231d492-1e42-11e4-b4cd-db5882bf8def,1965-11-25,1997-05-16,Irregular,Irregular,M,1930,1930-10-14
+DRC,Laurent Kabila,DRC_1997_1,8231d494-1e42-11e4-b4cd-db5882bf8def,1997-05-16,2001-01-16,Irregular,Irregular,M,1939,1939-11-27
+DRC,Joseph Kabila,DRC_2001_1,82320564-1e42-11e4-b4cd-db5882bf8def,2001-01-17,2019-01-24,Regular,Regular,M,1971,1971-06-04
+DRC,Felix Tshisekedi,DRC_2019_1,.,2019-01-24,2024-06-30,Regular,Still in Office,M,1963,1963-06-13
+DRV,Nguyen Van Linh,DRV_1986_2,824bf68a-1e42-11e4-b4cd-db5882bf8def,1986-12-18,1991-06-27,Regular,Regular,M,1915,1915-07-01
+DRV,Do Muoi,DRV_1991_1,824bf68b-1e42-11e4-b4cd-db5882bf8def,1991-06-27,1997-12-29,Regular,Regular,M,1917,1917-02-02
+DRV,Phieu,DRV_1997_1,824c275a-1e42-11e4-b4cd-db5882bf8def,1997-12-29,2001-04-22,Regular,Regular,M,1931,1931-12-27
+DRV,Nong Duc Manh,DRV_2001_1,824c275b-1e42-11e4-b4cd-db5882bf8def,2001-04-23,2011-01-19,Regular,Regular,M,1940,1940-09-11
+DRV,Phu Trong,DRV_2011_1,8255b0f9-1e42-11e4-b4cd-db5882bf8def,2011-01-19,2024-06-30,Regular,Still in Office,M,1944,1944-04-14
+ECU,Borja Cevallos,ECU_1988_1,81f86a18-1e42-11e4-b4cd-db5882bf8def,1988-08-10,1992-08-10,Regular,Regular,M,1935,1935-06-19
+ECU,Duran Ballen,ECU_1992_1,81f86a19-1e42-11e4-b4cd-db5882bf8def,1992-08-10,1996-08-10,Regular,Regular,M,1921,1921-07-14
+ECU,Alarcon Fabian,ECU_1997_3,81f89af4-1e42-11e4-b4cd-db5882bf8def,1997-02-11,1998-08-10,Regular,Regular,M,1947,1947-04-14
+ECU,Mahuad,ECU_1998_1,81f89af6-1e42-11e4-b4cd-db5882bf8def,1998-08-10,2000-01-21,Regular,Irregular,M,1949,1949-07-29
+ECU,Gustavo Noboa,ECU_2000_1,81f89af7-1e42-11e4-b4cd-db5882bf8def,2000-01-22,2003-01-15,Irregular,Regular,M,1937,NA
+ECU,Lucio Gutierrez,ECU_2003_1,81f89af8-1e42-11e4-b4cd-db5882bf8def,2003-01-15,2005-04-20,Regular,Regular,M,1957,NA
+ECU,Alfredo Palacio,ECU_2005_1,82508a88-1e42-11e4-b4cd-db5882bf8def,2005-04-20,2007-01-15,Regular,Regular,M,1939,NA
+ECU,Rafael Correa,ECU_2007_1,82508a89-1e42-11e4-b4cd-db5882bf8def,2007-01-15,2017-05-24,Regular,Regular,M,1963,1963-04-06
+ECU,Lenín Moreno,ECU_2017_1,.,2017-05-24,2021-05-24,Regular,Regular,M,1953,1953-03-19
+ECU,Guillermo Lasso,ECU_2021_1,.,2021-05-24,2023-11-23,Regular,Regular,M,1955,1955-11-16
+EGY,Mubarak,EGY_1981_1,823ecd1d-1e42-11e4-b4cd-db5882bf8def,1981-10-14,2011-02-11,Regular,Irregular,M,1929,1929-05-04
+EGY,Tantawi,EGY_2011_1,82545b2d-1e42-11e4-b4cd-db5882bf8def,2011-02-11,2012-06-30,Regular,Regular,M,1931,NA
+EGY,Morsi,EGY_2012_1,14a011a1-aae0-11e4-b3bc-29f2fa19767e,2012-06-30,2013-07-03,Regular,Irregular,M,1951,1951-08-08
+EGY,Mansour,EGY_2013_1,2b3c6721-3481-11e4-8dba-bbcd9ed46413,2013-07-04,2014-06-08,Irregular,Regular,M,1945,1945-12-23
+EGY,al-Sisi,EGY_2014_1,14a011a2-aae0-11e4-b3bc-29f2fa19767e,2014-06-08,2024-06-30,Regular,Still in Office,M,1954,1954-11-19
+EQG,Nguema Mbasogo,EQG_1979_1,822a334a-1e42-11e4-b4cd-db5882bf8def,1979-08-03,2024-06-30,Irregular,Still in Office,M,1942,1942-06-05
+ERI,Afeworki,ERI_1993_1,8233bce5-1e42-11e4-b4cd-db5882bf8def,1993-05-24,2024-06-30,Regular,Still in Office,M,1946,1946-02-02
+EST,Laar,EST_1992_2,82213c2c-1e42-11e4-b4cd-db5882bf8def,1992-10-28,1994-11-08,Regular,Regular,M,1960,1960-04-22
+EST,Vahi,EST_1995_1,82213c2b-1e42-11e4-b4cd-db5882bf8def,1995-04-17,1997-03-17,Regular,Regular,M,1947,1947-01-10
+EST,Siimann,EST_1997_1,82216cfe-1e42-11e4-b4cd-db5882bf8def,1997-03-17,1999-03-25,Regular,Regular,M,1946,NA
+EST,Laar,EST_1999_1,82213c2c-1e42-11e4-b4cd-db5882bf8def,1999-03-25,2002-01-28,Regular,Regular,M,1960,1960-04-22
+EST,Siim Kallas,EST_2002_1,82216cff-1e42-11e4-b4cd-db5882bf8def,2002-01-28,2003-04-10,Regular,Regular,M,1948,NA
+EST,Parts,EST_2003_1,82216d00-1e42-11e4-b4cd-db5882bf8def,2003-04-10,2005-04-13,Regular,Regular,M,1966,NA
+EST,Ansip,EST_2005_1,8252d47f-1e42-11e4-b4cd-db5882bf8def,2005-04-13,2014-03-26,Regular,Regular,M,1956,1956-10-01
+EST,Roivas,EST_2014_1,149ed919-aae0-11e4-b3bc-29f2fa19767e,2014-03-26,2016-11-23,Regular,Regular,M,1979,1979-09-26
+EST,Ratas,EST_2016_1,.,2016-11-23,2021-01-26,Regular,Regular,M,1978,1978-07-02
+EST,Kaja Kallas,EST_2021_1,.,2021-01-26,2024-06-30,Regular,Still in Office,F,1977,1977-06-18
+ETH,Mengistu Marriam,ETH_1977_1,8233bce2-1e42-11e4-b4cd-db5882bf8def,1977-02-11,1991-05-21,Regular,Irregular,M,1937,NA
+ETH,Meles Zenawi,ETH_1991_2,8233bce4-1e42-11e4-b4cd-db5882bf8def,1991-05-27,2012-08-20,Irregular,Natural Death,M,1955,1955-08-23
+ETH,Hailemariam Desalegn,ETH_2012_1,2b3c671d-3481-11e4-8dba-bbcd9ed46413,2012-08-20,2018-04-02,Regular,Irregular,M,1965,1965-07-18
+ETH,Abiy Ahmed,ETH_2018_1,.,2018-04-02,2024-06-30,Regular,Still in Office,M,1976,1976-08-15
+ETM,Gusmao,ETM_2002_1,824d1b8d-1e42-11e4-b4cd-db5882bf8def,2002-05-20,2007-05-20,Regular,Regular,M,1946,1946-06-20
+ETM,Ramos-Horta,ETM_2008_2,8255e1ca-1e42-11e4-b4cd-db5882bf8def,2008-04-17,2012-05-20,Regular,Retired Due to Ill Health,M,1949,1949-12-26
+ETM,Ruak,ETM_2012_1,2b3ec880-3481-11e4-8dba-bbcd9ed46413,2012-05-20,2017-05-20,Regular,Regular,M,1956,1956-10-10
+ETM,Guterres,ETM_2017_1,.,2017-05-20,2022-05-20,Regular,Regular,M,1954,1954-09-07
+ETM,Jose Manuel Ramos-Horta,ETM_2022_1,.,2022-05-20,2024-06-30,Regular,Still in Office,M,1954,1949-12-26
+FIN,Koivisto,FIN_1981_1,8224ab29-1e42-11e4-b4cd-db5882bf8def,1981-09-11,1994-03-01,Regular,Regular,M,1923,1923-11-25
+FIN,Marthi Ahtisaari,FIN_1994_1,8224ab2a-1e42-11e4-b4cd-db5882bf8def,1994-03-01,2000-03-01,Regular,Regular,M,1937,1937-06-23
+FIN,Halonen,FIN_2000_1,8224dbfa-1e42-11e4-b4cd-db5882bf8def,2000-03-01,2012-03-01,Regular,Regular,F,1943,1943-12-24
+FIN,Sauli Niinistö,FIN_2012_1,2b3a05b6-3481-11e4-8dba-bbcd9ed46413,2012-03-01,2024-06-30,Regular,Still in Office,M,1948,1948-08-24
+FJI,Mara,FJI_1987_3,824f965a-1e42-11e4-b4cd-db5882bf8def,1987-12-05,1992-06-02,Regular,Regular,M,1920,1920-05-13
+FJI,Rabuka,FJI_1992_1,824fc72a-1e42-11e4-b4cd-db5882bf8def,1992-06-02,1999-05-19,Regular,Regular,M,1948,1948-09-13
+FJI,Chaudhry,FJI_1999_1,824fc72b-1e42-11e4-b4cd-db5882bf8def,1999-05-19,2000-05-19,Regular,Irregular,M,1942,1942-09-02
+FJI,Laisenia Qarase,FJI_2000_3,824fc72e-1e42-11e4-b4cd-db5882bf8def,2000-07-14,2006-12-05,Regular,Irregular,M,1941,NA
+FJI,Bainimarama,FJI_2007_1,3671d6d8-3bbd-11e5-afeb-eb6f07f9fec7,2007-01-05,2022-12-24,Irregular,Regular,M,1954,1954-04-27
+FJI,Sitiveni Rabuka,FJI_2022_1,.,2022-12-24,2024-06-30,Regular,Still in Office,M,1948,1948-09-13
+FRN,Mitterand,FRN_1981_1,820d967c-1e42-11e4-b4cd-db5882bf8def,1981-05-21,1995-05-17,Regular,Regular,M,1916,1916-10-26
+FRN,Chirac,FRN_1995_1,820d967d-1e42-11e4-b4cd-db5882bf8def,1995-05-17,2007-05-16,Regular,Regular,M,1932,1932-11-29
+FRN,Sarkozy,FRN_2007_1,82511d05-1e42-11e4-b4cd-db5882bf8def,2007-05-16,2012-05-15,Regular,Regular,M,1955,NA
+FRN,Hollande,FRN_2012_1,2b37a455-3481-11e4-8dba-bbcd9ed46413,2012-05-15,2017-05-14,Regular,Regular,M,1954,1954-08-12
+FRN,Macron,FRN_2017_1,.,2017-05-14,2024-06-30,Regular,Still in Office,M,1977,1977-12-21
+GAB,Bongo,GAB_1967_1,8230e064-1e42-11e4-b4cd-db5882bf8def,1967-11-28,2009-06-08,Regular,Natural Death,M,1935,1935-12-30
+GAB,Ali Bongo Ondimba,GAB_2009_2,8253c8a5-1e42-11e4-b4cd-db5882bf8def,2009-10-16,2023-08-30,Regular,Irregular,M,1959,1959-02-09
+GAB,Brice Oligui,GAB_2023_1,.,2023-08-30,2024-06-30,Irregular,Still in Office,M,1974,NA
+GAM,Jawara,GAM_1965_1,822a641c-1e42-11e4-b4cd-db5882bf8def,1965-02-18,1994-07-22,Regular,Irregular,M,1924,1924-05-11
+GAM,Jammeh,GAM_1994_1,822a641d-1e42-11e4-b4cd-db5882bf8def,1994-07-22,2017-01-19,Irregular,Regular,M,1942,1942-06-05
+GAM,Adama Barrow,GAM_2017_1,.,2017-01-19,2024-06-30,Regular,Still in Office,M,1965,1965-02-15
+GDR,Gysi,GDR_1989_2,82147469-1e42-11e4-b4cd-db5882bf8def,1989-12-09,1990-10-03,Regular,Foreign,M,1948,1948-01-16
+GFR,Kohl,GFR_1982_1,82144394-1e42-11e4-b4cd-db5882bf8def,1982-10-01,1998-10-27,Regular,Regular,M,1930,1930-04-03
+GFR,Schroder,GFR_1998_1,82144395-1e42-11e4-b4cd-db5882bf8def,1998-10-27,2005-11-22,Regular,Regular,M,1944,1944-04-07
+GFR,Merkel,GFR_2005_1,82517eaa-1e42-11e4-b4cd-db5882bf8def,2005-11-22,2021-12-08,Regular,Regular,F,1954,1954-07-17
+GFR,Scholz,GFR_2021_1,.,2021-12-08,2024-06-30,Regular,Still in Office,M,1958,1958-06-14
+GHA,Rawlings,GHA_1981_1,82301d12-1e42-11e4-b4cd-db5882bf8def,1981-12-31,2001-01-07,Irregular,Regular,M,1947,1947-06-22
+GHA,John Agyekum Kufuor,GHA_2001_1,82301d14-1e42-11e4-b4cd-db5882bf8def,2001-01-08,2009-01-07,Regular,Regular,M,1938,1938-12-08
+GHA,Atta Mills,GHA_2009_1,825397d0-1e42-11e4-b4cd-db5882bf8def,2009-01-07,2012-07-24,Regular,Natural Death,M,1944,NA
+GHA,John Mahama,GHA_2012_1,2b3c671a-3481-11e4-8dba-bbcd9ed46413,2012-07-24,2017-01-07,Regular,Regular,M,1958,1958-11-29
+GHA,Nana Akufo-Addo,GHA_2017_1,.,2017-01-07,2024-06-30,Regular,Still in Office,M,1944,1944-03-29
+GNB,Vieira,GNB_1980_1,82296fef-1e42-11e4-b4cd-db5882bf8def,1980-11-14,1999-05-07,Irregular,Irregular,M,1939,1939-04-27
+GNB,Sanha,GNB_1999_2,8229a0c3-1e42-11e4-b4cd-db5882bf8def,1999-05-14,2000-02-17,Irregular,Regular,M,1947,1947-05-05
+GNB,Kumba Iala,GNB_2000_1,8229d196-1e42-11e4-b4cd-db5882bf8def,2000-02-18,2003-09-14,Regular,Irregular,M,1953,NA
+GNB,Henrique Pereira Rosa,GNB_2003_2,822a026a-1e42-11e4-b4cd-db5882bf8def,2003-09-28,2005-10-01,Regular,Regular,M,1946,NA
+GNB,Vieira,GNB_2005_1,82296fef-1e42-11e4-b4cd-db5882bf8def,2005-10-01,2009-03-02,Regular,Irregular,M,1939,1939-04-27
+GNB,Sanha,GNB_2009_2,8229a0c3-1e42-11e4-b4cd-db5882bf8def,2009-09-08,2011-12-31,Regular,Natural Death,M,1956,NA
+GNB,Manuel Serifo Nhamadjo,GNB_2012_3,2b3a05b8-3481-11e4-8dba-bbcd9ed46413,2012-05-11,2014-06-23,Regular,Regular,M,1958,1958-03-25
+GNB,Vaz,GNB_2014_1,149f4e46-aae0-11e4-b3bc-29f2fa19767e,2014-06-23,2020-02-27,Regular,Regular,M,1957,1957-12-10
+GNB,Umaro Cissoko Embalo,GNB_2020_1,.,2020-02-27,2024-06-30,Regular,Still in Office,M,1972,1972-09-23
+GRC,Mitsotakis,GRC_1990_1,821e5fac-1e42-11e4-b4cd-db5882bf8def,1990-04-11,1993-10-13,Regular,Regular,M,1918,NA
+GRC,A. Papandreou,GRC_1993_1,821e2ed9-1e42-11e4-b4cd-db5882bf8def,1993-10-13,1995-11-20,Regular,Retired Due to Ill Health,M,1919,1919-02-05
+GRC,Simitis,GRC_1996_1,821e5fae-1e42-11e4-b4cd-db5882bf8def,1996-01-22,2004-03-10,Regular,Regular,M,1936,NA
+GRC,Konstantinos Karamanlis,GRC_2004_1,821e907e-1e42-11e4-b4cd-db5882bf8def,2004-03-10,2009-10-06,Regular,Regular,M,1956,NA
+GRC,Georgios Papandreou,GRC_2009_1,825272d7-1e42-11e4-b4cd-db5882bf8def,2009-10-06,2011-11-11,Regular,Regular,M,1952,1952-06-16
+GRC,Antonis Konstantinou Samaras,GRC_2012_2,149eb208-aae0-11e4-b3bc-29f2fa19767e,2012-06-20,2015-01-26,Regular,Regular,M,1951,1951-05-23
+GRC,Alexis Tsipras,GRC_2015_1,43f80fff-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-26,2019-07-08,Regular,Regular,M,1974,1974-07-28
+GRC,Kyriakos Mitsotakis,GRC_2019_1,.,2019-07-08,2023-05-25,Regular,Regular,M,1968,1968-03-04
+GRC,Kyriakos Mitsotakis,GRC_2023_2,.,2023-06-26,2024-06-30,Regular,Still in Office,M,1968,1968-03-04
+GRG,Shevardnadze,GRG_1992_2,82238624-1e42-11e4-b4cd-db5882bf8def,1992-03-10,2003-11-23,Regular,Irregular,M,1928,1928-01-25
+GRG,Saakashvili,GRG_2004_1,82238626-1e42-11e4-b4cd-db5882bf8def,2004-01-25,2007-11-25,Regular,Irregular,M,1967,1967-12-21
+GRG,Saakashvili,GRG_2008_1,82238626-1e42-11e4-b4cd-db5882bf8def,2008-01-20,2013-11-17,Regular,Regular,M,1967,1967-12-21
+GRG,Margvelashvili,GRG_2013_1,2b3a05b5-3481-11e4-8dba-bbcd9ed46413,2013-11-17,2018-12-16,Regular,Regular,M,1969,1969-09-04
+GRG,Zourabichvili,GRG_2018_1,.,2018-12-16,2024-06-30,Regular,Still in Office,F,1952,1952-03-18
+GUA,Cerezo,GUA_1986_1,81e61a3e-1e42-11e4-b4cd-db5882bf8def,1986-01-14,1991-01-14,Regular,Regular,M,1942,1942-12-26
+GUA,Serrano Elias,GUA_1991_1,81e61a3f-1e42-11e4-b4cd-db5882bf8def,1991-01-14,1993-05-31,Regular,Irregular,M,1945,1945-04-26
+GUA,Leon Carpio,GUA_1993_2,81e64b10-1e42-11e4-b4cd-db5882bf8def,1993-06-01,1996-01-14,Irregular,Regular,M,1942,NA
+GUA,Arzu Yrigoyen,GUA_1996_1,81e64b11-1e42-11e4-b4cd-db5882bf8def,1996-01-14,2000-01-14,Regular,Regular,M,1946,NA
+GUA,Alfonso Portillo Cabrera,GUA_2000_1,81e64b12-1e42-11e4-b4cd-db5882bf8def,2000-01-15,2004-01-14,Regular,Regular,M,1951,NA
+GUA,Berger Perdomo,GUA_2004_1,81e64b13-1e42-11e4-b4cd-db5882bf8def,2004-01-14,2008-01-14,Regular,Regular,M,1946,NA
+GUA,Colom Caballeros,GUA_2008_1,825059b1-1e42-11e4-b4cd-db5882bf8def,2008-01-14,2012-01-14,Regular,Regular,M,1951,NA
+GUA,Perez Molina,GUA_2012_1,2b37a451-3481-11e4-8dba-bbcd9ed46413,2012-01-14,2015-09-03,Regular,Regular,M,1950,1950-12-01
+GUA,Jimmy Morales Cabrera,GUA_2016_1,.,2016-01-14,2020-01-14,Regular,Regular,M,1969,1969-03-18
+GUA,Alejandro Giammattei,GUA_2020_1,.,2020-01-14,2024-06-30,Regular,Still in Office,M,1956,1956-03-09
+GUI,Conte,GUI_1984_2,822e03ec-1e42-11e4-b4cd-db5882bf8def,1984-04-03,2008-12-22,Irregular,Natural Death,M,1934,NA
+GUI,Dadis Camara,GUI_2008_2,825366fe-1e42-11e4-b4cd-db5882bf8def,2008-12-23,2009-12-05,Irregular,Irregular,M,1964,NA
+GUI,Sekouba Konate,GUI_2009_1,825366ff-1e42-11e4-b4cd-db5882bf8def,2009-12-05,2010-12-21,Irregular,Regular,M,1966,NA
+GUI,Conde,GUI_2010_1,82536700-1e42-11e4-b4cd-db5882bf8def,2010-12-21,2021-09-05,Regular,Irregular,M,1938,1938-03-04
+GUI,Mamady Doumbouya,GUI_2021_1,.,2021-09-05,2024-06-30,Irregular,Still in Office,M,1980,1980-03-04
+GUY,Hoyte,GUY_1985_1,81f650f4-1e42-11e4-b4cd-db5882bf8def,1985-08-06,1992-10-09,Regular,Regular,M,1929,1929-03-09
+GUY,Jagan Cheddi,GUY_1992_1,81f681c4-1e42-11e4-b4cd-db5882bf8def,1992-10-09,1997-03-06,Regular,Natural Death,M,1918,1918-03-22
+GUY,Samuel Hinds,GUY_1997_1,81f681c5-1e42-11e4-b4cd-db5882bf8def,1997-03-06,1997-12-19,Regular,Regular,M,1943,1943-12-27
+GUY,Janet Jagan,GUY_1997_2,81f681c6-1e42-11e4-b4cd-db5882bf8def,1997-12-19,1999-08-11,Regular,Retired Due to Ill Health,F,1920,1920-10-20
+GUY,Bharrat Jagdeo,GUY_1999_1,81f681c7-1e42-11e4-b4cd-db5882bf8def,1999-08-11,2011-12-03,Regular,Regular,M,1964,1964-01-23
+GUY,Ramotar,GUY_2011_1,82508a87-1e42-11e4-b4cd-db5882bf8def,2011-12-03,2015-05-16,Regular,Regular,M,1950,1950-10-22
+GUY,David Granger,GUY_2015_1,43f5ae9f-de6a-11e5-ba44-bb6d7c1a9a58,2015-05-16,2020-08-02,Regular,Regular,M,1945,1950-10-22
+GUY,Irfaan Ali,GUY_2020_1,.,2020-08-02,2024-06-30,Regular,Still in Office,M,1980,1980-04-25
+HAI,Avril,HAI_1988_3,81e0921b-1e42-11e4-b4cd-db5882bf8def,1988-09-17,1990-03-10,Irregular,Irregular,M,1938,NA
+HAI,Pascal-Troillet,HAI_1990_2,81e0921d-1e42-11e4-b4cd-db5882bf8def,1990-03-13,1991-02-07,Regular,Regular,F,1943,1943-08-13
+HAI,Cedras,HAI_1991_2,81e0c2ee-1e42-11e4-b4cd-db5882bf8def,1991-09-30,1994-10-14,Irregular,Foreign,M,1949,NA
+HAI,Aristide,HAI_1994_1,81e0921e-1e42-11e4-b4cd-db5882bf8def,1994-10-15,1996-02-07,Foreign Imposition,Regular,M,1953,1953-07-15
+HAI,Preval,HAI_1996_1,81e0c2ef-1e42-11e4-b4cd-db5882bf8def,1996-02-07,2001-02-07,Regular,Regular,M,1943,NA
+HAI,Aristide,HAI_2001_1,81e0921e-1e42-11e4-b4cd-db5882bf8def,2001-02-08,2004-02-29,Regular,Irregular,M,1953,1953-07-15
+HAI,Boniface Alexandre,HAI_2004_1,81e0c2f0-1e42-11e4-b4cd-db5882bf8def,2004-02-29,2006-05-14,Regular,Regular,M,1936,NA
+HAI,Preval,HAI_2006_1,81e0c2ef-1e42-11e4-b4cd-db5882bf8def,2006-05-14,2011-05-14,Regular,Regular,M,1943,NA
+HAI,Martelly,HAI_2011_1,824ff802-1e42-11e4-b4cd-db5882bf8def,2011-05-14,2016-02-07,Regular,Regular,M,1961,1961-02-12
+HAI,Jocelerme Privert,HAI_2016_2,.,2016-02-14,2017-02-07,Regular,Regular,M,1953,1953-02-01
+HAI,Jovenel Moise,HAI_2017_1,.,2017-02-07,2021-07-07,Regular,Assassination,M,1968,1968-06-26
+HAI,Ariel Henry,HAI_2021_2,.,2022-07-20,2023-12-31,Regular,Still in office,M,1949,1949-11-06
+HON,Azcona Hoyo,HON_1986_1,81e73f37-1e42-11e4-b4cd-db5882bf8def,1986-01-27,1990-01-27,Regular,Regular,M,1927,1927-01-26
+HON,Callejas,HON_1990_1,81e73f38-1e42-11e4-b4cd-db5882bf8def,1990-01-27,1994-01-27,Regular,Regular,M,1943,NA
+HON,Reina,HON_1994_1,81e77012-1e42-11e4-b4cd-db5882bf8def,1994-01-27,1998-01-27,Regular,Regular,M,1926,1926-03-13
+HON,Flores Facusse,HON_1998_1,81e77013-1e42-11e4-b4cd-db5882bf8def,1998-01-27,2002-01-27,Regular,Regular,M,1950,NA
+HON,Ricardo Maduro,HON_2002_1,81e77014-1e42-11e4-b4cd-db5882bf8def,2002-01-27,2006-01-27,Regular,Regular,M,1946,NA
+HON,Zelaya,HON_2006_1,825059b2-1e42-11e4-b4cd-db5882bf8def,2006-01-27,2009-06-28,Regular,Irregular,M,1952,NA
+HON,Lobo,HON_2010_1,825059b4-1e42-11e4-b4cd-db5882bf8def,2010-01-27,2014-01-27,Regular,Regular,M,1947,NA
+HON,Hernandez,HON_2014_1,149deeac-aae0-11e4-b3bc-29f2fa19767e,2014-01-27,2022-01-27,Regular,Regular,M,1968,1968-10-28
+HON,Iris Xiomara Castro Sarmiento,HON_2022_1,.,2022-01-27,2024-06-30,Regular,Still in Office,F,1959,1959-09-30
+HUN,Antall,HUN_1990_1,821750ed-1e42-11e4-b4cd-db5882bf8def,1990-05-03,1993-12-12,Regular,Natural Death,M,1932,1932-04-08
+HUN,Horn,HUN_1994_1,821781bd-1e42-11e4-b4cd-db5882bf8def,1994-07-15,1998-07-06,Regular,Regular,M,1932,NA
+HUN,Orban,HUN_1998_1,821781be-1e42-11e4-b4cd-db5882bf8def,1998-07-06,2002-05-27,Regular,Regular,M,1963,1963-05-31
+HUN,Peter Medgyessy,HUN_2002_1,821781bf-1e42-11e4-b4cd-db5882bf8def,2002-05-27,2004-09-29,Regular,Regular,M,1942,1942-10-19
+HUN,Ferenc Gyurcsany,HUN_2004_1,821781c0-1e42-11e4-b4cd-db5882bf8def,2004-09-29,2009-04-14,Regular,Regular,M,1961,1961-06-04
+HUN,Bajnai,HUN_2009_1,8251af7f-1e42-11e4-b4cd-db5882bf8def,2009-04-14,2010-05-29,Regular,Regular,M,1968,NA
+HUN,Orban,HUN_2010_1,821781be-1e42-11e4-b4cd-db5882bf8def,2010-05-29,2024-06-30,Regular,Still in Office,M,1963,1963-05-31
+ICE,Hermannsson,ICE_1988_1,8228ac9e-1e42-11e4-b4cd-db5882bf8def,1988-09-28,1991-04-30,Regular,Regular,M,1928,1928-06-22
+ICE,Oddsson,ICE_1991_1,8228dd72-1e42-11e4-b4cd-db5882bf8def,1991-04-30,2004-09-15,Regular,Regular,M,1948,1948-01-17
+ICE,Halldor Asgrimsson,ICE_2004_1,8228dd73-1e42-11e4-b4cd-db5882bf8def,2004-09-15,2006-06-15,Regular,Regular,M,1947,NA
+ICE,Hilmar Haarde,ICE_2006_1,82530556-1e42-11e4-b4cd-db5882bf8def,2006-06-15,2009-02-01,Regular,Regular,M,1951,NA
+ICE,Sigurdardottir,ICE_2009_1,82530557-1e42-11e4-b4cd-db5882bf8def,2009-02-01,2013-05-23,Regular,Regular,F,1942,1942-10-04
+ICE,Gunnlaugsson,ICE_2013_1,149f0027-aae0-11e4-b3bc-29f2fa19767e,2013-05-23,2016-04-07,Regular,Irregular,M,1975,1975-03-12
+ICE,Johannsson,ICE_2016_1,.,2016-04-07,2017-01-11,Regular,Regular,M,1962,1962-04-20
+ICE,Benediktsson,ICE_2017_1,.,2017-01-11,2017-11-30,Regular,Regular,M,1970,1970-01-26
+ICE,Jakobsdottir,ICE_2017_2,.,2017-11-30,2024-06-30,Regular,Still in Office,F,1976,1976-02-01
+IND,Pratap Singh,IND_1989_1,8247936b-1e42-11e4-b4cd-db5882bf8def,1989-12-02,1990-11-10,Regular,Regular,M,1931,1931-06-25
+IND,Rao,IND_1991_1,8247c43b-1e42-11e4-b4cd-db5882bf8def,1991-06-21,1996-05-16,Regular,Regular,M,1921,1921-06-28
+IND,Gowda,IND_1996_2,8247c43d-1e42-11e4-b4cd-db5882bf8def,1996-06-01,1997-04-21,Regular,Regular,M,1933,1933-05-18
+IND,Gujral,IND_1997_1,8247c43e-1e42-11e4-b4cd-db5882bf8def,1997-04-21,1998-03-19,Regular,Regular,M,1919,1919-12-04
+IND,Vajpayee,IND_1998_1,8247c43c-1e42-11e4-b4cd-db5882bf8def,1998-03-19,2004-05-22,Regular,Regular,M,1924,NA
+IND,Manmohan Singh,IND_2004_1,8247c43f-1e42-11e4-b4cd-db5882bf8def,2004-05-22,2014-05-26,Regular,Regular,M,1932,1932-09-26
+IND,Narendra Modi,IND_2014_1,14a038b1-aae0-11e4-b3bc-29f2fa19767e,2014-05-26,2024-06-30,Regular,Still in Office,M,1950,1950-09-17
+INS,Suharto,INS_1966_1,824d1b88-1e42-11e4-b4cd-db5882bf8def,1966-03-12,1998-05-21,Irregular,Regular,M,1921,1921-02-20
+INS,Habibie,INS_1998_1,824d1b89-1e42-11e4-b4cd-db5882bf8def,1998-05-21,1999-10-20,Regular,Regular,M,1936,1936-06-25
+INS,Wahid,INS_1999_1,824d1b8a-1e42-11e4-b4cd-db5882bf8def,1999-10-20,2001-07-23,Regular,Regular,M,1940,NA
+INS,Megawati Sukarnoputri,INS_2001_1,824d1b8b-1e42-11e4-b4cd-db5882bf8def,2001-07-24,2004-10-20,Regular,Regular,F,1947,NA
+INS,Bambang Yudhoyono,INS_2004_1,824d1b8c-1e42-11e4-b4cd-db5882bf8def,2004-10-20,2014-10-20,Regular,Regular,M,1949,1949-09-09
+INS,Joko Widodo,INS_2014_1,14a05fc3-aae0-11e4-b3bc-29f2fa19767e,2014-10-20,2024-06-30,Regular,Still in Office,M,1961,1961-06-21
+IRE,Haughey,IRE_1987_1,82083f2e-1e42-11e4-b4cd-db5882bf8def,1987-03-10,1992-02-11,Regular,Regular,M,1925,1925-09-16
+IRE,Reynolds,IRE_1992_1,82087001-1e42-11e4-b4cd-db5882bf8def,1992-02-11,1994-12-15,Regular,Regular,M,1935,1935-11-03
+IRE,Bruton,IRE_1994_1,82087002-1e42-11e4-b4cd-db5882bf8def,1994-12-15,1997-06-26,Regular,Regular,M,1947,NA
+IRE,Ahern,IRE_1997_1,8208a0d4-1e42-11e4-b4cd-db5882bf8def,1997-06-26,2008-05-07,Regular,Regular,M,1951,NA
+IRE,B. Cowen,IRE_2008_1,8250ec30-1e42-11e4-b4cd-db5882bf8def,2008-05-07,2011-03-09,Regular,Regular,M,1960,1960-01-10
+IRE,E. Kenny,IRE_2011_1,82511d00-1e42-11e4-b4cd-db5882bf8def,2011-03-09,2017-06-14,Regular,Regular,M,1951,1951-04-24
+IRE,Leo Varadkar,IRE_2017_1,.,2017-06-14,2020-06-27,Regular,Regular,M,1979,1979-01-18
+IRE,Michéal Martin,IRE_2020_1,.,2020-06-27,2022-12-17,Regular,Regular,M,1960,1960-08-01
+IRE,Leo Varadkar,IRE_2022_1,.,2022-12-17,2024-06-30,Regular,Still in Office,M,1979,1979-01-18
+IRN,Rafsanjani,IRN_1989_2,823ce4cb-1e42-11e4-b4cd-db5882bf8def,1989-08-17,1997-08-03,Regular,Regular,M,1943,1943-09-29
+IRN,Khatami,IRN_1997_1,823ce4cc-1e42-11e4-b4cd-db5882bf8def,1997-08-03,2005-08-03,Regular,Regular,M,1946,1946-02-02
+IRN,Ahmadinejad,IRN_2005_1,82545b2a-1e42-11e4-b4cd-db5882bf8def,2005-08-03,2013-08-03,Regular,Regular,M,1956,1956-10-28
+IRN,Rouhani,IRN_2013_1,2b3c6720-3481-11e4-8dba-bbcd9ed46413,2013-08-03,2021-08-03,Regular,Regular,M,1948,1948-11-12
+IRN,Ebrahim Raisi,IRN_2021_1,.,2021-08-03,2024-06-30,Regular,Still in Office,M,1960,1960-12-14
+IRQ,Saddam Hussein,IRQ_1979_1,823e3aa0-1e42-11e4-b4cd-db5882bf8def,1979-07-16,2003-04-09,Regular,Foreign,M,1937,1937-04-28
+IRQ,Paul Bremer,IRQ_2003_3,823e6b74-1e42-11e4-b4cd-db5882bf8def,2003-05-12,2004-06-28,Foreign Imposition,Regular,M,1941,NA
+IRQ,Iyad Allawi,IRQ_2004_1,823e6b75-1e42-11e4-b4cd-db5882bf8def,2004-06-28,2005-05-03,Regular,Regular,M,1945,NA
+IRQ,al-Jaafari,IRQ_2005_1,82545b2b-1e42-11e4-b4cd-db5882bf8def,2005-05-03,2006-05-20,Regular,Regular,M,1947,NA
+IRQ,al-Maliki,IRQ_2006_1,82545b2c-1e42-11e4-b4cd-db5882bf8def,2006-05-20,2014-09-08,Regular,Regular,M,1950,1950-06-20
+IRQ,al-Abadi,IRQ_2014_1,14a011a0-aae0-11e4-b3bc-29f2fa19767e,2014-09-08,2018-10-25,Regular,Regular,M,1952,1952-04-25
+IRQ,Abdul-Mahdi,IRQ_2018_1,.,2018-10-25,2020-05-06,Regular,Irregular,M,1942,1942-01-01
+IRQ,Mustafa Al-Kadhimi,IRQ_2020_1,.,2020-05-06,2022-10-27,Regular,Regular,M,1967,NA
+IRQ,Mohammed Shia' Al Sudani,IRQ_2022_1,.,2022-10-27,2024-06-30,Regular,Still in Office,M,1970,NA
+ISR,Shamir,ISR_1986_1,82411721-1e42-11e4-b4cd-db5882bf8def,1986-10-20,1992-07-12,Regular,Regular,M,1914,1914-11-03
+ISR,Rabin,ISR_1992_1,8240e642-1e42-11e4-b4cd-db5882bf8def,1992-07-12,1995-11-04,Regular,Irregular,M,1922,1922-03-01
+ISR,Netanyahu,ISR_1996_1,82411722-1e42-11e4-b4cd-db5882bf8def,1996-06-18,1999-07-06,Regular,Regular,M,1949,1949-10-21
+ISR,Barak,ISR_1999_1,824147f4-1e42-11e4-b4cd-db5882bf8def,1999-07-06,2001-03-07,Regular,Regular,M,1942,1942-02-12
+ISR,Ariel Sharon,ISR_2001_1,824147f5-1e42-11e4-b4cd-db5882bf8def,2001-03-08,2006-01-04,Regular,Retired Due to Ill Health,M,1928,NA
+ISR,Olmert,ISR_2006_1,82548bfe-1e42-11e4-b4cd-db5882bf8def,2006-01-04,2009-03-31,Regular,Regular,M,1928,1928-02-26
+ISR,Netanyahu,ISR_2009_1,82411722-1e42-11e4-b4cd-db5882bf8def,2009-03-31,2021-06-13,Regular,Regular,M,1949,1949-10-21
+ISR,Yair Lapid,ISR_2021_1,.,2021-06-13,2022-06-30,Regular,Regular,M,1963,1963-11-05
+ISR,Netanyahu,ISR_2022_2,.,2022-12-29,2024-06-30,Regular,Still in Office,M,1949,1949-10-21
+ITA,Andreotti,ITA_1989_1,82196a11-1e42-11e4-b4cd-db5882bf8def,1989-07-23,1992-06-28,Regular,Regular,M,1919,1919-01-15
+ITA,Amato,ITA_1992_1,82199ae6-1e42-11e4-b4cd-db5882bf8def,1992-06-28,1993-04-29,Regular,Regular,M,1938,1938-05-13
+ITA,Ciampi,ITA_1993_1,82199ae7-1e42-11e4-b4cd-db5882bf8def,1993-04-29,1994-05-11,Regular,Regular,M,1920,1920-12-09
+ITA,Dini,ITA_1995_1,8219cbb7-1e42-11e4-b4cd-db5882bf8def,1995-01-17,1996-05-18,Regular,Regular,M,1931,1931-03-01
+ITA,Prodi,ITA_1996_1,35aed4f8-3bbd-11e5-afeb-eb6f07f9fec7,1996-05-18,1998-10-21,Regular,Regular,M,1939,1939-08-09
+ITA,D'Alema,ITA_1998_1,8219cbb9-1e42-11e4-b4cd-db5882bf8def,1998-10-21,2000-04-26,Regular,Regular,M,1949,1949-04-20
+ITA,Amato,ITA_2000_1,82199ae6-1e42-11e4-b4cd-db5882bf8def,2000-04-26,2001-06-11,Regular,Regular,M,1938,1938-05-13
+ITA,Berlusconi,ITA_2001_1,8219cbb6-1e42-11e4-b4cd-db5882bf8def,2001-06-11,2006-05-17,Regular,Regular,M,1936,1936-09-29
+ITA,Prodi,ITA_2006_1,35aed4f8-3bbd-11e5-afeb-eb6f07f9fec7,2006-05-17,2008-05-08,Regular,Regular,M,1939,1939-08-09
+ITA,Berlusconi,ITA_2008_1,8219cbb6-1e42-11e4-b4cd-db5882bf8def,2008-05-08,2011-11-16,Regular,Regular,M,1936,1936-09-29
+ITA,Monti,ITA_2011_1,8251e055-1e42-11e4-b4cd-db5882bf8def,2011-11-16,2013-04-28,Regular,Regular,M,1943,1943-03-19
+ITA,Letta,ITA_2013_1,2b37a458-3481-11e4-8dba-bbcd9ed46413,2013-04-28,2014-02-22,Regular,Regular,M,1966,1966-08-20
+ITA,Renzi,ITA_2014_1,149e63e6-aae0-11e4-b3bc-29f2fa19767e,2014-02-22,2016-12-12,Regular,Regular,M,1975,1975-01-11
+ITA,Gentiloni,ITA_2016_1,.,2016-12-12,2018-06-01,Regular,Regular,M,1954,1954-11-22
+ITA,Conte,ITA_2018_1,.,2018-06-01,2021-02-13,Regular,Regular,M,1964,1964-08-08
+ITA,Draghi,ITA_2021_1,.,2021-02-13,2022-10-22,Regular,Regular,M,1947,1947-09-03
+ITA,Giorgia Meloni,ITA_2022_1,.,2022-10-22,2024-06-30,Regular,Still in Office,F,1977,1977-01-15
+JAM,Manley,JAM_1989_1,81e30cec-1e42-11e4-b4cd-db5882bf8def,1989-02-10,1992-03-30,Regular,Retired Due to Ill Health,M,1924,1924-12-10
+JAM,Patterson,JAM_1992_1,81e33dbd-1e42-11e4-b4cd-db5882bf8def,1992-03-30,2006-03-30,Regular,Regular,M,1935,NA
+JAM,Simpson-Miller,JAM_2006_1,2b37a44f-3481-11e4-8dba-bbcd9ed46413,2006-03-30,2007-09-11,Regular,Regular,F,1945,1945-12-12
+JAM,Golding,JAM_2007_1,825028d2-1e42-11e4-b4cd-db5882bf8def,2007-09-11,2011-10-23,Regular,Regular,M,1947,NA
+JAM,Simpson-Miller,JAM_2012_1,2b37a44f-3481-11e4-8dba-bbcd9ed46413,2012-01-05,2016-03-03,Regular,Regular,F,1945,1945-12-12
+JAM,Andrew Holness,JAM_2016_1,.,2016-03-03,2024-06-30,Regular,Still in Office,M,1972,1972-07-22
+JOR,Hussein Ibn Talal El-Hashim,JOR_1952_1,824053c8-1e42-11e4-b4cd-db5882bf8def,1952-08-11,1999-02-07,Regular,Natural Death,M,1935,1935-11-14
+JOR,Abdullah Ibn Hussein El-Hashimi,JOR_1999_1,8240849a-1e42-11e4-b4cd-db5882bf8def,1999-02-07,2024-06-30,Regular,Still in Office,M,1962,1962-01-30
+JPN,Kaifu,JPN_1989_2,824731bf-1e42-11e4-b4cd-db5882bf8def,1989-08-09,1991-11-06,Regular,Regular,M,1931,1931-01-02
+JPN,Miyazawa,JPN_1991_1,824731c0-1e42-11e4-b4cd-db5882bf8def,1991-11-06,1993-08-09,Regular,Regular,M,1919,1919-10-08
+JPN,Murayama,JPN_1994_2,824731c3-1e42-11e4-b4cd-db5882bf8def,1994-06-29,1996-01-11,Regular,Regular,M,1924,NA
+JPN,Hashimoto,JPN_1996_1,82476292-1e42-11e4-b4cd-db5882bf8def,1996-01-11,1998-07-30,Regular,Regular,M,1937,1937-07-29
+JPN,Obuchi,JPN_1998_1,82476293-1e42-11e4-b4cd-db5882bf8def,1998-07-30,2000-04-02,Regular,Retired Due to Ill Health,M,1937,1937-06-23
+JPN,Yoshiro Mori,JPN_2000_2,82476295-1e42-11e4-b4cd-db5882bf8def,2000-04-05,2001-04-26,Regular,Regular,M,1937,NA
+JPN,Junichiro Koizumi,JPN_2001_1,82476296-1e42-11e4-b4cd-db5882bf8def,2001-04-26,2006-09-26,Regular,Regular,M,1942,1942-01-08
+JPN,Shinzo Abe,JPN_2006_1,364a2a98-3bbd-11e5-afeb-eb6f07f9fec7,2006-09-26,2007-09-26,Regular,Regular,M,1954,1954-09-21
+JPN,Yasuo Fukuda,JPN_2007_1,8254eda8-1e42-11e4-b4cd-db5882bf8def,2007-09-26,2008-09-24,Regular,Regular,M,1936,1936-07-16
+JPN,Taro Aso,JPN_2008_1,8254eda9-1e42-11e4-b4cd-db5882bf8def,2008-09-24,2009-09-16,Regular,Regular,M,1940,1940-09-20
+JPN,Naoto Kan,JPN_2010_1,82551e79-1e42-11e4-b4cd-db5882bf8def,2010-06-08,2011-09-02,Regular,Regular,M,1946,1946-10-10
+JPN,Yoshihiko Noda,JPN_2011_1,82551e7a-1e42-11e4-b4cd-db5882bf8def,2011-09-02,2012-12-26,Regular,Regular,M,1957,1957-05-20
+JPN,Shinzo Abe,JPN_2012_1,364a2a98-3bbd-11e5-afeb-eb6f07f9fec7,2012-12-26,2020-09-16,Regular,Retired Due to Ill Health,M,1954,1954-09-21
+JPN,Yoshihide Suga,JPN_2020_1,.,2020-09-16,2021-10-04,Regular,Regular,M,1948,1948-12-06
+JPN,Fumio Kishida,JPN_2021_1,.,2021-10-04,2024-06-30,Regular,Still in Office,M,1957,1957-07-29
+KEN,Moi,KEN_1978_1,8232670e-1e42-11e4-b4cd-db5882bf8def,1978-08-22,2002-12-30,Regular,Regular,M,1924,1924-09-02
+KEN,Mwai Kibaki,KEN_2002_1,8232670f-1e42-11e4-b4cd-db5882bf8def,2002-12-31,2013-04-09,Regular,Regular,M,1931,NA
+KEN,Uhuru Kenyatta,KEN_2013_1,2b3c671c-3481-11e4-8dba-bbcd9ed46413,2013-04-09,2022-09-13,Regular,Regular,M,1961,1961-10-26
+KEN,William Samoei Ruto,KEN_2022_1,.,2022-09-13,2024-06-30,Regular,Still in Office,M,1966,1966-12-21
+KOS,Hashim Thaci,KOS_2008_1,149e8af7-aae0-11e4-b3bc-29f2fa19767e,2008-02-17,2014-12-09,Regular,Regular,M,1968,1968-04-24
+KOS,Isa Mustafa,KOS_2014_1,149e8af8-aae0-11e4-b3bc-29f2fa19767e,2014-12-09,2017-09-09,Regular,Regular,M,1951,1951-05-15
+KOS,Ramush Haradinaj,KOS_2017_1,.,2017-09-09,2020-02-03,Regular,Regular,M,1968,1968-07-03
+KOS,Avdullah Hoti,KOS_2020_2,.,2020-06-03,2021-03-22,Regular,Regular,M,1976,1976-02-04
+KOS,Albin Kurti,KOS_2021_1,.,2021-03-22,2024-06-30,Regular,Still in Office,M,1975,1975-03-24
+KUW,Jabir As-Sabah,KUW_1978_1,82423c18-1e42-11e4-b4cd-db5882bf8def,1978-01-01,1990-08-02,Regular,Foreign,M,1926,1926-06-29
+KUW,Jabir As-Sabah,KUW_1991_1,82423c18-1e42-11e4-b4cd-db5882bf8def,1991-04-20,2006-01-15,Foreign Imposition,Natural Death,M,1926,1926-06-29
+KUW,Sheikh Sabah Al Ahmad Al Jabir Al Sabah,KUW_2006_2,82548c00-1e42-11e4-b4cd-db5882bf8def,2006-01-29,2020-09-29,Regular,Natural Death,M,1942,1942-01-05
+KUW,Sheikh Nawaf Al Ahmad Al Jabir Al Sabah,KUW_2020_1,.,2020-09-29,2023-12-16,Regular,Natural Death,M,1937,1937-06-25
+KYR,Akayev,KYR_1990_1,824391f3-1e42-11e4-b4cd-db5882bf8def,1990-10-27,2005-03-25,Regular,Irregular,M,1944,1944-11-10
+KYR,Bakiyev,KYR_2005_1,8254bcd2-1e42-11e4-b4cd-db5882bf8def,2005-03-25,2010-04-07,Regular,Irregular,M,1949,1949-08-01
+KYR,Otunbayeva,KYR_2010_1,8254bcd3-1e42-11e4-b4cd-db5882bf8def,2010-04-07,2011-12-01,Regular,Regular,F,1950,1950-08-23
+KYR,Atambayev,KYR_2011_1,8254bcd4-1e42-11e4-b4cd-db5882bf8def,2011-12-01,2017-11-24,Regular,Regular,M,1956,1956-09-17
+KYR,Jeenbekov,KYR_2017_1,.,2017-11-24,2020-10-15,Regular,Irregular,M,1958,1958-11-16
+KYR,Sadyr Japarov,KYR_2021_1,.,2021-01-28,2024-06-30,Regular,Still in Office,M,1968,1968-12-06
+KZK,Nazarbayev,KZK_1990_1,8243c2c2-1e42-11e4-b4cd-db5882bf8def,1990-04-24,2019-03-20,Regular,Irregular,M,1940,1940-07-06
+KZK,Kassy-Jomart Tokayev,KZK_2019_1,.,2019-03-20,2024-06-30,Regular,Still in Office,M,1953,1953-05-17
+LAO,Phomivan,LAO_1975_1,824b94e3-1e42-11e4-b4cd-db5882bf8def,1975-12-02,1992-11-25,Irregular,Natural Death,M,1920,1920-12-13
+LAO,Phounsavanh,LAO_1992_1,824b94e4-1e42-11e4-b4cd-db5882bf8def,1992-11-25,1998-02-24,Regular,Regular,M,1914,NA
+LAO,Siphandon,LAO_1998_1,824bc5b2-1e42-11e4-b4cd-db5882bf8def,1998-02-24,2006-06-08,Regular,Regular,M,1924,NA
+LAO,Sayasone,LAO_2006_1,8255b0f8-1e42-11e4-b4cd-db5882bf8def,2006-06-08,2016-04-20,Regular,Regular,M,1936,1936-03-06
+LAO,Bounnhang Vorachit,LAO_2016_1,.,2016-04-20,2021-03-22,Regular,Regular,M,1937,1937-08-15
+LAO,Thongloun Sisoulith,LAO_2021_1,.,2021-03-22,2024-06-30,Regular,Still in Office,M,1945,1945-11-10
+LAT,Godmanis,LAT_1990_1,8221ceaa-1e42-11e4-b4cd-db5882bf8def,1990-05-03,1993-08-03,Regular,Regular,M,1951,1951-11-27
+LAT,Birkavs,LAT_1993_1,8221ff7a-1e42-11e4-b4cd-db5882bf8def,1993-08-03,1994-09-19,Regular,Regular,M,1942,1942-07-28
+LAT,Gailis,LAT_1994_1,8221ff7b-1e42-11e4-b4cd-db5882bf8def,1994-09-19,1995-12-21,Regular,Regular,M,1951,NA
+LAT,Skele,LAT_1995_1,8221ff7c-1e42-11e4-b4cd-db5882bf8def,1995-12-21,1997-08-07,Regular,Regular,M,1958,NA
+LAT,Krasts,LAT_1997_1,8221ff7d-1e42-11e4-b4cd-db5882bf8def,1997-08-07,1998-11-26,Regular,Regular,M,1957,NA
+LAT,Skele,LAT_1999_1,8221ff7c-1e42-11e4-b4cd-db5882bf8def,1999-07-16,2000-05-05,Regular,Regular,M,1958,NA
+LAT,Berzins,LAT_2000_1,8222304e-1e42-11e4-b4cd-db5882bf8def,2000-05-05,2002-11-07,Regular,Regular,M,1951,1951-08-04
+LAT,Repse,LAT_2002_1,8222304f-1e42-11e4-b4cd-db5882bf8def,2002-11-07,2004-03-09,Regular,Regular,M,1961,NA
+LAT,Aigars Kalvitis,LAT_2004_2,82223051-1e42-11e4-b4cd-db5882bf8def,2004-12-02,2007-12-20,Regular,Regular,M,1966,NA
+LAT,Godmanis,LAT_2007_1,8221ceaa-1e42-11e4-b4cd-db5882bf8def,2007-12-20,2009-03-12,Regular,Regular,M,1951,1951-11-27
+LAT,Dombrovskis,LAT_2009_1,8252d480-1e42-11e4-b4cd-db5882bf8def,2009-03-12,2014-01-22,Regular,Regular,M,1971,NA
+LAT,Lamdota Straujuma,LAT_2014_1,2b3a05b4-3481-11e4-8dba-bbcd9ed46413,2014-01-22,2016-02-11,Regular,Regular,F,1951,1951-02-24
+LAT,Maris Kucinskis,LAT_2016_1,.,2016-02-11,2019-01-23,Regular,Regular,M,1961,1961-11-28
+LAT,Krisjanis Karins,LAT_2019_1,.,2019-01-23,2023-12-15,Regular,Regular,M,1964,1964-12-13
+LBR,Doe,LBR_1980_1,822ef813-1e42-11e4-b4cd-db5882bf8def,1980-04-12,1990-09-09,Irregular,Irregular,M,1951,1951-05-06
+LBR,Sawyer,LBR_1990_1,822f28e4-1e42-11e4-b4cd-db5882bf8def,1990-11-22,1994-03-07,Foreign Imposition,Regular,M,1945,1945-06-15
+LBR,Kpormapkor,LBR_1994_1,822f28e5-1e42-11e4-b4cd-db5882bf8def,1994-03-07,1995-09-01,Regular,Regular,M,1944,NA
+LBR,Sankawulo,LBR_1995_1,822f28e6-1e42-11e4-b4cd-db5882bf8def,1995-09-01,1996-09-03,Regular,Regular,M,1943,NA
+LBR,Ruth Perry,LBR_1996_1,822f28e7-1e42-11e4-b4cd-db5882bf8def,1996-09-03,1997-08-02,Regular,Regular,F,1939,NA
+LBR,Taylor,LBR_1997_1,822f59b8-1e42-11e4-b4cd-db5882bf8def,1997-08-02,2003-08-11,Regular,Regular,M,1948,NA
+LBR,Bryant,LBR_2003_2,822f59ba-1e42-11e4-b4cd-db5882bf8def,2003-10-14,2006-01-16,Regular,Regular,M,1949,NA
+LBR,Johnson Sirleaf,LBR_2006_1,825397ce-1e42-11e4-b4cd-db5882bf8def,2006-01-16,2018-01-22,Regular,Regular,F,1938,1938-10-29
+LBR,Weah,LBR_2018_1,.,2018-01-22,2024-06-30,Regular,Still in Office,M,1966,1966-10-01
+LEB,Elias Hrawi,LEB_1989_2,824022f2-1e42-11e4-b4cd-db5882bf8def,1989-11-23,1998-11-24,Regular,Regular,M,1930,NA
+LEB,Emile Lahoud,LEB_1998_1,824022f3-1e42-11e4-b4cd-db5882bf8def,1998-11-24,2007-11-23,Regular,Regular,M,1936,NA
+LEB,Suleiman,LEB_2008_1,82548bfd-1e42-11e4-b4cd-db5882bf8def,2008-05-25,2014-05-24,Regular,Regular,M,1948,1948-11-21
+LEB,Salam,LEB_2014_1,14a011a3-aae0-11e4-b3bc-29f2fa19767e,2014-05-24,2016-10-31,Regular,Regular,M,1945,1945-05-13
+LEB,Michel Aoun,LEB_2016_1,.,2016-10-31,2022-10-30,Regular,Regular,M,1933,1933-09-30
+LEB,Najib Mikati,LEB_2022_1,.,2022-10-30,2024-06-30,Irregular,Still in Office,M,1955,1955-11-24
+LES,Lekhanya,LES_1986_1,823a6a01-1e42-11e4-b4cd-db5882bf8def,1986-01-24,1991-05-02,Irregular,Irregular,M,1938,1938-04-07
+LES,Ramaema,LES_1991_1,823a9ad0-1e42-11e4-b4cd-db5882bf8def,1991-05-02,1993-04-02,Irregular,Regular,M,1933,1933-11-10
+LES,Mokhehle,LES_1993_1,823a9ad1-1e42-11e4-b4cd-db5882bf8def,1993-04-02,1994-08-17,Regular,Irregular,M,1918,1918-12-26
+LES,Mokhehle,LES_1994_2,823a9ad1-1e42-11e4-b4cd-db5882bf8def,1994-09-14,1998-05-29,Irregular,Regular,M,1918,1918-12-26
+LES,Pakalitha Mosisili,LES_1998_1,823a9ad3-1e42-11e4-b4cd-db5882bf8def,1998-05-29,2012-06-08,Regular,Regular,M,1945,1945-03-15
+LES,Tom Thabane,LES_2012_1,149fc376-aae0-11e4-b3bc-29f2fa19767e,2012-06-08,2015-03-17,Regular,Regular,M,1939,1939-05-28
+LES,Pakalitha Mosisili,LES_2015_1,43fa7162-de6a-11e5-ba44-bb6d7c1a9a58,2015-03-17,2017-06-16,Regular,Regular,M,1945,1945-03-14
+LES,Tom Thabane,LES_2017_1,.,2017-06-16,2020-05-19,Regular,Regular,M,1939,1939-05-28
+LES,Moeketsi Majoro,LES_2020_1,.,2020-05-19,2022-10-28,Regular,Regular,M,1961,1961-11-03
+LES,Ntsokane Samuel Matekane,LES_2022_1,.,2022-10-28,2024-06-30,Regular,Still in Office,M,1958,1958-03-15
+LIB,Qaddafi,LIB_1969_1,823c217e-1e42-11e4-b4cd-db5882bf8def,1969-09-01,2011-08-23,Irregular,Irregular,M,1942,NA
+LIB,Mustafa Jalil,LIB_2011_1,82545b29-1e42-11e4-b4cd-db5882bf8def,2011-08-23,2012-08-08,Irregular,Regular,M,1952,NA
+LIB,Mohammed Magariaf,LIB_2012_2,149fc379-aae0-11e4-b3bc-29f2fa19767e,2012-08-09,2013-05-28,Regular,Regular,M,1940,NA
+LIB,Nouri Abusahmain,LIB_2013_2,2b3c671f-3481-11e4-8dba-bbcd9ed46413,2013-06-25,2014-08-04,Regular,Regular,M,-999,NA
+LIB,Akila Saleh Issa,LIB_2014_1,149fea91-aae0-11e4-b3bc-29f2fa19767e,2014-08-05,2015-12-17,Regular,Irregular,M,1944,NA
+LIB,Fayez al-Sarraj,LIB_2015_1,.,2015-12-17,2021-03-15,Foreign Imposition,Irregular,M,1960,1960-02-20
+LIB,Mohamed al-Menfi,LIB_2021_1,.,2021-03-15,2024-06-30,Regular,Still in Office,M,1976,1976-03-03
+LIT,Landsbergis,LIT_1990_1,82226124-1e42-11e4-b4cd-db5882bf8def,1990-03-11,1992-11-25,Regular,Regular,M,1931,1931-10-12
+LIT,Brazauskas,LIT_1992_1,82226125-1e42-11e4-b4cd-db5882bf8def,1992-11-25,1998-02-25,Regular,Regular,M,1932,NA
+LIT,Adamkus,LIT_1998_1,82226126-1e42-11e4-b4cd-db5882bf8def,1998-02-26,2003-02-25,Regular,Regular,M,1926,1926-11-03
+LIT,Paksas,LIT_2003_1,82229200-1e42-11e4-b4cd-db5882bf8def,2003-02-26,2004-04-06,Regular,Regular,M,1956,1956-06-10
+LIT,Adamkus,LIT_2004_2,82226126-1e42-11e4-b4cd-db5882bf8def,2004-07-12,2009-07-12,Regular,Regular,M,1926,1926-11-03
+LIT,Grybauskaite,LIT_2009_1,8252d481-1e42-11e4-b4cd-db5882bf8def,2009-07-12,2019-07-12,Regular,Regular,F,1956,1956-03-01
+LIT,Gitanas Nauseda,LIT_2019_1,.,2019-07-12,2024-06-30,Regular,Still in Office,M,1964,1964-05-19
+LUX,Santer,LUX_1984_1,820b4c7a-1e42-11e4-b4cd-db5882bf8def,1984-07-20,1995-01-20,Regular,Regular,M,1937,1937-05-18
+LUX,Juncker,LUX_1995_1,820b4c7b-1e42-11e4-b4cd-db5882bf8def,1995-01-20,2013-12-04,Regular,Regular,M,1954,1954-12-09
+LUX,Xavier Bettel,LUX_2013_1,2b37a454-3481-11e4-8dba-bbcd9ed46413,2013-12-04,2023-11-17,Regular,Regular,M,1973,1973-03-03
+MAA,Sidi Ahmed Taya,MAA_1984_1,822cdeeb-1e42-11e4-b4cd-db5882bf8def,1984-12-12,2005-08-03,Irregular,Irregular,M,1941,NA
+MAA,Ould Mohamed Vall,MAA_2005_1,82533628-1e42-11e4-b4cd-db5882bf8def,2005-08-03,2007-04-19,Irregular,Regular,M,1953,NA
+MAA,Ould Cheikh Abdellahi,MAA_2007_1,82533629-1e42-11e4-b4cd-db5882bf8def,2007-04-19,2008-08-06,Regular,Irregular,M,1938,NA
+MAA,Ould Abdel Aziz,MAA_2009_2,8253362a-1e42-11e4-b4cd-db5882bf8def,2009-08-05,2019-08-01,Regular,Regular,M,1956,1956-12-20
+MAA,Mohamed Cheikh El Ghazouani,MAA_2019_1,.,2019-08-01,2024-06-30,Regular,Still in Office,M,1956,1956-12-31
+MAC,Nikola Kljusev,MAC_1991_1,821af0bb-1e42-11e4-b4cd-db5882bf8def,1991-01-27,1992-08-17,Irregular,Regular,M,1927,NA
+MAC,Crvenkovski,MAC_1992_1,821af0bc-1e42-11e4-b4cd-db5882bf8def,1992-08-17,1998-11-30,Regular,Regular,M,1962,NA
+MAC,Georgievski,MAC_1998_1,821b218c-1e42-11e4-b4cd-db5882bf8def,1998-11-30,2002-11-01,Regular,Regular,M,1966,NA
+MAC,Crvenkovski,MAC_2002_1,821af0bc-1e42-11e4-b4cd-db5882bf8def,2002-11-01,2004-05-12,Regular,Regular,M,1962,NA
+MAC,Vlado Buckovski,MAC_2004_4,821b218f-1e42-11e4-b4cd-db5882bf8def,2004-12-17,2006-08-27,Regular,Regular,M,1962,1962-12-02
+MAC,Gruevski,MAC_2006_1,82521126-1e42-11e4-b4cd-db5882bf8def,2006-08-27,2016-01-15,Regular,Regular,M,1970,1970-08-31
+MAC,Emil Dimitriev,MAC_2016_1,.,2016-01-15,2017-05-31,Regular,Regular,M,1979,1979-03-19
+MAC,Zoran Zaev,MAC_2017_1,.,2017-05-31,2020-01-03,Regular,Regular,M,1974,1974-10-08
+MAC,Zoran Zaev,MAC_2020_2,.,2020-08-30,2022-01-16,Regular,Regular,M,1974,1974-10-08
+MAC,Kovacevski,MAC_2022_1,.,2022-01-16,2024-06-30,Regular,Still in Office,M,1974,1974-07-24
+MAD,Maumoon Abdul Gayoom,MAD_1978_1,8249dd61-1e42-11e4-b4cd-db5882bf8def,1978-11-11,2008-11-11,Regular,Regular,M,1937,1937-12-29
+MAD,Nasheed,MAD_2008_1,82554f4f-1e42-11e4-b4cd-db5882bf8def,2008-11-11,2012-02-07,Regular,Regular,M,1953,NA
+MAD,Waheed Hassan,MAD_2012_1,14a038b3-aae0-11e4-b3bc-29f2fa19767e,2012-02-07,2013-11-17,Regular,Regular,M,1953,1953-01-03
+MAD,Abdulla Yameen Abdul Gayoom,MAD_2013_1,2b3ec87e-3481-11e4-8dba-bbcd9ed46413,2013-11-17,2018-11-17,Regular,Regular,M,1959,1959-05-21
+MAD,Ibrahim Mohamed Solih,MAD_2018_1,.,2018-11-17,2023-11-17,Regular,Regular,M,1964,1964-05-04
+MAG,Ratsiraka,MAG_1975_3,823afc7d-1e42-11e4-b4cd-db5882bf8def,1975-06-15,1993-03-27,Regular,Regular,M,1936,1936-11-04
+MAG,Zafy,MAG_1993_1,823afc7e-1e42-11e4-b4cd-db5882bf8def,1993-03-27,1996-09-05,Regular,Regular,M,1927,NA
+MAG,Ratsiraka,MAG_1997_1,823afc7d-1e42-11e4-b4cd-db5882bf8def,1997-02-09,2002-07-06,Regular,Irregular,M,1936,1936-11-04
+MAG,Marc Ravalomanana,MAG_2002_1,823b2d4d-1e42-11e4-b4cd-db5882bf8def,2002-07-06,2009-03-17,Irregular,Irregular,M,1949,1949-12-12
+MAG,Andry Rajoelina,MAG_2009_1,82542a55-1e42-11e4-b4cd-db5882bf8def,2009-03-17,2014-01-25,Irregular,Regular,M,1974,1974-05-30
+MAG,Rajaonarimampianina,MAG_2014_1,149fc377-aae0-11e4-b3bc-29f2fa19767e,2014-01-25,2018-09-07,Regular,Regular,M,1958,1958-11-06
+MAG,Andry Rajoelina,MAG_2019_1,.,2019-01-19,2024-06-30,Regular,Still in Office,M,1974,1974-05-30
+MAL,Mahatir Bin Mohammad,MAL_1981_1,824c890c-1e42-11e4-b4cd-db5882bf8def,1981-07-16,2003-10-31,Regular,Regular,M,1925,NA
+MAL,Ahmad Badawi,MAL_2003_1,824c890d-1e42-11e4-b4cd-db5882bf8def,2003-10-31,2009-04-03,Regular,Regular,M,1939,1939-11-26
+MAL,Najib Tun Razak,MAL_2009_1,8255e1c8-1e42-11e4-b4cd-db5882bf8def,2009-04-03,2018-05-10,Regular,Regular,M,1953,1953-07-23
+MAL,Mahatir Bin Mohammad,MAL_2018_1,.,2018-05-10,2020-03-01,Regular,Regular,M,1925,1925-07-10
+MAL,Muhyiddin Yassin,MAL_2020_1,.,2020-03-01,2021-08-21,Regular,Regular,M,1947,1947-05-15
+MAL,Ismail Sabri bin Yaakob,MAL_2021_1,.,2021-08-21,2022-11-24,Regular,Regular,M,1960,1960-01-18
+MAL,Anwar bin Ibrahim,MAL_2022_1,.,2022-11-24,2024-06-30,Regular,Still in Office,M,1947,1947-08-10
+MAS,Anerood Jugnauth,MAS_1982_1,823b5e2f-1e42-11e4-b4cd-db5882bf8def,1982-06-16,1995-12-22,Regular,Regular,M,1930,1930-03-29
+MAS,Ramgoolam N.,MAS_1995_1,823b8efe-1e42-11e4-b4cd-db5882bf8def,1995-12-22,2000-09-17,Regular,Regular,M,1947,1947-07-14
+MAS,Anerood Jugnauth,MAS_2000_1,823b5e2f-1e42-11e4-b4cd-db5882bf8def,2000-09-18,2003-09-30,Regular,Regular,M,1930,1930-03-29
+MAS,Paul Berenger,MAS_2003_1,823b8eff-1e42-11e4-b4cd-db5882bf8def,2003-09-30,2005-07-05,Regular,Regular,M,1945,1945-03-26
+MAS,Ramgoolam N.,MAS_2005_1,823b8efe-1e42-11e4-b4cd-db5882bf8def,2005-07-05,2014-12-17,Regular,Regular,M,1947,1947-07-14
+MAS,Anerood Jugnauth,MAS_2014_1,823b5e2f-1e42-11e4-b4cd-db5882bf8def,2014-12-17,2017-01-23,Regular,Retired Due to Ill Health,M,1930,1930-03-29
+MAS,Pravind Jugnauth,MAS_2017_1,.,2017-01-23,2024-06-30,Regular,Still in Office,M,1961,1961-12-25
+MAW,Banda,MAW_1964_1,82341e8e-1e42-11e4-b4cd-db5882bf8def,1964-07-06,1994-05-21,Regular,Regular,M,1906,1906-05-18
+MAW,Muluzi,MAW_1994_1,82344f5e-1e42-11e4-b4cd-db5882bf8def,1994-05-21,2004-05-24,Regular,Regular,M,1943,NA
+MAW,Bingu wa Mutharika,MAW_2004_1,82344f5f-1e42-11e4-b4cd-db5882bf8def,2004-05-24,2012-04-07,Regular,Natural Death,M,1934,NA
+MAW,Joyce Hilda Banda,MAW_2012_1,2b3c671e-3481-11e4-8dba-bbcd9ed46413,2012-04-07,2014-05-31,Regular,Regular,F,1950,1950-04-12
+MAW,Peter Mutharika,MAW_2014_1,149f9c69-aae0-11e4-b3bc-29f2fa19767e,2014-05-31,2020-06-28,Regular,Regular,M,1940,NA
+MAW,Lazarus Chakwera,MAW_2020_1,.,2020-06-28,2024-06-30,Regular,Still in Office,M,1955,1955-04-05
+MEX,Salinas,MEX_1988_1,81e4c46a-1e42-11e4-b4cd-db5882bf8def,1988-12-01,1994-11-30,Regular,Regular,M,1948,1948-04-03
+MEX,Zedillo,MEX_1994_1,81e4f53a-1e42-11e4-b4cd-db5882bf8def,1994-12-01,2000-11-30,Regular,Regular,M,1951,1951-12-27
+MEX,Vicente Fox Quesada,MEX_2000_1,81e4f53b-1e42-11e4-b4cd-db5882bf8def,2000-12-01,2006-11-30,Regular,Regular,M,1942,1942-07-02
+MEX,Calderon,MEX_2006_1,825028d7-1e42-11e4-b4cd-db5882bf8def,2006-12-01,2012-12-01,Regular,Regular,M,1962,NA
+MEX,Enrique Pena Nieto,MEX_2012_1,2b37a450-3481-11e4-8dba-bbcd9ed46413,2012-12-01,2018-11-30,Regular,Regular,M,1966,1966-07-20
+MEX,Manuel Lopez Obrador,MEX_2012_2,.,2018-11-30,2024-06-30,Regular,Still in Office,M,1953,1953-11-13
+MLD,Snegur,MLD_1990_1,821f84ac-1e42-11e4-b4cd-db5882bf8def,1990-09-03,1997-01-15,Regular,Regular,M,1940,NA
+MLD,Lucinschi,MLD_1997_1,821f84ad-1e42-11e4-b4cd-db5882bf8def,1997-01-15,2001-04-07,Regular,Regular,M,1940,1940-01-27
+MLD,Tarlev,MLD_2001_1,821f84ae-1e42-11e4-b4cd-db5882bf8def,2001-04-07,2008-03-31,Regular,Regular,M,1963,NA
+MLD,Greceanii,MLD_2008_1,8252a3ab-1e42-11e4-b4cd-db5882bf8def,2008-03-31,2009-09-14,Regular,Regular,F,1956,NA
+MLD,Vlad Filat,MLD_2009_2,8252a3ad-1e42-11e4-b4cd-db5882bf8def,2009-09-25,2013-04-25,Regular,Regular,M,1969,NA
+MLD,Iurie Leanca,MLD_2013_1,2b3a05b2-3481-11e4-8dba-bbcd9ed46413,2013-04-25,2015-02-18,Regular,Regular,M,1963,1963-10-20
+MLD,Pavel Filip,MLD_2016_1,.,2016-01-20,2019-06-08,Regular,Regular,M,1966,1966-04-10
+MLD,Ion Chicu,MLD_2019_2,.,2019-11-14,2020-12-31,Regular,Regular,M,1972,1972-02-28
+MLD,Natalia Gavrili<U+021B>a,MLD_2021_1,.,2021-08-06,2023-02-16,Regular,Regular,F,1977,1977-09-21
+MLD,Dorin Recean,MLD_2023_1,.,2023-02-16,2024-06-30,Regular,Still in Office,M,1974,1974-04-17
+MLI,Traore,MLI_1968_1,822a94f1-1e42-11e4-b4cd-db5882bf8def,1968-11-19,1991-03-26,Irregular,Irregular,M,1936,1936-09-15
+MLI,Amadou Toure,MLI_1991_1,822ac5c4-1e42-11e4-b4cd-db5882bf8def,1991-03-26,1992-06-06,Irregular,Regular,M,1948,NA
+MLI,Konare,MLI_1992_1,822ac5c5-1e42-11e4-b4cd-db5882bf8def,1992-06-06,2002-06-08,Regular,Regular,M,1946,NA
+MLI,Amadou Toure,MLI_2002_1,822ac5c4-1e42-11e4-b4cd-db5882bf8def,2002-06-09,2012-03-22,Regular,Irregular,M,1948,NA
+MLI,Dioncounda Traore,MLI_2012_2,149f4e48-aae0-11e4-b3bc-29f2fa19767e,2012-04-12,2013-09-04,Irregular,Regular,M,1942,1942-02-23
+MLI,Ibrahim Boubacar Keita,MLI_2013_1,2b3c6718-3481-11e4-8dba-bbcd9ed46413,2013-09-04,2020-08-19,Regular,Irregular,M,1945,1945-01-29
+MLI,Assimi Goita,MLI_2021_1,.,2021-05-24,2024-06-30,Irregular,Still in Office,M,1980,1980-10-22
+MLT,Adami,MLT_1987_1,8219fc8a-1e42-11e4-b4cd-db5882bf8def,1987-05-12,1996-10-28,Regular,Regular,M,1934,1934-02-07
+MLT,Sant,MLT_1996_1,8219fc8b-1e42-11e4-b4cd-db5882bf8def,1996-10-28,1998-09-06,Regular,Regular,M,1948,NA
+MLT,Adami,MLT_1998_1,8219fc8a-1e42-11e4-b4cd-db5882bf8def,1998-09-06,2004-03-23,Regular,Regular,M,1934,1934-02-07
+MLT,Gonzi,MLT_2004_1,82521124-1e42-11e4-b4cd-db5882bf8def,2004-03-23,2013-03-11,Regular,Regular,M,1953,1953-07-01
+MLT,Muscat,MLT_2013_1,2b3a05ae-3481-11e4-8dba-bbcd9ed46413,2013-03-11,2020-01-12,Regular,Irregular,M,1974,1974-01-22
+MLT,Robert Abela,MLT_2020_1,.,2020-01-12,2024-06-30,Regular,Still in Office,M,1977,1977-12-07
+MON,Batmonkh,MON_1984_1,8244e7c4-1e42-11e4-b4cd-db5882bf8def,1984-08-23,1990-03-12,Regular,Regular,M,1926,1926-03-10
+MON,Ochirbat,MON_1990_1,8244e7c5-1e42-11e4-b4cd-db5882bf8def,1990-03-12,1997-06-20,Regular,Regular,M,1942,NA
+MON,Bagabandi,MON_1997_1,8244e7c6-1e42-11e4-b4cd-db5882bf8def,1997-06-20,2005-06-24,Regular,Regular,M,1950,1950-04-22
+MON,Enkhbayar,MON_2005_1,8254bcd5-1e42-11e4-b4cd-db5882bf8def,2005-06-24,2009-06-18,Regular,Regular,M,1958,1958-06-01
+MON,Elbegdorj,MON_2009_1,8254bcd6-1e42-11e4-b4cd-db5882bf8def,2009-06-18,2017-07-10,Regular,Regular,M,1963,1963-03-30
+MON,Battulga,MON_2017_1,.,2017-07-10,2021-06-25,Regular,Regular,M,1963,1963-03-30
+MON,Ukhnaagiin Khürelsükh,MON_2021_1,.,2021-06-25,2024-06-30,Regular,Still in Office,M,1968,1968-06-14
+MOR,Hassan II,MOR_1961_1,823bbfd2-1e42-11e4-b4cd-db5882bf8def,1961-02-26,1999-07-23,Regular,Natural Death,M,1929,1929-07-09
+MOR,Muhammad VI,MOR_1999_1,823bbfd3-1e42-11e4-b4cd-db5882bf8def,1999-07-23,2024-06-30,Regular,Still in Office,M,1963,1963-08-21
+MYA,Saw Maung,MYA_1988_3,82494ae9-1e42-11e4-b4cd-db5882bf8def,1988-09-18,1992-04-23,Irregular,Retired Due to Ill Health,M,1928,1928-12-05
+MYA,Than Shwe,MYA_1992_1,82497bb8-1e42-11e4-b4cd-db5882bf8def,1992-04-23,2011-03-30,Regular,Regular,M,1933,1933-02-02
+MYA,Thein Sein,MYA_2011_1,14a038b2-aae0-11e4-b3bc-29f2fa19767e,2011-03-30,2016-03-30,Regular,Regular,M,1945,1945-04-20
+MYA,Htin Kyaw,MYA_2016_1,.,2016-03-30,2018-03-21,Regular,Retired Due to Ill Health,M,1946,1946-07-20
+MYA,Win Myint,MYA_2018_2,.,2018-03-30,2021-02-01,Regular,Irregular,M,1951,1951-11-08
+MYA,Myint Swe,MYA_2021_1,.,2021-02-01,2024-06-30,Irregular,Still in Office,M,1951,1951-05-24
+MZM,Chissano,MZM_1986_1,8233edb8-1e42-11e4-b4cd-db5882bf8def,1986-11-06,2005-02-02,Regular,Regular,M,1939,1939-10-02
+MZM,Guebuza,MZM_2005_1,8253f976-1e42-11e4-b4cd-db5882bf8def,2005-02-02,2015-01-15,Regular,Regular,M,1942,1942-01-20
+MZM,Filipe Nyusi,MZM_2015_1,43fa715f-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-15,2024-06-30,Regular,Still in Office,M,1959,1959-02-09
+NAM,Nujoma,NAM_1990_1,823a69ff-1e42-11e4-b4cd-db5882bf8def,1990-03-21,2005-03-21,Regular,Regular,M,1929,1929-05-12
+NAM,Pohamba,NAM_2005_1,8253f97b-1e42-11e4-b4cd-db5882bf8def,2005-03-21,2015-03-21,Regular,Regular,M,1935,1935-08-18
+NAM,Hage Geingob,NAM_2015_1,43fa7161-de6a-11e5-ba44-bb6d7c1a9a58,2015-03-21,2024-06-30,Regular,Still in Office,M,1941,1941-08-03
+NEP,Birendra,NEP_1972_1,824a3f09-1e42-11e4-b4cd-db5882bf8def,1972-01-31,1990-11-09,Regular,Regular,M,1946,1946-12-28
+NEP,Girija Prasad Koirala,NEP_1991_1,36579818-3bbd-11e5-afeb-eb6f07f9fec7,1991-05-26,1994-11-30,Regular,Regular,M,1925,NA
+NEP,Man Mohan Adhikari,NEP_1994_1,824a3f0c-1e42-11e4-b4cd-db5882bf8def,1994-11-30,1995-09-12,Regular,Regular,M,1920,NA
+NEP,Sher Bahadur Deuba,NEP_1995_1,824a3f0d-1e42-11e4-b4cd-db5882bf8def,1995-09-12,1997-03-12,Regular,Regular,M,1946,1946-06-13
+NEP,Girija Prasad Koirala,NEP_1998_1,36579818-3bbd-11e5-afeb-eb6f07f9fec7,1998-04-15,1999-05-31,Regular,Regular,M,1925,NA
+NEP,Krishna Prasad Bhatterai,NEP_1999_1,824a3f0a-1e42-11e4-b4cd-db5882bf8def,1999-05-31,2000-03-22,Regular,Regular,M,1924,NA
+NEP,Girija Prasad Koirala,NEP_2000_1,36579818-3bbd-11e5-afeb-eb6f07f9fec7,2000-03-22,2001-07-26,Regular,Regular,M,1925,NA
+NEP,Sher Bahdur Deuba,NEP_2001_1,19bbd548-3bbd-11e5-afeb-eb6f07f9fec7,2001-07-26,2002-10-04,Regular,Regular,M,1946,1946-06-13
+NEP,Surya Bahadur Thapa,NEP_2003_1,197a5f78-3bbd-11e5-afeb-eb6f07f9fec7,2003-06-05,2004-06-03,Regular,Regular,M,1928,NA
+NEP,Gyanendra,NEP_2005_1,82554f50-1e42-11e4-b4cd-db5882bf8def,2005-02-01,2006-04-30,Regular,Irregular,M,1947,1947-07-07
+NEP,Girija Prasad Koirala,NEP_2006_1,36579818-3bbd-11e5-afeb-eb6f07f9fec7,2006-04-30,2008-08-18,Regular,Regular,M,1925,NA
+NEP,Dahal,NEP_2008_1,82558020-1e42-11e4-b4cd-db5882bf8def,2008-08-18,2009-05-25,Regular,Regular,M,1954,1954-12-11
+NEP,Madhav Kumar Nepal,NEP_2009_1,82558021-1e42-11e4-b4cd-db5882bf8def,2009-05-25,2011-02-06,Regular,Regular,M,1953,NA
+NEP,Bhattarai,NEP_2011_2,82558023-1e42-11e4-b4cd-db5882bf8def,2011-08-29,2013-03-14,Regular,Regular,M,1954,NA
+NEP,Khil Raj Regmi,NEP_2013_1,2b3ec87f-3481-11e4-8dba-bbcd9ed46413,2013-03-14,2014-02-11,Regular,Regular,M,1949,1949-05-31
+NEP,Sushil Koirala,NEP_2014_1,14a05fc0-aae0-11e4-b3bc-29f2fa19767e,2014-02-11,2015-10-10,Regular,Regular,M,1939,1939-08-12
+NEP,Khadga Prasad Sharma Oli,NEP_2015_1,43fcd2bc-de6a-11e5-ba44-bb6d7c1a9a58,2015-10-10,2016-08-04,Regular,Regular,M,1952,1952-02-22
+NEP,Dahal,NEP_2016_1,.,2016-08-04,2017-06-07,Regular,Regular,M,1954,1954-12-11
+NEP,Khadga Prasad Sharma Oli,NEP_2018_1,.,2018-02-15,2021-07-13,Regular,Regular,M,1952,1952-02-22
+NEP,Sher Bahadur Deuba,NEP_2021_1,.,2021-07-13,2022-12-26,Regular,Regular,M,1946,1946-06-13
+NEP,Pushpa Kamal Dahal,NEP_2022_1,.,2022-12-26,2024-06-30,Regular,Still in Office,M,1954,1954-12-11
+NEW,Palmer,NEW_1989_1,824f34b1-1e42-11e4-b4cd-db5882bf8def,1989-08-08,1990-09-04,Regular,Regular,M,1942,1942-04-21
+NEW,Bolger,NEW_1990_2,824f6582-1e42-11e4-b4cd-db5882bf8def,1990-10-27,1997-12-08,Regular,Regular,M,1935,1935-05-31
+NEW,Jenny Shipley,NEW_1997_1,824f6583-1e42-11e4-b4cd-db5882bf8def,1997-12-08,1999-12-10,Regular,Regular,F,1952,NA
+NEW,Helen Clark,NEW_1999_1,824f6584-1e42-11e4-b4cd-db5882bf8def,1999-12-10,2008-11-19,Regular,Regular,F,1950,1950-02-26
+NEW,John Key,NEW_2008_1,8255e1ce-1e42-11e4-b4cd-db5882bf8def,2008-11-19,2016-12-12,Regular,Regular,M,1961,1961-08-09
+NEW,Bill English,NEW_2016_1,.,2016-12-12,2017-10-26,Regular,Regular,M,1961,1961-12-30
+NEW,Jacinda Ardern,NEW_2016_2,.,2017-10-26,2023-01-25,Regular,Regular,F,1980,1980-07-26
+NEW,Chris Hipkins,NEW_2023_1,.,2023-01-25,2023-11-27,Regular,Regular,M,1978,1978-09-05
+NIC,Daniel Ortega,NIC_1979_1,81e9ba0e-1e42-11e4-b4cd-db5882bf8def,1979-07-18,1990-04-25,Irregular,Regular,M,1945,1945-11-11
+NIC,Violeta Chamorro,NIC_1990_1,81e9ba0f-1e42-11e4-b4cd-db5882bf8def,1990-04-25,1997-01-10,Regular,Regular,F,1929,1929-10-18
+NIC,Aleman,NIC_1997_1,81e9ba10-1e42-11e4-b4cd-db5882bf8def,1997-01-10,2002-01-10,Regular,Regular,M,1946,NA
+NIC,Enrique Bolanos,NIC_2002_1,81e9eae0-1e42-11e4-b4cd-db5882bf8def,2002-01-11,2007-01-10,Regular,Regular,M,1928,NA
+NIC,Daniel Ortega,NIC_2007_1,81e9ba0e-1e42-11e4-b4cd-db5882bf8def,2007-01-10,2024-06-30,Regular,Still in Office,M,1945,1945-11-11
+NIG,Babangida,NIG_1985_1,8230af8f-1e42-11e4-b4cd-db5882bf8def,1985-08-27,1993-08-26,Irregular,Regular,M,1941,1941-08-17
+NIG,Abacha,NIG_1993_2,8230af91-1e42-11e4-b4cd-db5882bf8def,1993-11-17,1998-06-08,Irregular,Natural Death,M,1943,1943-09-20
+NIG,Abubakar,NIG_1998_1,8230af92-1e42-11e4-b4cd-db5882bf8def,1998-06-09,1999-05-29,Regular,Regular,M,1942,1942-06-13
+NIG,Obasanjo,NIG_1999_1,82307ebd-1e42-11e4-b4cd-db5882bf8def,1999-05-29,2007-05-29,Regular,Regular,M,1937,1937-03-05
+NIG,Yar'Adua,NIG_2007_1,8253c8a2-1e42-11e4-b4cd-db5882bf8def,2007-05-29,2010-02-09,Regular,Retired Due to Ill Health,M,1951,1951-08-16
+NIG,Goodluck Jonathan,NIG_2010_1,8253c8a3-1e42-11e4-b4cd-db5882bf8def,2010-02-09,2015-05-29,Regular,Regular,M,1957,1957-11-20
+NIG,Muhummadu Buhari,NIG_2015_1,43fa715d-de6a-11e5-ba44-bb6d7c1a9a58,2015-05-29,2023-05-29,Regular,Regular,M,1942,1942-12-17
+NIG,Bola Tinubu,NIG_2023_1,.,2023-05-29,2024-06-30,Regular,Still in Office,M,1952,1952-03-29
+NIR,Seibou,NIR_1987_1,822d4092-1e42-11e4-b4cd-db5882bf8def,1987-11-10,1993-04-16,Regular,Regular,M,1940,NA
+NIR,Ousmane,NIR_1993_1,822d4093-1e42-11e4-b4cd-db5882bf8def,1993-04-16,1996-01-27,Regular,Irregular,M,1950,NA
+NIR,Mainassara,NIR_1996_1,822d4094-1e42-11e4-b4cd-db5882bf8def,1996-01-27,1999-04-11,Irregular,Irregular,M,1949,1949-05-09
+NIR,Mamadou Tandja,NIR_1999_2,822d7167-1e42-11e4-b4cd-db5882bf8def,1999-12-22,2010-02-08,Regular,Irregular,M,1938,NA
+NIR,Djibo,NIR_2010_1,825366fa-1e42-11e4-b4cd-db5882bf8def,2010-02-08,2011-04-07,Irregular,Regular,M,1965,NA
+NIR,Issoufou,NIR_2011_1,825366fb-1e42-11e4-b4cd-db5882bf8def,2011-04-07,2021-04-02,Regular,Regular,M,1952,NA
+NIR,Mohamed Bazoum,NIR_2021_1,.,2021-04-02,2023-07-26,Regular,Irregular,M,1960,1960-01-01
+NIR,Abdourahamane Tchiani,NIR_2023_1,.,2023-07-26,2024-06-30,Irregular,Still in Office,M,1960,NA
+NOR,Syse,NOR_1989_1,8226c450-1e42-11e4-b4cd-db5882bf8def,1989-10-16,1990-11-03,Regular,Regular,M,1930,1930-11-25
+NOR,Brundtland,NOR_1990_1,8226c44e-1e42-11e4-b4cd-db5882bf8def,1990-11-03,1996-10-25,Regular,Regular,F,1939,1939-04-20
+NOR,Jagland,NOR_1996_1,8226f520-1e42-11e4-b4cd-db5882bf8def,1996-10-25,1997-10-17,Regular,Regular,M,1950,1950-11-05
+NOR,Bondevik,NOR_1997_1,8226f521-1e42-11e4-b4cd-db5882bf8def,1997-10-17,1998-08-30,Regular,Regular,M,1947,1947-09-03
+NOR,Bondevik,NOR_1998_2,8226f521-1e42-11e4-b4cd-db5882bf8def,1998-09-24,2000-03-17,Regular,Regular,M,1947,1947-09-03
+NOR,Stoltenberg,NOR_2000_1,8226f523-1e42-11e4-b4cd-db5882bf8def,2000-03-17,2001-10-19,Regular,Regular,M,1959,NA
+NOR,Bondevik,NOR_2001_1,8226f521-1e42-11e4-b4cd-db5882bf8def,2001-10-19,2005-10-17,Regular,Regular,M,1947,1947-09-03
+NOR,Stoltenberg,NOR_2005_1,8226f523-1e42-11e4-b4cd-db5882bf8def,2005-10-17,2013-10-16,Regular,Regular,M,1959,NA
+NOR,Solberg,NOR_2013_1,2b3a05b7-3481-11e4-8dba-bbcd9ed46413,2013-10-16,2021-10-14,Regular,Regular,F,1961,1961-02-24
+NOR,Jonas Gahr Støre,NOR_2021_1,.,2021-10-14,2024-06-30,Regular,Still in Office,M,1960,1960-08-25
+NTH,Lubbers,NTH_1982_1,820994fc-1e42-11e4-b4cd-db5882bf8def,1982-11-04,1994-08-22,Regular,Regular,M,1939,1939-05-07
+NTH,Kok,NTH_1994_1,820994fd-1e42-11e4-b4cd-db5882bf8def,1994-08-22,2002-07-22,Regular,Regular,M,1938,1938-09-29
+NTH,Jan Peter Balkenende,NTH_2002_1,8209c5d6-1e42-11e4-b4cd-db5882bf8def,2002-07-22,2010-10-14,Regular,Regular,M,1956,1956-05-07
+NTH,Mark Rutte,NTH_2010_1,82511d01-1e42-11e4-b4cd-db5882bf8def,2010-10-14,2024-06-30,Regular,Still in Office,M,1967,1967-02-14
+OMA,Qabus Bin Said,OMA_1970_1,82429dc1-1e42-11e4-b4cd-db5882bf8def,1970-07-23,2020-01-10,Irregular,Natural Death,M,1940,1940-11-18
+OMA,Haitham bin Tariq,OMA_2020_1,.,2020-01-10,2024-06-30,Regular,Still in Office,M,1954,1954-10-13
+PAK,Benazir Bhutto,PAK_1988_2,8248878d-1e42-11e4-b4cd-db5882bf8def,1988-12-02,1990-08-06,Regular,Regular,F,1953,1953-06-21
+PAK,Sharif,PAK_1990_2,8248878f-1e42-11e4-b4cd-db5882bf8def,1990-11-06,1993-04-18,Regular,Irregular,M,1949,1949-12-25
+PAK,Benazir Bhutto,PAK_1993_4,8248878d-1e42-11e4-b4cd-db5882bf8def,1993-10-19,1996-11-05,Regular,Irregular,F,1953,1953-06-21
+PAK,Nawaz Sharif,PAK_1997_1,8248878f-1e42-11e4-b4cd-db5882bf8def,1997-02-17,1999-10-12,Regular,Irregular,M,1949,1949-12-25
+PAK,Musharraf,PAK_1999_1,8248b86b-1e42-11e4-b4cd-db5882bf8def,1999-10-14,2008-08-18,Irregular,Regular,M,1943,NA
+PAK,Zardari,PAK_2008_2,82551e7c-1e42-11e4-b4cd-db5882bf8def,2008-09-09,2013-06-05,Regular,Regular,M,1955,NA
+PAK,Nawaz Sharif,PAK_2013_1,2b3ec87d-3481-11e4-8dba-bbcd9ed46413,2013-06-05,2017-07-28,Regular,Irregular,M,1949,1949-12-25
+PAK,Shahid Khaqan Abbasi,PAK_2017_1,.,2017-07-28,2018-05-31,Regular,Regular,M,1958,1958-12-27
+PAK,Imran Khan,PAK_2018_2,.,2018-08-18,2022-04-10,Regular,Irregular,M,1952,1952-10-05
+PAK,Shehbaz Sharif,PAK_2022_1,.,2022-04-11,2023-08-13,Regular,Regular,M,1951,1951-09-23
+PAK,Anwaar ul Haq Kakar,PAK_2023_1,.,2023-08-14,2024-06-30,Regular,Still in Office,M,1971,NA
+PAN,Noriega,PAN_1983_1,81f343a8-1e42-11e4-b4cd-db5882bf8def,1983-08-15,1990-01-03,Irregular,Foreign,M,1940,1940-02-11
+PAN,Endara,PAN_1990_1,81f343a9-1e42-11e4-b4cd-db5882bf8def,1990-01-04,1994-09-01,Foreign Imposition,Regular,M,1936,NA
+PAN,Balladares,PAN_1994_1,81f343aa-1e42-11e4-b4cd-db5882bf8def,1994-09-01,1999-09-01,Regular,Regular,M,1946,NA
+PAN,Mireya Moscoso,PAN_1999_1,81f3747a-1e42-11e4-b4cd-db5882bf8def,1999-09-01,2004-09-01,Regular,Regular,F,1946,1946-07-01
+PAN,Martin Torrijos,PAN_2004_1,81f3747b-1e42-11e4-b4cd-db5882bf8def,2004-09-01,2009-07-01,Regular,Regular,M,1963,NA
+PAN,Martinelli,PAN_2009_1,82508a85-1e42-11e4-b4cd-db5882bf8def,2009-07-01,2014-07-01,Regular,Regular,M,1952,NA
+PAN,Varela Rodriguez,PAN_2014_1,149e15bd-aae0-11e4-b3bc-29f2fa19767e,2014-07-01,2019-07-01,Regular,Regular,M,1963,1963-12-12
+PAN,Laurentino Cortizo,PAN_2019_1,.,2019-07-01,2024-06-30,Regular,Still in Office,M,1953,1953-01-30
+PAR,Rodriguez Pedotti,PAR_1989_1,81ffa9ba-1e42-11e4-b4cd-db5882bf8def,1989-02-03,1993-08-15,Irregular,Regular,M,1924,1924-06-19
+PAR,Wasmosy Monti,PAR_1993_1,81ffa9bb-1e42-11e4-b4cd-db5882bf8def,1993-08-15,1998-08-15,Regular,Regular,M,1938,NA
+PAR,Gonzalez Macchi,PAR_1999_1,81ffda8b-1e42-11e4-b4cd-db5882bf8def,1999-03-28,2003-08-15,Regular,Regular,M,1947,NA
+PAR,Nicanor Duarte Frutos,PAR_2003_1,81ffda8c-1e42-11e4-b4cd-db5882bf8def,2003-08-15,2008-08-15,Regular,Regular,M,1956,1956-10-11
+PAR,Fernando Lugo,PAR_2008_1,8250bb5c-1e42-11e4-b4cd-db5882bf8def,2008-08-15,2012-06-22,Regular,Regular,M,1951,1951-05-30
+PAR,Federico Franco,PAR_2012_1,2c772280-3481-11e4-8dba-bbcd9ed46413,2012-06-22,2013-08-15,Regular,Regular,M,1962,1962-07-24
+PAR,Horacio Cartes,PAR_2013_1,2b37a453-3481-11e4-8dba-bbcd9ed46413,2013-08-15,2018-08-15,Regular,Regular,M,1956,1956-07-05
+PAR,Mario Abdo Benitez,PAR_2018_1,.,2018-08-15,2023-08-15,Regular,Regular,M,1971,1971-11-10
+PAR,Santiago Pena Palacios,PAR_2023_1,.,2023-08-15,2024-06-30,Regular,Still in Office,M,1978,1978-11-16
+PER,Garcia Perez,PER_1985_1,81fa8346-1e42-11e4-b4cd-db5882bf8def,1985-07-28,1990-07-28,Regular,Regular,M,1949,1949-05-23
+PER,Fujimori,PER_1990_1,81fa8347-1e42-11e4-b4cd-db5882bf8def,1990-07-28,2000-11-22,Regular,Regular,M,1938,1938-07-28
+PER,Alejandro Toledo,PER_2001_1,81fab41a-1e42-11e4-b4cd-db5882bf8def,2001-07-28,2006-07-28,Regular,Regular,M,1946,NA
+PER,Garcia Perez,PER_2006_1,81fa8346-1e42-11e4-b4cd-db5882bf8def,2006-07-28,2011-07-28,Regular,Regular,M,1949,NA
+PER,Ollanta Humala,PER_2011_1,8250bb58-1e42-11e4-b4cd-db5882bf8def,2011-07-28,2016-07-28,Regular,Regular,M,1962,1962-06-27
+PER,Pedro Pablo Kuczynski Godard,PER_2016_1,.,2016-07-28,2018-03-23,Regular,Regular,M,1938,1938-10-03
+PER,Martin Vizcarra Cornejo,PER_2018_1,.,2018-03-23,2020-11-10,Regular,Irregular,M,1963,1963-03-22
+PER,Pedro Castillo,PER_2021_1,.,2021-07-28,2022-12-07,Regular,Irregular,M,1969,1969-10-19
+PER,Dina Boluarte,PER_2022_1,.,2022-12-07,2024-06-30,Regular,Still in Office,F,1962,1962-05-31
+PHI,Aquino,PHI_1986_1,824ceab4-1e42-11e4-b4cd-db5882bf8def,1986-02-25,1992-06-30,Irregular,Regular,F,1933,1933-01-25
+PHI,Ramos,PHI_1992_1,824ceab5-1e42-11e4-b4cd-db5882bf8def,1992-06-30,1998-06-30,Regular,Regular,M,1928,1928-03-18
+PHI,Estrada,PHI_1998_1,824ceab6-1e42-11e4-b4cd-db5882bf8def,1998-06-30,2001-01-20,Regular,Regular,M,1937,1937-04-19
+PHI,Gloria Macapagal-Arroyo,PHI_2001_1,824ceab7-1e42-11e4-b4cd-db5882bf8def,2001-01-21,2010-06-30,Regular,Regular,F,1947,1947-04-05
+PHI,Benigno Aquino III,PHI_2010_1,8255e1c9-1e42-11e4-b4cd-db5882bf8def,2010-06-30,2016-06-30,Regular,Regular,M,1960,1960-02-08
+PHI,Rodrigo Duterte,PHI_2016_1,.,2016-06-30,2022-06-30,Regular,Regular,M,1945,1945-03-28
+PHI,Bongbong Marcos,PHI_2022_1,.,2022-06-30,2024-06-30,Regular,Still in Office,M,1957,1957-09-13
+PNG,Namaliu,PNG_1988_1,824e7162-1e42-11e4-b4cd-db5882bf8def,1988-07-04,1992-07-17,Regular,Regular,M,1947,1947-04-03
+PNG,Wingti,PNG_1992_1,824e7161-1e42-11e4-b4cd-db5882bf8def,1992-07-17,1994-08-30,Regular,Regular,M,1951,NA
+PNG,Chan,PNG_1994_1,824e7160-1e42-11e4-b4cd-db5882bf8def,1994-08-30,1997-07-22,Regular,Regular,M,1939,1939-08-29
+PNG,Skate,PNG_1997_1,824e7163-1e42-11e4-b4cd-db5882bf8def,1997-07-22,1999-07-14,Regular,Regular,M,1953,NA
+PNG,Morauta,PNG_1999_1,824ea232-1e42-11e4-b4cd-db5882bf8def,1999-07-14,2002-08-05,Regular,Regular,M,1946,NA
+PNG,Somare,PNG_2002_1,824e715f-1e42-11e4-b4cd-db5882bf8def,2002-08-06,2011-08-02,Regular,Retired Due to Ill Health,M,1936,1936-04-09
+PNG,O'Neil,PNG_2011_1,8255e1cd-1e42-11e4-b4cd-db5882bf8def,2011-08-02,2019-05-29,Regular,Regular,M,1965,1965-02-13
+PNG,James Marape,PNG_2019_1,.,2019-05-29,2024-06-30,Regular,Still in Office,M,1971,1971-04-24
+POL,Jaruzelski,POL_1981_1,821506e5-1e42-11e4-b4cd-db5882bf8def,1981-10-18,1990-12-22,Regular,Regular,M,1923,1923-07-06
+POL,Walesa,POL_1990_1,821537c2-1e42-11e4-b4cd-db5882bf8def,1990-12-22,1995-12-23,Regular,Regular,M,1943,1943-09-29
+POL,Kwasniewski,POL_1995_1,821537c3-1e42-11e4-b4cd-db5882bf8def,1995-12-23,2005-12-23,Regular,Regular,M,1954,1954-11-15
+POL,Kaczynski,POL_2005_1,82517eab-1e42-11e4-b4cd-db5882bf8def,2005-12-23,2010-04-10,Regular,Natural Death,M,1949,NA
+POL,Komorowski,POL_2010_4,82517eac-1e42-11e4-b4cd-db5882bf8def,2010-08-06,2015-08-06,Regular,Regular,M,1952,1952-06-04
+POL,Andrzej Duda,POL_2015_1,.,2015-08-06,2023-12-13,Regular,Regular,M,1972,1972-05-16
+POR,Soares,POR_1986_1,8212edc1-1e42-11e4-b4cd-db5882bf8def,1986-03-09,1996-03-09,Regular,Regular,M,1924,1924-12-07
+POR,Sampaio,POR_1996_1,8212edc2-1e42-11e4-b4cd-db5882bf8def,1996-03-09,2006-03-09,Regular,Regular,M,1939,NA
+POR,Cavaco Silva,POR_2006_1,82517ea9-1e42-11e4-b4cd-db5882bf8def,2006-03-09,2016-03-09,Regular,Regular,M,1939,1939-07-15
+POR,Rebelo de Sousa,POR_2016_1,.,2016-03-09,2024-06-30,Regular,Still in Office,M,1948,1948-12-12
+PRK,Kim Il-Sung,PRK_1948_1,8245189d-1e42-11e4-b4cd-db5882bf8def,1948-09-09,1994-07-08,Regular,Natural Death,M,1912,1912-04-15
+PRK,Kim Jong-Il,PRK_1994_1,8245496c-1e42-11e4-b4cd-db5882bf8def,1994-07-08,2011-12-17,Regular,Natural Death,M,1942,1942-02-16
+PRK,Kim Jong Un,PRK_2011_1,8254eda5-1e42-11e4-b4cd-db5882bf8def,2011-12-17,2024-06-30,Regular,Still in Office,M,1983,1983-01-08
+QAT,Khalifah Ath-Thani,QAT_1972_1,82423c1d-1e42-11e4-b4cd-db5882bf8def,1972-02-22,1995-06-27,Irregular,Irregular,M,1932,NA
+QAT,Hamad ibn Khalifah Al Thani,QAT_1995_1,82426cec-1e42-11e4-b4cd-db5882bf8def,1995-06-27,2013-06-25,Irregular,Regular,M,1952,NA
+QAT,Tamim ibn Hamad Al Thani,QAT_2013_1,2b3ec878-3481-11e4-8dba-bbcd9ed46413,2013-06-25,2024-06-30,Regular,Still in Office,M,1980,1980-06-03
+ROK,Roh Tae Woo,ROK_1988_1,82457a43-1e42-11e4-b4cd-db5882bf8def,1988-02-25,1993-02-25,Regular,Regular,M,1932,1932-12-04
+ROK,Kim Young Sam,ROK_1993_1,82457a44-1e42-11e4-b4cd-db5882bf8def,1993-02-25,1998-02-25,Regular,Regular,M,1927,1927-12-20
+ROK,Kim Dae Jung,ROK_1998_1,82457a45-1e42-11e4-b4cd-db5882bf8def,1998-02-25,2003-02-25,Regular,Regular,M,1925,1925-12-03
+ROK,Roh Moo Hyun,ROK_2003_1,8245ab14-1e42-11e4-b4cd-db5882bf8def,2003-02-25,2008-02-25,Regular,Regular,M,1946,1946-09-01
+ROK,Lee Myung Bak,ROK_2008_1,8254eda6-1e42-11e4-b4cd-db5882bf8def,2008-02-25,2013-02-25,Regular,Regular,M,1941,1941-12-19
+ROK,Park Geun-hye,ROK_2013_1,2b3ec87a-3481-11e4-8dba-bbcd9ed46413,2013-02-25,2017-03-10,Regular,Irregular,F,1952,1952-02-12
+ROK,Moon Jae-in,ROK_2017_2,.,2017-05-10,2022-05-09,Regular,Regular,M,1953,1953-01-24
+ROK,Yoon Suk Xeol,ROK_2022_1,.,2022-05-09,2024-06-30,Regular,Still in Office,M,1960,1960-12-18
+RUM,Roman,RUM_1989_1,821fe654-1e42-11e4-b4cd-db5882bf8def,1989-12-26,1991-10-01,Regular,Regular,M,1946,NA
+RUM,Stolojan,RUM_1991_1,821fe655-1e42-11e4-b4cd-db5882bf8def,1991-10-01,1992-11-04,Regular,Regular,M,1943,NA
+RUM,Vacariou,RUM_1992_1,821fe656-1e42-11e4-b4cd-db5882bf8def,1992-11-04,1996-12-12,Regular,Regular,M,1943,1943-12-05
+RUM,Ciorbea,RUM_1996_1,821fe657-1e42-11e4-b4cd-db5882bf8def,1996-12-12,1998-03-30,Regular,Regular,M,1954,NA
+RUM,Vasile,RUM_1998_2,82201728-1e42-11e4-b4cd-db5882bf8def,1998-04-15,1999-12-14,Regular,Regular,M,1942,NA
+RUM,Isarescu,RUM_1999_2,8220172a-1e42-11e4-b4cd-db5882bf8def,1999-12-22,2000-12-28,Regular,Regular,M,1949,NA
+RUM,A. Nastase,RUM_2000_1,8220172b-1e42-11e4-b4cd-db5882bf8def,2000-12-28,2004-12-21,Regular,Regular,M,1950,NA
+RUM,Traian Basescu,RUM_2004_2,8220172d-1e42-11e4-b4cd-db5882bf8def,2004-12-29,2007-04-20,Regular,Regular,M,1951,1951-11-04
+RUM,Traian Basescu,RUM_2007_2,8220172d-1e42-11e4-b4cd-db5882bf8def,2007-05-23,2012-07-10,Regular,Regular,M,1951,1951-11-04
+RUM,Traian Basescu,RUM_2012_2,8220172d-1e42-11e4-b4cd-db5882bf8def,2012-08-28,2014-12-21,Regular,Regular,M,1951,1951-11-04
+RUM,Klaus Iohannis,RUM_2014_1,.,2014-12-21,2024-06-30,Regular,Still in Office,M,1959,1959-06-13
+RUS,Gorbachev,RUS_1985_1,8220a9ae-1e42-11e4-b4cd-db5882bf8def,1985-03-11,1991-08-21,Regular,Irregular,M,1931,1931-03-02
+RUS,Yeltsin,RUS_1991_1,8220a9af-1e42-11e4-b4cd-db5882bf8def,1991-08-21,1999-12-31,Regular,Regular,M,1931,1931-02-01
+RUS,Putin,RUS_1999_1,8220a9b0-1e42-11e4-b4cd-db5882bf8def,1999-12-31,2024-06-30,Regular,Still in Office,M,1952,1952-10-07
+RWA,Habyarimana,RWA_1973_1,82332a5c-1e42-11e4-b4cd-db5882bf8def,1973-07-05,1994-04-06,Irregular,Irregular,M,1937,1937-08-03
+RWA,Paul Kagame,RWA_1994_2,82332a5e-1e42-11e4-b4cd-db5882bf8def,1994-07-19,2024-06-30,Regular,Still in Office,M,1957,1957-10-23
+SAF,deKlerk,SAF_1989_3,8239d780-1e42-11e4-b4cd-db5882bf8def,1989-08-15,1994-05-10,Regular,Regular,M,1936,1936-03-18
+SAF,Mandela,SAF_1994_1,8239d781-1e42-11e4-b4cd-db5882bf8def,1994-05-10,1999-06-16,Regular,Regular,M,1918,1918-07-18
+SAF,Mbeki,SAF_1999_1,8239d782-1e42-11e4-b4cd-db5882bf8def,1999-06-16,2008-09-25,Regular,Regular,M,1942,1942-06-18
+SAF,Zuma,SAF_2009_1,8253f97a-1e42-11e4-b4cd-db5882bf8def,2009-05-09,2018-02-14,Regular,Regular,M,1942,1942-04-12
+SAF,Cyril Ramaphosa,SAF_2018_1,.,2018-02-14,2024-06-30,Regular,Still in Office,M,1952,1952-11-17
+SAL,Cristiani,SAL_1989_1,81e8c5de-1e42-11e4-b4cd-db5882bf8def,1989-06-01,1994-06-01,Regular,Regular,M,1947,1947-11-22
+SAL,Calderon Sol,SAL_1994_1,81e8c5df-1e42-11e4-b4cd-db5882bf8def,1994-06-01,1999-06-01,Regular,Regular,M,1948,NA
+SAL,Flores,SAL_1999_1,81e8c5e0-1e42-11e4-b4cd-db5882bf8def,1999-06-01,2004-06-01,Regular,Regular,M,1959,1959-10-17
+SAL,Saca González,SAL_2004_1,81e8c5e1-1e42-11e4-b4cd-db5882bf8def,2004-06-01,2009-06-01,Regular,Regular,M,1965,NA
+SAL,Funes,SAL_2009_1,825059b5-1e42-11e4-b4cd-db5882bf8def,2009-06-01,2014-06-01,Regular,Regular,M,1959,NA
+SAL,Sanchez Ceren,SAL_2014_1,149deead-aae0-11e4-b3bc-29f2fa19767e,2014-06-01,2019-06-01,Regular,Regular,M,1944,1944-06-14
+SAL,Nayib Bukele,SAL_2019_1,.,2019-06-01,2023-12-01,Regular,Irregular,M,1981,1981-07-24
+SAU,Fahd,SAU_1982_1,8241a99c-1e42-11e4-b4cd-db5882bf8def,1982-06-13,1996-01-01,Regular,Retired Due to Ill Health,M,1922,NA
+SAU,Abdullah ibn Abdilaziz,SAU_1996_1,8241a99d-1e42-11e4-b4cd-db5882bf8def,1996-01-01,2015-01-23,Regular,Natural Death,M,1924,1924-08-01
+SAU,Salman bin Abdulaziz Al Saud,SAU_2015_1,43fa7164-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-23,2024-06-30,Regular,Still in Office,M,1935,1924-08-01
+SEN,Diouf,SEN_1981_1,822af699-1e42-11e4-b4cd-db5882bf8def,1981-01-01,2000-04-01,Regular,Regular,M,1935,1935-09-07
+SEN,Abdoulaye Wade,SEN_2000_1,822b276c-1e42-11e4-b4cd-db5882bf8def,2000-04-02,2012-04-02,Regular,Regular,M,1926,NA
+SEN,Macky Sall,SEN_2012_1,2b3c6719-3481-11e4-8dba-bbcd9ed46413,2012-04-02,2024-06-30,Regular,Still in Office,M,1945,1945-12-11
+SER,Kostunica,SER_2006_1,821be4de-1e42-11e4-b4cd-db5882bf8def,2006-04-06,2008-07-07,Regular,Regular,M,1944,1944-03-24
+SER,Cvetkovic,SER_2008_1,82521128-1e42-11e4-b4cd-db5882bf8def,2008-07-07,2012-07-27,Regular,Regular,M,1950,NA
+SER,Dacic,SER_2012_1,2b3a05af-3481-11e4-8dba-bbcd9ed46413,2012-07-27,2014-04-27,Regular,Regular,M,1966,1966-01-01
+SER,Vucic,SER_2014_1,149e63e8-aae0-11e4-b3bc-29f2fa19767e,2014-04-27,2017-05-31,Regular,Regular,M,1970,1970-03-05
+SER,Brnabic,SER_2017_2,.,2017-06-29,2024-06-30,Regular,Still in Office,F,1975,1975-09-28
+SIE,Momoh,SIE_1985_1,822f8a90-1e42-11e4-b4cd-db5882bf8def,1985-11-28,1992-04-29,Regular,Irregular,M,1937,1937-01-26
+SIE,Strasser,SIE_1992_1,822fbb60-1e42-11e4-b4cd-db5882bf8def,1992-05-01,1996-01-17,Irregular,Irregular,M,1965,NA
+SIE,Kabbah,SIE_1996_2,822fbb62-1e42-11e4-b4cd-db5882bf8def,1996-03-29,1997-05-25,Regular,Irregular,M,1932,1932-02-16
+SIE,Kabbah,SIE_1998_1,822fbb62-1e42-11e4-b4cd-db5882bf8def,1998-03-10,2007-09-17,Foreign Imposition,Regular,M,1932,1932-02-16
+SIE,Bai Koroma,SIE_2007_1,825397cf-1e42-11e4-b4cd-db5882bf8def,2007-09-17,2018-04-04,Regular,Regular,M,1953,1953-10-02
+SIE,Julius Maada Bio,SIE_2018_1,.,2018-04-04,2024-06-30,Regular,Still in Office,M,1964,1964-05-12
+SIN,Lee Kuan Yew,SIN_1959_1,824c890e-1e42-11e4-b4cd-db5882bf8def,1959-06-05,1990-11-28,Regular,Regular,M,1923,1923-09-16
+SIN,Goh Chok Tong,SIN_1990_1,824c890f-1e42-11e4-b4cd-db5882bf8def,1990-11-28,2004-08-12,Regular,Regular,M,1941,1941-05-20
+SIN,Lee Hsien Loong,SIN_2004_1,824c8910-1e42-11e4-b4cd-db5882bf8def,2004-08-12,2024-06-30,Regular,Still in Office,M,1952,1952-02-10
+SLO,Meciar,SLO_1993_1,8218450e-1e42-11e4-b4cd-db5882bf8def,1993-01-01,1994-03-16,Regular,Regular,M,1942,1942-07-26
+SLO,Moravcik,SLO_1994_1,8218450f-1e42-11e4-b4cd-db5882bf8def,1994-03-16,1994-12-13,Regular,Regular,M,1945,NA
+SLO,Meciar,SLO_1994_2,8218450e-1e42-11e4-b4cd-db5882bf8def,1994-12-13,1998-10-30,Regular,Regular,M,1942,1942-07-26
+SLO,Dzurinda,SLO_1998_1,82184510-1e42-11e4-b4cd-db5882bf8def,1998-10-30,2006-07-04,Regular,Regular,M,1955,1955-02-04
+SLO,Robert Fico,SLO_2006_1,8251e052-1e42-11e4-b4cd-db5882bf8def,2006-07-04,2010-07-08,Regular,Regular,M,1964,NA
+SLO,Radicova,SLO_2010_1,8251e053-1e42-11e4-b4cd-db5882bf8def,2010-07-08,2012-04-04,Regular,Regular,F,1956,NA
+SLO,Robert Fico,SLO_2012_1,8251e052-1e42-11e4-b4cd-db5882bf8def,2012-04-04,2018-03-22,Regular,Regular,M,1964,1964-09-15
+SLO,Pellegrini,SLO_2018_1,.,2018-03-22,2020-03-21,Regular,Regular,M,1975,1975-10-06
+SLO,Igor Matovic,SLO_2020_1,.,2020-03-21,2021-04-01,Regular,Regular,M,1973,1973-05-11
+SLO,Eduard Heger,SLO_2021_1,.,2021-04-01,2023-05-15,Regular,Regular,M,1976,1976-05-03
+SLV,Kucan,SLV_1990_1,821c7758-1e42-11e4-b4cd-db5882bf8def,1990-04-22,1991-12-23,Regular,Regular,M,1941,NA
+SLV,Drnovsek,SLV_1992_1,821c775a-1e42-11e4-b4cd-db5882bf8def,1992-05-14,2000-05-03,Regular,Regular,M,1950,1950-05-17
+SLV,Drnovsek,SLV_2000_2,821c775a-1e42-11e4-b4cd-db5882bf8def,2000-11-17,2002-12-11,Regular,Regular,M,1950,1950-05-17
+SLV,Anton Rop,SLV_2002_1,821c775c-1e42-11e4-b4cd-db5882bf8def,2002-12-11,2004-11-09,Regular,Regular,M,1960,1960-12-27
+SLV,Janez Jansa,SLV_2004_1,821ca82c-1e42-11e4-b4cd-db5882bf8def,2004-11-09,2008-11-21,Regular,Regular,M,1958,1958-09-17
+SLV,Borut Pahor,SLV_2008_1,825272d6-1e42-11e4-b4cd-db5882bf8def,2008-11-21,2012-02-10,Regular,Regular,M,1963,1963-11-02
+SLV,Janez Jansa,SLV_2012_1,821ca82c-1e42-11e4-b4cd-db5882bf8def,2012-02-10,2013-03-20,Regular,Regular,M,1958,1958-09-17
+SLV,Bratusek,SLV_2013_1,149e8af9-aae0-11e4-b3bc-29f2fa19767e,2013-03-20,2014-09-18,Regular,Regular,F,1970,1970-03-31
+SLV,Cerar,SLV_2014_1,149eb206-aae0-11e4-b3bc-29f2fa19767e,2014-09-18,2018-09-13,Regular,Regular,M,1963,1963-08-25
+SLV,Sarec,SLV_2018_1,.,2018-09-13,2020-03-13,Regular,Regular,M,1977,1977-12-02
+SLV,Janez Jansa,SLV_2020_1,.,2020-03-13,2022-06-01,Regular,Regular,M,1958,1958-09-17
+SLV,Robert Golob,SLV_2022_1,.,2022-06-01,2024-06-30,Regular,Still in Office,M,1967,1967-01-23
+SOL,Mamaloni,SOL_1989_1,824f6586-1e42-11e4-b4cd-db5882bf8def,1989-03-28,1993-06-18,Regular,Regular,M,1943,NA
+SOL,Hilly,SOL_1993_1,824f9656-1e42-11e4-b4cd-db5882bf8def,1993-06-18,1994-10-31,Regular,Irregular,M,1947,NA
+SOL,Mamaloni,SOL_1994_1,824f6586-1e42-11e4-b4cd-db5882bf8def,1994-10-31,1997-08-27,Irregular,Regular,M,1943,NA
+SOL,Ulufa'alu,SOL_1997_1,824f9657-1e42-11e4-b4cd-db5882bf8def,1997-08-27,2000-06-05,Regular,Irregular,M,1950,NA
+SOL,Manasseh Sogavare,SOL_2000_1,824f9658-1e42-11e4-b4cd-db5882bf8def,2000-06-30,2001-12-17,Regular,Regular,M,1955,1955-01-17
+SOL,Kemakeza,SOL_2001_1,824f9659-1e42-11e4-b4cd-db5882bf8def,2001-12-17,2006-04-20,Regular,Regular,M,1951,NA
+SOL,Manasseh Sogavare,SOL_2006_2,824f9658-1e42-11e4-b4cd-db5882bf8def,2006-05-04,2007-12-20,Regular,Regular,M,1955,1955-01-17
+SOL,Sikua,SOL_2007_1,825612a8-1e42-11e4-b4cd-db5882bf8def,2007-12-20,2010-08-25,Regular,Regular,M,1959,NA
+SOL,Danny Philip,SOL_2010_1,825612a9-1e42-11e4-b4cd-db5882bf8def,2010-08-25,2011-11-16,Regular,Regular,M,1951,NA
+SOL,Darcy Lilo,SOL_2011_1,825612aa-1e42-11e4-b4cd-db5882bf8def,2011-11-16,2014-12-09,Regular,Regular,M,1965,1965-08-28
+SOL,Manasseh Sogavare,SOL_2014_1,824f9658-1e42-11e4-b4cd-db5882bf8def,2014-12-09,2017-11-15,Regular,Regular,M,1955,1955-01-17
+SOL,Rick Houenipwela,SOL_2017_1,.,2017-11-15,2019-04-24,Regular,Regular,M,1958,1958-08-08
+SOL,Manasseh Sogavare,SOL_2019_1,.,2019-04-24,2024-06-30,Regular,Still in Office,M,1955,1955-01-17
+SOM,Siad Barre,SOM_1969_1,82332a61-1e42-11e4-b4cd-db5882bf8def,1969-10-21,1991-01-26,Irregular,Irregular,M,1912,NA
+SOM,Hassan Sheikh Mohamud,SOM_2012_1,149f9c67-aae0-11e4-b3bc-29f2fa19767e,2012-09-16,2017-02-16,Regular,Regular,M,1955,1955-11-09
+SOM,Mohamed Abdullahi Mohamed,SOM_2017_1,.,2017-02-16,2022-05-23,Regular,Regular,M,1962,1962-03-11
+SOM,Hassan Sheikh Mohamud,SOM_2022_1,.,2022-05-23,2024-06-30,Regular,Still in Office,M,1955,1955-11-09
+SPN,Gonzalez Marquez,SPN_1982_1,82122a71-1e42-11e4-b4cd-db5882bf8def,1982-12-02,1996-05-05,Regular,Regular,M,1942,1942-03-05
+SPN,Aznar,SPN_1996_1,82122a72-1e42-11e4-b4cd-db5882bf8def,1996-05-05,2004-04-17,Regular,Regular,M,1953,1953-02-25
+SPN,Rodriguez Zapatero,SPN_2004_1,82125b42-1e42-11e4-b4cd-db5882bf8def,2004-04-17,2011-12-20,Regular,Regular,M,1960,NA
+SPN,Mariano Rajoy Brey,SPN_2011_1,82517ea8-1e42-11e4-b4cd-db5882bf8def,2011-12-20,2018-06-01,Regular,Regular,M,1955,1955-03-27
+SPN,Pedro Sánchez,SPN_2018_1,.,2018-06-01,2024-06-30,Regular,Still in Office,M,1972,1972-02-29
+SRI,Premadasa,SRI_1989_1,8249ac8e-1e42-11e4-b4cd-db5882bf8def,1989-01-02,1993-05-01,Regular,Irregular,M,1924,1924-06-23
+SRI,Wijetunge,SRI_1993_1,8249ac8f-1e42-11e4-b4cd-db5882bf8def,1993-05-01,1994-11-12,Regular,Regular,M,1922,1922-02-15
+SRI,Kumaratunga,SRI_1994_1,8249ac90-1e42-11e4-b4cd-db5882bf8def,1994-11-12,2005-11-19,Regular,Regular,F,1945,1945-06-29
+SRI,Rajapakse,SRI_2005_1,82554f4e-1e42-11e4-b4cd-db5882bf8def,2005-11-19,2015-01-09,Regular,Regular,F,1945,1945-11-18
+SRI,Maithripala Sirisena,SRI_2015_1,43fa7166-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-09,2019-11-18,Regular,Regular,F,1951,1951-08-03
+SRI,Gotabaya Rajapaksa,SRI_2019_1,.,2019-11-18,2022-07-14,Regular,Irregular,M,1949,1949-06-20
+SRI,Ranil Wickremesinghe,SRI_2022_1,.,2022-07-14,2024-06-30,Regular,Still in Office,M,1949,1949-03-24
+SSD,Salva Kiir,SSD_2011_1,149fea92-aae0-11e4-b3bc-29f2fa19767e,2011-07-09,2024-06-30,Regular,Still in Office,M,1951,1951-09-13
+SUD,Al-Bashir,SUD_1989_1,823c8325-1e42-11e4-b4cd-db5882bf8def,1989-06-30,2019-04-11,Irregular,Irregular,M,1944,1944-01-01
+SUD,Abdel Fattah al-Burhan,SUD_2019_1,.,2019-04-11,2024-06-30,Irregular,Still in Office,M,1960,1960-04-11
+SUR,Shankar,SUR_1988_1,81f6b2a3-1e42-11e4-b4cd-db5882bf8def,1988-01-25,1990-12-24,Regular,Irregular,M,1937,NA
+SUR,Venetiaan,SUR_1991_1,81f6b2a6-1e42-11e4-b4cd-db5882bf8def,1991-09-16,1996-09-15,Regular,Regular,M,1936,NA
+SUR,Wijdenbosch,SUR_1996_1,81f6e376-1e42-11e4-b4cd-db5882bf8def,1996-09-15,2000-08-12,Regular,Regular,M,1941,NA
+SUR,Venetiaan,SUR_2000_1,81f6b2a6-1e42-11e4-b4cd-db5882bf8def,2000-08-12,2010-08-12,Regular,Regular,M,1936,NA
+SUR,Bouterse,SUR_2010_1,81f6b2a2-1e42-11e4-b4cd-db5882bf8def,2010-08-12,2020-07-16,Regular,Regular,M,1945,1945-10-13
+SUR,Chan Santokhi,SUR_2020_1,.,2020-07-16,2024-06-30,Regular,Still in Office,M,1959,1959-02-03
+SWA,Mswati,SWA_1986_1,823acba8-1e42-11e4-b4cd-db5882bf8def,1986-04-25,2024-06-30,Regular,Still in Office,M,1968,1968-04-18
+SWD,Carlsson,SWD_1986_1,8225d020-1e42-11e4-b4cd-db5882bf8def,1986-03-12,1991-10-30,Regular,Regular,M,1934,1934-11-09
+SWD,Bildt,SWD_1991_1,35debe98-3bbd-11e5-afeb-eb6f07f9fec7,1991-10-30,1994-10-07,Regular,Regular,M,1949,1949-07-15
+SWD,Carlsson,SWD_1994_1,8225d020-1e42-11e4-b4cd-db5882bf8def,1994-10-07,1996-03-21,Regular,Regular,M,1934,1934-11-09
+SWD,Persson,SWD_1996_1,822600f2-1e42-11e4-b4cd-db5882bf8def,1996-03-21,2006-10-06,Regular,Regular,M,1949,1949-01-20
+SWD,Reinfeldt,SWD_2006_1,82530553-1e42-11e4-b4cd-db5882bf8def,2006-10-06,2014-10-03,Regular,Regular,M,1965,1965-08-04
+SWD,Stefan L<U+FFFD>fven,SWD_2014_1,149f0026-aae0-11e4-b3bc-29f2fa19767e,2014-10-03,2022-11-30,Regular,Regular,M,1957,1957-07-21
+SWD,Magdalena Andersson,SWD_2021_1,.,2021-11-30,2022-10-18,Regular,Regular,F,1967,1967-01-23
+SWD,Kristersson,SWD_2022_1,.,2022-10-18,2024-06-30,Regular,Still in Office,M,1963,1963-12-29
+SWZ,Koller,SWZ_1990_1,8210114b-1e42-11e4-b4cd-db5882bf8def,1990-01-01,1990-12-31,Regular,Regular,M,1933,NA
+SWZ,Cotti,SWZ_1991_1,8210114c-1e42-11e4-b4cd-db5882bf8def,1991-01-01,1991-12-31,Regular,Regular,M,1939,NA
+SWZ,Felber,SWZ_1992_1,8210421c-1e42-11e4-b4cd-db5882bf8def,1992-01-01,1992-12-31,Regular,Regular,M,1933,NA
+SWZ,Ogi,SWZ_1993_1,8210421d-1e42-11e4-b4cd-db5882bf8def,1993-01-01,1993-12-31,Regular,Regular,M,1942,1942-07-18
+SWZ,Stich,SWZ_1994_1,82101149-1e42-11e4-b4cd-db5882bf8def,1994-01-01,1994-12-31,Regular,Regular,M,1927,NA
+SWZ,Villiger,SWZ_1995_1,8210421e-1e42-11e4-b4cd-db5882bf8def,1995-01-01,1995-12-31,Regular,Regular,M,1941,NA
+SWZ,Delamuraz,SWZ_1996_1,8210114a-1e42-11e4-b4cd-db5882bf8def,1996-01-01,1996-12-31,Regular,Regular,M,1936,1936-04-01
+SWZ,Koller,SWZ_1997_1,8210114b-1e42-11e4-b4cd-db5882bf8def,1997-01-01,1997-12-31,Regular,Regular,M,1933,NA
+SWZ,Cotti,SWZ_1998_1,8210114c-1e42-11e4-b4cd-db5882bf8def,1998-01-01,1998-12-31,Regular,Regular,M,1939,NA
+SWZ,Dreifuss,SWZ_1999_1,8210421f-1e42-11e4-b4cd-db5882bf8def,1999-01-01,1999-12-31,Regular,Regular,F,1940,1940-01-09
+SWZ,Ogi,SWZ_2000_1,8210421d-1e42-11e4-b4cd-db5882bf8def,2000-01-01,2000-12-31,Regular,Regular,M,1942,1942-07-18
+SWZ,Leuenberger,SWZ_2001_1,358af948-3bbd-11e5-afeb-eb6f07f9fec7,2001-01-01,2001-12-31,Regular,Regular,M,1946,1946-09-21
+SWZ,Villiger,SWZ_2002_1,8210421e-1e42-11e4-b4cd-db5882bf8def,2002-01-01,2002-12-31,Regular,Regular,M,1941,NA
+SWZ,Pascal Couchepin,SWZ_2003_1,358b2058-3bbd-11e5-afeb-eb6f07f9fec7,2003-01-01,2003-12-31,Regular,Regular,M,1942,NA
+SWZ,Joseph Deiss,SWZ_2004_1,821072f0-1e42-11e4-b4cd-db5882bf8def,2004-01-01,2004-12-31,Regular,Regular,M,1946,NA
+SWZ,Schmid,SWZ_2005_1,82514dd4-1e42-11e4-b4cd-db5882bf8def,2005-01-01,2005-12-31,Regular,Regular,M,1947,NA
+SWZ,Leuenberger,SWZ_2006_1,358af948-3bbd-11e5-afeb-eb6f07f9fec7,2006-01-01,2006-12-31,Regular,Regular,M,1946,NA
+SWZ,Calmy-Rey,SWZ_2007_1,82514dd6-1e42-11e4-b4cd-db5882bf8def,2007-01-01,2007-12-31,Regular,Regular,F,1945,NA
+SWZ,Pascal Couchepin,SWZ_2008_1,358b2058-3bbd-11e5-afeb-eb6f07f9fec7,2008-01-01,2008-12-31,Regular,Regular,M,1942,NA
+SWZ,Hans-Rudolf Merz,SWZ_2009_1,82514dd8-1e42-11e4-b4cd-db5882bf8def,2009-01-01,2009-12-31,Regular,Regular,M,1942,NA
+SWZ,Doris Leuthard,SWZ_2010_1,82514dd9-1e42-11e4-b4cd-db5882bf8def,2010-01-01,2010-12-31,Regular,Regular,F,1963,1963-04-10
+SWZ,Calmy-Rey,SWZ_2011_1,82514dd6-1e42-11e4-b4cd-db5882bf8def,2011-01-01,2011-12-31,Regular,Regular,F,1945,NA
+SWZ,Eveline Widmer-Schlumpf,SWZ_2012_1,2b37a456-3481-11e4-8dba-bbcd9ed46413,2012-01-01,2012-12-31,Regular,Regular,F,1956,1956-03-16
+SWZ,Ueli Maurer,SWZ_2013_1,149e3ccd-aae0-11e4-b3bc-29f2fa19767e,2013-01-01,2013-12-31,Regular,Regular,M,1950,1950-12-01
+SWZ,Didier Burkhalter,SWZ_2014_1,149e3cce-aae0-11e4-b3bc-29f2fa19767e,2014-01-01,2014-12-31,Regular,Regular,M,1960,NA
+SWZ,Simonetta Sommaruga,SWZ_2015_1,43f5aea5-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-01,2015-12-31,Regular,Regular,F,1960,1960-05-14
+SWZ,Johnann Schneider-Ammann,SWZ_2016_1,.,2016-01-01,2016-12-31,Regular,Regular,M,1952,1952-02-18
+SWZ,Doris Leuthard,SWZ_2016_2,.,2016-12-31,2017-12-31,Regular,Regular,F,1963,1963-04-10
+SWZ,Alain Berset,SWZ_2017_1,.,2017-12-31,2018-12-31,Regular,Regular,M,1972,1972-04-09
+SWZ,Ueli Maurer,SWZ_2018_1,.,2018-12-31,2019-12-31,Regular,Regular,M,1950,1950-12-01
+SWZ,Simonetta Sommaruga,SWZ_2019_1,.,2019-12-31,2020-12-31,Regular,Regular,F,1960,1960-05-14
+SWZ,Guy Parmelin,SWZ_2020_1,.,2020-12-31,2021-12-31,Regular,Regular,M,1959,1959-11-09
+SWZ,Ignazio Cassis,SWZ_2021_1,.,2021-12-31,2022-12-31,Regular,Regular,M,1961,1961-04-13
+SWZ,Alain Berset,SWZ_2022_1,.,2022-12-31,2023-12-31,Regular,Regular,M,1972,1972-04-09
+SYR,Al-Assad H.,SYR_1971_1,823fc14b-1e42-11e4-b4cd-db5882bf8def,1971-02-22,2000-06-10,Regular,Natural Death,M,1930,1930-10-06
+SYR,Bashar al-Assad,SYR_2000_1,823fc14c-1e42-11e4-b4cd-db5882bf8def,2000-06-10,2024-06-30,Regular,Still in Office,M,1965,1965-09-11
+TAJ,Nabiyev,TAJ_1991_2,824391f0-1e42-11e4-b4cd-db5882bf8def,1991-09-23,1992-09-07,Irregular,Irregular,M,1930,1930-10-05
+TAJ,Emomali Rahmon,TAJ_1992_2,824391f2-1e42-11e4-b4cd-db5882bf8def,1992-11-20,2024-06-30,Irregular,Still in Office,M,1952,1952-10-05
+TAW,Lee Teng-Hui,TAW_1988_1,82451899-1e42-11e4-b4cd-db5882bf8def,1988-01-13,2000-05-20,Regular,Regular,M,1923,1923-01-15
+TAW,Chen Shui-bian,TAW_2000_1,8245189a-1e42-11e4-b4cd-db5882bf8def,2000-05-21,2008-05-20,Regular,Regular,M,1950,NA
+TAW,Ma Ying-jeou,TAW_2008_1,8254eda4-1e42-11e4-b4cd-db5882bf8def,2008-05-20,2016-05-20,Regular,Regular,M,1950,1950-07-13
+TAW,Tsai Ing-Wen,TAW_2016_1,.,2016-05-20,2024-06-30,Regular,Still in Office,F,1956,1956-08-31
+TAZ,Mwinyi,TAZ_1985_1,823297e0-1e42-11e4-b4cd-db5882bf8def,1985-11-05,1995-11-05,Regular,Regular,M,1925,1925-05-08
+TAZ,Mkapa,TAZ_1995_1,823297e1-1e42-11e4-b4cd-db5882bf8def,1995-11-05,2005-12-21,Regular,Regular,M,1938,NA
+TAZ,Kikwete,TAZ_2005_1,8253c8a6-1e42-11e4-b4cd-db5882bf8def,2005-12-21,2015-11-05,Regular,Regular,M,1950,1950-10-07
+TAZ,John Magufuli,TAZ_2015_1,43fa715e-de6a-11e5-ba44-bb6d7c1a9a58,2015-11-05,2021-03-17,Regular,Natural Death,M,1959,1959-10-29
+TAZ,Samia Suluhu Hassan,TAZ_2021_1,.,2021-03-17,2024-06-30,Regular,Still in Office,F,1960,1960-01-27
+THI,Choonhavan,THI_1988_1,824b0264-1e42-11e4-b4cd-db5882bf8def,1988-08-04,1991-02-23,Regular,Irregular,M,1922,1922-04-25
+THI,Panyarachun,THI_1991_1,824b0265-1e42-11e4-b4cd-db5882bf8def,1991-03-07,1992-04-04,Regular,Regular,M,1932,1932-08-09
+THI,Leekpai,THI_1992_3,824b0267-1e42-11e4-b4cd-db5882bf8def,1992-09-23,1995-07-13,Regular,Regular,M,1938,NA
+THI,Silpa-Archa,THI_1995_1,824b3336-1e42-11e4-b4cd-db5882bf8def,1995-07-13,1996-12-01,Regular,Regular,M,1932,NA
+THI,Chavalit Yongchaiyudh,THI_1996_1,824b3337-1e42-11e4-b4cd-db5882bf8def,1996-12-01,1997-11-09,Regular,Regular,M,1932,1932-05-15
+THI,Leekpai,THI_1997_1,824b0267-1e42-11e4-b4cd-db5882bf8def,1997-11-09,2001-02-09,Regular,Regular,M,1938,NA
+THI,Thaksin Shinawatra,THI_2001_1,824b3338-1e42-11e4-b4cd-db5882bf8def,2001-02-10,2006-09-19,Regular,Irregular,M,1949,NA
+THI,Chulanont,THI_2006_1,82558024-1e42-11e4-b4cd-db5882bf8def,2006-09-19,2008-01-29,Regular,Regular,M,1943,NA
+THI,Vejjajiva,THI_2008_4,8255b0f6-1e42-11e4-b4cd-db5882bf8def,2008-12-15,2011-08-08,Regular,Regular,M,1964,NA
+THI,Yingluck Shinawatra,THI_2011_1,8255b0f7-1e42-11e4-b4cd-db5882bf8def,2011-08-08,2014-05-07,Regular,Regular,F,1967,1967-06-21
+THI,Prayuth Chan-ocha,THI_2014_2,14a05fc2-aae0-11e4-b3bc-29f2fa19767e,2014-05-22,2023-08-22,Irregular,Regular,M,1954,1954-03-21
+THI,Srettha Thavisin,THI_2023_1,.,2023-08-22,2024-06-30,Regular,Still in Office,M,1962,1962-02-15
+TKM,Niyazov,TKM_1990_1,824391ee-1e42-11e4-b4cd-db5882bf8def,1990-10-27,2006-12-21,Regular,Natural Death,M,1940,1940-02-19
+TKM,Gurbanguly Berdymukhammedov,TKM_2006_1,8254bcd1-1e42-11e4-b4cd-db5882bf8def,2006-12-21,2022-03-19,Regular,Regular,M,1957,1957-06-29
+TKM,Serdar Berdymukhammedov,TKM_2022_1,.,2022-03-19,2024-06-30,Regular,Still in Office,M,1981,1981-09-22
+TOG,Eyadema,TOG_1967_2,82304de7-1e42-11e4-b4cd-db5882bf8def,1967-04-14,2005-02-05,Irregular,Natural Death,M,1937,1937-12-26
+TOG,Faure Gnassingbe,TOG_2005_3,36009e78-3bbd-11e5-afeb-eb6f07f9fec7,2005-05-04,2024-06-30,Regular,Still in Office,M,1966,1966-06-06
+TRI,Robinson,TRI_1986_1,81e33dc0-1e42-11e4-b4cd-db5882bf8def,1986-12-18,1991-12-07,Regular,Regular,M,1926,1926-12-16
+TRI,Manning,TRI_1991_1,81e36e90-1e42-11e4-b4cd-db5882bf8def,1991-12-16,1995-11-09,Regular,Regular,M,1946,1946-08-17
+TRI,Panday,TRI_1995_1,81e36e91-1e42-11e4-b4cd-db5882bf8def,1995-11-09,2001-12-24,Regular,Regular,M,1933,NA
+TRI,Manning,TRI_2001_1,81e36e90-1e42-11e4-b4cd-db5882bf8def,2001-12-25,2010-05-26,Regular,Regular,M,1946,NA
+TRI,Kamla Persad-Bissessar,TRI_2010_1,825028d4-1e42-11e4-b4cd-db5882bf8def,2010-05-26,2015-09-09,Regular,Regular,F,1952,1952-04-22
+TRI,Keith Rowley,TRI_2015_1,43f5ae9d-de6a-11e5-ba44-bb6d7c1a9a58,2015-09-09,2024-06-30,Regular,Still in Office,M,1949,1949-10-24
+TUN,Zine Al-Abidine Ben Ali,TUN_1987_1,823c217c-1e42-11e4-b4cd-db5882bf8def,1987-11-07,2011-01-14,Irregular,Irregular,M,1936,1936-09-03
+TUN,Mebazaa,TUN_2011_2,82542a59-1e42-11e4-b4cd-db5882bf8def,2011-01-15,2011-12-13,Regular,Regular,M,1933,NA
+TUN,Marzouki,TUN_2011_3,82545b28-1e42-11e4-b4cd-db5882bf8def,2011-12-13,2014-12-31,Regular,Regular,M,1945,1945-07-07
+TUN,Caid Essebsi,TUN_2014_1,43fa7163-de6a-11e5-ba44-bb6d7c1a9a58,2014-12-31,2019-07-25,Regular,Natural Death,M,1926,1926-10-29
+TUN,Kais Saied,TUN_2019_2,.,2019-10-23,2024-06-30,Regular,Still in Office,M,1958,1958-02-22
+TUR,Akbulut,TUR_1989_1,823d7755-1e42-11e4-b4cd-db5882bf8def,1989-11-09,1991-06-24,Regular,Regular,M,1935,NA
+TUR,Demirel,TUR_1991_2,823d467f-1e42-11e4-b4cd-db5882bf8def,1991-11-20,1993-05-16,Regular,Regular,M,1924,1924-10-06
+TUR,Ciller,TUR_1993_2,823da826-1e42-11e4-b4cd-db5882bf8def,1993-06-25,1996-03-06,Regular,Regular,F,1946,1946-05-24
+TUR,Erbakan,TUR_1996_2,823da827-1e42-11e4-b4cd-db5882bf8def,1996-06-28,1997-06-30,Regular,Irregular,M,1926,1926-10-29
+TUR,Yilmaz,TUR_1997_1,823da824-1e42-11e4-b4cd-db5882bf8def,1997-06-30,1999-01-11,Irregular,Regular,M,1947,1947-11-06
+TUR,Ecevit,TUR_1999_1,823d7751-1e42-11e4-b4cd-db5882bf8def,1999-01-11,2002-11-18,Regular,Regular,M,1925,1925-05-28
+TUR,Erdogan,TUR_2003_1,823da829-1e42-11e4-b4cd-db5882bf8def,2003-03-14,2024-06-30,Regular,Still in Office,M,1954,1954-02-26
+UAE,An-Nahayan,UAE_1971_1,82426ced-1e42-11e4-b4cd-db5882bf8def,1971-12-02,2004-11-03,Regular,Natural Death,M,1918,NA
+UAE,Khalifa Al Nahayan,UAE_2004_1,8254bcd0-1e42-11e4-b4cd-db5882bf8def,2004-11-03,2022-05-13,Regular,Natural Death,M,1948,1948-01-25
+UAE,Mohamed bin Zayed Al Nahyan,UAE_2022_1,.,2022-05-13,2024-06-30,Regular,Still in Office,M,1961,1961-03-11
+UGA,Museveni,UGA_1986_1,8232670c-1e42-11e4-b4cd-db5882bf8def,1986-01-29,2024-06-30,Irregular,Still in Office,M,1944,1944-08-15
+UKG,Thatcher,UKG_1979_1,8207aca6-1e42-11e4-b4cd-db5882bf8def,1979-05-04,1990-11-28,Regular,Regular,F,1925,1925-10-13
+UKG,Major,UKG_1990_1,8207aca7-1e42-11e4-b4cd-db5882bf8def,1990-11-28,1997-05-02,Regular,Regular,M,1943,1943-03-29
+UKG,Blair,UKG_1997_1,8207aca8-1e42-11e4-b4cd-db5882bf8def,1997-05-02,2007-06-27,Regular,Regular,M,1953,1953-05-06
+UKG,Brown,UKG_2007_1,8250ec2e-1e42-11e4-b4cd-db5882bf8def,2007-06-27,2010-05-11,Regular,Regular,M,1951,1951-02-20
+UKG,Cameron,UKG_2010_1,8250ec2f-1e42-11e4-b4cd-db5882bf8def,2010-05-11,2016-07-13,Regular,Regular,M,1966,1966-10-09
+UKG,May,UKG_2016_1,.,2016-07-13,2019-07-24,Reguar,Regular,F,1956,1956-10-01
+UKG,Johnson,UKG_2019_1,.,2019-07-24,2022-09-06,Regular,Regular,M,1964,1964-06-19
+UKG,Sunak,UKG_2022_2,.,2022-10-25,2024-06-30,Regular,Still in Office,M,1980,1980-05-12
+UKR,Kravchuk,UKR_1990_1,8222c2d5-1e42-11e4-b4cd-db5882bf8def,1990-07-18,1994-07-19,Regular,Regular,M,1934,1934-01-10
+UKR,Kuchma,UKR_1994_1,8222f3a8-1e42-11e4-b4cd-db5882bf8def,1994-07-19,2005-01-23,Regular,Regular,M,1938,1938-08-09
+UKR,Yushchenko,UKR_2005_1,8252d482-1e42-11e4-b4cd-db5882bf8def,2005-01-23,2010-02-25,Regular,Regular,M,1954,1954-02-23
+UKR,Yanukovych,UKR_2010_1,8252d483-1e42-11e4-b4cd-db5882bf8def,2010-02-25,2014-02-22,Regular,Regular,M,1950,NA
+UKR,Petro Poroshenko,UKR_2014_2,43f81005-de6a-11e5-ba44-bb6d7c1a9a58,2014-06-07,2019-05-20,Regular,Regular,M,1965,1965-09-26
+UKR,Volodymyr Zelensky,UKR_2019_1,.,2019-05-20,2024-06-30,Regular,Still in Office,M,1978,1978-01-25
+URU,Sanguinetti,URU_1985_1,820687af-1e42-11e4-b4cd-db5882bf8def,1985-03-01,1990-03-01,Regular,Regular,M,1936,1936-01-06
+URU,Lacalle de Herrera,URU_1990_1,820687b0-1e42-11e4-b4cd-db5882bf8def,1990-03-01,1995-03-01,Regular,Regular,M,1941,NA
+URU,Sanguinetti,URU_1995_1,820687af-1e42-11e4-b4cd-db5882bf8def,1995-03-01,2000-03-01,Regular,Regular,M,1936,1936-01-06
+URU,Jorge Batlle,URU_2000_1,8206b882-1e42-11e4-b4cd-db5882bf8def,2000-03-02,2005-03-01,Regular,Regular,M,1927,NA
+URU,Tabare Vazquez,URU_2005_1,8250ec2c-1e42-11e4-b4cd-db5882bf8def,2005-03-01,2010-03-01,Regular,Regular,M,1940,1940-01-17
+URU,Jose Mujica,URU_2010_1,8250ec2d-1e42-11e4-b4cd-db5882bf8def,2010-03-01,2015-03-01,Regular,Regular,M,1935,1935-05-20
+URU,Tabare Vazquez,URU_2015_1,43f5aea3-de6a-11e5-ba44-bb6d7c1a9a58,2015-03-01,2020-03-01,Regular,Regular,M,1940,1940-01-17
+URU,Luis Lacalle Pou,URU_2020_1,.,2020-03-01,2024-06-30,Regular,Still in Office,M,1973,1973-08-11
+USA,G.H.W. Bush,USA_1989_1,81ddb59a-1e42-11e4-b4cd-db5882bf8def,1989-01-20,1993-01-20,Regular,Regular,M,1924,NA
+USA,Clinton,USA_1993_1,81ddb59b-1e42-11e4-b4cd-db5882bf8def,1993-01-20,2001-01-20,Regular,Regular,M,1946,NA
+USA,G.W. Bush,USA_2001_1,81ddb59c-1e42-11e4-b4cd-db5882bf8def,2001-01-21,2009-01-20,Regular,Regular,M,1946,NA
+USA,Obama,USA_2009_1,824fc72f-1e42-11e4-b4cd-db5882bf8def,2009-01-20,2017-01-20,Regular,Regular,M,1961,1961-08-04
+USA,Trump,USA_2017_1,.,2017-01-20,2021-01-20,Regular,Regular,M,1946,1946-06-14
+USA,Joe Biden,USA_2021_1,.,2021-01-20,2024-06-30,Regular,Still in Office,M,1942,1942-11-20
+UZB,Karimov,UZB_1990_1,824391f4-1e42-11e4-b4cd-db5882bf8def,1990-03-24,2016-09-02,Regular,Natural Death,M,1938,1938-01-30
+UZB,Shavkat Mirziyoyev,UZB_2016_2,.,2016-09-08,2024-06-30,Regular,Still in Office,M,1957,1957-07-24
+VEN,Andres Perez,VEN_1989_1,81f6201e-1e42-11e4-b4cd-db5882bf8def,1989-02-02,1993-08-31,Regular,Regular,M,1922,1922-10-27
+VEN,Caldera Rodriguez,VEN_1994_1,81f6201d-1e42-11e4-b4cd-db5882bf8def,1994-02-02,1999-02-02,Regular,Regular,M,1916,1916-01-24
+VEN,Hugo Chavez,VEN_1999_1,81f650f2-1e42-11e4-b4cd-db5882bf8def,1999-02-02,2012-03-05,Regular,Natural Death,M,1954,1954-07-28
+VEN,Maduro,VEN_2012_1,2b37a452-3481-11e4-8dba-bbcd9ed46413,2012-03-05,2024-06-30,Regular,Still in Office,M,1962,1962-11-23
+YEM,Saleh al-Hashidi,YEM_1978_1,8241da75-1e42-11e4-b4cd-db5882bf8def,1978-07-17,2012-02-27,Regular,Regular,M,1942,NA
+YEM,Abd Rabbuh Mansur Hadi,YEM_2012_1,2b3c6722-3481-11e4-8dba-bbcd9ed46413,2012-02-21,2022-04-07,Regular,Irregular,M,1945,1945-09-01
+YEM,Rashad Mohammed al-Alimi,YEM_2022_1,.,2022-04-07,2024-06-30,Regular,Still in Office,M,1954,NA
+YPR,Attas,YPR_1986_1,82420b48-1e42-11e4-b4cd-db5882bf8def,1986-01-24,1990-05-22,Irregular,Regular,M,1939,NA
+YUG,Milosevic,YUG_1989_1,821be4dd-1e42-11e4-b4cd-db5882bf8def,1989-05-15,2000-10-07,Regular,Regular,M,1941,1941-08-20
+YUG,Kostunica,YUG_2000_1,821be4de-1e42-11e4-b4cd-db5882bf8def,2000-10-08,2003-03-07,Regular,Regular,M,1944,1944-03-24
+YUG,Svetozar Marovic,YUG_2003_1,b8187036-4fbb-11e5-b438-d954e400443c,2003-03-07,2006-06-04,Regular,Regular,M,1955,1955-03-31
+ZAM,Kaunda,ZAM_1964_1,8233edb9-1e42-11e4-b4cd-db5882bf8def,1964-10-24,1991-11-02,Regular,Regular,M,1924,1924-04-28
+ZAM,Chiluba,ZAM_1991_1,8233edba-1e42-11e4-b4cd-db5882bf8def,1991-11-02,2002-01-02,Regular,Regular,M,1943,1943-04-30
+ZAM,Levy Mwanawasa,ZAM_2002_1,82341e8a-1e42-11e4-b4cd-db5882bf8def,2002-01-03,2008-06-29,Regular,Retired Due to Ill Health,M,1948,1948-09-03
+ZAM,Banda,ZAM_2008_1,8253f977-1e42-11e4-b4cd-db5882bf8def,2008-06-29,2011-09-23,Regular,Regular,M,1937,NA
+ZAM,Sata,ZAM_2011_1,8253f978-1e42-11e4-b4cd-db5882bf8def,2011-09-23,2014-10-28,Regular,Natural Death,M,1937,1937-07-06
+ZAM,Edgar Lungu,ZAM_2015_1,43fa7160-de6a-11e5-ba44-bb6d7c1a9a58,2015-01-25,2021-08-24,Regular,Regular,M,1956,1956-10-11
+ZAM,Hakainde Hichilema,ZAM_2021_1,.,2021-08-24,2024-06-30,Regular,Still in Office,M,1962,1962-06-04
+ZIM,Mugabe,ZIM_1980_1,82341e8d-1e42-11e4-b4cd-db5882bf8def,1980-03-04,2017-11-24,Regular,Irregular,M,1924,1924-02-21
+ZIM,Mnangagwa,ZIM_2017_1,.,2017-11-24,2024-06-30,Irregular,Still in Office,M,1942,1942-09-15

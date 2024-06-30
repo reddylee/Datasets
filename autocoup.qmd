@@ -1,18 +1,51 @@
+## Setup
+
 ```{r}
 #| label: setup
 library(tidyverse)
- library(readxl)
+library(data.table)
+library(readxl)
 ```
 
+## Autocoup Dataset
+
 ```{r}
-#| label: read_data
+#| label: autocoup
+# read_data
 Autocoup <- read_excel("Autocoup.xlsx")
-```
 
-```{r}
-#| label: write_data
-
+# write_data
 autocoup <- Autocoup |> 
   select(1:14) |>
   write_csv("autocoup.csv")
+```
+
+## The Political Leaders’ Affiliation Database (PLAD) Dataset
+
+```{r}
+download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLAD.xls")
+
+# read_data
+PLAD <- read_excel("PLAD.xls")
+write_csv(plad, "PLAD.csv")
+```
+
+## Archigos Dataset
+
+```{r}
+#| label: archigos
+
+# read_data
+Archigos <- fread("http://ksgleditsch.com/data/1March_Archigos_4.1.txt", encoding = "Latin-1") 
+
+# write_data
+write_csv(Archigos, "archigos.csv")
+```
+
+```{bash}
+#| label: upload
+
+git add .
+git commit -m "Version 'r Sys.Date()'"
+git push
 ```
