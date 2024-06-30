@@ -3,6 +3,7 @@
 ```{r}
 #| label: setup
 library(tidyverse)
+library(janitor)
 library(data.table)
 library(readxl)
 ```
@@ -13,11 +14,12 @@ library(readxl)
 #| label: autocoup
 # read_data
 Autocoup <- read_excel("Autocoup.xlsx")
-
+# str(Autocoup)
 # write_data
 autocoup <- Autocoup |> 
   select(1:14) |>
   write_csv("autocoup.csv")
+# str(autocoup)
 ```
 
 ## The Political Leaders’ Affiliation Database (PLAD) Dataset
@@ -41,6 +43,8 @@ Archigos <- fread("http://ksgleditsch.com/data/1March_Archigos_4.1.txt", encodin
 # write_data
 write_csv(Archigos, "archigos.csv")
 ```
+
+## Upload Datasets
 
 ```{bash}
 #| label: upload
