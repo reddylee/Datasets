@@ -27,7 +27,7 @@ download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLA
 
 # read_data
 PLAD <- read_excel("PLAD.xls")
-write_csv(plad, "PLAD.csv")
+write_csv(PLAD, "PLAD.csv")
 ```
 
 ## Archigos Dataset
