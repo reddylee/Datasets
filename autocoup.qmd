@@ -17,13 +17,12 @@ Autocoup <- read_excel("Autocoup.xlsx")
 # str(Autocoup)
 # write_data
 autocoup <- Autocoup |> 
-  select(1:14) |>
   mutate(entry_date = as.Date(entry_date)) |> 
   write_csv("autocoup.csv")
 # str(autocoup)
 ```
 
-## The Political Leaders’ Affiliation Database (PLAD) Dataset
+## PLAD Dataset
 
 ```{r}
 download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLAD.xls")
@@ -42,7 +41,31 @@ write_csv(PLAD, "PLAD.csv")
 Archigos <- fread("http://ksgleditsch.com/data/1March_Archigos_4.1.txt", encoding = "Latin-1") 
 
 # write_data
-write_csv(Archigos, "archigos.csv")
+archigos <- Archigos |> 
+  #update Léon M'ba of Babon
+  mutate(
+    startdate = ymd(startdate),
+    enddate = ymd(enddate)
+  ) |>
+  filter(!obsid %in% c("GAB-1960", "GAB-1964-1")) |>
+  mutate(
+    startdate = case_when(
+      obsid == "GAB-1964-2" ~ ymd("1960-08-17"),
+      TRUE ~ startdate),
+    entry = case_when(
+      obsid == "GAB-1964-2" ~ "Regular",
+      TRUE ~ entry)
+  )
+write_csv(archigos, "archigos.csv")
+```
+
+## Country Codes Dataset
+
+```{r}
+#| label: country_codes
+
+# countrycode::codelist |> 
+#   view()
 ```
 
 ## Upload Datasets
