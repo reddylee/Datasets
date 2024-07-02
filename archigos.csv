@@ -1995,7 +1995,7 @@ RUS-1982,822078d3-1e42-11e4-b4cd-db5882bf8def,365,RUS,Andropov,1982-11-10,1984-0
 RUS-1984,822078d4-1e42-11e4-b4cd-db5882bf8def,365,RUS,Chernenko,1984-02-13,1985-03-10,Regular,Natural Death,Regular,0,Missing: Natural Death within Six Months of Losing Office,M,1911,1985,1911-09-24,1985-03-10,http://dbpedia.org/resource/Konstantin_Chernenko,0,2,0,-777,NA,NA
 RUS-1985,8220a9ae-1e42-11e4-b4cd-db5882bf8def,365,RUS,Gorbachev,1985-03-11,1991-08-21,Regular,Irregular,"Removed by Military, without Foreign Support",0,OK,M,1931,-777,1931-03-02,NA,http://dbpedia.org/resource/Mikhail_Gorbachev,0,3,6,0,NA,NA
 RUS-1991,8220a9af-1e42-11e4-b4cd-db5882bf8def,365,RUS,Yeltsin,1991-08-21,1999-12-31,Regular,Regular,Regular,0,OK,M,1931,2007,1931-02-01,2007-04-23,http://dbpedia.org/resource/Boris_Yeltsin,0,1,0,0,NA,NA
-RUS-2000,8220a9b0-1e42-11e4-b4cd-db5882bf8def,365,RUS,Putin,2000-01-01,2015-12-31,Regular,Still in Office,Still in Office,0,Leader Still in Office,M,1952,-777,1952-10-07,NA,http://dbpedia.org/resource/Vladimir_Putin,0,-888,-888,-888,NA,NA
+RUS-2000,8220a9b0-1e42-11e4-b4cd-db5882bf8def,365,RUS,Putin,1999-12-31,2015-12-31,Regular,Still in Office,Still in Office,0,Leader Still in Office,M,1952,-777,1952-10-07,NA,http://dbpedia.org/resource/Vladimir_Putin,0,-888,-888,-888,NA,NA
 EST-1918,8220a9b1-1e42-11e4-b4cd-db5882bf8def,366,EST,Pats,1918-02-24,1919-05-08,Regular,Regular,Regular,0,OK,M,1874,1956,1874-02-23,1956-01-18,http://dbpedia.org/resource/Konstantin_P%C3%A4ts,0,1,0,0,NA,NA
 EST-1919-1,8220a9b2-1e42-11e4-b4cd-db5882bf8def,366,EST,Strandman,1919-05-19,1919-11-13,Regular,Regular,Regular,0,OK,M,1875,1941,1875-11-30,NA,http://dbpedia.org/resource/Otto_Strandman,0,1,0,0,NA,NA
 EST-1919-2,8220da82-1e42-11e4-b4cd-db5882bf8def,366,EST,Tonisson,1919-11-13,1920-10-27,Regular,Regular,Regular,0,OK,M,1868,1941,1868-12-22,NA,http://dbpedia.org/resource/Jaan_T%C3%B5nisson,0,1,0,0,NA,NA
@@ -2449,7 +2449,7 @@ CHA-1960,8231420b-1e42-11e4-b4cd-db5882bf8def,483,CHA,Tombalbaye,1960-08-11,1975
 CHA-1975,8231420c-1e42-11e4-b4cd-db5882bf8def,483,CHA,Malloum,1975-04-15,1979-03-23,Irregular,Irregular,"Removed by Rebels, with Foreign Support",0,Exile,M,1932,2009,1932-09-10,NA,NA,1,3,3,1,NA,NA
 CHA-1979,8231420d-1e42-11e4-b4cd-db5882bf8def,483,CHA,Oueddei,1979-03-23,1982-06-07,Regular,Irregular,"Removed by Rebels, without Foreign Support",0,Exile,M,1944,-777,NA,NA,http://dbpedia.org/resource/Goukouni_Oueddei,0,3,4,1,NA,NA
 CHA-1982,8231420e-1e42-11e4-b4cd-db5882bf8def,483,CHA,Habre,1982-06-19,1990-12-02,Irregular,Irregular,"Removed by Rebels, without Foreign Support",0,Exile,M,1942,-777,NA,NA,NA,1,3,4,1,NA,NA
-CHA-1990,823172de-1e42-11e4-b4cd-db5882bf8def,483,CHA,Deby,1990-12-04,2015-12-31,Irregular,Still in Office,Still in Office,0,Leader Still in Office,M,1952,-777,1952-06-18,NA,NA,1,-888,-888,-888,NA,NA
+CHA-1990,823172de-1e42-11e4-b4cd-db5882bf8def,483,CHA,Deby,1990-12-02,2015-12-31,Irregular,Still in Office,Still in Office,0,Leader Still in Office,M,1952,-777,1952-06-18,NA,NA,1,-888,-888,-888,NA,NA
 CON-1960,823172df-1e42-11e4-b4cd-db5882bf8def,484,CON,Youlou,1960-08-15,1963-08-15,Regular,Irregular,"Popular Protest, without Foreign Support",0,Imprisonment,M,1917,1972,1917-06-09,NA,NA,0,3,2,2,NA,NA
 CON-1963,823172e0-1e42-11e4-b4cd-db5882bf8def,484,CON,Debat,1963-08-16,1968-09-04,Irregular,Irregular,"Removed by Military, without Foreign Support",0,OK,M,1921,1977,NA,NA,NA,1,3,6,0,NA,NA
 CON-1968,8231a3b2-1e42-11e4-b4cd-db5882bf8def,484,CON,Raoul,1968-09-04,1969-01-01,Irregular,Regular,Regular,0,OK,M,1938,1999,1938-12-13,NA,NA,1,1,0,0,NA,NA
