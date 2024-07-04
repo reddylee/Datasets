@@ -26,7 +26,7 @@
 "25","USA-2001","81ddb59c-1e42-11e4-b4cd-db5882bf8def",2,"USA","United States of America","Americas","G.W. Bush",2001-01-21,2009-01-20,"Regular","Regular","Regular","M",1946
 "26","USA-2009","824fc72f-1e42-11e4-b4cd-db5882bf8def",2,"USA","United States of America","Americas","Obama",2009-01-20,2017-01-20,"Regular","Regular","Still in Office","M",1961
 "27","USA_2017_1",NA,2,"USA","United States of America","Americas","Trump",2017-01-20,2021-01-20,"Regular","Regular","Regular","M",1946
-"28","USA_2021_1",NA,2,"USA","United States of America","Americas","Joe Biden",2021-01-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1942
+"28","USA_2021_1",NA,2,"USA","United States of America","Americas","Joe Biden",2021-01-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1942
 "29","CAN-1873","81ddb59d-1e42-11e4-b4cd-db5882bf8def",20,"CAN","Canada","Americas","Mackenzie",1873-11-07,1878-10-17,"Regular","Regular","Regular","M",1822
 "30","CAN-1878","197110a8-3bbd-11e5-afeb-eb6f07f9fec7",20,"CAN","Canada","Americas","Macdonald",1878-10-17,1891-06-06,"Regular","Natural Death","Regular","M",1815
 "31","CAN-1891","81ddb59e-1e42-11e4-b4cd-db5882bf8def",20,"CAN","Canada","Americas","Abbott",1891-06-16,1892-12-05,"Regular","Regular","Regular","M",1821
@@ -49,7 +49,7 @@
 "48","CAN-1993-2","81dea9ca-1e42-11e4-b4cd-db5882bf8def",20,"CAN","Canada","Americas","Chretien",1993-11-04,2003-12-12,"Regular","Regular","Regular","M",1939
 "49","CAN-2003","81dea9cb-1e42-11e4-b4cd-db5882bf8def",20,"CAN","Canada","Americas","Paul Martin",2003-12-12,2006-02-06,"Regular","Regular","Regular","M",1938
 "50","CAN-2006","824ff7fe-1e42-11e4-b4cd-db5882bf8def",20,"CAN","Canada","Americas","Harper",2006-02-06,2015-11-04,"Regular","Regular","Regular","M",1959
-"51","CAN_2015_1",NA,20,"CAN","Canada","Americas","Justin Trudeau",2015-11-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1971
+"51","CAN_2015_1",NA,20,"CAN","Canada","Americas","Justin Trudeau",2015-11-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1971
 "52","BHM-1967","81dea9cc-1e42-11e4-b4cd-db5882bf8def",31,"BHM","Bahamas","Americas","Pindling",1967-01-16,1992-08-21,"Regular","Regular","Regular","M",1930
 "53","BHM-1992","3500baa8-3bbd-11e5-afeb-eb6f07f9fec7",31,"BHM","Bahamas","Americas","Ingraham",1992-08-21,2002-05-03,"Regular","Regular","Regular","M",1947
 "54","BHM-2002","81deda9d-1e42-11e4-b4cd-db5882bf8def",31,"BHM","Bahamas","Americas","Christie",2002-05-03,2005-05-04,"Regular","Regular","Regular","M",1943
@@ -57,7 +57,7 @@
 "56","BHM-2007","3500baa8-3bbd-11e5-afeb-eb6f07f9fec7",31,"BHM","Bahamas","Americas","Ingraham",2007-05-04,2012-05-08,"Regular","Regular","Regular","M",1947
 "57","BHM-2012","81deda9d-1e42-11e4-b4cd-db5882bf8def",31,"BHM","Bahamas","Americas","Christie",2012-05-08,2017-05-11,"Regular","Regular","Still in Office","M",1943
 "58","BHM_2017_1",NA,31,"BHM","Bahamas","Americas","Minnis",2017-05-11,2021-09-17,"Regular","Regular","Regular","M",1954
-"59","BHM_2021_1",NA,31,"BHM","Bahamas","Americas","Philip Brave Davis",2021-09-17,2024-07-02,"Regular","Still in Office","Still in Office","M",1951
+"59","BHM_2021_1",NA,31,"BHM","Bahamas","Americas","Philip Brave Davis",2021-09-17,2024-07-04,"Regular","Still in Office","Still in Office","M",1951
 "60","CUB-1902","81deda9e-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Palma",1902-05-20,1906-09-28,"Regular","Irregular","Unknown","M",1835
 "61","CUB-1909","81deda9f-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Gomez",1909-01-28,1913-05-20,"Regular","Regular","Regular","M",1858
 "62","CUB-1913","81dedaa0-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Menocal",1913-05-20,1921-05-20,"Regular","Regular","Regular","M",1868
@@ -71,7 +71,7 @@
 "70","CUB-1952","81df3c47-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Batista",1952-03-10,1959-01-01,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1901
 "71","CUB-1959","81df6d18-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Castro",1959-01-02,2008-02-24,"Irregular","Retired Due to Ill Health","Regular","M",1927
 "72","CUB-2008","824ff801-1e42-11e4-b4cd-db5882bf8def",40,"CUB","Cuba","Americas","Raul Castro",2008-02-24,2019-10-10,"Regular","Regular","Still in Office","M",1931
-"73","CUB_2019_1",NA,40,"CUB","Cuba","Americas","Díaz-Canel",2019-10-10,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"73","CUB_2019_1",NA,40,"CUB","Cuba","Americas","Díaz-Canel",2019-10-10,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "74","HAI-1874","81df6d19-1e42-11e4-b4cd-db5882bf8def",41,"HAI","Haiti","Americas","Rameau",1874-06-11,1876-04-15,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1828
 "75","HAI-1876","81df6d1a-1e42-11e4-b4cd-db5882bf8def",41,"HAI","Haiti","Americas","Canal",1876-04-23,1879-07-17,"Irregular","Irregular","Unknown","M",1832
 "76","HAI-1879-3","81df9dec-1e42-11e4-b4cd-db5882bf8def",41,"HAI","Haiti","Americas","Salomon",1879-10-23,1888-08-10,"Irregular","Irregular","Unknown","M",1815
@@ -128,7 +128,7 @@
 "127","DOM-2000","81e30ce8-1e42-11e4-b4cd-db5882bf8def",42,"DOM","Dominican Republic","Americas","Hipolito Mejia",2000-08-17,2004-08-16,"Regular","Regular","Regular","M",1941
 "128","DOM-2004","81e2dc15-1e42-11e4-b4cd-db5882bf8def",42,"DOM","Dominican Republic","Americas","Fernandez Reyna",2004-08-16,2012-08-16,"Regular","Regular","Regular","M",1953
 "129","DOM-2012","2b37a44e-3481-11e4-8dba-bbcd9ed46413",42,"DOM","Dominican Republic","Americas","Medina",2012-08-16,2020-08-16,"Regular","Regular","Still in Office","M",1951
-"130","DOM_2020_1",NA,42,"DOM","Dominican Republic","Americas","Luis Abinader",2020-08-16,2024-07-02,"Regular","Still in Office","Still in Office","M",1967
+"130","DOM_2020_1",NA,42,"DOM","Dominican Republic","Americas","Luis Abinader",2020-08-16,2024-07-04,"Regular","Still in Office","Still in Office","M",1967
 "131","JAM-1962","81e30ce9-1e42-11e4-b4cd-db5882bf8def",51,"JAM","Jamaica","Americas","Bustamante",1962-08-06,1967-02-22,"Regular","Regular","Regular","M",1884
 "132","JAM-1967-2","81e30ceb-1e42-11e4-b4cd-db5882bf8def",51,"JAM","Jamaica","Americas","Shearer",1967-04-11,1972-03-02,"Regular","Regular","Regular","M",1923
 "133","JAM-1972","81e30cec-1e42-11e4-b4cd-db5882bf8def",51,"JAM","Jamaica","Americas","Manley",1972-03-02,1980-11-01,"Regular","Regular","Regular","M",1924
@@ -138,7 +138,7 @@
 "137","JAM-2006","2b37a44f-3481-11e4-8dba-bbcd9ed46413",51,"JAM","Jamaica","Americas","Simpson-Miller",2006-03-30,2007-09-11,"Regular","Regular","Regular","F",1945
 "138","JAM-2007","825028d2-1e42-11e4-b4cd-db5882bf8def",51,"JAM","Jamaica","Americas","Golding",2007-09-11,2011-10-23,"Regular","Regular","Regular","M",1947
 "139","JAM-2012","2b37a44f-3481-11e4-8dba-bbcd9ed46413",51,"JAM","Jamaica","Americas","Simpson-Miller",2012-01-05,2016-03-03,"Regular","Regular","Still in Office","F",1945
-"140","JAM_2016_1",NA,51,"JAM","Jamaica","Americas","Andrew Holness",2016-03-03,2024-07-02,"Regular","Still in Office","Still in Office","M",1972
+"140","JAM_2016_1",NA,51,"JAM","Jamaica","Americas","Andrew Holness",2016-03-03,2024-07-04,"Regular","Still in Office","Still in Office","M",1972
 "141","TRI-1962","81e33dbe-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Williams",1962-08-31,1981-03-29,"Regular","Natural Death","Regular","M",1911
 "142","TRI-1981","81e33dbf-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Chambers",1981-03-30,1986-12-18,"Regular","Regular","Regular","M",1928
 "143","TRI-1986","81e33dc0-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Robinson",1986-12-18,1991-12-07,"Regular","Regular","Regular","M",1926
@@ -146,7 +146,7 @@
 "145","TRI-1995","81e36e91-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Panday",1995-11-09,2001-12-24,"Regular","Regular","Regular","M",1933
 "146","TRI-2001","81e36e90-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Manning",2001-12-25,2010-05-26,"Regular","Regular","Regular","M",1947
 "147","TRI-2010","825028d4-1e42-11e4-b4cd-db5882bf8def",52,"TRI","Trinidad and Tobago","Americas","Kamla Persad-Bissessar",2010-05-26,2015-09-09,"Regular","Regular","Regular","F",1952
-"148","TRI_2015_1",NA,52,"TRI","Trinidad and Tobago","Americas","Keith Rowley",2015-09-09,2024-07-02,"Regular","Still in Office","Still in Office","M",1949
+"148","TRI_2015_1",NA,52,"TRI","Trinidad and Tobago","Americas","Keith Rowley",2015-09-09,2024-07-04,"Regular","Still in Office","Still in Office","M",1949
 "149","BAR-1966","81e36e92-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","Barrow",1966-11-18,1976-09-08,"Regular","Regular","Regular","M",1920
 "150","BAR-1976","81e36e93-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","Adams",1976-10-08,1985-03-11,"Regular","Natural Death","Regular","M",1931
 "151","BAR-1985","81e36e94-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","St. John",1985-03-11,1986-05-29,"Regular","Regular","Regular","M",1931
@@ -155,7 +155,7 @@
 "154","BAR-1994","81e39f6f-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","Arthur",1994-09-07,2008-01-16,"Regular","Regular","Regular","M",1949
 "155","BAR-2008","825028d5-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","Thompson",2008-01-16,2010-10-23,"Regular","Natural Death","Regular","M",1961
 "156","BAR-2010","825028d6-1e42-11e4-b4cd-db5882bf8def",53,"BAR","Barbados","Americas","Stuart",2010-10-23,2018-05-25,"Regular","Regular","Still in Office","M",1951
-"157","BAR_2018_1",NA,53,"BAR","Barbados","Americas","Mottley",2018-05-25,2024-07-02,"Regular","Still in Office","Still in Office","F",1965
+"157","BAR_2018_1",NA,53,"BAR","Barbados","Americas","Mottley",2018-05-25,2024-07-04,"Regular","Still in Office","Still in Office","F",1965
 "158","MEX-1872","81e39f70-1e42-11e4-b4cd-db5882bf8def",70,"MEX","Mexico","Americas","de Tejada",1872-07-19,1876-11-21,"Regular","Irregular","Unknown","M",1825
 "159","MEX-1876","81e39f71-1e42-11e4-b4cd-db5882bf8def",70,"MEX","Mexico","Americas","Diaz",1876-11-23,1911-05-25,"Irregular","Irregular","Unknown","M",1830
 "160","MEX-1911-2","81e3d042-1e42-11e4-b4cd-db5882bf8def",70,"MEX","Mexico","Americas","Madero",1911-11-06,1913-02-19,"Regular","Irregular","Unknown","M",1873
@@ -180,14 +180,14 @@
 "179","MEX-2000","81e4f53b-1e42-11e4-b4cd-db5882bf8def",70,"MEX","Mexico","Americas","Vicente Fox Quesada",2000-12-01,2006-11-30,"Regular","Regular","Regular","M",1942
 "180","MEX-2006","825028d7-1e42-11e4-b4cd-db5882bf8def",70,"MEX","Mexico","Americas","Calderon",2006-12-01,2012-12-01,"Regular","Regular","Regular","M",1962
 "181","MEX-2012","2b37a450-3481-11e4-8dba-bbcd9ed46413",70,"MEX","Mexico","Americas","Enrique Pena Nieto",2012-12-01,2018-11-30,"Regular","Regular","Still in Office","M",1966
-"182","MEX_2012_2",NA,70,"MEX","Mexico","Americas","Manuel Lopez Obrador",2018-11-30,2024-07-02,"Regular","Still in Office","Still in Office","M",1953
+"182","MEX_2012_2",NA,70,"MEX","Mexico","Americas","Manuel Lopez Obrador",2018-11-30,2024-07-04,"Regular","Still in Office","Still in Office","M",1953
 "183","BLZ-1961","81e4f53c-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","Price",1961-04-07,1984-12-17,"Regular","Regular","Regular","M",1919
 "184","BLZ-1984","81e4f53d-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","Esquivel",1984-12-17,1989-11-07,"Regular","Regular","Regular","M",1940
 "185","BLZ-1989","81e4f53c-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","Price",1989-11-07,1993-07-03,"Regular","Regular","Regular","M",1919
 "186","BLZ-1993","81e4f53d-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","Esquivel",1993-07-03,1998-08-28,"Regular","Regular","Regular","M",1940
 "187","BLZ-1998","81e4f53e-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","Musa",1998-08-28,2008-02-08,"Regular","Regular","Regular","M",1944
 "188","BLZ-2008","825059b0-1e42-11e4-b4cd-db5882bf8def",80,"BLZ","Belize","Americas","D.Barrow",2008-02-08,2020-11-12,"Regular","Regular","Still in Office","M",1951
-"189","BLZ_2020_1",NA,80,"BLZ","Belize","Americas","Juan Briceno",2020-11-12,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"189","BLZ_2020_1",NA,80,"BLZ","Belize","Americas","Juan Briceno",2020-11-12,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "190","GUA-1873","81e5260e-1e42-11e4-b4cd-db5882bf8def",90,"GUA","Guatemala","Americas","Justo Rufino Barrios",1873-06-04,1885-04-06,"Regular","Irregular","Unknown","M",1835
 "191","GUA-1885","81e5260f-1e42-11e4-b4cd-db5882bf8def",90,"GUA","Guatemala","Americas","Barillas",1885-04-06,1892-03-15,"Regular","Regular","Regular","M",1845
 "192","GUA-1892","81e52610-1e42-11e4-b4cd-db5882bf8def",90,"GUA","Guatemala","Americas","Reina Barrios",1892-03-15,1898-02-08,"Regular","Irregular","Unknown","M",1835
@@ -216,7 +216,7 @@
 "215","GUA-2008","825059b1-1e42-11e4-b4cd-db5882bf8def",90,"GUA","Guatemala","Americas","Colom Caballeros",2008-01-14,2012-01-14,"Regular","Regular","Regular","M",1951
 "216","GUA-2012","2b37a451-3481-11e4-8dba-bbcd9ed46413",90,"GUA","Guatemala","Americas","Perez Molina",2012-01-14,2015-09-03,"Regular","Regular","Regular","M",1950
 "217","GUA_2016_1",NA,90,"GUA","Guatemala","Americas","Jimmy Morales Cabrera",2016-01-14,2020-01-14,"Regular","Regular","Regular","M",1969
-"218","GUA_2020_1",NA,90,"GUA","Guatemala","Americas","Alejandro Giammattei",2020-01-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1956
+"218","GUA_2020_1",NA,90,"GUA","Guatemala","Americas","Alejandro Giammattei",2020-01-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1956
 "219","HON-1874","81e64b14-1e42-11e4-b4cd-db5882bf8def",91,"HON","Honduras","Americas","Leiva",1874-01-13,1876-06-08,"Irregular","Irregular","Unknown","M",1821
 "220","HON-1876","81e67be4-1e42-11e4-b4cd-db5882bf8def",91,"HON","Honduras","Americas","Soto",1876-08-27,1883-10-19,"Irregular","Irregular","Unknown","M",1846
 "221","HON-1883-2","81e67be6-1e42-11e4-b4cd-db5882bf8def",91,"HON","Honduras","Americas","Bogran",1883-11-30,1891-11-30,"Regular","Regular","Regular","M",1849
@@ -252,7 +252,7 @@
 "251","HON-2006","825059b2-1e42-11e4-b4cd-db5882bf8def",91,"HON","Honduras","Americas","Zelaya",2006-01-27,2009-06-28,"Regular","Irregular","Removed by Military, without Foreign Support","M",1952
 "252","HON-2010","825059b4-1e42-11e4-b4cd-db5882bf8def",91,"HON","Honduras","Americas","Lobo",2010-01-27,2014-01-27,"Regular","Regular","Regular","M",1947
 "253","HON-2014","149deeac-aae0-11e4-b3bc-29f2fa19767e",91,"HON","Honduras","Americas","Hernández",2014-01-27,2022-01-27,"Regular","Regular","Still in Office","M",1968
-"254","HON_2022_1",NA,91,"HON","Honduras","Americas","Iris Xiomara Castro Sarmiento",2022-01-27,2024-07-02,"Regular","Still in Office","Still in Office","F",1959
+"254","HON_2022_1",NA,91,"HON","Honduras","Americas","Iris Xiomara Castro Sarmiento",2022-01-27,2024-07-04,"Regular","Still in Office","Still in Office","F",1959
 "255","SAL-1871","81e77015-1e42-11e4-b4cd-db5882bf8def",92,"SAL","El Salvador","Americas","Gonzalez",1871-04-15,1876-02-11,"Irregular","Regular","Regular","M",1818
 "256","SAL-1876-2","81e7a0e6-1e42-11e4-b4cd-db5882bf8def",92,"SAL","El Salvador","Americas","Zaldivar",1876-05-01,1885-05-14,"Irregular","Irregular","Unknown","M",1834
 "257","SAL-1885","81e7a0e7-1e42-11e4-b4cd-db5882bf8def",92,"SAL","El Salvador","Americas","Menendez",1885-05-22,1890-06-22,"Irregular","Irregular","Unknown","M",1830
@@ -316,7 +316,7 @@
 "315","NIC-1990","81e9ba0f-1e42-11e4-b4cd-db5882bf8def",93,"NIC","Nicaragua","Americas","Violeta Chamorro",1990-04-25,1997-01-10,"Regular","Regular","Regular","F",1929
 "316","NIC-1997","81e9ba10-1e42-11e4-b4cd-db5882bf8def",93,"NIC","Nicaragua","Americas","Aleman",1997-01-10,2002-01-10,"Regular","Regular","Regular","M",1946
 "317","NIC-2002","81e9eae0-1e42-11e4-b4cd-db5882bf8def",93,"NIC","Nicaragua","Americas","Enrique Bolanos",2002-01-11,2007-01-10,"Regular","Regular","Regular","M",1928
-"318","NIC-2007","81e9ba0e-1e42-11e4-b4cd-db5882bf8def",93,"NIC","Nicaragua","Americas","Daniel Ortega",2007-01-10,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
+"318","NIC-2007","81e9ba0e-1e42-11e4-b4cd-db5882bf8def",93,"NIC","Nicaragua","Americas","Daniel Ortega",2007-01-10,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
 "319","COS-1870","81e9eae1-1e42-11e4-b4cd-db5882bf8def",94,"COS","Costa Rica","Americas","Guardia",1870-08-10,1882-07-06,"Irregular","Natural Death","Regular","M",1831
 "320","COS-1882-2","81e9eae3-1e42-11e4-b4cd-db5882bf8def",94,"COS","Costa Rica","Americas","Prospero Fernandez Oreamuno",1882-07-20,1885-03-12,"Regular","Natural Death","Regular","M",1834
 "321","COS-1885","81e9eae4-1e42-11e4-b4cd-db5882bf8def",94,"COS","Costa Rica","Americas","Bernardo Soto Alfaro",1885-03-12,1889-11-07,"Regular","Irregular","Unknown","M",1854
@@ -353,7 +353,7 @@
 "352","COS-2010","82508a84-1e42-11e4-b4cd-db5882bf8def",94,"COS","Costa Rica","Americas","Laura Chinchilla Miranda",2010-05-08,2014-05-08,"Regular","Regular","Regular","F",1959
 "353","COS-2014","149e15bc-aae0-11e4-b3bc-29f2fa19767e",94,"COS","Costa Rica","Americas","Solis Rivera",2014-05-08,2018-05-08,"Regular","Regular","Still in Office","M",1958
 "354","COS_2018_1",NA,94,"COS","Costa Rica","Americas","Carlos Alvarado Quesada",2018-05-08,2022-05-08,"Regular","Regular","Regular","M",1980
-"355","COS_2022_1",NA,94,"COS","Costa Rica","Americas","Rodrigo Chaves Robles",2022-05-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1961
+"355","COS_2022_1",NA,94,"COS","Costa Rica","Americas","Rodrigo Chaves Robles",2022-05-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1961
 "356","PAN-1904","81ecc756-1e42-11e4-b4cd-db5882bf8def",95,"PAN","Panama","Americas","Manuel Amador Guerrero",1904-02-20,1908-10-01,"Regular","Regular","Regular","M",1833
 "357","PAN-1908","81ecc757-1e42-11e4-b4cd-db5882bf8def",95,"PAN","Panama","Americas","Jose Domingo de Obaldia",1908-10-01,1910-03-01,"Regular","Natural Death","Regular","M",1845
 "358","PAN-1910-2","81ecf82b-1e42-11e4-b4cd-db5882bf8def",95,"PAN","Panama","Americas","Pablo Arosemena Alba",1910-10-01,1912-02-02,"Regular","Regular","Regular","M",1836
@@ -387,7 +387,7 @@
 "386","PAN-2004","81f3747b-1e42-11e4-b4cd-db5882bf8def",95,"PAN","Panama","Americas","Martin Torrijos",2004-09-01,2009-07-01,"Regular","Regular","Regular","M",1963
 "387","PAN-2009","82508a85-1e42-11e4-b4cd-db5882bf8def",95,"PAN","Panama","Americas","Martinelli",2009-07-01,2014-07-01,"Regular","Regular","Regular","M",1952
 "388","PAN-2014","149e15bd-aae0-11e4-b3bc-29f2fa19767e",95,"PAN","Panama","Americas","Varela Rodriguez",2014-07-01,2019-07-01,"Regular","Regular","Still in Office","M",1963
-"389","PAN_2019_1",NA,95,"PAN","Panama","Americas","Laurentino Cortizo",2019-07-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1953
+"389","PAN_2019_1",NA,95,"PAN","Panama","Americas","Laurentino Cortizo",2019-07-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1953
 "390","COL-1874","81f3747c-1e42-11e4-b4cd-db5882bf8def",100,"COL","Colombia","Americas","Perez",1874-04-01,1876-04-01,"Regular","Regular","Regular","M",1830
 "391","COL-1876","81f3747d-1e42-11e4-b4cd-db5882bf8def",100,"COL","Colombia","Americas","Parra",1876-04-01,1877-05-14,"Regular","Retired Due to Ill Health","Regular","M",1825
 "392","COL-1878","352d21d8-3bbd-11e5-afeb-eb6f07f9fec7",100,"COL","Colombia","Americas","Julián Trujillo Largacha",1878-04-01,1880-04-08,"Regular","Regular","Regular","M",1828
@@ -428,7 +428,7 @@
 "427","COL-2002","81f4fb26-1e42-11e4-b4cd-db5882bf8def",100,"COL","Colombia","Americas","Alvaro Uribe Velez",2002-08-08,2010-08-07,"Regular","Regular","Regular","M",1952
 "428","COL-2010","82508a86-1e42-11e4-b4cd-db5882bf8def",100,"COL","Colombia","Americas","Santos Calderon",2010-08-07,2018-08-07,"Regular","Regular","Still in Office","M",1951
 "429","COL_2018_1",NA,100,"COL","Colombia","Americas","Ivan Duque Marquez",2018-08-07,2022-08-07,"Regular","Regular","Regular","M",1976
-"430","COL_2022_1",NA,100,"COL","Colombia","Americas","Gustavo Petro",2022-08-07,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"430","COL_2022_1",NA,100,"COL","Colombia","Americas","Gustavo Petro",2022-08-07,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "431","VEN-1870","81f4fb27-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Guzman Blanco",1870-04-27,1877-02-20,"Irregular","Regular","Regular","M",1829
 "432","VEN-1877-2","81f52bf9-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Linares Alcantara",1877-03-02,1878-11-20,"Regular","Natural Death","Regular","M",1825
 "433","VEN-1879","81f4fb27-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Guzman Blanco",1879-02-26,1884-04-27,"Regular","Regular","Regular","M",1829
@@ -458,7 +458,7 @@
 "457","VEN-1989","81f6201e-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Andres Perez",1989-02-02,1993-08-31,"Regular","Regular","Regular","M",1922
 "458","VEN-1994","81f6201d-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Caldera Rodriguez",1994-02-02,1999-02-02,"Regular","Regular","Regular","M",1916
 "459","VEN-1999","81f650f2-1e42-11e4-b4cd-db5882bf8def",101,"VEN","Venezuela","Americas","Hugo Chavez",1999-02-02,2012-03-05,"Regular","Natural Death","Regular","M",1954
-"460","VEN-2012","2b37a452-3481-11e4-8dba-bbcd9ed46413",101,"VEN","Venezuela","Americas","Maduro",2012-03-05,2024-07-02,"Regular","Still in Office","Still in Office","M",1962
+"460","VEN-2012","2b37a452-3481-11e4-8dba-bbcd9ed46413",101,"VEN","Venezuela","Americas","Maduro",2012-03-05,2024-07-04,"Regular","Still in Office","Still in Office","M",1962
 "461","GUY-1966","81f650f3-1e42-11e4-b4cd-db5882bf8def",110,"GUY","Guyana","Americas","Burnham",1966-05-26,1985-08-06,"Regular","Natural Death","Regular","M",1923
 "462","GUY-1985","81f650f4-1e42-11e4-b4cd-db5882bf8def",110,"GUY","Guyana","Americas","Hoyte",1985-08-06,1992-10-09,"Regular","Regular","Regular","M",1929
 "463","GUY-1992","81f681c4-1e42-11e4-b4cd-db5882bf8def",110,"GUY","Guyana","Americas","Jagan Cheddi",1992-10-09,1997-03-06,"Regular","Natural Death","Regular","M",1918
@@ -467,7 +467,7 @@
 "466","GUY-1999","81f681c7-1e42-11e4-b4cd-db5882bf8def",110,"GUY","Guyana","Americas","Bharrat Jagdeo",1999-08-11,2011-12-03,"Regular","Regular","Regular","M",1964
 "467","GUY-2011","82508a87-1e42-11e4-b4cd-db5882bf8def",110,"GUY","Guyana","Americas","Ramotar",2011-12-03,2015-05-16,"Regular","Regular","Regular","M",1950
 "468","GUY_2015_1",NA,110,"GUY","Guyana","Americas","David Granger",2015-05-16,2020-08-02,"Regular","Regular","Regular","M",1945
-"469","GUY_2020_1",NA,110,"GUY","Guyana","Americas","Irfaan Ali",2020-08-02,2024-07-02,"Regular","Still in Office","Still in Office","M",1980
+"469","GUY_2020_1",NA,110,"GUY","Guyana","Americas","Irfaan Ali",2020-08-02,2024-07-04,"Regular","Still in Office","Still in Office","M",1980
 "470","SUR-1975","81f681c8-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Ferrier",1975-11-25,1980-08-13,"Regular","Irregular","Removed by Military, without Foreign Support","M",1910
 "471","SUR-1980","81f6b2a2-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Bouterse",1980-08-13,1988-01-25,"Irregular","Regular","Regular","M",1946
 "472","SUR-1988","81f6b2a3-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Shankar",1988-01-25,1990-12-24,"Regular","Irregular","Removed by Military, without Foreign Support","M",1937
@@ -475,7 +475,7 @@
 "474","SUR-1996","81f6e376-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Wijdenbosch",1996-09-15,2000-08-12,"Regular","Regular","Regular","M",1941
 "475","SUR-2000","81f6b2a6-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Venetiaan",2000-08-12,2010-08-12,"Regular","Regular","Regular","M",1936
 "476","SUR-2010","81f6b2a2-1e42-11e4-b4cd-db5882bf8def",115,"SUR","Suriname","Americas","Bouterse",2010-08-12,2020-07-16,"Regular","Regular","Still in Office","M",1945
-"477","SUR_2020_1",NA,115,"SUR","Suriname","Americas","Chan Santokhi",2020-07-16,2024-07-02,"Regular","Still in Office","Still in Office","M",1959
+"477","SUR_2020_1",NA,115,"SUR","Suriname","Americas","Chan Santokhi",2020-07-16,2024-07-04,"Regular","Still in Office","Still in Office","M",1959
 "478","ECU-1869","3539f318-3bbd-11e5-afeb-eb6f07f9fec7",130,"ECU","Ecuador","Americas","Gabriel García Moreno",1869-01-19,1875-08-06,"Irregular","Irregular","Unknown","M",1821
 "479","ECU-1875","81f6e378-1e42-11e4-b4cd-db5882bf8def",130,"ECU","Ecuador","Americas","Borrero y Cortazar",1875-10-09,1876-09-08,"Regular","Irregular","Unknown","M",1827
 "480","ECU-1876","81f6e379-1e42-11e4-b4cd-db5882bf8def",130,"ECU","Ecuador","Americas","Veintemilla",1876-09-08,1883-07-09,"Irregular","Irregular","Unknown","M",1823
@@ -558,7 +558,7 @@
 "557","PER_2016_1",NA,135,"PER","Peru","Americas","Pedro Pablo Kuczynski Godard",2016-07-28,2018-03-23,"Regular","Regular","Regular","M",1938
 "558","PER_2018_1",NA,135,"PER","Peru","Americas","Martin Vizcarra Cornejo",2018-03-23,2020-11-10,"Regular","Irregular","Irregular","M",1963
 "559","PER_2021_1",NA,135,"PER","Peru","Americas","Pedro Castillo",2021-07-28,2022-12-07,"Regular","Irregular","Irregular","M",1969
-"560","PER_2022_1",NA,135,"PER","Peru","Americas","Dina Boluarte",2022-12-07,2024-07-02,"Regular","Still in Office","Still in Office","F",1962
+"560","PER_2022_1",NA,135,"PER","Peru","Americas","Dina Boluarte",2022-12-07,2024-07-04,"Regular","Still in Office","Still in Office","F",1962
 "561","BRA-1840","81fab41b-1e42-11e4-b4cd-db5882bf8def",140,"BRA","Brazil","Americas","Pedro II",1840-07-23,1889-11-15,"Regular","Irregular","Unknown","M",1825
 "562","BRA-1889","81fab41c-1e42-11e4-b4cd-db5882bf8def",140,"BRA","Brazil","Americas","M. D. da Fonseca",1889-11-15,1891-11-23,"Irregular","Irregular","Unknown","M",1823
 "563","BRA-1891","81fae4ee-1e42-11e4-b4cd-db5882bf8def",140,"BRA","Brazil","Americas","Peixoto",1891-11-23,1894-11-15,"Regular","Regular","Regular","M",1839
@@ -591,7 +591,7 @@
 "590","BRA-2011","8250bb59-1e42-11e4-b4cd-db5882bf8def",140,"BRA","Brazil","Americas","Rousseff",2011-01-01,2016-05-12,"Regular","Regular","Still in Office","F",1947
 "591","BRA_2016_1",NA,140,"BRA","Brazil","Americas","Michel Temer",2016-05-12,2018-12-31,"Regular","Regular","Regular","M",1940
 "592","BRA_2018_1",NA,140,"BRA","Brazil","Americas","Jair Bolsonaro",2018-12-31,2022-12-31,"Regular","Regular","Regular","M",1955
-"593","BRA_2022_1",NA,140,"BRA","Brazil","Americas","Lula da Silva",2022-12-31,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
+"593","BRA_2022_1",NA,140,"BRA","Brazil","Americas","Lula da Silva",2022-12-31,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
 "594","BOL-1874","1973a8b8-3bbd-11e5-afeb-eb6f07f9fec7",145,"BOL","Bolivia","Americas","Frias",1874-02-14,1876-05-04,"Regular","Irregular","Unknown","M",1804
 "595","BOL-1876","81fcfe16-1e42-11e4-b4cd-db5882bf8def",145,"BOL","Bolivia","Americas","Daza",1876-05-04,1879-12-27,"Irregular","Irregular","Unknown","M",1840
 "596","BOL-1880","81fd2ee8-1e42-11e4-b4cd-db5882bf8def",145,"BOL","Bolivia","Americas","Campero",1880-01-19,1884-08-15,"Irregular","Regular","Regular","M",1813
@@ -635,7 +635,7 @@
 "634","BOL-2003","81fe84bf-1e42-11e4-b4cd-db5882bf8def",145,"BOL","Bolivia","Americas","Carlos Mesa",2003-10-17,2005-06-09,"Regular","Regular","Regular","M",1953
 "635","BOL-2006","8250bb5b-1e42-11e4-b4cd-db5882bf8def",145,"BOL","Bolivia","Americas","Juan Morales",2006-01-22,2019-11-10,"Regular","Irregular","Still in Office","M",1959
 "636","BOL_2019_1",NA,145,"BOL","Bolivia","Americas","Jeanine Anez",2019-11-12,2020-11-08,"Regular","Regular","Regular","F",1967
-"637","BOL_2020_1",NA,145,"BOL","Bolivia","Americas","Luis Arce",2020-11-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"637","BOL_2020_1",NA,145,"BOL","Bolivia","Americas","Luis Arce",2020-11-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "638","PAR-1874","81fe84c0-1e42-11e4-b4cd-db5882bf8def",150,"PAR","Paraguay","Americas","Gill",1874-11-25,1877-04-12,"Irregular","Irregular","Unknown","M",1840
 "639","PAR-1877","81fe84c1-1e42-11e4-b4cd-db5882bf8def",150,"PAR","Paraguay","Americas","Uriarte",1877-04-12,1878-11-25,"Regular","Regular","Regular","M",1843
 "640","PAR-1878","81fe84c2-1e42-11e4-b4cd-db5882bf8def",150,"PAR","Paraguay","Americas","Barreiro",1878-11-27,1880-09-04,"Regular","Natural Death","Regular","M",1833
@@ -702,7 +702,7 @@
 "701","CHL-2010","149e15be-aae0-11e4-b3bc-29f2fa19767e",155,"CHL","Chile","Americas","Sebastian Piñera",2010-03-11,2014-03-11,"Regular","Regular","Regular","M",1949
 "702","CHL-2014","8250bb5d-1e42-11e4-b4cd-db5882bf8def",155,"CHL","Chile","Americas","Michelle Bachelet",2014-03-11,2018-03-11,"Regular","Regular","Still in Office","F",1951
 "703","CHL_2018_1",NA,155,"CHL","Chile","Americas","Sebastian Pinera",2018-03-11,2022-03-11,"Regular","Regular","Regular","M",1949
-"704","CHL_2022_1",NA,155,"CHL","Chile","Americas","Gabriel Boric",2022-03-11,2024-07-02,"Regular","Still in Office","Still in Office","M",1986
+"704","CHL_2022_1",NA,155,"CHL","Chile","Americas","Gabriel Boric",2022-03-11,2024-07-04,"Regular","Still in Office","Still in Office","M",1986
 "705","ARG-1874","8201f3b1-1e42-11e4-b4cd-db5882bf8def",160,"ARG","Argentina","Americas","Avellanda",1874-10-12,1880-09-21,"Regular","Regular","Regular","M",1836
 "706","ARG-1880","8201f3b2-1e42-11e4-b4cd-db5882bf8def",160,"ARG","Argentina","Americas","Roca",1880-09-21,1886-10-12,"Regular","Regular","Regular","M",1843
 "707","ARG-1886","8202248e-1e42-11e4-b4cd-db5882bf8def",160,"ARG","Argentina","Americas","Celman",1886-10-12,1890-08-05,"Regular","Regular","Regular","M",1844
@@ -787,7 +787,7 @@
 "786","URU-2005","8250ec2c-1e42-11e4-b4cd-db5882bf8def",165,"URU","Uruguay","Americas","Tabare Vazquez",2005-03-01,2010-03-01,"Regular","Regular","Regular","M",1940
 "787","URU-2010","8250ec2d-1e42-11e4-b4cd-db5882bf8def",165,"URU","Uruguay","Americas","Jose Mujica",2010-03-01,2015-03-01,"Regular","Regular","Regular","M",1935
 "788","URU-2015","0edcc4a2-df39-11e5-ba44-bb6d7c1a9a58",165,"URU","Uruguay","Americas","Tabare Vasquez",2015-03-01,2020-03-01,"Regular","Regular","Still in Office","M",1940
-"789","URU_2020_1",NA,165,"URU","Uruguay","Americas","Luis Lacalle Pou",2020-03-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1973
+"789","URU_2020_1",NA,165,"URU","Uruguay","Americas","Luis Lacalle Pou",2020-03-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1973
 "790","UKG-1874","1975cb98-3bbd-11e5-afeb-eb6f07f9fec7",200,"UKG","United Kingdom","Europe","Disraeli",1874-02-20,1880-04-18,"Regular","Regular","Regular","M",1804
 "791","UKG-1880","3568a438-3bbd-11e5-afeb-eb6f07f9fec7",200,"UKG","United Kingdom","Europe","Gladstone",1880-04-28,1885-06-09,"Regular","Regular","Regular","M",1809
 "792","UKG-1886-2","8206b883-1e42-11e4-b4cd-db5882bf8def",200,"UKG","United Kingdom","Europe","Salisbury",1886-08-03,1892-08-11,"Regular","Regular","Regular","M",1830
@@ -820,7 +820,7 @@
 "819","UKG-2010","8250ec2f-1e42-11e4-b4cd-db5882bf8def",200,"UKG","United Kingdom","Europe","Cameron",2010-05-11,2016-07-13,"Regular","Regular","Still in Office","M",1966
 "820","UKG_2016_1",NA,200,"UKG","United Kingdom","Europe","May",2016-07-13,2019-07-24,"Reguar","Regular","Regular","F",1956
 "821","UKG_2019_1",NA,200,"UKG","United Kingdom","Europe","Johnson",2019-07-24,2022-09-06,"Regular","Regular","Regular","M",1964
-"822","UKG_2022_2",NA,200,"UKG","United Kingdom","Europe","Sunak",2022-10-25,2024-07-02,"Regular","Still in Office","Still in Office","M",1980
+"822","UKG_2022_2",NA,200,"UKG","United Kingdom","Europe","Sunak",2022-10-25,2024-07-04,"Regular","Still in Office","Still in Office","M",1980
 "823","IRE-1919","8207dd84-1e42-11e4-b4cd-db5882bf8def",205,"IRE","Ireland","Europe","de Valera",1919-04-01,1921-12-05,"Irregular","Regular","Regular","M",1882
 "824","IRE-1922-3","82080e58-1e42-11e4-b4cd-db5882bf8def",205,"IRE","Ireland","Europe","Cosgrave, W.",1922-09-09,1932-03-09,"Regular","Regular","Regular","M",1880
 "825","IRE-1932","8207dd84-1e42-11e4-b4cd-db5882bf8def",205,"IRE","Ireland","Europe","de Valera",1932-03-09,1948-02-18,"Regular","Regular","Regular","M",1882
@@ -843,7 +843,7 @@
 "842","IRE-2011","82511d00-1e42-11e4-b4cd-db5882bf8def",205,"IRE","Ireland","Europe","E. Kenny",2011-03-09,2017-06-14,"Regular","Regular","Still in Office","M",1951
 "843","IRE_2017_1",NA,205,"IRE","Ireland","Europe","Leo Varadkar",2017-06-14,2020-06-27,"Regular","Regular","Regular","M",1979
 "844","IRE_2020_1",NA,205,"IRE","Ireland","Europe","Michéal Martin",2020-06-27,2022-12-17,"Regular","Regular","Regular","M",1960
-"845","IRE_2022_1",NA,205,"IRE","Ireland","Europe","Leo Varadkar",2022-12-17,2024-07-02,"Regular","Still in Office","Still in Office","M",1979
+"845","IRE_2022_1",NA,205,"IRE","Ireland","Europe","Leo Varadkar",2022-12-17,2024-07-04,"Regular","Still in Office","Still in Office","M",1979
 "846","NTH-1874","19a47cb8-3bbd-11e5-afeb-eb6f07f9fec7",210,"NTH","Netherlands","Europe","Heemskerk, JA",1874-08-27,1877-11-03,"Regular","Regular","Regular","M",1818
 "847","NTH-1877","8208a0d5-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","Kappeye van de Coppello",1877-11-03,1879-08-11,"Regular","Regular","Regular","M",1822
 "848","NTH-1879","8208a0d6-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","van Lynden",1879-08-20,1883-04-23,"Regular","Regular","Regular","M",1826
@@ -874,7 +874,7 @@
 "873","NTH-1982","820994fc-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","Lubbers",1982-11-04,1994-08-22,"Regular","Regular","Regular","M",1939
 "874","NTH-1994","820994fd-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","Kok",1994-08-22,2002-07-22,"Regular","Regular","Regular","M",1938
 "875","NTH-2002","8209c5d6-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","Jan Peter Balkenende",2002-07-22,2010-10-14,"Regular","Regular","Regular","M",1956
-"876","NTH-2010","82511d01-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","M. Rutte",2010-10-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1967
+"876","NTH-2010","82511d01-1e42-11e4-b4cd-db5882bf8def",210,"NTH","Netherlands","Europe","M. Rutte",2010-10-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1967
 "877","BEL-1871","8209c5d7-1e42-11e4-b4cd-db5882bf8def",211,"BEL","Belgium","Europe","Jules Malou",1871-12-07,1878-06-19,"Regular","Regular","Regular","M",1810
 "878","BEL-1878","19768ee8-3bbd-11e5-afeb-eb6f07f9fec7",211,"BEL","Belgium","Europe","Walthere Frere-Orban",1878-06-19,1884-06-16,"Regular","Regular","Regular","M",1812
 "879","BEL-1884-2","8209c5d8-1e42-11e4-b4cd-db5882bf8def",211,"BEL","Belgium","Europe","Auguste Marie Franaois Beernaert",1884-10-26,1894-03-26,"Regular","Regular","Regular","M",1829
@@ -915,7 +915,7 @@
 "914","BEL-2011","82511d04-1e42-11e4-b4cd-db5882bf8def",211,"BEL","Belgium","Europe","Di Rupo",2011-12-06,2014-10-11,"Regular","Regular","Regular","M",1951
 "915","BEL-2014","149e3ccc-aae0-11e4-b3bc-29f2fa19767e",211,"BEL","Belgium","Europe","Charles Michel",2014-10-11,2019-10-27,"Regular","Regular","Still in Office","M",1975
 "916","BEL_2019_1",NA,211,"BEL","Belgium","Europe","Sophie Wilmes",2019-10-27,2020-10-01,"Regular","Regular","Regular","F",1975
-"917","BEL_2020_1",NA,211,"BEL","Belgium","Europe","Alexander De Croo",2020-10-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1975
+"917","BEL_2020_1",NA,211,"BEL","Belgium","Europe","Alexander De Croo",2020-10-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1975
 "918","LUX-1874","820aead0-1e42-11e4-b4cd-db5882bf8def",212,"LUX","Luxemburg","Europe","Felix de Blochausen",1874-12-26,1885-02-20,"Regular","Regular","Regular","M",1834
 "919","LUX-1885","820aead1-1e42-11e4-b4cd-db5882bf8def",212,"LUX","Luxemburg","Europe","Edouard Thilges",1885-02-20,1888-09-22,"Regular","Regular","Regular","M",1817
 "920","LUX-1888","820aead2-1e42-11e4-b4cd-db5882bf8def",212,"LUX","Luxemburg","Europe","Paul Eyschen",1888-09-22,1915-10-12,"Regular","Natural Death","Regular","M",1841
@@ -982,7 +982,7 @@
 "981","FRN-1995","820d967d-1e42-11e4-b4cd-db5882bf8def",220,"FRN","France","Europe","Chirac",1995-05-17,2007-05-16,"Regular","Regular","Regular","M",1932
 "982","FRN-2007","82511d05-1e42-11e4-b4cd-db5882bf8def",220,"FRN","France","Europe","Sarkozy",2007-05-16,2012-05-15,"Regular","Regular","Regular","M",1955
 "983","FRN-2012","2b37a455-3481-11e4-8dba-bbcd9ed46413",220,"FRN","France","Europe","Hollande",2012-05-15,2017-05-14,"Regular","Regular","Still in Office","M",1954
-"984","FRN_2017_1",NA,220,"FRN","France","Europe","Macron",2017-05-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1977
+"984","FRN_2017_1",NA,220,"FRN","France","Europe","Macron",2017-05-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1977
 "985","SWZ-1875","820d967e-1e42-11e4-b4cd-db5882bf8def",225,"SWZ","Switzerland","Europe","Scherer",1875-01-01,1875-12-31,"Regular","Regular","Regular","M",1825
 "986","SWZ-1876","19ace128-3bbd-11e5-afeb-eb6f07f9fec7",225,"SWZ","Switzerland","Europe","Welti",1876-01-01,1876-12-31,"Regular","Regular","Regular","M",1825
 "987","SWZ-1877","820d967f-1e42-11e4-b4cd-db5882bf8def",225,"SWZ","Switzerland","Europe","Heer",1877-01-01,1877-12-31,"Regular","Regular","Regular","M",1825
@@ -1165,7 +1165,7 @@
 "1164","SPN-1996","82122a72-1e42-11e4-b4cd-db5882bf8def",230,"SPN","Spain","Europe","Aznar",1996-05-05,2004-04-17,"Regular","Regular","Regular","M",1953
 "1165","SPN-2004","82125b42-1e42-11e4-b4cd-db5882bf8def",230,"SPN","Spain","Europe","Rodriguez Zapatero",2004-04-17,2011-12-20,"Regular","Regular","Regular","M",1960
 "1166","SPN-2011","82517ea8-1e42-11e4-b4cd-db5882bf8def",230,"SPN","Spain","Europe","Rajoy Brey",2011-12-20,2018-06-01,"Regular","Regular","Still in Office","M",1955
-"1167","SPN_2018_1",NA,230,"SPN","Spain","Europe","Pedro Sánchez",2018-06-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1972
+"1167","SPN_2018_1",NA,230,"SPN","Spain","Europe","Pedro Sánchez",2018-06-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1972
 "1168","POR-1861","82125b43-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Luis I",1861-11-11,1889-10-19,"Regular","Natural Death","Regular","M",1838
 "1169","POR-1889","82125b44-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Carlos I",1889-10-19,1908-02-01,"Regular","Irregular","Unknown","M",1863
 "1170","POR-1908","82125b45-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Manuel II",1908-02-01,1910-10-05,"Regular","Irregular","Unknown","M",1889
@@ -1184,7 +1184,7 @@
 "1183","POR-1986","8212edc1-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Soares",1986-03-09,1996-03-09,"Regular","Regular","Regular","M",1924
 "1184","POR-1996","8212edc2-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Sampaio",1996-03-09,2006-03-09,"Regular","Regular","Regular","M",1939
 "1185","POR-2006","82517ea9-1e42-11e4-b4cd-db5882bf8def",235,"POR","Portugal","Europe","Cavaco Silva",2006-03-09,2016-03-09,"Regular","Regular","Still in Office","M",1939
-"1186","POR_2016_1",NA,235,"POR","Portugal","Europe","Rebelo de Sousa",2016-03-09,2024-07-02,"Regular","Still in Office","Still in Office","M",1948
+"1186","POR_2016_1",NA,235,"POR","Portugal","Europe","Rebelo de Sousa",2016-03-09,2024-07-04,"Regular","Still in Office","Still in Office","M",1948
 "1187","BAV-1864","8212edc3-1e42-11e4-b4cd-db5882bf8def",245,"BAV",NA,NA,"Ludwig II",1864-03-10,1871-04-06,"Regular","Foreign","Removed through Threat of Foreign Force","M",1831
 "1188","GMY-1858","82131e92-1e42-11e4-b4cd-db5882bf8def",255,"GMY",NA,NA,"Wilhelm I",1858-10-07,1888-03-09,"Regular","Natural Death","Regular","M",1797
 "1189","GMY-1888-2","82131e94-1e42-11e4-b4cd-db5882bf8def",255,"GMY",NA,NA,"Wilhelm II",1888-06-15,1918-11-09,"Regular","Irregular","Popular Protest, with Foreign Support","M",1859
@@ -1205,7 +1205,7 @@
 "1204","GFR-1982","82144394-1e42-11e4-b4cd-db5882bf8def",260,"GFR","West Germany","Europe","Kohl",1982-10-01,1998-10-27,"Regular","Regular","Regular","M",1930
 "1205","GFR-1998","82144395-1e42-11e4-b4cd-db5882bf8def",260,"GFR","West Germany","Europe","Schroder",1998-10-27,2005-11-22,"Regular","Regular","Regular","M",1944
 "1206","GFR-2005","82517eaa-1e42-11e4-b4cd-db5882bf8def",260,"GFR","West Germany","Europe","Merkel",2005-11-22,2021-12-08,"Regular","Regular","Still in Office","F",1954
-"1207","GFR_2021_1",NA,260,"GFR","West Germany","Europe","Scholz",2021-12-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1958
+"1207","GFR_2021_1",NA,260,"GFR","West Germany","Europe","Scholz",2021-12-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1958
 "1208","GDR-1946","82144396-1e42-11e4-b4cd-db5882bf8def",265,"GDR","East Germany","Europe","Wilhelm Pieck",1946-04-22,1950-07-25,"Irregular","Regular","Regular","M",1876
 "1209","GDR-1950","82144397-1e42-11e4-b4cd-db5882bf8def",265,"GDR","East Germany","Europe","Ulbricht",1950-07-25,1971-05-03,"Regular","Regular","Regular","M",1893
 "1210","GDR-1971","82144398-1e42-11e4-b4cd-db5882bf8def",265,"GDR","East Germany","Europe","Honecker",1971-05-03,1989-10-18,"Regular","Regular","Regular","M",1912
@@ -1251,7 +1251,7 @@
 "1250","AUS_2016_2",NA,305,"AUS","Austria","Europe","Kern",2016-05-17,2017-12-18,"Regular","Regular","Regular","M",1966
 "1251","AUS_2017_1",NA,305,"AUS","Austria","Europe","Kurz",2017-12-18,2019-05-28,"Regular","Regular","Regular","M",1986
 "1252","AUS_2020_1",NA,305,"AUS","Austria","Europe","Kurz",2020-01-07,2021-12-06,"Regular","Regular","Regular","M",1986
-"1253","AUS_2021_2",NA,305,"AUS","Austria","Europe","Nehammer",2021-12-06,2024-07-02,"Regular","Still in Office","Still in Office","M",1972
+"1253","AUS_2021_2",NA,305,"AUS","Austria","Europe","Nehammer",2021-12-06,2024-07-04,"Regular","Still in Office","Still in Office","M",1972
 "1254","HUN-1920","82172017-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Horthy",1920-03-01,1944-10-15,"Regular","Foreign","Removed through Threat of Foreign Force","M",1868
 "1255","HUN-1945","82172018-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Rakoski",1945-01-15,1956-07-15,"Irregular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1892
 "1256","HUN-1956-3","821750ea-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Kadar",1956-11-04,1988-05-22,"Foreign Imposition","Regular","Regular","M",1912
@@ -1262,7 +1262,7 @@
 "1261","HUN-2002","821781bf-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Peter Medgyessy",2002-05-27,2004-09-29,"Regular","Regular","Regular","M",1942
 "1262","HUN-2004","821781c0-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Ferenc Gyurcsany",2004-09-29,2009-04-14,"Regular","Regular","Regular","M",1961
 "1263","HUN-2009","8251af7f-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Bajnai",2009-04-14,2010-05-29,"Regular","Regular","Regular","M",1968
-"1264","HUN-2010","821781be-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Orban",2010-05-29,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"1264","HUN-2010","821781be-1e42-11e4-b4cd-db5882bf8def",310,"HUN","Hungary","Europe","Orban",2010-05-29,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "1265","CZE-1918","8217b290-1e42-11e4-b4cd-db5882bf8def",315,"CZE","Czech Republik","Europe","Masaryk",1918-10-28,1935-12-14,"Regular","Retired Due to Ill Health","Regular","M",1850
 "1266","CZE-1935","8217b291-1e42-11e4-b4cd-db5882bf8def",315,"CZE","Czech Republik","Europe","Benes",1935-12-18,1938-10-05,"Regular","Regular","Regular","M",1884
 "1267","CZE-1938-2","8217b293-1e42-11e4-b4cd-db5882bf8def",315,"CZE","Czech Republik","Europe","Hacha",1938-12-01,1945-05-13,"Foreign Imposition","Foreign","Removed through Threat of Foreign Force","M",1872
@@ -1282,7 +1282,7 @@
 "1281","CZR-2010","8251e051-1e42-11e4-b4cd-db5882bf8def",316,"CZR","Czech Republic","Europe","Necas",2010-07-13,2013-07-10,"Regular","Regular","Regular","M",1964
 "1282","CZR-2014","149e3ccf-aae0-11e4-b3bc-29f2fa19767e",316,"CZR","Czech Republic","Europe","Sobotka",2014-01-29,2017-12-06,"Regular","Regular","Still in Office","M",1971
 "1283","CZR_2017_1",NA,316,"CZR","Czech Republik","Europe","Babis",2017-12-06,2020-12-17,"Regular","Regular","Regular","M",1954
-"1284","CZR_2021_1",NA,316,"CZR","Czech Republik","Europe","Fiala",2021-12-17,2024-07-02,"Regular","Still in Office","Still in Office","M",1964
+"1284","CZR_2021_1",NA,316,"CZR","Czech Republik","Europe","Fiala",2021-12-17,2024-07-04,"Regular","Still in Office","Still in Office","M",1964
 "1285","SLO-1993","8218450e-1e42-11e4-b4cd-db5882bf8def",317,"SLO","Slovakia","Europe","Meciar",1993-01-01,1994-03-16,"Regular","Regular","Regular","M",1942
 "1286","SLO-1994-1","8218450f-1e42-11e4-b4cd-db5882bf8def",317,"SLO","Slovakia","Europe","Moravcik",1994-03-16,1994-12-13,"Regular","Regular","Regular","M",1945
 "1287","SLO-1994-2","8218450e-1e42-11e4-b4cd-db5882bf8def",317,"SLO","Slovakia","Europe","Meciar",1994-12-13,1998-10-30,"Regular","Regular","Regular","M",1942
@@ -1350,7 +1350,7 @@
 "1349","ITA_2016_1",NA,325,"ITA","Italy","Europe","Gentiloni",2016-12-12,2018-06-01,"Regular","Regular","Regular","M",1954
 "1350","ITA_2018_1",NA,325,"ITA","Italy","Europe","Conte",2018-06-01,2021-02-13,"Regular","Regular","Regular","M",1964
 "1351","ITA_2021_1",NA,325,"ITA","Italy","Europe","Draghi",2021-02-13,2022-10-22,"Regular","Regular","Regular","M",1947
-"1352","ITA_2022_1",NA,325,"ITA","Italy","Europe","Giorgia Meloni",2022-10-22,2024-07-02,"Regular","Still in Office","Still in Office","F",1977
+"1352","ITA_2022_1",NA,325,"ITA","Italy","Europe","Giorgia Meloni",2022-10-22,2024-07-04,"Regular","Still in Office","Still in Office","F",1977
 "1353","MLT-1962","8219cbba-1e42-11e4-b4cd-db5882bf8def",338,"MLT","Malta","Europe","Olivier",1962-03-05,1971-06-21,"Regular","Regular","Regular","M",1911
 "1354","MLT-1971","8219cbbb-1e42-11e4-b4cd-db5882bf8def",338,"MLT","Malta","Europe","Mintoff",1971-06-21,1984-12-22,"Regular","Regular","Regular","M",1916
 "1355","MLT-1984","8219cbbc-1e42-11e4-b4cd-db5882bf8def",338,"MLT","Malta","Europe","Bonnici",1984-12-22,1987-05-12,"Regular","Regular","Regular","M",1933
@@ -1359,7 +1359,7 @@
 "1358","MLT-1998","8219fc8a-1e42-11e4-b4cd-db5882bf8def",338,"MLT","Malta","Europe","Adami",1998-09-06,2004-03-23,"Regular","Regular","Regular","M",1934
 "1359","MLT-2004","82521124-1e42-11e4-b4cd-db5882bf8def",338,"MLT","Malta","Europe","Gonzi",2004-03-23,2013-03-11,"Regular","Regular","Regular","M",1953
 "1360","MLT-2013","2b3a05ae-3481-11e4-8dba-bbcd9ed46413",338,"MLT","Malta","Europe","Muscat",2013-03-11,2020-01-12,"Regular","Irregular","Still in Office","M",1974
-"1361","MLT_2020_1",NA,338,"MLT","Malta","Europe","Robert Abela",2020-01-12,2024-07-02,"Regular","Still in Office","Still in Office","M",1977
+"1361","MLT_2020_1",NA,338,"MLT","Malta","Europe","Robert Abela",2020-01-12,2024-07-04,"Regular","Still in Office","Still in Office","M",1977
 "1362","ALB-1912","8219fc8c-1e42-11e4-b4cd-db5882bf8def",339,"ALB","Albania","Europe","Ismail Qemali Bej",1912-11-29,1914-01-22,"Irregular","Irregular","Unknown","M",1844
 "1363","ALB-1914-3","821a2d5f-1e42-11e4-b4cd-db5882bf8def",339,"ALB","Albania","Europe","Esat Pashe Toptani",1914-10-05,1916-02-24,"Irregular","Foreign","Unknown","M",1863
 "1364","ALB-1918","821a2d60-1e42-11e4-b4cd-db5882bf8def",339,"ALB","Albania","Europe","Turkhan Pasha",1918-12-28,1920-03-27,"Foreign Imposition","Regular","Regular","M",1839
@@ -1375,7 +1375,7 @@
 "1374","ALB-1999","821abfdc-1e42-11e4-b4cd-db5882bf8def",339,"ALB","Albania","Europe","Meta",1999-10-29,2002-02-22,"Regular","Regular","Regular","M",1969
 "1375","ALB-2002-2","821abfda-1e42-11e4-b4cd-db5882bf8def",339,"ALB","Albania","Europe","Fatos Nano",2002-07-31,2005-09-11,"Regular","Regular","Regular","M",1952
 "1376","ALB-2005","35b38fe8-3bbd-11e5-afeb-eb6f07f9fec7",339,"ALB","Albania","Europe","Berisha",2005-09-11,2013-09-15,"Regular","Regular","Regular","M",1944
-"1377","ALB-2013","149e63e7-aae0-11e4-b3bc-29f2fa19767e",339,"ALB","Albania","Europe","Rama",2013-09-15,2024-07-02,"Regular","Still in Office","Still in Office","M",1964
+"1377","ALB-2013","149e63e7-aae0-11e4-b3bc-29f2fa19767e",339,"ALB","Albania","Europe","Rama",2013-09-15,2024-07-04,"Regular","Still in Office","Still in Office","M",1964
 "1378","SER-1882","821abfdd-1e42-11e4-b4cd-db5882bf8def",340,"SER","Serbia","Europe","Milan I",1882-03-06,1889-03-06,"Irregular","Regular","Regular","M",1854
 "1379","SER-1889","821abfde-1e42-11e4-b4cd-db5882bf8def",340,"SER","Serbia","Europe","Ristic (Regency)",1889-03-06,1893-04-13,"Regular","Irregular","Unknown","M",1831
 "1380","SER-1893","821abfdf-1e42-11e4-b4cd-db5882bf8def",340,"SER","Serbia","Europe","Alexander I",1893-04-13,1903-06-11,"Irregular","Irregular","Unknown","M",1876
@@ -1386,7 +1386,7 @@
 "1385","SER-2008","82521128-1e42-11e4-b4cd-db5882bf8def",340,"SER","Serbia","Europe","Cvetkovic",2008-07-07,2012-07-27,"Regular","Regular","Regular","M",1950
 "1386","SER-2012","2b3a05af-3481-11e4-8dba-bbcd9ed46413",340,"SER","Serbia","Europe","Dacic",2012-07-27,2014-04-27,"Regular","Regular","Regular","M",1966
 "1387","SER-2014","149e63e8-aae0-11e4-b3bc-29f2fa19767e",340,"SER","Serbia","Europe","Vucic",2014-04-27,2017-05-31,"Regular","Regular","Still in Office","M",1970
-"1388","SER_2017_2",NA,340,"SER","Serbia","Europe","Brnabic",2017-06-29,2024-07-02,"Regular","Still in Office","Still in Office","F",1975
+"1388","SER_2017_2",NA,340,"SER","Serbia","Europe","Brnabic",2017-06-29,2024-07-04,"Regular","Still in Office","Still in Office","F",1975
 "1389","MNG-1860","821af0ba-1e42-11e4-b4cd-db5882bf8def",341,"MNG",NA,NA,"Nikola I Petrovic-Njegos",1860-08-13,1917-01-17,"Regular","Foreign","Unknown","M",1841
 "1390","MAC-1991","821af0bb-1e42-11e4-b4cd-db5882bf8def",343,"MAC","Macedonia","Europe","Nikola Kljusev",1991-01-27,1992-08-17,"Irregular","Regular","Regular","M",1927
 "1391","MAC-1992","821af0bc-1e42-11e4-b4cd-db5882bf8def",343,"MAC","Macedonia","Europe","Crvenkovski",1992-08-17,1998-11-30,"Regular","Regular","Regular","M",1962
@@ -1397,12 +1397,12 @@
 "1396","MAC_2016_1",NA,343,"MAC","Macedonia","Europe","Emil Dimitriev",2016-01-15,2017-05-31,"Regular","Regular","Regular","M",1979
 "1397","MAC_2017_1",NA,343,"MAC","Macedonia","Europe","Zoran Zaev",2017-05-31,2020-01-03,"Regular","Regular","Regular","M",1974
 "1398","MAC_2020_2",NA,343,"MAC","Macedonia","Europe","Zoran Zaev",2020-08-30,2022-01-16,"Regular","Regular","Regular","M",1974
-"1399","MAC_2022_1",NA,343,"MAC","Macedonia","Europe","Kovacevski",2022-01-16,2024-07-02,"Regular","Still in Office","Still in Office","M",1974
+"1399","MAC_2022_1",NA,343,"MAC","Macedonia","Europe","Kovacevski",2022-01-16,2024-07-04,"Regular","Still in Office","Still in Office","M",1974
 "1400","CRO-1990","821b2190-1e42-11e4-b4cd-db5882bf8def",344,"CRO","Croatia","Europe","Tudjman",1990-05-30,1999-11-26,"Regular","Natural Death","Regular","M",1922
 "1401","CRO-2000-2","821b5262-1e42-11e4-b4cd-db5882bf8def",344,"CRO","Croatia","Europe","Mesic",2000-02-18,2010-02-18,"Regular","Regular","Regular","M",1934
 "1402","CRO-2010","82521127-1e42-11e4-b4cd-db5882bf8def",344,"CRO","Croatia","Europe","Josipovic",2010-02-18,2015-02-18,"Regular","Regular","Regular","M",1957
 "1403","CRO-2015","0edcebb1-df39-11e5-ba44-bb6d7c1a9a58",344,"CRO","Croatia","Europe","Kolinda Grabar-Kitarovic",2015-02-19,2020-02-18,"Regular","Regular","Still in Office","F",1968
-"1404","CRO_2020_1",NA,344,"CRO","Croatia","Europe","Zoran Milanovic",2020-02-18,2024-07-02,"Regular","Still in Office","Still in Office","M",1966
+"1404","CRO_2020_1",NA,344,"CRO","Croatia","Europe","Zoran Milanovic",2020-02-18,2024-07-04,"Regular","Still in Office","Still in Office","M",1966
 "1405","YUG-1918","19777948-3bbd-11e5-afeb-eb6f07f9fec7",345,"YUG","Yugoslavia","Europe","Alexander",1918-12-01,1934-10-09,"Regular","Irregular","Assassination by Unsupported Individual","M",1888
 "1406","YUG-1934","821b5263-1e42-11e4-b4cd-db5882bf8def",345,"YUG","Yugoslavia","Europe","Prince Paul",1934-10-09,1941-03-27,"Regular","Irregular","Removed by Military, without Foreign Support","M",1893
 "1407","YUG-1945","821b8334-1e42-11e4-b4cd-db5882bf8def",345,"YUG","Yugoslavia","Europe","Tito",1945-03-06,1980-05-04,"Irregular","Natural Death","Regular","M",1892
@@ -1424,7 +1424,7 @@
 "1423","KOS-2014","149e8af8-aae0-11e4-b3bc-29f2fa19767e",347,"KOS","Kosovo","Europe","Isa Mustafa",2014-12-09,2017-09-09,"Regular","Regular","Still in Office","M",1951
 "1424","KOS_2017_1",NA,347,"KOS","Kosovo","Europe","Ramush Haradinaj",2017-09-09,2020-02-03,"Regular","Regular","Regular","M",1968
 "1425","KOS_2020_2",NA,347,"KOS","Kosovo","Europe","Avdullah Hoti",2020-06-03,2021-03-22,"Regular","Regular","Regular","M",1976
-"1426","KOS_2021_1",NA,347,"KOS","Kosovo","Europe","Albin Kurti",2021-03-22,2024-07-02,"Regular","Still in Office","Still in Office","M",1975
+"1426","KOS_2021_1",NA,347,"KOS","Kosovo","Europe","Albin Kurti",2021-03-22,2024-07-04,"Regular","Still in Office","Still in Office","M",1975
 "1427","SLV-1990","821c7758-1e42-11e4-b4cd-db5882bf8def",349,"SLV","Slovenia","Europe","Kucan",1990-04-22,1991-12-23,"Regular","Regular","Regular","M",1941
 "1428","SLV-1992","821c775a-1e42-11e4-b4cd-db5882bf8def",349,"SLV","Slovenia","Europe","Drnovsek",1992-05-14,2000-05-03,"Regular","Regular","Regular","M",1950
 "1429","SLV-2000-2","821c775a-1e42-11e4-b4cd-db5882bf8def",349,"SLV","Slovenia","Europe","Drnovsek",2000-11-17,2002-12-11,"Regular","Regular","Regular","M",1950
@@ -1436,7 +1436,7 @@
 "1435","SLV-2014","149eb206-aae0-11e4-b3bc-29f2fa19767e",349,"SLV","Slovenia","Europe","Cerar",2014-09-18,2018-09-13,"Regular","Regular","Still in Office","M",1963
 "1436","SLV_2018_1",NA,349,"SLV","Slovenia","Europe","Sarec",2018-09-13,2020-03-13,"Regular","Regular","Regular","M",1977
 "1437","SLV_2020_1",NA,349,"SLV","Slovenia","Europe","Janez Jansa",2020-03-13,2022-06-01,"Regular","Regular","Regular","M",1958
-"1438","SLV_2022_1",NA,349,"SLV","Slovenia","Europe","Robert Golob",2022-06-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1967
+"1438","SLV_2022_1",NA,349,"SLV","Slovenia","Europe","Robert Golob",2022-06-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1967
 "1439","GRC-1863","821ca82d-1e42-11e4-b4cd-db5882bf8def",350,"GRC","Greece","Europe","George I",1863-03-30,1913-03-18,"Regular","Irregular","Unknown","M",1845
 "1440","GRC-1913","821ca82e-1e42-11e4-b4cd-db5882bf8def",350,"GRC","Greece","Europe","Konstantinos I",1913-03-18,1917-06-12,"Irregular","Foreign","Unknown","M",1868
 "1441","GRC-1917","821ca82f-1e42-11e4-b4cd-db5882bf8def",350,"GRC","Greece","Europe","Venizelos",1917-06-27,1920-11-18,"Foreign Imposition","Regular","Regular","M",1864
@@ -1477,7 +1477,7 @@
 "1476","CYP-2003","821ec15d-1e42-11e4-b4cd-db5882bf8def",352,"CYP","Cyprus","Asia","Tassos Nikolaou Papadopoulos",2003-02-28,2008-02-28,"Regular","Regular","Regular","M",1934
 "1477","CYP-2008","825272d9-1e42-11e4-b4cd-db5882bf8def",352,"CYP","Cyprus","Asia","Dimitris Christofias",2008-02-28,2013-02-28,"Regular","Regular","Regular","M",1946
 "1478","CYP-2013","2b3a05b0-3481-11e4-8dba-bbcd9ed46413",352,"CYP","Cyprus","Asia","Anastasiades",2013-02-28,2023-02-28,"Regular","Regular","Still in Office","M",1946
-"1479","CYP_2023_1",NA,352,"CYP","Cyprus","Asia","Nikos Christodoulides",2023-02-28,2024-07-02,"Regular","Still in Office","Still in Office","M",1973
+"1479","CYP_2023_1",NA,352,"CYP","Cyprus","Asia","Nikos Christodoulides",2023-02-28,2024-07-04,"Regular","Still in Office","Still in Office","M",1973
 "1480","BUL-1887","821ec15e-1e42-11e4-b4cd-db5882bf8def",355,"BUL","Bulgaria","Europe","Ferdinand I",1887-08-07,1918-10-03,"Regular","Regular","Regular","M",1861
 "1481","BUL-1918","821ec15f-1e42-11e4-b4cd-db5882bf8def",355,"BUL","Bulgaria","Europe","Boris III",1918-10-03,1943-08-29,"Regular","Natural Death","Regular","M",1894
 "1482","BUL-1943","821ec160-1e42-11e4-b4cd-db5882bf8def",355,"BUL","Bulgaria","Europe","Cyril",1943-08-29,1944-09-09,"Regular","Irregular","Removed by Rebels, with Foreign Support","M",1895
@@ -1506,7 +1506,7 @@
 "1505","MLD_2016_1",NA,359,"MLD","Moldavia","Europe","Pavel Filip",2016-01-20,2019-06-08,"Regular","Regular","Regular","M",1966
 "1506","MLD_2019_2",NA,359,"MLD","Moldavia","Europe","Ion Chicu",2019-11-14,2020-12-31,"Regular","Regular","Regular","M",1972
 "1507","MLD_2021_1",NA,359,"MLD","Moldavia","Europe","Natalia Gavrili<U+021B>a",2021-08-06,2023-02-16,"Regular","Regular","Regular","F",1977
-"1508","MLD_2023_1",NA,359,"MLD","Moldavia","Europe","Dorin Recean",2023-02-16,2024-07-02,"Regular","Still in Office","Still in Office","M",1974
+"1508","MLD_2023_1",NA,359,"MLD","Moldavia","Europe","Dorin Recean",2023-02-16,2024-07-04,"Regular","Still in Office","Still in Office","M",1974
 "1509","RUM-1866","821f84af-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Carol I",1866-05-22,1914-10-10,"Regular","Natural Death","Regular","M",1839
 "1510","RUM-1914","821f84b0-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Ferdinand I",1914-10-11,1927-07-21,"Regular","Natural Death","Regular","M",1865
 "1511","RUM-1927","821f84b1-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Nicholas",1927-07-21,1930-06-08,"Regular","Regular","Regular","M",1903
@@ -1525,7 +1525,7 @@
 "1524","RUM-2004-2","8220172d-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Traian Basescu",2004-12-29,2007-04-20,"Regular","Regular","Regular","M",1951
 "1525","RUM-2007-2","8220172d-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Traian Basescu",2007-05-23,2012-07-10,"Regular","Regular","Regular","M",1951
 "1526","RUM-2012-2","8220172d-1e42-11e4-b4cd-db5882bf8def",360,"RUM","Romania","Europe","Traian Basescu",2012-08-28,2014-12-21,"Regular","Regular","Regular","M",1951
-"1527","RUM_2014_1",NA,360,"RUM","Romania","Europe","Klaus Iohannis",2014-12-21,2024-07-02,"Regular","Still in Office","Still in Office","M",1959
+"1527","RUM_2014_1",NA,360,"RUM","Romania","Europe","Klaus Iohannis",2014-12-21,2024-07-04,"Regular","Still in Office","Still in Office","M",1959
 "1528","RUS-1855","822047fc-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Alexander II",1855-03-02,1881-03-13,"Regular","Irregular","Unknown","M",1818
 "1529","RUS-1881","822047fd-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Alexander III",1881-03-13,1894-11-01,"Regular","Natural Death","Regular","M",1845
 "1530","RUS-1894","822047fe-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Nicholas II",1894-11-01,1917-11-06,"Regular","Irregular","Unknown","M",1868
@@ -1537,7 +1537,7 @@
 "1536","RUS-1984","822078d4-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Chernenko",1984-02-13,1985-03-10,"Regular","Natural Death","Regular","M",1911
 "1537","RUS-1985","8220a9ae-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Gorbachev",1985-03-11,1991-08-21,"Regular","Irregular","Removed by Military, without Foreign Support","M",1931
 "1538","RUS-1991","8220a9af-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Yeltsin",1991-08-21,1999-12-31,"Regular","Regular","Regular","M",1931
-"1539","RUS-2000","8220a9b0-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Putin",1999-12-31,2024-07-02,"Regular","Still in Office","Still in Office","M",1952
+"1539","RUS-2000","8220a9b0-1e42-11e4-b4cd-db5882bf8def",365,"RUS","Russia","Europe","Putin",1999-12-31,2024-07-04,"Regular","Still in Office","Still in Office","M",1952
 "1540","EST-1918","8220a9b1-1e42-11e4-b4cd-db5882bf8def",366,"EST","Estonia","Europe","Pats",1918-02-24,1919-05-08,"Regular","Regular","Regular","M",1874
 "1541","EST-1919-2","8220da82-1e42-11e4-b4cd-db5882bf8def",366,"EST","Estonia","Europe","Tonisson",1919-11-13,1920-10-27,"Regular","Regular","Regular","M",1868
 "1542","EST-1921","8220a9b1-1e42-11e4-b4cd-db5882bf8def",366,"EST","Estonia","Europe","Pats",1921-01-25,1922-10-23,"Regular","Regular","Regular","M",1874
@@ -1557,7 +1557,7 @@
 "1556","EST-2005","8252d47f-1e42-11e4-b4cd-db5882bf8def",366,"EST","Estonia","Europe","Ansip",2005-04-13,2014-03-26,"Regular","Regular","Regular","M",1956
 "1557","EST-2014","149ed919-aae0-11e4-b3bc-29f2fa19767e",366,"EST","Estonia","Europe","Roivas",2014-03-26,2016-11-23,"Regular","Regular","Still in Office","M",1979
 "1558","EST_2016_1",NA,366,"EST","Estonia","Europe","Ratas",2016-11-23,2021-01-26,"Regular","Regular","Regular","M",1978
-"1559","EST_2021_1",NA,366,"EST","Estonia","Europe","Kaja Kallas",2021-01-26,2024-07-02,"Regular","Still in Office","Still in Office","F",1977
+"1559","EST_2021_1",NA,366,"EST","Estonia","Europe","Kaja Kallas",2021-01-26,2024-07-04,"Regular","Still in Office","Still in Office","F",1977
 "1560","LAT-1919-3","82216d01-1e42-11e4-b4cd-db5882bf8def",367,"LAT","Latvia","Europe","Ulmanis",1919-07-14,1921-06-17,"Regular","Regular","Regular","M",1877
 "1561","LAT-1921","82219dd3-1e42-11e4-b4cd-db5882bf8def",367,"LAT","Latvia","Europe","Meierovics",1921-06-17,1923-01-31,"Regular","Regular","Regular","M",1887
 "1562","LAT-1924-1","82219dd5-1e42-11e4-b4cd-db5882bf8def",367,"LAT","Latvia","Europe","Zamuelis",1924-01-27,1924-12-18,"Regular","Regular","Regular","M",1872
@@ -1592,28 +1592,28 @@
 "1591","LIT-2003","82229200-1e42-11e4-b4cd-db5882bf8def",368,"LIT","Lithuania","Europe","Paksas",2003-02-26,2004-04-06,"Regular","Regular","Regular","M",1956
 "1592","LIT-2004-2","82226126-1e42-11e4-b4cd-db5882bf8def",368,"LIT","Lithuania","Europe","Adamkus",2004-07-12,2009-07-12,"Regular","Regular","Regular","M",1953
 "1593","LIT-2009","8252d481-1e42-11e4-b4cd-db5882bf8def",368,"LIT","Lithuania","Europe","Grybauskaite",2009-07-12,2019-07-12,"Regular","Regular","Still in Office","F",1956
-"1594","LIT_2019_1",NA,368,"LIT","Lithuania","Europe","Gitanas Nauseda",2019-07-12,2024-07-02,"Regular","Still in Office","Still in Office","M",1964
+"1594","LIT_2019_1",NA,368,"LIT","Lithuania","Europe","Gitanas Nauseda",2019-07-12,2024-07-04,"Regular","Still in Office","Still in Office","M",1964
 "1595","UKR-1990","8222c2d5-1e42-11e4-b4cd-db5882bf8def",369,"UKR","Ukraine","Europe","Kravchuk",1990-07-18,1994-07-19,"Regular","Regular","Regular","M",1934
 "1596","UKR-1994","8222f3a8-1e42-11e4-b4cd-db5882bf8def",369,"UKR","Ukraine","Europe","Kuchma",1994-07-19,2005-01-23,"Regular","Regular","Regular","M",1938
 "1597","UKR-2005","8252d482-1e42-11e4-b4cd-db5882bf8def",369,"UKR","Ukraine","Europe","Yushchenko",2005-01-23,2010-02-25,"Regular","Regular","Regular","M",1954
 "1598","UKR-2010","8252d483-1e42-11e4-b4cd-db5882bf8def",369,"UKR","Ukraine","Europe","Yanukovych",2010-02-25,2014-02-22,"Regular","Regular","Regular","M",1950
 "1599","UKR-2014-2","0edd60e1-df39-11e5-ba44-bb6d7c1a9a58",369,"UKR","Ukraine","Europe","Petro Poroshenko",2014-06-07,2019-05-20,"Regular","Regular","Still in Office","M",1965
-"1600","UKR_2019_1",NA,369,"UKR","Ukraine","Europe","Volodymyr Zelensky",2019-05-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1978
+"1600","UKR_2019_1",NA,369,"UKR","Ukraine","Europe","Volodymyr Zelensky",2019-05-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1978
 "1601","BLR-1991","8222f3a9-1e42-11e4-b4cd-db5882bf8def",370,"BLR","Belarus","Europe","Shushkevich",1991-09-18,1994-01-26,"Regular","Regular","Regular","M",1934
-"1602","BLR-1994-3","82235550-1e42-11e4-b4cd-db5882bf8def",370,"BLR","Belarus","Europe","Lukashenko",1994-07-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"1602","BLR-1994-3","82235550-1e42-11e4-b4cd-db5882bf8def",370,"BLR","Belarus","Europe","Lukashenko",1994-07-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "1603","ARM-1991","82235551-1e42-11e4-b4cd-db5882bf8def",371,"ARM","Armenia","Asia","Ter-Petrosyan",1991-10-16,1998-02-03,"Regular","Regular","Regular","M",1945
 "1604","ARM-1998","82235552-1e42-11e4-b4cd-db5882bf8def",371,"ARM","Armenia","Asia","Kocharian",1998-02-04,2008-04-09,"Regular","Regular","Regular","M",1954
 "1605","ARM-2008","82530552-1e42-11e4-b4cd-db5882bf8def",371,"ARM","Armenia","Asia","Sarkisyan",2008-04-09,2018-04-09,"Regular","Regular","Still in Office","M",1954
 "1606","ARM_2018_1",NA,371,"ARM","Armenia","Asia","Armen Sarkissian",2018-04-09,2022-02-01,"Regular","Regular","Regular","M",1953
-"1607","ARM_2022_2",NA,371,"ARM","Armenia","Asia","Vahagn Khachaturyan",2022-03-13,2024-07-02,"Regular","Still in Office","Still in Office","M",1959
+"1607","ARM_2022_2",NA,371,"ARM","Armenia","Asia","Vahagn Khachaturyan",2022-03-13,2024-07-04,"Regular","Still in Office","Still in Office","M",1959
 "1608","GRG-1992-2","82238624-1e42-11e4-b4cd-db5882bf8def",372,"GRG","Georgia","Asia","Shevardnadze",1992-03-10,2003-11-23,"Regular","Irregular","Popular Protest, without Foreign Support","M",1928
 "1609","GRG-2004","82238626-1e42-11e4-b4cd-db5882bf8def",372,"GRG","Georgia","Asia","Saakashvili",2004-01-25,2007-11-25,"Regular","Irregular","Popular Protest, without Foreign Support","M",1967
 "1610","GRG-2008","82238626-1e42-11e4-b4cd-db5882bf8def",372,"GRG","Georgia","Asia","Saakashvili",2008-01-20,2013-11-17,"Regular","Regular","Regular","M",1967
 "1611","GRG-2013","2b3a05b5-3481-11e4-8dba-bbcd9ed46413",372,"GRG","Georgia","Asia","Margvelashvili",2013-11-17,2018-12-16,"Regular","Regular","Still in Office","M",1969
-"1612","GRG_2018_1",NA,372,"GRG","Georgia","Asia","Zourabichvili",2018-12-16,2024-07-02,"Regular","Still in Office","Still in Office","F",1952
+"1612","GRG_2018_1",NA,372,"GRG","Georgia","Asia","Zourabichvili",2018-12-16,2024-07-04,"Regular","Still in Office","Still in Office","F",1952
 "1613","AZE-1992-4","8223e7cc-1e42-11e4-b4cd-db5882bf8def",373,"AZE","Azerbaijan","Asia","Abulfaz Elchibey",1992-06-16,1993-06-18,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1938
 "1614","AZE-1993","8223e7cd-1e42-11e4-b4cd-db5882bf8def",373,"AZE","Azerbaijan","Asia","H. Aliyev",1993-06-24,2003-08-04,"Regular","Retired Due to Ill Health","Regular","M",1923
-"1615","AZE-2003","8223e7ce-1e42-11e4-b4cd-db5882bf8def",373,"AZE","Azerbaijan","Asia","Ilhma Aliyev",2003-08-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1961
+"1615","AZE-2003","8223e7ce-1e42-11e4-b4cd-db5882bf8def",373,"AZE","Azerbaijan","Asia","Ilhma Aliyev",2003-08-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1961
 "1616","FIN-1917","822418a0-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Svinhufud",1917-11-27,1918-12-12,"Regular","Retired Due to Ill Health","Regular","M",1861
 "1617","FIN-1919","82244975-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Stahlberg",1919-07-25,1925-02-28,"Regular","Regular","Regular","M",1865
 "1618","FIN-1925","82247a52-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Relander",1925-03-01,1931-02-28,"Regular","Regular","Regular","M",1883
@@ -1626,7 +1626,7 @@
 "1625","FIN-1981","8224ab29-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Koivisto",1981-09-11,1994-03-01,"Regular","Regular","Regular","M",1923
 "1626","FIN-1994","8224ab2a-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Marthi Ahtisaari",1994-03-01,2000-03-01,"Regular","Regular","Regular","M",1937
 "1627","FIN-2000","8224dbfa-1e42-11e4-b4cd-db5882bf8def",375,"FIN","Finland","Europe","Halonen",2000-03-01,2012-03-01,"Regular","Regular","Regular","F",1943
-"1628","FIN-2012","2b3a05b6-3481-11e4-8dba-bbcd9ed46413",375,"FIN","Finland","Europe","Sauli Niinistö",2012-03-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1948
+"1628","FIN-2012","2b3a05b6-3481-11e4-8dba-bbcd9ed46413",375,"FIN","Finland","Europe","Sauli Niinistö",2012-03-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1948
 "1629","SWD-1872","8224dbfb-1e42-11e4-b4cd-db5882bf8def",380,"SWD","Sweden","Europe","Oscar II",1872-09-18,1876-03-20,"Regular","Regular","Regular","M",1829
 "1630","SWD-1876","8224dbfc-1e42-11e4-b4cd-db5882bf8def",380,"SWD","Sweden","Europe","de Geer af Finspång",1876-03-20,1880-04-19,"Regular","Regular","Regular","M",1818
 "1631","SWD-1880","8224dbfd-1e42-11e4-b4cd-db5882bf8def",380,"SWD","Sweden","Europe","Posse",1880-04-19,1883-06-13,"Regular","Regular","Regular","M",1820
@@ -1662,7 +1662,7 @@
 "1661","SWD-2006","82530553-1e42-11e4-b4cd-db5882bf8def",380,"SWD","Sweden","Europe","Reinfeldt",2006-10-06,2014-10-03,"Regular","Regular","Regular","M",1965
 "1662","SWD-2014","149f0026-aae0-11e4-b3bc-29f2fa19767e",380,"SWD","Sweden","Europe","Stefan Löfven",2014-10-03,2022-11-30,"Regular","Regular","Still in Office","M",1957
 "1663","SWD_2021_1",NA,380,"SWD","Sweden","Europe","Magdalena Andersson",2021-11-30,2022-10-18,"Regular","Regular","Regular","F",1967
-"1664","SWD_2022_1",NA,380,"SWD","Sweden","Europe","Kristersson",2022-10-18,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"1664","SWD_2022_1",NA,380,"SWD","Sweden","Europe","Kristersson",2022-10-18,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "1665","NOR-1905","822600f3-1e42-11e4-b4cd-db5882bf8def",385,"NOR","Norway","Europe","Michelsen",1905-03-02,1907-10-28,"Regular","Regular","Regular","M",1857
 "1666","NOR-1908","822600f5-1e42-11e4-b4cd-db5882bf8def",385,"NOR","Norway","Europe","Knudsen",1908-03-19,1910-02-01,"Regular","Regular","Regular","M",1848
 "1667","NOR-1910","822600f6-1e42-11e4-b4cd-db5882bf8def",385,"NOR","Norway","Europe","Konow",1910-02-01,1912-02-19,"Regular","Regular","Regular","M",1845
@@ -1698,7 +1698,7 @@
 "1697","NOR-2001","8226f521-1e42-11e4-b4cd-db5882bf8def",385,"NOR","Norway","Europe","Bondevik",2001-10-19,2005-10-17,"Regular","Regular","Regular","M",1947
 "1698","NOR-2005","8226f523-1e42-11e4-b4cd-db5882bf8def",385,"NOR","Norway","Europe","Stoltenberg",2005-10-17,2013-10-16,"Regular","Regular","Regular","M",1959
 "1699","NOR-2013","2b3a05b7-3481-11e4-8dba-bbcd9ed46413",385,"NOR","Norway","Europe","Solberg",2013-10-16,2021-10-14,"Regular","Regular","Still in Office","F",1961
-"1700","NOR_2021_1",NA,385,"NOR","Norway","Europe","Jonas Gahr Støre",2021-10-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"1700","NOR_2021_1",NA,385,"NOR","Norway","Europe","Jonas Gahr Støre",2021-10-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "1701","DEN-1874","8226f524-1e42-11e4-b4cd-db5882bf8def",390,"DEN","Denmark","Europe","Fonnesbech",1874-07-14,1875-06-11,"Regular","Regular","Regular","M",1817
 "1702","DEN-1875","822725f4-1e42-11e4-b4cd-db5882bf8def",390,"DEN","Denmark","Europe","Estrup",1875-06-11,1894-08-07,"Regular","Regular","Regular","M",1825
 "1703","DEN-1894","822725f5-1e42-11e4-b4cd-db5882bf8def",390,"DEN","Denmark","Europe","Reedtz-Thott",1894-08-07,1897-05-23,"Regular","Regular","Regular","M",1839
@@ -1732,7 +1732,7 @@
 "1731","DEN-2009","82530554-1e42-11e4-b4cd-db5882bf8def",390,"DEN","Denmark","Europe","Lars Løkke Rasmussen",2009-04-05,2011-10-03,"Regular","Regular","Regular","M",1964
 "1732","DEN-2011","82530555-1e42-11e4-b4cd-db5882bf8def",390,"DEN","Denmark","Europe","Thorning-Schmidt",2011-10-03,2015-06-28,"Regular","Regular","Regular","F",1966
 "1733","DEN_2015_1",NA,390,"DEN","Denmark","Europe","Lars L<U+FFFD>kke Rasmussen",2015-06-28,2019-06-27,"Regular","Regular","Regular","M",1964
-"1734","DEN_2019_1",NA,390,"DEN","Denmark","Europe","Mette Frederiksen",2019-06-27,2024-07-02,"Regular","Still in Office","Still in Office","F",1977
+"1734","DEN_2019_1",NA,390,"DEN","Denmark","Europe","Mette Frederiksen",2019-06-27,2024-07-04,"Regular","Still in Office","Still in Office","F",1977
 "1735","ICE-1944-2","82281a1c-1e42-11e4-b4cd-db5882bf8def",395,"ICE","Iceland","Europe","Thors",1944-10-21,1947-02-03,"Regular","Regular","Regular","M",1892
 "1736","ICE-1947","82284af6-1e42-11e4-b4cd-db5882bf8def",395,"ICE","Iceland","Europe","Stefansson",1947-02-03,1949-12-06,"Regular","Regular","Regular","M",1894
 "1737","ICE-1950","82284af7-1e42-11e4-b4cd-db5882bf8def",395,"ICE","Iceland","Europe","Steinthorsson",1950-03-14,1953-09-13,"Regular","Regular","Regular","M",1893
@@ -1756,11 +1756,11 @@
 "1755","ICE-2013","149f0027-aae0-11e4-b3bc-29f2fa19767e",395,"ICE","Iceland","Europe","Gunnlaugsson",2013-05-23,2016-04-07,"Regular","Irregular","Still in Office","F",1975
 "1756","ICE_2016_1",NA,395,"ICE","Iceland","Europe","Johannsson",2016-04-07,2017-01-11,"Regular","Regular","Regular","M",1962
 "1757","ICE_2017_1",NA,395,"ICE","Iceland","Europe","Benediktsson",2017-01-11,2017-11-30,"Regular","Regular","Regular","M",1970
-"1758","ICE_2017_2",NA,395,"ICE","Iceland","Europe","Jakobsdottir",2017-11-30,2024-07-02,"Regular","Still in Office","Still in Office","F",1976
+"1758","ICE_2017_2",NA,395,"ICE","Iceland","Europe","Jakobsdottir",2017-11-30,2024-07-04,"Regular","Still in Office","Still in Office","F",1976
 "1759","CAP-1975","82290e46-1e42-11e4-b4cd-db5882bf8def",402,"CAP","Cap Verde","Africa","Pires",1975-07-08,1991-04-04,"Regular","Regular","Regular","M",1934
 "1760","CAP-1991","82290e47-1e42-11e4-b4cd-db5882bf8def",402,"CAP","Cap Verde","Africa","Veiga",1991-04-04,2000-07-29,"Regular","Regular","Regular","M",1949
 "1761","CAP-2001","82293f1b-1e42-11e4-b4cd-db5882bf8def",402,"CAP","Cap Verde","Africa","Neves",2001-02-01,2016-04-22,"Regular","Regular","Still in Office","M",1960
-"1762","CAP_2016_1",NA,402,"CAP","Cap Verde","Africa","Correia e Silva",2016-04-22,2024-07-02,"Regular","Still in Office","Still in Office","M",1962
+"1762","CAP_2016_1",NA,402,"CAP","Cap Verde","Africa","Correia e Silva",2016-04-22,2024-07-04,"Regular","Still in Office","Still in Office","M",1962
 "1763","GNB-1974","82296fee-1e42-11e4-b4cd-db5882bf8def",404,"GNB","Guinea-Bissau","Africa","Cabral",1974-09-10,1980-11-14,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1931
 "1764","GNB-1980","82296fef-1e42-11e4-b4cd-db5882bf8def",404,"GNB","Guinea-Bissau","Africa","Vieira",1980-11-14,1999-05-07,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1939
 "1765","GNB-1999-2","8229a0c3-1e42-11e4-b4cd-db5882bf8def",404,"GNB","Guinea-Bissau","Africa","Sanha",1999-05-14,2000-02-17,"Irregular","Regular","Regular","M",1947
@@ -1770,13 +1770,13 @@
 "1769","GNB-2009-2","8229a0c3-1e42-11e4-b4cd-db5882bf8def",404,"GNB","Guinea-Bissau","Africa","Sanha",2009-09-08,2011-12-31,"Regular","Natural Death","Regular","M",1956
 "1770","GNB-2012-3","2b3a05b8-3481-11e4-8dba-bbcd9ed46413",404,"GNB","Guinea-Bissau","Africa","Manuel Serifo Nhamadjo",2012-05-11,2014-06-23,"Regular","Regular","Regular","M",1958
 "1771","GNB-2014","149f4e46-aae0-11e4-b3bc-29f2fa19767e",404,"GNB","Guinea-Bissau","Africa","Vaz",2014-06-23,2020-02-27,"Regular","Regular","Still in Office","M",1957
-"1772","GNB_2020_1",NA,404,"GNB","Guinea-Bissau","Africa","Umaro Cissoko Embalo",2020-02-27,2024-07-02,"Regular","Still in Office","Still in Office","M",1972
+"1772","GNB_2020_1",NA,404,"GNB","Guinea-Bissau","Africa","Umaro Cissoko Embalo",2020-02-27,2024-07-04,"Regular","Still in Office","Still in Office","M",1972
 "1773","EQG-1963","822a3348-1e42-11e4-b4cd-db5882bf8def",411,"EQG","Equatorial Guinea","Africa","Bonifacio Ondo Edu",1963-12-15,1968-10-12,"Regular","Regular","Regular","M",-999
 "1774","EQG-1968","822a3349-1e42-11e4-b4cd-db5882bf8def",411,"EQG","Equatorial Guinea","Africa","Macias Nguema",1968-10-12,1979-08-03,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
-"1775","EQG-1979","822a334a-1e42-11e4-b4cd-db5882bf8def",411,"EQG","Equatorial Guinea","Africa","Nguema Mbasogo",1979-08-03,2024-07-02,"Irregular","Still in Office","Still in Office","M",1942
+"1775","EQG-1979","822a334a-1e42-11e4-b4cd-db5882bf8def",411,"EQG","Equatorial Guinea","Africa","Nguema Mbasogo",1979-08-03,2024-07-04,"Irregular","Still in Office","Still in Office","M",1942
 "1776","GAM-1965","822a641c-1e42-11e4-b4cd-db5882bf8def",420,"GAM","Gambia","Africa","Jawara",1965-02-18,1994-07-22,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
 "1777","GAM-1994","822a641d-1e42-11e4-b4cd-db5882bf8def",420,"GAM","Gambia","Africa","Jammeh",1994-07-22,2017-01-19,"Irregular","Regular","Still in Office","M",1942
-"1778","GAM_2017_1",NA,420,"GAM","Gambia","Africa","Adama Barrow",2017-01-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1965
+"1778","GAM_2017_1",NA,420,"GAM","Gambia","Africa","Adama Barrow",2017-01-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1965
 "1779","MLI-1960","822a94f0-1e42-11e4-b4cd-db5882bf8def",432,"MLI","Mali","Africa","Keita",1960-09-22,1968-11-19,"Regular","Irregular","Removed by Military, without Foreign Support","M",1915
 "1780","MLI-1968","822a94f1-1e42-11e4-b4cd-db5882bf8def",432,"MLI","Mali","Africa","Traore",1968-11-19,1991-03-26,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1936
 "1781","MLI-1991","822ac5c4-1e42-11e4-b4cd-db5882bf8def",432,"MLI","Mali","Africa","Amadou Toure",1991-03-26,1992-06-06,"Irregular","Regular","Regular","M",1948
@@ -1784,11 +1784,11 @@
 "1783","MLI-2002","822ac5c4-1e42-11e4-b4cd-db5882bf8def",432,"MLI","Mali","Africa","Amadou Toure",2002-06-09,2012-03-22,"Regular","Irregular","Removed by Military, without Foreign Support","M",1948
 "1784","MLI-2012-2","149f4e48-aae0-11e4-b3bc-29f2fa19767e",432,"MLI","Mali","Africa","Dioncounda Traore",2012-04-12,2013-09-04,"Irregular","Regular","Regular","M",1942
 "1785","MLI-2013","2b3c6718-3481-11e4-8dba-bbcd9ed46413",432,"MLI","Mali","Africa","Ibrahim Boubacar Keita",2013-09-04,2020-08-19,"Regular","Irregular","Still in Office","M",1945
-"1786","MLI_2021_1",NA,432,"MLI","Mali","Africa","Assimi Goita",2021-05-24,2024-07-02,"Irregular","Still in Office","Still in Office","M",1980
+"1786","MLI_2021_1",NA,432,"MLI","Mali","Africa","Assimi Goita",2021-05-24,2024-07-04,"Irregular","Still in Office","Still in Office","M",1980
 "1787","SEN-1960","822af698-1e42-11e4-b4cd-db5882bf8def",433,"SEN","Senegal","Africa","Senghor",1960-08-20,1980-12-31,"Regular","Regular","Regular","M",1906
 "1788","SEN-1981","822af699-1e42-11e4-b4cd-db5882bf8def",433,"SEN","Senegal","Africa","Diouf",1981-01-01,2000-04-01,"Regular","Regular","Regular","M",1935
 "1789","SEN-2000","822b276c-1e42-11e4-b4cd-db5882bf8def",433,"SEN","Senegal","Africa","Abdoulaye Wade",2000-04-02,2012-04-02,"Regular","Regular","Regular","M",1926
-"1790","SEN-2012","2b3c6719-3481-11e4-8dba-bbcd9ed46413",433,"SEN","Senegal","Africa","Sall",2012-04-02,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
+"1790","SEN-2012","2b3c6719-3481-11e4-8dba-bbcd9ed46413",433,"SEN","Senegal","Africa","Sall",2012-04-02,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
 "1791","BEN-1960","822b276d-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Maga",1960-01-01,1963-10-27,"Regular","Irregular","Removed by Military, without Foreign Support","M",1916
 "1792","BEN-1964","822b8914-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Apithy",1964-01-19,1965-11-29,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1913
 "1793","BEN-1965-2","822b5840-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Soglo",1965-12-22,1967-12-17,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1912
@@ -1798,14 +1798,14 @@
 "1797","BEN-1991","822c4c6e-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Soglo, N",1991-04-04,1996-04-04,"Regular","Regular","Regular","M",1934
 "1798","BEN-1996","822c1b9b-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Kerekou",1996-04-04,2006-04-06,"Regular","Regular","Regular","M",1933
 "1799","BEN-2006","82533627-1e42-11e4-b4cd-db5882bf8def",434,"BEN","Benin","Africa","Yayi Boni",2006-04-06,2016-04-06,"Regular","Regular","Still in Office","M",1952
-"1800","BEN_2016_1",NA,434,"BEN","Benin","Africa","Patrice Talon",2016-04-06,2024-07-02,"Regular","Still in Office","Still in Office","M",1985
+"1800","BEN_2016_1",NA,434,"BEN","Benin","Africa","Patrice Talon",2016-04-06,2024-07-04,"Regular","Still in Office","Still in Office","M",1985
 "1801","MAA-1960","822c4c6f-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Ould Daddah",1960-11-28,1978-07-10,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
 "1802","MAA-1980","822cdeea-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Ould Haidalla",1980-01-04,1984-12-12,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1940
 "1803","MAA-1984","822cdeeb-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Sidi Ahmed Taya",1984-12-12,2005-08-03,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1941
 "1804","MAA-2005","82533628-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Ould Mohamed Vall",2005-08-03,2007-04-19,"Irregular","Regular","Regular","M",1953
 "1805","MAA-2007","82533629-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Ould Cheikh Abdellahi",2007-04-19,2008-08-06,"Regular","Irregular","Removed by Military, without Foreign Support","M",1938
 "1806","MAA-2009-2","8253362a-1e42-11e4-b4cd-db5882bf8def",435,"MAA","Mauritania","Africa","Ould Abdel Aziz",2009-08-05,2019-08-01,"Regular","Regular","Still in Office","M",1956
-"1807","MAA_2019_1",NA,435,"MAA","Mauritania","Africa","Mohamed Cheikh El Ghazouani",2019-08-01,2024-07-02,"Regular","Still in Office","Still in Office","M",1956
+"1807","MAA_2019_1",NA,435,"MAA","Mauritania","Africa","Mohamed Cheikh El Ghazouani",2019-08-01,2024-07-04,"Regular","Still in Office","Still in Office","M",1956
 "1808","NIR-1960","822d0fbe-1e42-11e4-b4cd-db5882bf8def",436,"NIR","Niger","Africa","Diori",1960-10-03,1974-04-15,"Regular","Irregular","Removed by Military, without Foreign Support","M",1916
 "1809","NIR-1974","822d0fbf-1e42-11e4-b4cd-db5882bf8def",436,"NIR","Niger","Africa","Kountche",1974-04-17,1987-11-10,"Irregular","Natural Death","Regular","M",1931
 "1810","NIR-1987","822d4092-1e42-11e4-b4cd-db5882bf8def",436,"NIR","Niger","Africa","Seibou",1987-11-10,1993-04-16,"Regular","Regular","Regular","M",1940
@@ -1819,13 +1819,13 @@
 "1818","CDI-1993","822da23a-1e42-11e4-b4cd-db5882bf8def",437,"CDI","Ivory Coast","Africa","Konan Bedie",1993-12-07,1999-12-25,"Regular","Irregular","Removed by Military, without Foreign Support","M",1934
 "1819","CDI-1999","822da23b-1e42-11e4-b4cd-db5882bf8def",437,"CDI","Ivory Coast","Africa","Guei",1999-12-25,2000-10-25,"Irregular","Irregular","Popular Protest, without Foreign Support","M",1941
 "1820","CDI-2000","822dd30e-1e42-11e4-b4cd-db5882bf8def",437,"CDI","Ivory Coast","Africa","Laurent Gbagbo",2000-10-26,2011-04-11,"Irregular","Irregular","Removed by Military, with Foreign Support","M",1945
-"1821","CDI-2011","825366fc-1e42-11e4-b4cd-db5882bf8def",437,"CDI","Ivory Coast","Africa","Ouattara",2011-04-11,2024-07-02,"Irregular","Still in Office","Still in Office","M",1942
+"1821","CDI-2011","825366fc-1e42-11e4-b4cd-db5882bf8def",437,"CDI","Ivory Coast","Africa","Ouattara",2011-04-11,2024-07-04,"Irregular","Still in Office","Still in Office","M",1942
 "1822","GUI-1958","822dd30f-1e42-11e4-b4cd-db5882bf8def",438,"GUI","Guinea","Africa","Toure",1958-10-02,1984-03-26,"Regular","Natural Death","Regular","M",1922
 "1823","GUI-1984-2","822e03ec-1e42-11e4-b4cd-db5882bf8def",438,"GUI","Guinea","Africa","Conte",1984-04-03,2008-12-22,"Irregular","Natural Death","Regular","M",1934
 "1824","GUI-2008-2","825366fe-1e42-11e4-b4cd-db5882bf8def",438,"GUI","Guinea","Africa","Dadis Camara",2008-12-23,2009-12-05,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1964
 "1825","GUI-2009","825366ff-1e42-11e4-b4cd-db5882bf8def",438,"GUI","Guinea","Africa","Sekouba Konate",2009-12-05,2010-12-21,"Irregular","Regular","Regular","M",1966
 "1826","GUI-2010","82536700-1e42-11e4-b4cd-db5882bf8def",438,"GUI","Guinea","Africa","Conde",2010-12-21,2021-09-05,"Regular","Irregular","Still in Office","M",1938
-"1827","GUI_2021_1",NA,438,"GUI","Guinea","Africa","Mamady Doumbouya",2021-09-05,2024-07-02,"Irregular","Still in Office","Still in Office","M",1980
+"1827","GUI_2021_1",NA,438,"GUI","Guinea","Africa","Mamady Doumbouya",2021-09-05,2024-07-04,"Irregular","Still in Office","Still in Office","M",1980
 "1828","BFO-1960","822e03ed-1e42-11e4-b4cd-db5882bf8def",439,"BFO","Burkina Faso","Africa","Yameogo",1960-08-05,1966-01-03,"Regular","Irregular","Removed by Military, without Foreign Support","M",1921
 "1829","BFO-1966","822e03ee-1e42-11e4-b4cd-db5882bf8def",439,"BFO","Burkina Faso","Africa","Lamizana",1966-01-03,1971-01-13,"Irregular","Regular","Regular","M",1916
 "1830","BFO-1971","822e34c0-1e42-11e4-b4cd-db5882bf8def",439,"BFO","Burkina Faso","Africa","Gerard Kango Ouedraogo",1971-01-13,1974-02-08,"Regular","Irregular","Removed by Military, without Foreign Support","M",1925
@@ -1835,7 +1835,7 @@
 "1834","BFO-1987","822e6595-1e42-11e4-b4cd-db5882bf8def",439,"BFO","Burkina Faso","Africa","Campaore",1987-10-15,2014-10-31,"Irregular","Regular","Regular","M",1951
 "1835","BFO-2014-3","149f7558-aae0-11e4-b3bc-29f2fa19767e",439,"BFO","Burkina Faso","Africa","Kafando",2014-11-18,2015-12-29,"Regular","Regular","Regular","M",1957
 "1836","BFO_2015_1",NA,439,"BFO","Burkina Faso","Africa","Roch Marc Christian Kabore",2015-12-29,2022-01-30,"Regular","Irregular","Irregular","M",1957
-"1837","BFO_2022_2",NA,439,"BFO","Burkina Faso","Africa","Ibrahim Traore",2022-09-30,2024-07-02,"Irregular","Still in Office","Still in Office","M",1988
+"1837","BFO_2022_2",NA,439,"BFO","Burkina Faso","Africa","Ibrahim Traore",2022-09-30,2024-07-04,"Irregular","Still in Office","Still in Office","M",1988
 "1838","LBR-1872","197863a8-3bbd-11e5-afeb-eb6f07f9fec7",450,"LBR","Liberia","Africa","Joseph Jenkins Roberts",1872-01-01,1875-06-27,"Irregular","Retired Due to Ill Health","Regular","M",1809
 "1839","LBR-1876","19788ab8-3bbd-11e5-afeb-eb6f07f9fec7",450,"LBR","Liberia","Africa","James Spriggs Payne",1876-01-03,1878-01-07,"Regular","Regular","Regular","M",1819
 "1840","LBR-1878","822e6596-1e42-11e4-b4cd-db5882bf8def",450,"LBR","Liberia","Africa","Anthony William Gardiner",1878-01-07,1883-01-20,"Regular","Regular","Regular","M",1820
@@ -1858,7 +1858,7 @@
 "1857","LBR-1997","822f59b8-1e42-11e4-b4cd-db5882bf8def",450,"LBR","Liberia","Africa","Taylor",1997-08-02,2003-08-11,"Regular","Regular","Regular","M",1948
 "1858","LBR-2003-2","822f59ba-1e42-11e4-b4cd-db5882bf8def",450,"LBR","Liberia","Africa","Bryant",2003-10-14,2006-01-16,"Regular","Regular","Regular","M",1949
 "1859","LBR-2006","825397ce-1e42-11e4-b4cd-db5882bf8def",450,"LBR","Liberia","Africa","Johnson Sirleaf",2006-01-16,2018-01-22,"Regular","Regular","Still in Office","F",1938
-"1860","LBR_2018_1",NA,450,"LBR","Liberia","Africa","Weah",2018-01-22,2024-07-02,"Regular","Still in Office","Still in Office","M",1966
+"1860","LBR_2018_1",NA,450,"LBR","Liberia","Africa","Weah",2018-01-22,2024-07-04,"Regular","Still in Office","Still in Office","M",1966
 "1861","SIE-1961","822f59bb-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Margai,M",1961-04-27,1964-04-28,"Regular","Natural Death","Regular","M",1895
 "1862","SIE-1964","822f8a8c-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Margai, A",1964-04-29,1967-03-17,"Regular","Regular","Regular","M",1910
 "1863","SIE-1967-2","822f8a8e-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Juxon-Smith",1967-03-27,1968-04-19,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1933
@@ -1868,7 +1868,7 @@
 "1867","SIE-1996-2","822fbb62-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Kabbah",1996-03-29,1997-05-25,"Regular","Irregular","Removed by Military, without Foreign Support","M",1932
 "1868","SIE-1998","822fbb62-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Kabbah",1998-03-10,2007-09-17,"Foreign Imposition","Regular","Regular","M",1932
 "1869","SIE-2007","825397cf-1e42-11e4-b4cd-db5882bf8def",451,"SIE","Sierra Leone","Africa","Bai Koroma",2007-09-17,2018-04-04,"Regular","Regular","Still in Office","M",1953
-"1870","SIE_2018_1",NA,451,"SIE","Sierra Leone","Africa","Julius Maada Bio",2018-04-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1964
+"1870","SIE_2018_1",NA,451,"SIE","Sierra Leone","Africa","Julius Maada Bio",2018-04-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1964
 "1871","GHA-1952","822fbb64-1e42-11e4-b4cd-db5882bf8def",452,"GHA","Ghana","Africa","Nkrumah",1952-03-21,1966-02-24,"Regular","Irregular","Removed by Military, without Foreign Support","M",1909
 "1872","GHA-1966","822fec3e-1e42-11e4-b4cd-db5882bf8def",452,"GHA","Ghana","Africa","Ankrah",1966-02-24,1969-04-03,"Irregular","Regular","Regular","M",1915
 "1873","GHA-1969-2","822fec40-1e42-11e4-b4cd-db5882bf8def",452,"GHA","Ghana","Africa","Busia",1969-09-03,1972-01-13,"Regular","Irregular","Removed by Military, without Foreign Support","M",1913
@@ -1879,13 +1879,13 @@
 "1878","GHA-2001","82301d14-1e42-11e4-b4cd-db5882bf8def",452,"GHA","Ghana","Africa","John Agyekum Kufuor",2001-01-08,2009-01-07,"Regular","Regular","Regular","M",1938
 "1879","GHA-2009","825397d0-1e42-11e4-b4cd-db5882bf8def",452,"GHA","Ghana","Africa","Atta Mills",2009-01-07,2012-07-24,"Regular","Natural Death","Regular","M",1944
 "1880","GHA-2012","2b3c671a-3481-11e4-8dba-bbcd9ed46413",452,"GHA","Ghana","Africa","John Mahama",2012-07-24,2017-01-07,"Regular","Regular","Still in Office","M",1958
-"1881","GHA_2017_1",NA,452,"GHA","Ghana","Africa","Nana Akufo-Addo",2017-01-07,2024-07-02,"Regular","Still in Office","Still in Office","M",1944
+"1881","GHA_2017_1",NA,452,"GHA","Ghana","Africa","Nana Akufo-Addo",2017-01-07,2024-07-04,"Regular","Still in Office","Still in Office","M",1944
 "1882","TOG-1960","82301d15-1e42-11e4-b4cd-db5882bf8def",461,"TOG","Togo","Africa","Olympio",1960-04-27,1963-01-13,"Regular","Irregular","Removed by Military, without Foreign Support","M",1902
 "1883","TOG-1963","82301d16-1e42-11e4-b4cd-db5882bf8def",461,"TOG","Togo","Africa","Grunitzky",1963-01-16,1967-01-13,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1913
 "1884","TOG-1967-2","82304de7-1e42-11e4-b4cd-db5882bf8def",461,"TOG","Togo","Africa","Eyadema",1967-04-14,2005-02-05,"Irregular","Natural Death","Regular","M",1937
-"1885","TOG-2005-3","36009e78-3bbd-11e5-afeb-eb6f07f9fec7",461,"TOG","Togo","Africa","Faure Gnassingbe",2005-05-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1966
+"1885","TOG-2005-3","36009e78-3bbd-11e5-afeb-eb6f07f9fec7",461,"TOG","Togo","Africa","Faure Gnassingbe",2005-05-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1966
 "1886","CAO-1960","82304de8-1e42-11e4-b4cd-db5882bf8def",471,"CAO","Cameroon","Africa","Ahidjo",1960-01-01,1982-11-06,"Regular","Retired Due to Ill Health","Regular","M",1924
-"1887","CAO-1982","82304de9-1e42-11e4-b4cd-db5882bf8def",471,"CAO","Cameroon","Africa","Biya",1982-11-06,2024-07-02,"Regular","Still in Office","Still in Office","M",1933
+"1887","CAO-1982","82304de9-1e42-11e4-b4cd-db5882bf8def",471,"CAO","Cameroon","Africa","Biya",1982-11-06,2024-07-04,"Regular","Still in Office","Still in Office","M",1933
 "1888","NIG-1960","82304dea-1e42-11e4-b4cd-db5882bf8def",475,"NIG","Nigeria","Africa","Balewa",1960-10-01,1966-01-15,"Regular","Irregular","Removed by Military, without Foreign Support","M",1912
 "1889","NIG-1966-2","82307ebb-1e42-11e4-b4cd-db5882bf8def",475,"NIG","Nigeria","Africa","Gowon",1966-07-29,1975-07-29,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1934
 "1890","NIG-1976","82307ebd-1e42-11e4-b4cd-db5882bf8def",475,"NIG","Nigeria","Africa","Obasanjo",1976-02-13,1979-10-01,"Irregular","Regular","Regular","M",1937
@@ -1909,41 +1909,41 @@
 "1908","CEN-2003","8231420a-1e42-11e4-b4cd-db5882bf8def",482,"CEN","Central African Republic","Africa","Francois Bozize",2003-03-15,2013-03-24,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",1953
 "1909","CEN-2013","2b3c671b-3481-11e4-8dba-bbcd9ed46413",482,"CEN","Central African Republic","Africa","Djotodia",2013-03-24,2014-01-10,"Irregular","Regular","Regular","M",1949
 "1910","CEN-2014-2","149f9c66-aae0-11e4-b3bc-29f2fa19767e",482,"CEN","Central African Republic","Africa","Catherine Samba-Panza",2014-01-23,2016-03-30,"Regular","Regular","Still in Office","F",1954
-"1911","CEN_2016_1",NA,482,"CEN","Central African Republic","Africa","Touadéra",2016-03-30,2024-07-02,"Regular","Still in Office","Still in Office","M",1957
+"1911","CEN_2016_1",NA,482,"CEN","Central African Republic","Africa","Touadéra",2016-03-30,2024-07-04,"Regular","Still in Office","Still in Office","M",1957
 "1912","CHA-1960","8231420b-1e42-11e4-b4cd-db5882bf8def",483,"CHA","Chad","Africa","Tombalbaye",1960-08-11,1975-04-13,"Regular","Irregular","Removed by Military, without Foreign Support","M",1918
 "1913","CHA-1975","8231420c-1e42-11e4-b4cd-db5882bf8def",483,"CHA","Chad","Africa","Malloum",1975-04-15,1979-03-23,"Irregular","Irregular","Removed by Rebels, with Foreign Support","M",1932
 "1914","CHA-1979","8231420d-1e42-11e4-b4cd-db5882bf8def",483,"CHA","Chad","Africa","Oueddei",1979-03-23,1982-06-07,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",1944
 "1915","CHA-1982","8231420e-1e42-11e4-b4cd-db5882bf8def",483,"CHA","Chad","Africa","Habre",1982-06-19,1990-12-02,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1942
 "1916","CHA-1990","823172de-1e42-11e4-b4cd-db5882bf8def",483,"CHA","Chad","Africa","Deby",1990-12-02,2021-04-20,"Irregular","Assassination","Still in Office","M",1952
-"1917","CHA_2021_1",NA,483,"CHA","Chad","Africa","Mahamat Déby",2021-04-20,2024-07-02,"Irregular","Still in Office","Still in Office","M",1984
+"1917","CHA_2021_1",NA,483,"CHA","Chad","Africa","Mahamat Déby",2021-04-20,2024-07-04,"Irregular","Still in Office","Still in Office","M",1984
 "1918","CON-1960","823172df-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Youlou",1960-08-15,1963-08-15,"Regular","Irregular","Popular Protest, without Foreign Support","M",1917
 "1919","CON-1963","823172e0-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Debat",1963-08-16,1968-09-04,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1921
 "1920","CON-1969","8231a3b3-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Ngouabi",1969-01-01,1977-03-18,"Regular","Irregular","Removed by Military, without Foreign Support","M",1938
 "1921","CON-1977","8231a3b4-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Opango",1977-03-18,1979-02-05,"Regular","Irregular","Removed in Military Power Struggle Short of Coup","M",1939
 "1922","CON-1979","8231a3b5-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Nguesso",1979-02-08,1992-08-20,"Irregular","Regular","Regular","M",1943
 "1923","CON-1992","8231d490-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Lissouba",1992-08-31,1997-10-15,"Regular","Irregular","Removed by Rebels, with Foreign Support","M",1931
-"1924","CON-1997","8231a3b5-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Nguesso",1997-10-15,2024-07-02,"Irregular","Still in Office","Still in Office","M",1943
+"1924","CON-1997","8231a3b5-1e42-11e4-b4cd-db5882bf8def",484,"CON","Congo","Africa","Nguesso",1997-10-15,2024-07-04,"Irregular","Still in Office","Still in Office","M",1943
 "1925","DRC-1960-3","8231d493-1e42-11e4-b4cd-db5882bf8def",490,"DRC","Democratic Republic of the Congo","Africa","Kasavubu",1960-09-20,1965-11-25,"Regular","Irregular","Removed by Military, without Foreign Support","M",1913
 "1926","DRC-1965","8231d492-1e42-11e4-b4cd-db5882bf8def",490,"DRC","Democratic Republic of the Congo","Africa","Mobutu",1965-11-25,1997-05-16,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1930
 "1927","DRC-1997","8231d494-1e42-11e4-b4cd-db5882bf8def",490,"DRC","Democratic Republic of the Congo","Africa","Laurent Kabila",1997-05-16,2001-01-16,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1939
 "1928","DRC-2001","82320564-1e42-11e4-b4cd-db5882bf8def",490,"DRC","Democratic Republic of the Congo","Africa","Joseph Kabila",2001-01-17,2019-01-24,"Regular","Regular","Still in Office","M",1971
-"1929","DRC_2019_1",NA,490,"DRC","Democratic Republic of the Congo","Africa","Felix Tshisekedi",2019-01-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"1929","DRC_2019_1",NA,490,"DRC","Democratic Republic of the Congo","Africa","Felix Tshisekedi",2019-01-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "1930","UGA-1962","82320565-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Obote",1962-10-09,1971-01-25,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
 "1931","UGA-1971","82320566-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Amin",1971-01-25,1979-04-11,"Irregular","Foreign","Removed through Threat of Foreign Force","M",1925
 "1932","UGA-1979-2","82323638-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Banaisa",1979-06-20,1980-05-12,"Regular","Irregular","Removed by Military, without Foreign Support","M",1919
 "1933","UGA-1980-2","82320565-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Obote",1980-12-17,1985-07-27,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
-"1934","UGA-1986","8232670c-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Museveni",1986-01-29,2024-07-02,"Irregular","Still in Office","Still in Office","M",1944
+"1934","UGA-1986","8232670c-1e42-11e4-b4cd-db5882bf8def",500,"UGA","Uganda","Africa","Museveni",1986-01-29,2024-07-04,"Irregular","Still in Office","Still in Office","M",1944
 "1935","KEN-1963","8232670d-1e42-11e4-b4cd-db5882bf8def",501,"KEN","Kenya","Africa","Kenyatta",1963-12-12,1978-08-22,"Regular","Natural Death","Regular","M",1891
 "1936","KEN-1978","8232670e-1e42-11e4-b4cd-db5882bf8def",501,"KEN","Kenya","Africa","Moi",1978-08-22,2002-12-30,"Regular","Regular","Regular","M",1924
 "1937","KEN-2002","8232670f-1e42-11e4-b4cd-db5882bf8def",501,"KEN","Kenya","Africa","Mwai Kibaki",2002-12-31,2013-04-09,"Regular","Regular","Regular","M",1931
 "1938","KEN-2013","2b3c671c-3481-11e4-8dba-bbcd9ed46413",501,"KEN","Kenya","Africa","Uhuru Kenyatta",2013-04-09,2022-09-13,"Regular","Regular","Still in Office","M",1961
-"1939","KEN_2022_1",NA,501,"KEN","Kenya","Africa","William Samoei Ruto",2022-09-13,2024-07-02,"Regular","Still in Office","Still in Office","M",1966
+"1939","KEN_2022_1",NA,501,"KEN","Kenya","Africa","William Samoei Ruto",2022-09-13,2024-07-04,"Regular","Still in Office","Still in Office","M",1966
 "1940","TAZ-1961","82326710-1e42-11e4-b4cd-db5882bf8def",510,"TAZ","Tanzania","Africa","Nyerere",1961-11-09,1985-11-05,"Regular","Regular","Regular","M",1922
 "1941","TAZ-1985","823297e0-1e42-11e4-b4cd-db5882bf8def",510,"TAZ","Tanzania","Africa","Mwinyi",1985-11-05,1995-11-05,"Regular","Regular","Regular","M",1925
 "1942","TAZ-1995","823297e1-1e42-11e4-b4cd-db5882bf8def",510,"TAZ","Tanzania","Africa","Mkapa",1995-11-05,2005-12-21,"Regular","Regular","Regular","M",1938
 "1943","TAZ-2005","8253c8a6-1e42-11e4-b4cd-db5882bf8def",510,"TAZ","Tanzania","Africa","Kikwete",2005-12-21,2015-11-05,"Regular","Regular","Regular","M",1950
 "1944","TAZ_2015_1",NA,510,"TAZ","Tanzania","Africa","John Magufuli",2015-11-05,2021-03-17,"Regular","Natural Death","Natural Death","M",1959
-"1945","TAZ_2021_1",NA,510,"TAZ","Tanzania","Africa","Samia Suluhu Hassan",2021-03-17,2024-07-02,"Regular","Still in Office","Still in Office","F",1960
+"1945","TAZ_2021_1",NA,510,"TAZ","Tanzania","Africa","Samia Suluhu Hassan",2021-03-17,2024-07-04,"Regular","Still in Office","Still in Office","F",1960
 "1946","ZAN-1961","823297e2-1e42-11e4-b4cd-db5882bf8def",511,"ZAN",NA,NA,"Shamte Hamadi",1961-06-05,1964-01-12,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",-999
 "1947","BUI-1962","823297e4-1e42-11e4-b4cd-db5882bf8def",516,"BUI","Burundi","Africa","Mwambutsa",1962-07-01,1966-07-08,"Regular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1912
 "1948","BUI-1966-2","8232c8b5-1e42-11e4-b4cd-db5882bf8def",516,"BUI","Burundi","Africa","Micombero",1966-11-28,1976-11-01,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1940
@@ -1953,18 +1953,18 @@
 "1952","BUI-1996","8232c8b7-1e42-11e4-b4cd-db5882bf8def",516,"BUI","Burundi","Africa","Buyoya",1996-07-25,2003-04-30,"Irregular","Regular","Regular","M",1949
 "1953","BUI-2003","8232f98b-1e42-11e4-b4cd-db5882bf8def",516,"BUI","Burundi","Africa","Ndayizeye",2003-04-30,2005-08-26,"Regular","Regular","Regular","M",1953
 "1954","BUI-2005","8253c8a7-1e42-11e4-b4cd-db5882bf8def",516,"BUI","Burundi","Africa","Nkurunziza",2005-08-26,2020-06-08,"Regular","Natural Death","Still in Office","M",1963
-"1955","BUI_2020_1",NA,516,"BUI","Burundi","Africa","Evariste Ndayishiyme",2020-06-18,2024-07-02,"Regular","Still in Office","Still in Office","M",1968
+"1955","BUI_2020_1",NA,516,"BUI","Burundi","Africa","Evariste Ndayishiyme",2020-06-18,2024-07-04,"Regular","Still in Office","Still in Office","M",1968
 "1956","RWA-1961","8232f98c-1e42-11e4-b4cd-db5882bf8def",517,"RWA","Rwanda","Africa","Kayibanda",1961-10-26,1973-07-05,"Regular","Irregular","Removed by Military, without Foreign Support","M",1924
 "1957","RWA-1973","82332a5c-1e42-11e4-b4cd-db5882bf8def",517,"RWA","Rwanda","Africa","Habyarimana",1973-07-05,1994-04-06,"Irregular","Irregular","Irregular, Other","M",1937
-"1958","RWA-1994-2","82332a5e-1e42-11e4-b4cd-db5882bf8def",517,"RWA","Rwanda","Africa","Paul Kagame",1994-07-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1957
+"1958","RWA-1994-2","82332a5e-1e42-11e4-b4cd-db5882bf8def",517,"RWA","Rwanda","Africa","Paul Kagame",1994-07-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1957
 "1959","SOM-1960","82332a5f-1e42-11e4-b4cd-db5882bf8def",520,"SOM","Somalia","Africa","Osman Daar",1960-07-01,1967-07-10,"Regular","Regular","Regular","M",1908
 "1960","SOM-1967","82332a60-1e42-11e4-b4cd-db5882bf8def",520,"SOM","Somalia","Africa","Shermarke",1967-07-10,1969-10-15,"Regular","Irregular","Assassination by Unsupported Individual","M",1919
 "1961","SOM-1969","82332a61-1e42-11e4-b4cd-db5882bf8def",520,"SOM","Somalia","Africa","Siad Barre",1969-10-21,1991-01-26,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1912
 "1962","SOM-2012","149f9c67-aae0-11e4-b3bc-29f2fa19767e",520,"SOM","Somalia","Africa","Hassan Sheikh Mohamud",2012-09-16,2017-02-16,"Regular","Regular","Still in Office","M",1955
 "1963","SOM_2017_1",NA,520,"SOM","Somalia","Africa","Mohamed Abdullahi Mohamed",2017-02-16,2022-05-23,"Regular","Regular","Regular","M",1962
-"1964","SOM_2022_1",NA,520,"SOM","Somalia","Africa","Hassan Sheikh Mohamud",2022-05-23,2024-07-02,"Regular","Still in Office","Still in Office","M",1955
+"1964","SOM_2022_1",NA,520,"SOM","Somalia","Africa","Hassan Sheikh Mohamud",2022-05-23,2024-07-04,"Regular","Still in Office","Still in Office","M",1955
 "1965","DJI-1977","82335b30-1e42-11e4-b4cd-db5882bf8def",522,"DJI","Djibouti","Africa","Gouled Aptidon",1977-06-27,1999-05-08,"Regular","Regular","Regular","M",1916
-"1966","DJI-1999","82335b31-1e42-11e4-b4cd-db5882bf8def",522,"DJI","Djibouti","Africa","Guelleh",1999-05-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1947
+"1966","DJI-1999","82335b31-1e42-11e4-b4cd-db5882bf8def",522,"DJI","Djibouti","Africa","Guelleh",1999-05-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1947
 "1967","ETH-1871","82335b32-1e42-11e4-b4cd-db5882bf8def",530,"ETH","Ethiopia","Africa","Yohannes IV",1871-07-11,1889-03-09,"Irregular","Irregular","Unknown","M",1837
 "1968","ETH-1889","82335b33-1e42-11e4-b4cd-db5882bf8def",530,"ETH","Ethiopia","Africa","Menelek II",1889-03-09,1911-05-15,"Irregular","Natural Death","Regular","M",1844
 "1969","ETH-1911","82335b34-1e42-11e4-b4cd-db5882bf8def",530,"ETH","Ethiopia","Africa","Joshua (Lij Yasu)",1911-05-15,1916-09-27,"Regular","Irregular","Unknown","M",1894
@@ -1976,31 +1976,31 @@
 "1975","ETH-1977","8233bce2-1e42-11e4-b4cd-db5882bf8def",530,"ETH","Ethiopia","Africa","Mengistu Marriam",1977-02-11,1991-05-21,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",1937
 "1976","ETH-1991-2","8233bce4-1e42-11e4-b4cd-db5882bf8def",530,"ETH","Ethiopia","Africa","Meles Zenawi",1991-05-27,2012-08-20,"Irregular","Natural Death","Regular","M",1955
 "1977","ETH-2012","2b3c671d-3481-11e4-8dba-bbcd9ed46413",530,"ETH","Ethiopia","Africa","Desalegn",2012-08-20,2018-04-02,"Regular","Irregular","Still in Office","M",1965
-"1978","ETH_2018_1",NA,530,"ETH","Ethiopia","Africa","Abiy Ahmed",2018-04-02,2024-07-02,"Regular","Still in Office","Still in Office","M",1976
-"1979","ERI-1993","8233bce5-1e42-11e4-b4cd-db5882bf8def",531,"ERI","Eritrea","Africa","Afeworki",1993-05-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1946
+"1978","ETH_2018_1",NA,530,"ETH","Ethiopia","Africa","Abiy Ahmed",2018-04-02,2024-07-04,"Regular","Still in Office","Still in Office","M",1976
+"1979","ERI-1993","8233bce5-1e42-11e4-b4cd-db5882bf8def",531,"ERI","Eritrea","Africa","Afeworki",1993-05-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1946
 "1980","ANG-1975","8233bce6-1e42-11e4-b4cd-db5882bf8def",540,"ANG","Angola","Africa","Neto",1975-11-11,1979-09-10,"Irregular","Natural Death","Regular","M",1922
 "1981","ANG-1979","8233edb6-1e42-11e4-b4cd-db5882bf8def",540,"ANG","Angola","Africa","Dos Santos",1979-09-10,2017-09-25,"Regular","Regular","Still in Office","M",1942
-"1982","ANG_2017_1",NA,540,"ANG","Angola","Africa","Joao Lourenco",2017-09-25,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"1982","ANG_2017_1",NA,540,"ANG","Angola","Africa","Joao Lourenco",2017-09-25,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "1983","MZM-1975","8233edb7-1e42-11e4-b4cd-db5882bf8def",541,"MZM","Mozambique","Africa","Machel",1975-06-25,1986-10-19,"Irregular","Natural Death","Regular","M",1933
 "1984","MZM-1986","8233edb8-1e42-11e4-b4cd-db5882bf8def",541,"MZM","Mozambique","Africa","Chissano",1986-11-06,2005-02-02,"Regular","Regular","Regular","M",1939
 "1985","MZM-2005","8253f976-1e42-11e4-b4cd-db5882bf8def",541,"MZM","Mozambique","Africa","Guebuza",2005-02-02,2015-01-15,"Regular","Regular","Regular","M",1942
-"1986","MZM-2015","0eddaf00-df39-11e5-ba44-bb6d7c1a9a58",541,"MZM","Mozambique","Africa","Filipe Nyusi",2015-01-15,2024-07-02,"Regular","Still in Office","Still in Office","M",1959
+"1986","MZM-2015","0eddaf00-df39-11e5-ba44-bb6d7c1a9a58",541,"MZM","Mozambique","Africa","Filipe Nyusi",2015-01-15,2024-07-04,"Regular","Still in Office","Still in Office","M",1959
 "1987","ZAM-1964","8233edb9-1e42-11e4-b4cd-db5882bf8def",551,"ZAM","Zambia","Africa","Kaunda",1964-10-24,1991-11-02,"Regular","Regular","Regular","M",1924
 "1988","ZAM-1991","8233edba-1e42-11e4-b4cd-db5882bf8def",551,"ZAM","Zambia","Africa","Chiluba",1991-11-02,2002-01-02,"Regular","Regular","Regular","M",1943
 "1989","ZAM-2002","82341e8a-1e42-11e4-b4cd-db5882bf8def",551,"ZAM","Zambia","Africa","Levy Mwanawasa",2002-01-03,2008-06-29,"Regular","Retired Due to Ill Health","Regular","M",1948
 "1990","ZAM-2008","8253f977-1e42-11e4-b4cd-db5882bf8def",551,"ZAM","Zambia","Africa","Banda",2008-06-29,2011-09-23,"Regular","Regular","Regular","M",1937
 "1991","ZAM-2011","8253f978-1e42-11e4-b4cd-db5882bf8def",551,"ZAM","Zambia","Africa","Sata",2011-09-23,2014-10-28,"Regular","Natural Death","Regular","M",1937
 "1992","ZAM-2015","0eddaf01-df39-11e5-ba44-bb6d7c1a9a58",551,"ZAM","Zambia","Africa","Edgar Lungu",2015-01-25,2021-08-24,"Regular","Regular","Still in Office","M",1956
-"1993","ZAM_2021_1",NA,551,"ZAM","Zambia","Africa","Hakainde Hichilema",2021-08-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1962
+"1993","ZAM_2021_1",NA,551,"ZAM","Zambia","Africa","Hakainde Hichilema",2021-08-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1962
 "1994","ZIM-1965","82341e8b-1e42-11e4-b4cd-db5882bf8def",552,"ZIM","Zimbabwe","Africa","Smith",1965-11-11,1979-05-23,"Regular","Regular","Regular","M",1919
 "1995","ZIM-1980","82341e8d-1e42-11e4-b4cd-db5882bf8def",552,"ZIM","Zimbabwe","Africa","Mugabe",1980-03-04,2017-11-24,"Regular","Irregular","Still in Office","M",1924
-"1996","ZIM_2017_1",NA,552,"ZIM","Zimbabwe","Africa","Mnangagwa",2017-11-24,2024-07-02,"Irregular","Still in Office","Still in Office","M",1942
+"1996","ZIM_2017_1",NA,552,"ZIM","Zimbabwe","Africa","Mnangagwa",2017-11-24,2024-07-04,"Irregular","Still in Office","Still in Office","M",1942
 "1997","MAW-1964","82341e8e-1e42-11e4-b4cd-db5882bf8def",553,"MAW","Malawi","Africa","Banda",1964-07-06,1994-05-21,"Regular","Regular","Regular","M",1906
 "1998","MAW-1994","82344f5e-1e42-11e4-b4cd-db5882bf8def",553,"MAW","Malawi","Africa","Muluzi",1994-05-21,2004-05-24,"Regular","Regular","Regular","M",1943
 "1999","MAW-2004","82344f5f-1e42-11e4-b4cd-db5882bf8def",553,"MAW","Malawi","Africa","Bingu wa Mutharika",2004-05-24,2012-04-07,"Regular","Natural Death","Regular","M",1934
 "2000","MAW-2012","2b3c671e-3481-11e4-8dba-bbcd9ed46413",553,"MAW","Malawi","Africa","Joyce Hilda Banda",2012-04-07,2014-05-31,"Regular","Regular","Regular","F",1950
 "2001","MAW-2014","149f9c69-aae0-11e4-b3bc-29f2fa19767e",553,"MAW","Malawi","Africa","Peter Mutharika",2014-05-31,2020-06-28,"Regular","Regular","Still in Office","M",1940
-"2002","MAW_2020_1",NA,553,"MAW","Malawi","Africa","Lazarus Chakwera",2020-06-28,2024-07-02,"Regular","Still in Office","Still in Office","M",1955
+"2002","MAW_2020_1",NA,553,"MAW","Malawi","Africa","Lazarus Chakwera",2020-06-28,2024-07-04,"Regular","Still in Office","Still in Office","M",1955
 "2003","SAF-1910","1978b1c8-3bbd-11e5-afeb-eb6f07f9fec7",560,"SAF","South Africa","Africa","Louis Botha",1910-05-31,1919-08-27,"Regular","Natural Death","Regular","M",1862
 "2004","SAF-1919","82344f60-1e42-11e4-b4cd-db5882bf8def",560,"SAF","South Africa","Africa","Smuts",1919-09-03,1924-06-29,"Regular","Regular","Regular","M",1870
 "2005","SAF-1924","82344f61-1e42-11e4-b4cd-db5882bf8def",560,"SAF","South Africa","Africa","Hertzog",1924-06-30,1939-09-05,"Regular","Regular","Regular","M",1866
@@ -2014,7 +2014,7 @@
 "2013","SAF-1994","8239d781-1e42-11e4-b4cd-db5882bf8def",560,"SAF","South Africa","Africa","Mandela",1994-05-10,1999-06-16,"Regular","Regular","Regular","M",1918
 "2014","SAF-1999","8239d782-1e42-11e4-b4cd-db5882bf8def",560,"SAF","South Africa","Africa","Mbeki",1999-06-16,2008-09-25,"Regular","Regular","Regular","M",1942
 "2015","SAF-2009","8253f97a-1e42-11e4-b4cd-db5882bf8def",560,"SAF","South Africa","Africa","Zuma",2009-05-09,2018-02-14,"Regular","Regular","Still in Office","M",1942
-"2016","SAF_2018_1",NA,560,"SAF","South Africa","Africa","Cyril Ramaphosa",2018-02-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1952
+"2016","SAF_2018_1",NA,560,"SAF","South Africa","Africa","Cyril Ramaphosa",2018-02-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1952
 "2017","TRA-1872","8239d783-1e42-11e4-b4cd-db5882bf8def",563,"TRA",NA,NA,"Burgers",1872-07-01,1877-04-12,"Regular","Foreign","Unknown","M",1834
 "2018","TRA-1877","8239d784-1e42-11e4-b4cd-db5882bf8def",563,"TRA",NA,NA,"Shepstone",1877-04-12,1879-03-04,"Foreign Imposition","Regular","Regular","M",1817
 "2019","TRA-1879","8239d785-1e42-11e4-b4cd-db5882bf8def",563,"TRA",NA,NA,"Lanyon",1879-03-04,1881-08-08,"Regular","Irregular","Unknown","M",1842
@@ -2032,7 +2032,7 @@
 "2031","OFS-1907-2","823a69fe-1e42-11e4-b4cd-db5882bf8def",564,"OFS",NA,NA,"Fischer",1907-11-27,1910-05-31,"Regular","Regular","Regular","M",1850
 "2032","NAM-1990","823a69ff-1e42-11e4-b4cd-db5882bf8def",565,"NAM","Namibia","Africa","Nujoma",1990-03-21,2005-03-21,"Regular","Regular","Regular","M",1929
 "2033","NAM-2005","8253f97b-1e42-11e4-b4cd-db5882bf8def",565,"NAM","Namibia","Africa","Pohamba",2005-03-21,2015-03-21,"Regular","Regular","Regular","M",1935
-"2034","NAM-2015","0eddaf02-df39-11e5-ba44-bb6d7c1a9a58",565,"NAM","Namibia","Africa","Hage Geingob",2015-03-21,2024-07-02,"Regular","Still in Office","Still in Office","M",1941
+"2034","NAM-2015","0eddaf02-df39-11e5-ba44-bb6d7c1a9a58",565,"NAM","Namibia","Africa","Hage Geingob",2015-03-21,2024-07-04,"Regular","Still in Office","Still in Office","M",1941
 "2035","LES-1966","823a6a00-1e42-11e4-b4cd-db5882bf8def",570,"LES","Lesotho","Africa","Jonathan",1966-10-04,1986-01-20,"Regular","Irregular","Removed by Military, without Foreign Support","M",1914
 "2036","LES-1986","823a6a01-1e42-11e4-b4cd-db5882bf8def",570,"LES","Lesotho","Africa","Lekhanya",1986-01-24,1991-05-02,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1938
 "2037","LES-1991","823a9ad0-1e42-11e4-b4cd-db5882bf8def",570,"LES","Lesotho","Africa","Ramaema",1991-05-02,1993-04-02,"Irregular","Regular","Regular","M",1933
@@ -2043,16 +2043,16 @@
 "2042","LES-2015","0eddaf03-df39-11e5-ba44-bb6d7c1a9a58",570,"LES","Lesotho","Africa","Pakalitha Mosisili",2015-03-17,2017-06-16,"Regular","Regular","Still in Office","M",1945
 "2043","LES_2017_1",NA,570,"LES","Lesotho","Africa","Tom Thabane",2017-06-16,2020-05-19,"Regular","Regular","Regular","M",1939
 "2044","LES_2020_1",NA,570,"LES","Lesotho","Africa","Moeketsi Majoro",2020-05-19,2022-10-28,"Regular","Regular","Regular","M",1961
-"2045","LES_2022_1",NA,570,"LES","Lesotho","Africa","Ntsokane Samuel Matekane",2022-10-28,2024-07-02,"Regular","Still in Office","Still in Office","M",1958
+"2045","LES_2022_1",NA,570,"LES","Lesotho","Africa","Ntsokane Samuel Matekane",2022-10-28,2024-07-04,"Regular","Still in Office","Still in Office","M",1958
 "2046","BOT-1966","823a9ad4-1e42-11e4-b4cd-db5882bf8def",571,"BOT","Botswana","Africa","Khama",1966-09-30,1980-07-13,"Regular","Natural Death","Regular","M",1921
 "2047","BOT-1980","823a9ad5-1e42-11e4-b4cd-db5882bf8def",571,"BOT","Botswana","Africa","Masire",1980-07-13,1998-03-31,"Regular","Regular","Regular","M",1925
 "2048","BOT-1998","823acba4-1e42-11e4-b4cd-db5882bf8def",571,"BOT","Botswana","Africa","Mogae",1998-03-31,2008-04-01,"Regular","Regular","Regular","M",1939
 "2049","BOT-2008","82542a54-1e42-11e4-b4cd-db5882bf8def",571,"BOT","Botswana","Africa","Ian Khama",2008-04-01,2018-03-31,"Regular","Regular","Still in Office","M",1953
-"2050","BOT_2018_1",NA,571,"BOT","Botswana","Africa","Mokgweetsi Masisi",2018-03-31,2024-07-02,"Regular","Still in Office","Still in Office","M",1962
+"2050","BOT_2018_1",NA,571,"BOT","Botswana","Africa","Mokgweetsi Masisi",2018-03-31,2024-07-04,"Regular","Still in Office","Still in Office","M",1962
 "2051","SWA-1968","823acba5-1e42-11e4-b4cd-db5882bf8def",572,"SWA","Eswatini","Africa","Subhuza II",1968-09-06,1982-08-21,"Regular","Natural Death","Regular","M",1899
 "2052","SWA-1982","823acba6-1e42-11e4-b4cd-db5882bf8def",572,"SWA","Eswatini","Africa","Dzeliwe Shongwe",1982-08-21,1983-08-10,"Regular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1927
 "2053","SWA-1983","823acba7-1e42-11e4-b4cd-db5882bf8def",572,"SWA","Eswatini","Africa","Ntombe Thwala",1983-08-10,1986-04-25,"Regular","Regular","Regular","M",1950
-"2054","SWA-1986","823acba8-1e42-11e4-b4cd-db5882bf8def",572,"SWA","Eswatini","Africa","Mswati",1986-04-25,2024-07-02,"Regular","Still in Office","Still in Office","M",1968
+"2054","SWA-1986","823acba8-1e42-11e4-b4cd-db5882bf8def",572,"SWA","Eswatini","Africa","Mswati",1986-04-25,2024-07-04,"Regular","Still in Office","Still in Office","M",1968
 "2055","MAG-1864","823afc78-1e42-11e4-b4cd-db5882bf8def",580,"MAG","Madagascar","Africa","Rainilaiarivony",1864-07-15,1895-09-30,"Regular","Foreign","Unknown","M",1828
 "2056","MAG-1960","823afc79-1e42-11e4-b4cd-db5882bf8def",580,"MAG","Madagascar","Africa","Tsiranana",1960-06-26,1972-10-08,"Regular","Irregular","Popular Protest, without Foreign Support","M",1910
 "2057","MAG-1972","823afc7a-1e42-11e4-b4cd-db5882bf8def",580,"MAG","Madagascar","Africa","Ramanantsoa",1972-10-12,1975-02-05,"Irregular","Irregular","Removed in Military Power Struggle Short of Coup","M",1906
@@ -2062,7 +2062,7 @@
 "2061","MAG-2002","823b2d4d-1e42-11e4-b4cd-db5882bf8def",580,"MAG","Madagascar","Africa","Marc Ravalomanana",2002-07-06,2009-03-17,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1949
 "2062","MAG-2009","82542a55-1e42-11e4-b4cd-db5882bf8def",580,"MAG","Madagascar","Africa","Rajoelina",2009-03-17,2014-01-25,"Irregular","Regular","Regular","M",1974
 "2063","MAG-2014","149fc377-aae0-11e4-b3bc-29f2fa19767e",580,"MAG","Madagascar","Africa","Rajaonarimampianina",2014-01-25,2018-09-07,"Regular","Regular","Still in Office","M",1958
-"2064","MAG_2019_1",NA,580,"MAG","Madagascar","Africa","Andry Rajoelina",2019-01-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1974
+"2064","MAG_2019_1",NA,580,"MAG","Madagascar","Africa","Andry Rajoelina",2019-01-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1974
 "2065","COM-1975-2","823b2d4f-1e42-11e4-b4cd-db5882bf8def",581,"COM","Comoros","Africa","Soilih",1975-08-03,1978-05-13,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1937
 "2066","COM-1978","823b2d50-1e42-11e4-b4cd-db5882bf8def",581,"COM","Comoros","Africa","Bob Denard",1978-05-13,1989-12-18,"Irregular","Irregular","Removed by Other Government Actors, with Foreign Support","M",1929
 "2067","COM-1989","823b2d51-1e42-11e4-b4cd-db5882bf8def",581,"COM","Comoros","Africa","Djohar",1989-12-18,1995-09-29,"Regular","Irregular","Removed by Military, with Foreign Support","M",1918
@@ -2072,7 +2072,7 @@
 "2071","COM-2006","82542a56-1e42-11e4-b4cd-db5882bf8def",581,"COM","Comoros","Africa","Sambi",2006-05-26,2011-05-26,"Regular","Regular","Regular","M",1958
 "2072","COM-2011","82542a57-1e42-11e4-b4cd-db5882bf8def",581,"COM","Comoros","Africa","Dhoinine",2011-05-26,2016-05-26,"Regular","Regular","Still in Office","M",1962
 "2073","COM_2016_1",NA,581,"COM","Comoros","Africa","Azali Assoumani",2016-05-26,2019-02-03,"Regular","Regular","Regular","M",1959
-"2074","COM_2019_2",NA,581,"COM","Comoros","Africa","Azali Assoumani",2019-05-26,2024-07-02,"Regular","Still in Office","Still in Office","M",1959
+"2074","COM_2019_2",NA,581,"COM","Comoros","Africa","Azali Assoumani",2019-05-26,2024-07-04,"Regular","Still in Office","Still in Office","M",1959
 "2075","MAS-1968","823b5e2e-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Ramgoolam",1968-03-12,1982-06-16,"Regular","Regular","Regular","M",1900
 "2076","MAS-1982","823b5e2f-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Anerood Jugnauth",1982-06-16,1995-12-22,"Regular","Regular","Regular","M",1930
 "2077","MAS-1995","823b8efe-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Ramgoolam N.",1995-12-22,2000-09-17,"Regular","Regular","Regular","M",1947
@@ -2080,19 +2080,19 @@
 "2079","MAS-2003","823b8eff-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Paul Berenger",2003-09-30,2005-07-05,"Regular","Regular","Regular","M",1945
 "2080","MAS-2005","823b8efe-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Navin Ramgoolam",2005-07-05,2014-12-17,"Regular","Regular","Regular","M",1947
 "2081","MAS-2014","823b5e2f-1e42-11e4-b4cd-db5882bf8def",590,"MAS","Mauritius","Africa","Anerood Jugnauth",2014-12-17,2017-01-23,"Regular","Retired Due to Ill Health","Still in Office","M",1930
-"2082","MAS_2017_1",NA,590,"MAS","Mauritius","Africa","Pravind Jugnauth",2017-01-23,2024-07-02,"Regular","Still in Office","Still in Office","M",1961
+"2082","MAS_2017_1",NA,590,"MAS","Mauritius","Africa","Pravind Jugnauth",2017-01-23,2024-07-04,"Regular","Still in Office","Still in Office","M",1961
 "2083","MOR-1873","823b8f00-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Abu Ali al-Hasan",1873-09-25,1894-06-07,"Regular","Natural Death","Regular","M",1827
 "2084","MOR-1894","823b8f01-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Abd al-Aziz",1894-06-07,1908-01-05,"Regular","Irregular","Unknown","M",1881
 "2085","MOR-1956","823b8f02-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Mohammed V",1956-03-02,1961-02-26,"Irregular","Natural Death","Regular","M",1909
 "2086","MOR-1961","823bbfd2-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Hassan II",1961-02-26,1999-07-23,"Regular","Natural Death","Regular","M",1929
-"2087","MOR-1999","823bbfd3-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Muhammad VI",1999-07-23,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"2087","MOR-1999","823bbfd3-1e42-11e4-b4cd-db5882bf8def",600,"MOR","Morocco","Africa","Muhammad VI",1999-07-23,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "2088","ALG-1962-2","823bbfd5-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Bella",1962-09-26,1965-06-19,"Regular","Irregular","Removed by Military, without Foreign Support","M",1916
 "2089","ALG-1965","823bbfd6-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Boumedienne",1965-06-19,1978-12-27,"Irregular","Natural Death","Regular","M",1927
 "2090","ALG-1979","823bf0a6-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Benjedid",1979-02-07,1992-01-11,"Regular","Irregular","Removed by Military, without Foreign Support","M",1929
 "2091","ALG-1992-2","823bf0a8-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Kafi",1992-07-02,1994-01-31,"Regular","Regular","Regular","M",1928
 "2092","ALG-1994","823bf0a9-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Zeroual",1994-01-31,1999-04-27,"Regular","Regular","Regular","M",1941
 "2093","ALG-1999","823bf0aa-1e42-11e4-b4cd-db5882bf8def",615,"ALG","Algeria","Africa","Bouteflika",1999-04-27,2019-04-02,"Regular","Irregular","Still in Office","M",1937
-"2094","ALG_2019_2",NA,615,"ALG","Algeria","Africa","Abdelmadjid Tebboune",2019-12-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
+"2094","ALG_2019_2",NA,615,"ALG","Algeria","Africa","Abdelmadjid Tebboune",2019-12-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
 "2095","TUN-1859","823bf0ab-1e42-11e4-b4cd-db5882bf8def",616,"TUN","Tunisia","Africa","Muhammad III",1859-09-23,1882-10-28,"Regular","Natural Death","Regular","M",1813
 "2096","TUN-1943","823c217a-1e42-11e4-b4cd-db5882bf8def",616,"TUN","Tunisia","Africa","Muhammad al-Amin",1943-05-15,1957-07-25,"Regular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1881
 "2097","TUN-1957","823c217b-1e42-11e4-b4cd-db5882bf8def",616,"TUN","Tunisia","Africa","Ben Ali Bourguiba",1957-07-25,1987-11-07,"Irregular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1903
@@ -2100,7 +2100,7 @@
 "2099","TUN-2011-2","82542a59-1e42-11e4-b4cd-db5882bf8def",616,"TUN","Tunisia","Africa","Mebazaa",2011-01-15,2011-12-13,"Regular","Regular","Regular","M",1933
 "2100","TUN-2011-3","82545b28-1e42-11e4-b4cd-db5882bf8def",616,"TUN","Tunisia","Africa","Marzouki",2011-12-13,2014-12-31,"Regular","Regular","Regular","M",1945
 "2101","TUN-2014","0eddd610-df39-11e5-ba44-bb6d7c1a9a58",616,"TUN","Tunisia","Africa","Caid Essebsi",2014-12-31,2019-07-25,"Regular","Natural Death","Still in Office","M",1926
-"2102","TUN_2019_2",NA,616,"TUN","Tunisia","Africa","Kais Saied",2019-10-23,2024-07-02,"Regular","Still in Office","Still in Office","M",1958
+"2102","TUN_2019_2",NA,616,"TUN","Tunisia","Africa","Kais Saied",2019-10-23,2024-07-04,"Regular","Still in Office","Still in Office","M",1958
 "2103","LIB-1951","823c217d-1e42-11e4-b4cd-db5882bf8def",620,"LIB","Libya","Africa","Idris",1951-12-24,1969-09-01,"Regular","Irregular","Removed by Military, without Foreign Support","M",1890
 "2104","LIB-1969","823c217e-1e42-11e4-b4cd-db5882bf8def",620,"LIB","Libya","Africa","Qaddafi",1969-09-01,2011-08-23,"Irregular","Irregular","Removed by Rebels, with Foreign Support","M",1942
 "2105","LIB-2011","82545b29-1e42-11e4-b4cd-db5882bf8def",620,"LIB","Libya","Africa","Mustafa Jalil",2011-08-23,2012-08-08,"Irregular","Regular","Regular","M",1952
@@ -2108,7 +2108,7 @@
 "2107","LIB-2013-2","2b3c671f-3481-11e4-8dba-bbcd9ed46413",620,"LIB","Libya","Africa","Nouri Abusahmain",2013-06-25,2014-08-04,"Regular","Regular","Regular","M",-999
 "2108","LIB-2014","149fea91-aae0-11e4-b3bc-29f2fa19767e",620,"LIB","Libya","Africa","Akila Saleh Issa",2014-08-05,2015-12-17,"Regular","Irregular","Still in Office","M",1944
 "2109","LIB_2015_1",NA,620,"LIB","Libya","Africa","Fayez al-Sarraj",2015-12-17,2021-03-15,"Foreign Imposition","Irregular","Irregular","M",1960
-"2110","LIB_2021_1",NA,620,"LIB","Libya","Africa","Mohamed al-Menfi",2021-03-15,2024-07-02,"Regular","Still in Office","Still in Office","M",1976
+"2110","LIB_2021_1",NA,620,"LIB","Libya","Africa","Mohamed al-Menfi",2021-03-15,2024-07-04,"Regular","Still in Office","Still in Office","M",1976
 "2111","SUD-1956-2","823c524e-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Khalil",1956-07-05,1958-11-17,"Regular","Irregular","Removed by Military, without Foreign Support","M",1892
 "2112","SUD-1958","823c524f-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Abboud",1958-11-18,1964-11-01,"Irregular","Irregular","Popular Protest, without Foreign Support","M",1900
 "2113","SUD-1965","823c5251-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Maghoub",1965-06-14,1966-07-25,"Regular","Regular","Regular","M",1908
@@ -2119,8 +2119,8 @@
 "2118","SUD-1985","823c8323-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Abdul Rahman Swaredahab",1985-04-06,1986-05-06,"Irregular","Regular","Regular","M",1934
 "2119","SUD-1986","823c5252-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Sadiq al-Mahdi",1986-05-06,1989-06-30,"Regular","Irregular","Removed by Military, without Foreign Support","M",1935
 "2120","SUD-1989","823c8325-1e42-11e4-b4cd-db5882bf8def",625,"SUD","Sudan","Africa","Al-Bashir",1989-06-30,2019-04-11,"Irregular","Irregular","Still in Office","M",1944
-"2121","SUD_2019_1",NA,625,"SUD","Sudan","Africa","Abdel Fattah al-Burhan",2019-04-11,2024-07-02,"Irregular","Still in Office","Still in Office","M",1960
-"2122","SSD-2011","149fea92-aae0-11e4-b3bc-29f2fa19767e",626,"SSD","South Sudan","Africa","Salva Kiir",2011-07-09,2024-07-02,"Regular","Still in Office","Still in Office","M",1951
+"2121","SUD_2019_1",NA,625,"SUD","Sudan","Africa","Abdel Fattah al-Burhan",2019-04-11,2024-07-04,"Irregular","Still in Office","Still in Office","M",1960
+"2122","SSD-2011","149fea92-aae0-11e4-b3bc-29f2fa19767e",626,"SSD","South Sudan","Africa","Salva Kiir",2011-07-09,2024-07-04,"Regular","Still in Office","Still in Office","M",1951
 "2123","IRN-1848","823c8326-1e42-11e4-b4cd-db5882bf8def",630,"IRN","Iran","Asia","Nasir Ad-Din",1848-09-13,1896-05-01,"Regular","Irregular","Unknown","M",1831
 "2124","IRN-1896","823c8327-1e42-11e4-b4cd-db5882bf8def",630,"IRN","Iran","Asia","Muzaffar ad-Din",1896-05-02,1907-01-08,"Regular","Natural Death","Regular","M",1853
 "2125","IRN-1907","823cb3f6-1e42-11e4-b4cd-db5882bf8def",630,"IRN","Iran","Asia","Mohammed Ali Shah",1907-01-08,1909-07-16,"Regular","Regular","Regular","M",1872
@@ -2134,7 +2134,7 @@
 "2133","IRN-1997","823ce4cc-1e42-11e4-b4cd-db5882bf8def",630,"IRN","Iran","Asia","Khatami",1997-08-03,2005-08-03,"Regular","Regular","Regular","M",1946
 "2134","IRN-2005","82545b2a-1e42-11e4-b4cd-db5882bf8def",630,"IRN","Iran","Asia","Ahmadinejad",2005-08-03,2013-08-03,"Regular","Regular","Regular","M",1956
 "2135","IRN-2013","2b3c6720-3481-11e4-8dba-bbcd9ed46413",630,"IRN","Iran","Asia","Rouhani",2013-08-03,2021-08-03,"Regular","Regular","Still in Office","M",1948
-"2136","IRN_2021_1",NA,630,"IRN","Iran","Asia","Ebrahim Raisi",2021-08-03,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"2136","IRN_2021_1",NA,630,"IRN","Iran","Asia","Ebrahim Raisi",2021-08-03,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "2137","TUR-1861","823ce4cd-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Abdul Aziz",1861-06-25,1876-05-30,"Regular","Irregular","Unknown","M",1830
 "2138","TUR-1876-2","823ce4cf-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Hamid II",1876-08-30,1909-04-27,"Regular","Irregular","Unknown","M",1842
 "2139","TUR-1909","823d159e-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Mahmud Sefket Pasha",1909-04-27,1913-01-23,"Irregular","Irregular","Unknown","M",1844
@@ -2161,7 +2161,7 @@
 "2160","TUR-1996-2","823da827-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Erbakan",1996-06-28,1997-06-30,"Regular","Irregular","Removed by Military, without Foreign Support","M",1926
 "2161","TUR-1997","823da824-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Yilmaz",1997-06-30,1999-01-11,"Irregular","Regular","Regular","M",1947
 "2162","TUR-1999","823d7751-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Ecevit",1999-01-11,2002-11-18,"Regular","Regular","Regular","M",1925
-"2163","TUR-2003","823da829-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Erdogan",2003-03-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2163","TUR-2003","823da829-1e42-11e4-b4cd-db5882bf8def",640,"TUR","Turkey","Asia","Erdogan",2003-03-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2164","IRQ-1932","823dd8f8-1e42-11e4-b4cd-db5882bf8def",645,"IRQ","Iraq","Asia","Faisal I",1932-10-03,1933-09-08,"Regular","Natural Death","Regular","M",1885
 "2165","IRQ-1933","823dd8f9-1e42-11e4-b4cd-db5882bf8def",645,"IRQ","Iraq","Asia","Ghazi",1933-09-08,1939-04-04,"Regular","Natural Death","Regular","M",1912
 "2166","IRQ-1939","823dd8fa-1e42-11e4-b4cd-db5882bf8def",645,"IRQ","Iraq","Asia","Abdul-Ilah",1939-04-04,1953-05-02,"Regular","Regular","Regular","M",1913
@@ -2178,7 +2178,7 @@
 "2177","IRQ-2014","14a011a0-aae0-11e4-b3bc-29f2fa19767e",645,"IRQ","Iraq","Asia","al-Abadi",2014-09-08,2018-10-25,"Regular","Regular","Still in Office","M",1952
 "2178","IRQ_2018_1",NA,645,"IRQ","Iraq","Asia","Abdul-Mahdi",2018-10-25,2020-05-06,"Regular","Irregular","Irregular","M",1942
 "2179","IRQ_2020_1",NA,645,"IRQ","Iraq","Asia","Mustafa Al-Kadhimi",2020-05-06,2022-10-27,"Regular","Regular","Regular","M",1967
-"2180","IRQ_2022_1",NA,645,"IRQ","e","Asia","Mohammed Shia' Al Sudani",2022-10-27,2024-07-02,"Regular","Still in Office","Still in Office","M",1970
+"2180","IRQ_2022_1",NA,645,"IRQ","e","Asia","Mohammed Shia' Al Sudani",2022-10-27,2024-07-04,"Regular","Still in Office","Still in Office","M",1970
 "2181","EGY-1922","823e6b76-1e42-11e4-b4cd-db5882bf8def",651,"EGY","Egypt","Africa","Fuad I",1922-02-28,1936-04-28,"Regular","Natural Death","Regular","M",1868
 "2182","EGY-1936","823e9c48-1e42-11e4-b4cd-db5882bf8def",651,"EGY","Egypt","Africa","Farouk",1936-04-28,1952-07-22,"Regular","Irregular","Removed by Military, without Foreign Support","M",1920
 "2183","EGY-1952","823e9c49-1e42-11e4-b4cd-db5882bf8def",651,"EGY","Egypt","Africa","Naguib",1952-07-23,1954-11-14,"Irregular","Regular","Regular","M",1901
@@ -2188,7 +2188,7 @@
 "2187","EGY-2011","82545b2d-1e42-11e4-b4cd-db5882bf8def",651,"EGY","Egypt","Africa","Tantawi",2011-02-11,2012-06-30,"Regular","Regular","Regular","M",1931
 "2188","EGY-2012","14a011a1-aae0-11e4-b3bc-29f2fa19767e",651,"EGY","Egypt","Africa","Morsi",2012-06-30,2013-07-03,"Regular","Irregular","Popular Protest, without Foreign Support","M",1951
 "2189","EGY-2013","2b3c6721-3481-11e4-8dba-bbcd9ed46413",651,"EGY","Egypt","Africa","Mansour",2013-07-04,2014-06-08,"Irregular","Regular","Regular","M",1945
-"2190","EGY-2014","14a011a2-aae0-11e4-b3bc-29f2fa19767e",651,"EGY","Egypt","Africa","al-Sisi",2014-06-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2190","EGY-2014","14a011a2-aae0-11e4-b3bc-29f2fa19767e",651,"EGY","Egypt","Africa","al-Sisi",2014-06-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2191","SYR-1943","823efdf0-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Kuwatli",1943-08-17,1949-03-30,"Regular","Irregular","Removed by Military, without Foreign Support","M",1891
 "2192","SYR-1949-3","823f2ece-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Shishakli",1949-12-19,1954-02-28,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1909
 "2193","SYR-1954","19b804b8-3bbd-11e5-afeb-eb6f07f9fec7",652,"SYR","Syria","Asia","Atassi, H.",1954-02-28,1955-09-06,"Irregular","Regular","Regular","M",1875
@@ -2198,8 +2198,8 @@
 "2197","SYR-1963-2","823f9077-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Al-Hafiz",1963-07-27,1966-02-25,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1911
 "2198","SYR-1966","823f9078-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","El-Atassi, N.",1966-02-25,1970-11-13,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1929
 "2199","SYR-1971","823fc14b-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Al-Assad H.",1971-02-22,2000-06-10,"Regular","Natural Death","Regular","M",1930
-"2200","SYR_2000_1",NA,652,"SYR","Syria","Asia","Bashar al-Assad",2000-06-10,2024-07-02,"Regular","Still in Office","Still in Office","M",1965
-"2201","SYR-2000","823fc14c-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Bashar al-Assad",2000-06-11,2024-07-02,"Regular","Still in Office","Still in Office","M",1965
+"2200","SYR_2000_1",NA,652,"SYR","Syria","Asia","Bashar al-Assad",2000-06-10,2024-07-04,"Regular","Still in Office","Still in Office","M",1965
+"2201","SYR-2000","823fc14c-1e42-11e4-b4cd-db5882bf8def",652,"SYR","Syria","Asia","Bashar al-Assad",2000-06-11,2024-07-04,"Regular","Still in Office","Still in Office","M",1965
 "2202","LEB-1943","197926f8-3bbd-11e5-afeb-eb6f07f9fec7",660,"LEB","Lebanon","Asia","EL Khoury",1943-11-22,1952-09-18,"Regular","Regular","Regular","M",1890
 "2203","LEB-1952-2","823fc14e-1e42-11e4-b4cd-db5882bf8def",660,"LEB","Lebanon","Asia","Chamoun",1952-09-23,1958-09-23,"Regular","Regular","Regular","M",1900
 "2204","LEB-1958","19794e08-3bbd-11e5-afeb-eb6f07f9fec7",660,"LEB","Lebanon","Asia","Chehab",1958-09-23,1964-09-23,"Regular","Regular","Regular","M",1902
@@ -2213,11 +2213,11 @@
 "2212","LEB-2008","82548bfd-1e42-11e4-b4cd-db5882bf8def",660,"LEB","Lebanon","Asia","Suleiman",2008-05-25,2014-05-24,"Regular","Regular","Regular","M",1948
 "2213","LEB-2014","14a011a3-aae0-11e4-b3bc-29f2fa19767e",660,"LEB","Lebanon","Asia","Salam",2014-05-24,2016-10-31,"Regular","Regular","Still in Office","M",1945
 "2214","LEB_2016_1",NA,660,"LEB","Lebanon","Asia","Michel Aoun",2016-10-31,2022-10-30,"Regular","Regular","Regular","M",1933
-"2215","LEB_2022_1",NA,660,"LEB","Lebanon","Asia","Najib Mikati",2022-10-30,2024-07-02,"Irregular","Still in Office","Still in Office","M",1955
+"2215","LEB_2022_1",NA,660,"LEB","Lebanon","Asia","Najib Mikati",2022-10-30,2024-07-04,"Irregular","Still in Office","Still in Office","M",1955
 "2216","JOR-1921","824022f4-1e42-11e4-b4cd-db5882bf8def",663,"JOR","Jordan","Asia","Abdullah Al-Hussein",1921-04-11,1951-07-20,"Foreign Imposition","Irregular","Assassination by Unsupported Individual","M",1882
 "2217","JOR-1951-2","824053c7-1e42-11e4-b4cd-db5882bf8def",663,"JOR","Jordan","Asia","Ibn Abdullah-Hashim",1951-09-06,1952-08-11,"Regular","Regular","Regular","M",1909
 "2218","JOR-1952","824053c8-1e42-11e4-b4cd-db5882bf8def",663,"JOR","Jordan","Asia","Hussein Ibn Talal El-Hashim",1952-08-11,1999-02-07,"Regular","Natural Death","Regular","M",1935
-"2219","JOR-1999","8240849a-1e42-11e4-b4cd-db5882bf8def",663,"JOR","Jordan","Asia","Abdullah Ibn Hussein El-Hashimi",1999-02-07,2024-07-02,"Regular","Still in Office","Still in Office","M",1962
+"2219","JOR-1999","8240849a-1e42-11e4-b4cd-db5882bf8def",663,"JOR","Jordan","Asia","Abdullah Ibn Hussein El-Hashimi",1999-02-07,2024-07-04,"Regular","Still in Office","Still in Office","M",1962
 "2220","ISR-1948","8240849b-1e42-11e4-b4cd-db5882bf8def",666,"ISR","Israel","Asia","Ben Gurion",1948-05-14,1953-12-08,"Regular","Regular","Regular","M",1886
 "2221","ISR-1953","8240849c-1e42-11e4-b4cd-db5882bf8def",666,"ISR","Israel","Asia","Sharett",1953-12-08,1955-11-03,"Regular","Regular","Regular","M",1894
 "2222","ISR-1955","8240849b-1e42-11e4-b4cd-db5882bf8def",666,"ISR","Israel","Asia","Ben Gurion",1955-11-03,1963-06-16,"Regular","Regular","Regular","M",1886
@@ -2235,14 +2235,14 @@
 "2234","ISR-2006","82548bfe-1e42-11e4-b4cd-db5882bf8def",666,"ISR","Israel","Asia","Olmert",2006-01-04,2009-03-31,"Regular","Regular","Regular","M",1928
 "2235","ISR-2009","82411722-1e42-11e4-b4cd-db5882bf8def",666,"ISR","Israel","Asia","Netanyahu",2009-03-31,2021-06-13,"Regular","Regular","Still in Office","M",1949
 "2236","ISR_2021_1",NA,666,"ISR","Israel","Asia","Yair Lapid",2021-06-13,2022-06-30,"Regular","Regular","Regular","M",1963
-"2237","ISR_2022_2",NA,666,"ISR","Israel","Asia","Netanyahu",2022-12-29,2024-07-02,"Regular","Still in Office","Still in Office","M",1949
+"2237","ISR_2022_2",NA,666,"ISR","Israel","Asia","Netanyahu",2022-12-29,2024-07-04,"Regular","Still in Office","Still in Office","M",1949
 "2238","SAU-1927","824147f6-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Aziz",1927-05-20,1953-11-09,"Regular","Natural Death","Regular","M",1882
 "2239","SAU-1953","824178c8-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Saud",1953-11-09,1964-11-02,"Regular","Regular","Regular","M",1902
 "2240","SAU-1964","824178c9-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Faisal",1964-11-02,1975-03-25,"Regular","Irregular","Assassination by Unsupported Individual","M",1905
 "2241","SAU-1975","824178ca-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Khalid",1975-03-25,1982-06-13,"Regular","Natural Death","Regular","M",1913
 "2242","SAU-1982","8241a99c-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Fahd",1982-06-13,1996-01-01,"Regular","Retired Due to Ill Health","Regular","M",1922
 "2243","SAU-1996","8241a99d-1e42-11e4-b4cd-db5882bf8def",670,"SAU","Saudi Arabia","Asia","Abdullah ibn Abdilaziz",1996-01-01,2015-01-23,"Regular","Natural Death","Regular","M",1924
-"2244","SAU-2015","0eddd611-df39-11e5-ba44-bb6d7c1a9a58",670,"SAU","Saudi Arabia","Asia","Salman bin Abdulaziz Al Saud",2015-01-23,2024-07-02,"Regular","Still in Office","Regular","M",1935
+"2244","SAU-2015","0eddd611-df39-11e5-ba44-bb6d7c1a9a58",670,"SAU","Saudi Arabia","Asia","Salman bin Abdulaziz Al Saud",2015-01-23,2024-07-04,"Regular","Still in Office","Regular","M",1935
 "2245","YEM-1904","8241a99e-1e42-11e4-b4cd-db5882bf8def",678,"YEM","Yemen","Asia","Yahya",1904-06-04,1948-02-17,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",1876
 "2246","YEM-1948-2","8241a9a0-1e42-11e4-b4cd-db5882bf8def",678,"YEM","Yemen","Asia","Ibn Yahya Hamid",1948-03-13,1962-09-18,"Irregular","Natural Death","Regular","M",1891
 "2247","YEM-1962-2","8241da71-1e42-11e4-b4cd-db5882bf8def",678,"YEM","Yemen","Asia","AL-Sallal",1962-09-27,1967-11-05,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1917
@@ -2250,8 +2250,8 @@
 "2249","YEM-1974","8241da73-1e42-11e4-b4cd-db5882bf8def",678,"YEM","Yemen","Asia","Al-Hamadi",1974-06-13,1977-10-11,"Irregular","Irregular","Irregular, Other","M",1943
 "2250","YEM-1978","8241da75-1e42-11e4-b4cd-db5882bf8def",678,"YEM","Yemen","Asia","Saleh al-Hashidi",1978-07-17,2012-02-27,"Regular","Regular","Regular","M",1942
 "2251","YEM_2012_1",NA,678,"YEM","Yemen","Asia","Abd Rabbuh Mansur Hadi",2012-02-21,2022-04-07,"Regular","Irregular","Irregular","M",1945
-"2252","YEM-2012","2b3c6722-3481-11e4-8dba-bbcd9ed46413",678,"YEM","Yemen","Asia","Abd Rabbuh Mansur Hadi",2012-02-27,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
-"2253","YEM_2022_1",NA,678,"YEM","Yemen","Asia","Rashad Mohammed al-Alimi",2022-04-07,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2252","YEM-2012","2b3c6722-3481-11e4-8dba-bbcd9ed46413",678,"YEM","Yemen","Asia","Abd Rabbuh Mansur Hadi",2012-02-27,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
+"2253","YEM_2022_1",NA,678,"YEM","Yemen","Asia","Rashad Mohammed al-Alimi",2022-04-07,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2254","YPR-1967","82420b44-1e42-11e4-b4cd-db5882bf8def",680,"YPR","Yemen","Asia","Al-Shaabi",1967-11-30,1969-06-22,"Irregular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1925
 "2255","YPR-1969","82420b45-1e42-11e4-b4cd-db5882bf8def",680,"YPR","Yemen","Asia","Ali Rubayyi",1969-06-24,1978-06-26,"Regular","Irregular","Removed by Rebels, with Foreign Support","M",1934
 "2256","YPR-1978-2","82420b47-1e42-11e4-b4cd-db5882bf8def",680,"YPR","Yemen","Asia","Ismail",1978-12-27,1980-04-02,"Regular","Regular","Regular","M",1939
@@ -2264,20 +2264,20 @@
 "2263","KUW-2006-2","82548c00-1e42-11e4-b4cd-db5882bf8def",690,"KUW","Kuwait","Asia","Sheikh Sabah Al Ahmad Al Jabir Al Sabah",2006-01-29,2020-09-29,"Regular","Natural Death","Still in Office","M",1942
 "2264","KUW_2020_1",NA,690,"KUW","Kuwait","Asia","Sheikh Nawaf Al Ahmad Al Jabir Al Sabah",2020-09-29,2023-12-16,"Regular","Natural Death","Natural Death","M",1937
 "2265","BAH-1971","82423c1a-1e42-11e4-b4cd-db5882bf8def",692,"BAH","Bahrain","Asia","Isa Ibn Al-Khalifah",1971-08-15,1999-03-06,"Regular","Natural Death","Regular","M",1933
-"2266","BAH-1999","82423c1b-1e42-11e4-b4cd-db5882bf8def",692,"BAH","Bahrain","Asia","Hamad Isa Ibn Al-Khalifah",1999-03-06,2024-07-02,"Regular","Still in Office","Still in Office","M",1950
+"2266","BAH-1999","82423c1b-1e42-11e4-b4cd-db5882bf8def",692,"BAH","Bahrain","Asia","Hamad Isa Ibn Al-Khalifah",1999-03-06,2024-07-04,"Regular","Still in Office","Still in Office","M",1950
 "2267","QAT-1972","82423c1d-1e42-11e4-b4cd-db5882bf8def",694,"QAT","Qatar","Asia","Khalifah Ath-Thani",1972-02-22,1995-06-27,"Irregular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1932
 "2268","QAT-1995","82426cec-1e42-11e4-b4cd-db5882bf8def",694,"QAT","Qatar","Asia","Hamad ibn Khalifah Al Thani",1995-06-27,2013-06-25,"Irregular","Regular","Regular","M",1952
-"2269","QAT_2013_1",NA,694,"QAT","Qatar","Asia","Tamim ibn Hamad Al Thani",2013-06-25,2024-07-02,"Regular","Still in Office","Still in Office","M",1980
-"2270","QAT-2013","2b3ec878-3481-11e4-8dba-bbcd9ed46413",694,"QAT","Qatar","Asia","Tamim ibn Hamad Al Thani",2013-06-26,2024-07-02,"Regular","Still in Office","Still in Office","M",1980
+"2269","QAT_2013_1",NA,694,"QAT","Qatar","Asia","Tamim ibn Hamad Al Thani",2013-06-25,2024-07-04,"Regular","Still in Office","Still in Office","M",1980
+"2270","QAT-2013","2b3ec878-3481-11e4-8dba-bbcd9ed46413",694,"QAT","Qatar","Asia","Tamim ibn Hamad Al Thani",2013-06-26,2024-07-04,"Regular","Still in Office","Still in Office","M",1980
 "2271","UAE-1971","82426ced-1e42-11e4-b4cd-db5882bf8def",696,"UAE","United Arab Emirates","Asia","An-Nahayan",1971-12-02,2004-11-03,"Regular","Natural Death","Regular","M",1918
 "2272","UAE-2004","8254bcd0-1e42-11e4-b4cd-db5882bf8def",696,"UAE","United Arab Emirates","Asia","Khalifa Al Nahayan",2004-11-03,2022-05-13,"Regular","Natural Death","Still in Office","M",1948
-"2273","UAE_2022_1",NA,696,"UAE","United Arab Emirates","Asia","Mohamed bin Zayed Al Nahyan",2022-05-13,2024-07-02,"Regular","Still in Office","Still in Office","M",1961
+"2273","UAE_2022_1",NA,696,"UAE","United Arab Emirates","Asia","Mohamed bin Zayed Al Nahyan",2022-05-13,2024-07-04,"Regular","Still in Office","Still in Office","M",1961
 "2274","OMA-1871","82426cee-1e42-11e4-b4cd-db5882bf8def",698,"OMA","Oman","Asia","Turki ibn Sa`id",1871-01-30,1888-06-04,"Irregular","Natural Death","Regular","M",1832
 "2275","OMA-1888","82426cef-1e42-11e4-b4cd-db5882bf8def",698,"OMA","Oman","Asia","Faysal ibn Turki",1888-06-04,1913-10-05,"Regular","Natural Death","Regular","M",1864
 "2276","OMA-1913","82426cf0-1e42-11e4-b4cd-db5882bf8def",698,"OMA","Oman","Asia","Taimur ibn Faysal",1913-10-09,1932-02-10,"Regular","Regular","Regular","M",1888
 "2277","OMA-1932","82429dc0-1e42-11e4-b4cd-db5882bf8def",698,"OMA","Oman","Asia","Sa`id ibn Taimur",1932-02-10,1970-07-23,"Regular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1910
 "2278","OMA-1970","82429dc1-1e42-11e4-b4cd-db5882bf8def",698,"OMA","Oman","Asia","Qabus Bin Said",1970-07-23,2020-01-10,"Irregular","Natural Death","Still in Office","M",1940
-"2279","OMA_2020_1",NA,698,"OMA","Oman","Asia","Haitham bin Tariq",2020-01-10,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2279","OMA_2020_1",NA,698,"OMA","Oman","Asia","Haitham bin Tariq",2020-01-10,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2280","AFG-1868","19799c28-3bbd-11e5-afeb-eb6f07f9fec7",700,"AFG","Afghanistan","Asia","Shir `Ali Khan",1868-09-08,1879-02-21,"Irregular","Regular","Regular","M",1825
 "2281","AFG-1880","82429dc4-1e42-11e4-b4cd-db5882bf8def",700,"AFG","Afghanistan","Asia","Abdor Rahman Khan",1880-07-22,1901-10-03,"Foreign Imposition","Natural Death","Regular","M",1844
 "2282","AFG-1901","8242ce94-1e42-11e4-b4cd-db5882bf8def",700,"AFG","Afghanistan","Asia","Habibullah Khan",1901-10-03,1919-02-20,"Regular","Irregular","Assassination by Unsupported Individual","M",1872
@@ -2300,22 +2300,22 @@
 "2299","AFG-1996","8243611e-1e42-11e4-b4cd-db5882bf8def",700,"AFG","Afghanistan","Asia","Mullah Omar",1996-09-27,2001-11-13,"Irregular","Irregular","Removed by Rebels, with Foreign Support","M",1959
 "2300","AFG-2001","8243611f-1e42-11e4-b4cd-db5882bf8def",700,"AFG","Afghanistan","Asia","Hamid Karzai",2001-12-22,2014-09-29,"Foreign Imposition","Regular","Regular","M",1957
 "2301","AFG-2014","14a038b0-aae0-11e4-b3bc-29f2fa19767e",700,"AFG","Afghanistan","Asia","Ahmadzai",2014-09-29,2021-08-14,"Regular","Irregular","Still in Office","M",1949
-"2302","AFG_2021_1",NA,700,"AFG","Afghanistan","Asia","Hibatullah Akhundzada",2021-08-14,2024-07-02,"Irregular","Still in Office","Still in Office","M",NA
+"2302","AFG_2021_1",NA,700,"AFG","Afghanistan","Asia","Hibatullah Akhundzada",2021-08-14,2024-07-04,"Irregular","Still in Office","Still in Office","M",NA
 "2303","TKM-1990","824391ee-1e42-11e4-b4cd-db5882bf8def",701,"TKM","Turkmenistan","Asia","Niyazov",1990-10-27,2006-12-21,"Regular","Natural Death","Regular","M",1940
 "2304","TKM-2006","8254bcd1-1e42-11e4-b4cd-db5882bf8def",701,"TKM","Turkmenistan","Asia","Berdymukhammedov",2006-12-21,2022-03-19,"Regular","Regular","Still in Office","M",1957
-"2305","TKM_2022_1",NA,701,"TKM","Turkmenistan","Asia","Serdar Berdymukhammedov",2022-03-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1981
+"2305","TKM_2022_1",NA,701,"TKM","Turkmenistan","Asia","Serdar Berdymukhammedov",2022-03-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1981
 "2306","TAJ-1991-2","824391f0-1e42-11e4-b4cd-db5882bf8def",702,"TAJ","Tajikistan","Asia","Nabiyev",1991-09-23,1992-09-07,"Irregular","Irregular","Removed by Rebels, without Foreign Support","M",1930
-"2307","TAJ-1992-2","824391f2-1e42-11e4-b4cd-db5882bf8def",702,"TAJ","Tajikistan","Asia","Rakhmonov",1992-11-20,2024-07-02,"Irregular","Still in Office","Still in Office","M",1952
+"2307","TAJ-1992-2","824391f2-1e42-11e4-b4cd-db5882bf8def",702,"TAJ","Tajikistan","Asia","Rakhmonov",1992-11-20,2024-07-04,"Irregular","Still in Office","Still in Office","M",1952
 "2308","KYR-1990","824391f3-1e42-11e4-b4cd-db5882bf8def",703,"KYR","Kyrgyzstan","Asia","Akayev",1990-10-27,2005-03-25,"Regular","Irregular","Popular Protest, without Foreign Support","M",1944
 "2309","KYR-2005","8254bcd2-1e42-11e4-b4cd-db5882bf8def",703,"KYR","Kyrgyzstan","Asia","Bakiyev",2005-03-25,2010-04-07,"Regular","Irregular","Popular Protest, without Foreign Support","M",1949
 "2310","KYR-2010","8254bcd3-1e42-11e4-b4cd-db5882bf8def",703,"KYR","Kyrgyzstan","Asia","Otunbayeva",2010-04-07,2011-12-01,"Regular","Regular","Regular","F",1950
 "2311","KYR-2011","8254bcd4-1e42-11e4-b4cd-db5882bf8def",703,"KYR","Kyrgyzstan","Asia","Atambayev",2011-12-01,2017-11-24,"Regular","Regular","Still in Office","M",1956
 "2312","KYR_2017_1",NA,703,"KYR","Kyrgyzstan","Asia","Jeenbekov",2017-11-24,2020-10-15,"Regular","Irregular","Irregular","M",1958
-"2313","KYR_2021_1",NA,703,"KYR","Kyrgyzstan","Asia","Sadyr Japarov",2021-01-28,2024-07-02,"Regular","Still in Office","Still in Office","M",1968
+"2313","KYR_2021_1",NA,703,"KYR","Kyrgyzstan","Asia","Sadyr Japarov",2021-01-28,2024-07-04,"Regular","Still in Office","Still in Office","M",1968
 "2314","UZB-1990","824391f4-1e42-11e4-b4cd-db5882bf8def",704,"UZB","Uzbekistan","Asia","Karimov",1990-03-24,2016-09-02,"Regular","Natural Death","Still in Office","M",1938
-"2315","UZB_2016_2",NA,704,"UZB","Uzbekistan","Asia","Shavkat Mirziyoyev",2016-09-08,2024-07-02,"Regular","Still in Office","Still in Office","M",1957
+"2315","UZB_2016_2",NA,704,"UZB","Uzbekistan","Asia","Shavkat Mirziyoyev",2016-09-08,2024-07-04,"Regular","Still in Office","Still in Office","M",1957
 "2316","KZK-1990","8243c2c2-1e42-11e4-b4cd-db5882bf8def",705,"KZK","Kazakhstan","Asia","Nazarbayev",1990-04-24,2019-03-20,"Regular","Irregular","Still in Office","M",1940
-"2317","KZK_2019_1",NA,705,"KZK","Kazakhstan","Asia","Kassy-Jomart Tokayev",2019-03-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1953
+"2317","KZK_2019_1",NA,705,"KZK","Kazakhstan","Asia","Kassy-Jomart Tokayev",2019-03-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1953
 "2318","CHN-1861","8243c2c3-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Tz'u Hsi",1861-08-22,1908-11-15,"Regular","Natural Death","Regular","M",1835
 "2319","CHN-1908","8243c2c4-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Zaifeng",1908-12-02,1911-12-06,"Regular","Irregular","Unknown","M",1882
 "2320","CHN-1912-2","8243c2c7-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Yuan Shih-kai",1912-02-15,1916-06-06,"Regular","Natural Death","Regular","M",1859
@@ -2335,7 +2335,7 @@
 "2334","CHN-1980","8244553e-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Deng Xiaoping",1980-09-10,1997-02-19,"Regular","Natural Death","Regular","M",1904
 "2335","CHN-1997","8244553f-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Jiang Zemin",1997-02-19,2003-03-15,"Regular","Regular","Regular","M",1926
 "2336","CHN-2003","82445540-1e42-11e4-b4cd-db5882bf8def",710,"CHN","China","Asia","Hu Jintao",2003-03-15,2012-11-15,"Regular","Regular","Regular","M",1942
-"2337","CHN-2012","2b3ec879-3481-11e4-8dba-bbcd9ed46413",710,"CHN","China","Asia","Xi Jinping",2012-11-15,2024-07-02,"Regular","Still in Office","Still in Office","M",1953
+"2337","CHN-2012","2b3ec879-3481-11e4-8dba-bbcd9ed46413",710,"CHN","China","Asia","Xi Jinping",2012-11-15,2024-07-04,"Regular","Still in Office","Still in Office","M",1953
 "2338","TBT-1875","82445541-1e42-11e4-b4cd-db5882bf8def",711,"TBT",NA,NA,"Tatsak Rinpoche",1875-04-25,1886-06-15,"Regular","Natural Death","Regular","M",-999
 "2339","TBT-1886","82445542-1e42-11e4-b4cd-db5882bf8def",711,"TBT",NA,NA,"Demo Tulku Trinley Rabgyey",1886-06-15,1895-01-08,"Regular","Natural Death","Regular","M",-999
 "2340","TBT-1895","82445543-1e42-11e4-b4cd-db5882bf8def",711,"TBT",NA,NA,"13th Dalai Lama",1895-01-08,1933-12-17,"Regular","Natural Death","Regular","M",1876
@@ -2354,7 +2354,7 @@
 "2353","MON-2005","8254bcd5-1e42-11e4-b4cd-db5882bf8def",712,"MON","Mongolia","Asia","Enkhbayar",2005-06-24,2009-06-18,"Regular","Regular","Regular","M",1958
 "2354","MON-2009","8254bcd6-1e42-11e4-b4cd-db5882bf8def",712,"MON","Mongolia","Asia","Elbegdorj",2009-06-18,2017-07-10,"Regular","Regular","Still in Office","M",1963
 "2355","MON_2017_1",NA,712,"MON","Mongolia","Asia","Battulga",2017-07-10,2021-06-25,"Regular","Regular","Regular","M",1963
-"2356","MON_2021_1",NA,712,"MON","Mongolia","Asia","Ukhnaagiin Khürelsükh",2021-06-25,2024-07-02,"Regular","Still in Office","Still in Office","M",1968
+"2356","MON_2021_1",NA,712,"MON","Mongolia","Asia","Ukhnaagiin Khürelsükh",2021-06-25,2024-07-04,"Regular","Still in Office","Still in Office","M",1968
 "2357","TAW-1949","8244e7c7-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Li Tsung-jen",1949-01-21,1950-02-28,"Regular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1890
 "2358","TAW-1950","8244e7c8-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Chiang Kai-shek",1950-03-01,1975-04-05,"Regular","Natural Death","Regular","M",1886
 "2359","TAW-1975","8244e7c9-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Yen Chia-Kan",1975-04-05,1978-05-20,"Regular","Natural Death","Regular","M",1905
@@ -2362,12 +2362,12 @@
 "2361","TAW-1988","82451899-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Lee Teng-Hui",1988-01-13,2000-05-20,"Regular","Regular","Regular","M",1923
 "2362","TAW-2000","8245189a-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Chen Shui-bian",2000-05-21,2008-05-20,"Regular","Regular","Regular","M",1950
 "2363","TAW-2008","8254eda4-1e42-11e4-b4cd-db5882bf8def",713,"TAW","Taiwan","Asia","Ma Ying-jeou",2008-05-20,2016-05-20,"Regular","Regular","Still in Office","M",1950
-"2364","TAW_2016_1",NA,713,"TAW","Taiwan","Asia","Tsai Ing-Wen",2016-05-20,2024-07-02,"Regular","Still in Office","Still in Office","F",1956
+"2364","TAW_2016_1",NA,713,"TAW","Taiwan","Asia","Tsai Ing-Wen",2016-05-20,2024-07-04,"Regular","Still in Office","Still in Office","F",1956
 "2365","KOR-1873","8245189b-1e42-11e4-b4cd-db5882bf8def",730,"KOR",NA,NA,"Yi Hyong",1873-12-22,1907-07-20,"Regular","Foreign","Unknown","M",1852
 "2366","KOR-1907","8245189c-1e42-11e4-b4cd-db5882bf8def",730,"KOR",NA,NA,"Yi Ch'ok",1907-07-20,1910-08-29,"Foreign Imposition","Foreign","Unknown","M",1874
 "2367","PRK-1948","8245189d-1e42-11e4-b4cd-db5882bf8def",731,"PRK","North Korea","Asia","Kim Il-Sung",1948-09-09,1994-07-08,"Regular","Natural Death","Regular","M",1912
 "2368","PRK-1994","8245496c-1e42-11e4-b4cd-db5882bf8def",731,"PRK","North Korea","Asia","Kim Jong-Il",1994-07-08,2011-12-17,"Regular","Natural Death","Regular","M",1942
-"2369","PRK-2011","8254eda5-1e42-11e4-b4cd-db5882bf8def",731,"PRK","North Korea","Asia","Kim Jong Un",2011-12-17,2024-07-02,"Regular","Still in Office","Still in Office","M",1983
+"2369","PRK-2011","8254eda5-1e42-11e4-b4cd-db5882bf8def",731,"PRK","North Korea","Asia","Kim Jong Un",2011-12-17,2024-07-04,"Regular","Still in Office","Still in Office","M",1983
 "2370","ROK-1948","8245496d-1e42-11e4-b4cd-db5882bf8def",732,"ROK","South Korea","Asia","Rhee",1948-08-15,1960-04-27,"Regular","Irregular","Popular Protest, without Foreign Support","M",1875
 "2371","ROK-1960-2","8245496f-1e42-11e4-b4cd-db5882bf8def",732,"ROK","South Korea","Asia","Myun Chang",1960-08-12,1961-05-16,"Regular","Irregular","Removed by Military, without Foreign Support","M",1899
 "2372","ROK-1961-2","82454971-1e42-11e4-b4cd-db5882bf8def",732,"ROK","South Korea","Asia","Hee Park",1961-07-03,1979-10-26,"Irregular","Irregular","Removed by Other Government Actors, without Foreign Support","M",1917
@@ -2380,7 +2380,7 @@
 "2379","ROK-2008","8254eda6-1e42-11e4-b4cd-db5882bf8def",732,"ROK","South Korea","Asia","Lee Myung Bak",2008-02-25,2013-02-25,"Regular","Regular","Regular","M",1941
 "2380","ROK-2013","2b3ec87a-3481-11e4-8dba-bbcd9ed46413",732,"ROK","South Korea","Asia","Park Geun-hye",2013-02-25,2017-03-10,"Regular","Irregular","Still in Office","F",1952
 "2381","ROK_2017_2",NA,732,"ROK","South Korea","Asia","Moon Jae-in",2017-05-10,2022-05-09,"Regular","Regular","Regular","M",1953
-"2382","ROK_2022_1",NA,732,"ROK","South Korea","Asia","Yoon Suk Xeol",2022-05-09,2024-07-02,"Regular","Still in Office","Still in Office","M",1960
+"2382","ROK_2022_1",NA,732,"ROK","South Korea","Asia","Yoon Suk Xeol",2022-05-09,2024-07-04,"Regular","Still in Office","Still in Office","M",1960
 "2383","JPN-1868","8245ab15-1e42-11e4-b4cd-db5882bf8def",740,"JPN","Japan","Asia","Mutsuhito (Emperor)",1868-01-03,1885-12-22,"Regular","Regular","Regular","M",1852
 "2384","JPN-1885","3641c628-3bbd-11e5-afeb-eb6f07f9fec7",740,"JPN","Japan","Asia","Hirobumi Ito",1885-12-22,1888-04-30,"Regular","Regular","Regular","M",1842
 "2385","JPN-1888","8245ab17-1e42-11e4-b4cd-db5882bf8def",740,"JPN","Japan","Asia","Kuroda",1888-04-30,1889-12-24,"Regular","Regular","Regular","M",1840
@@ -2435,7 +2435,7 @@
 "2434","JPN-2011","82551e7a-1e42-11e4-b4cd-db5882bf8def",740,"JPN","Japan","Asia","Yoshihiko Noda",2011-09-02,2012-12-26,"Regular","Regular","Regular","M",1957
 "2435","JPN-2012","364a2a98-3bbd-11e5-afeb-eb6f07f9fec7",740,"JPN","Japan","Asia","Shinzo Abe",2012-12-26,2020-09-16,"Regular","Retired Due to Ill Health","Still in Office","M",1954
 "2436","JPN_2020_1",NA,740,"JPN","Japan","Asia","Yoshihide Suga",2020-09-16,2021-10-04,"Regular","Regular","Regular","M",1948
-"2437","JPN_2021_1",NA,740,"JPN","Japan","Asia","Fumio Kishida",2021-10-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1957
+"2437","JPN_2021_1",NA,740,"JPN","Japan","Asia","Fumio Kishida",2021-10-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1957
 "2438","IND-1947","82476297-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Nehru",1947-08-15,1964-05-27,"Regular","Natural Death","Regular","M",1889
 "2439","IND-1964-2","82479366-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Shastri",1964-06-09,1966-01-11,"Regular","Natural Death","Regular","M",1904
 "2440","IND-1966-2","82479367-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Gandhi, I.",1966-01-24,1977-03-22,"Regular","Regular","Regular","F",1917
@@ -2448,8 +2448,8 @@
 "2447","IND-1997","8247c43e-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Gujral",1997-04-21,1998-03-19,"Regular","Regular","Regular","M",1919
 "2448","IND-1998","8247c43c-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Vajpayee",1998-03-19,2004-05-22,"Regular","Regular","Regular","M",1924
 "2449","IND-2004","8247c43f-1e42-11e4-b4cd-db5882bf8def",750,"IND","India","Asia","Manmohan Singh",2004-05-22,2014-05-26,"Regular","Regular","Regular","M",1932
-"2450","IND_2014_1",NA,750,"IND","India","Asia","Narendra Modi",2014-05-26,2024-07-02,"Regular","Still in Office","Still in Office","M",1950
-"2451","IND-2014","14a038b1-aae0-11e4-b3bc-29f2fa19767e",750,"IND","India","Asia","Narendra Modi",2014-05-29,2024-07-02,"Regular","Still in Office","Still in Office","M",1950
+"2450","IND_2014_1",NA,750,"IND","India","Asia","Narendra Modi",2014-05-26,2024-07-04,"Regular","Still in Office","Still in Office","M",1950
+"2451","IND-2014","14a038b1-aae0-11e4-b3bc-29f2fa19767e",750,"IND","India","Asia","Narendra Modi",2014-05-29,2024-07-04,"Regular","Still in Office","Still in Office","M",1950
 "2452","BHU-1926","8247f50e-1e42-11e4-b4cd-db5882bf8def",760,"BHU","Bhutan","Asia","Wangchuk, Jigme",1926-08-21,1952-03-24,"Regular","Natural Death","Regular","M",1902
 "2453","BHU-1952","8247f50f-1e42-11e4-b4cd-db5882bf8def",760,"BHU","Bhutan","Asia","Wangchuk, Jigme Dorji",1952-03-24,1972-07-21,"Regular","Natural Death","Regular","M",1929
 "2454","BHU-1972","8247f510-1e42-11e4-b4cd-db5882bf8def",760,"BHU","Bhutan","Asia","Wangchuck, Jigme Singye",1972-07-21,1998-07-20,"Regular","Regular","Regular","M",1955
@@ -2464,7 +2464,7 @@
 "2463","BHU-2006","824825e2-1e42-11e4-b4cd-db5882bf8def",760,"BHU","Bhutan","Asia","Lyonpo Khandu Wangchuk",2006-09-07,2007-07-31,"Regular","Regular","Regular","M",1950
 "2464","BHU-2008","8247f511-1e42-11e4-b4cd-db5882bf8def",760,"BHU","Bhutan","Asia","Lyonpo Jigme Thinley",2008-04-09,2013-07-30,"Regular","Regular","Regular","M",1952
 "2465","BHU-2013","2b3ec87c-3481-11e4-8dba-bbcd9ed46413",760,"BHU","Bhutan","Asia","Tobgay",2013-07-30,2018-08-09,"Regular","Regular","Still in Office","M",1965
-"2466","BHU_2018_2",NA,760,"BHU","Bhutan","Asia","Lotay Tshering",2018-11-07,2024-07-02,"Regular","Still in Office","Still in Office","M",1969
+"2466","BHU_2018_2",NA,760,"BHU","Bhutan","Asia","Lotay Tshering",2018-11-07,2024-07-04,"Regular","Still in Office","Still in Office","M",1969
 "2467","PAK-1947","824825e4-1e42-11e4-b4cd-db5882bf8def",770,"PAK","Pakistan","Asia","Jinnah",1947-08-15,1948-09-11,"Regular","Natural Death","Regular","M",1876
 "2468","PAK-1948","824825e5-1e42-11e4-b4cd-db5882bf8def",770,"PAK","Pakistan","Asia","L. Khan",1948-09-11,1951-10-16,"Regular","Irregular","Assassination by Unsupported Individual","M",1895
 "2469","PAK-1951","824825e6-1e42-11e4-b4cd-db5882bf8def",770,"PAK","Pakistan","Asia","Nazimuddin",1951-10-17,1953-04-17,"Regular","Regular","Regular","M",1894
@@ -2495,7 +2495,7 @@
 "2494","BNG-1996-2","365240e8-3bbd-11e5-afeb-eb6f07f9fec7",771,"BNG","Bangladesh","Asia","Hasina Wazed",1996-06-23,2001-07-15,"Regular","Regular","Regular","F",1947
 "2495","BNG-2001-2","3651f2c8-3bbd-11e5-afeb-eb6f07f9fec7",771,"BNG","Bangladesh","Asia","Khaleda Zia",2001-10-10,2006-10-29,"Regular","Regular","Regular","F",1945
 "2496","BNG-2007","82554f4c-1e42-11e4-b4cd-db5882bf8def",771,"BNG","Bangladesh","Asia","Fakhruddin",2007-01-12,2009-01-06,"Regular","Regular","Regular","M",1940
-"2497","BNG-2009","365240e8-3bbd-11e5-afeb-eb6f07f9fec7",771,"BNG","Bangladesh","Asia","Hasina Wazed",2009-01-06,2024-07-02,"Regular","Still in Office","Still in Office","F",1947
+"2497","BNG-2009","365240e8-3bbd-11e5-afeb-eb6f07f9fec7",771,"BNG","Bangladesh","Asia","Hasina Wazed",2009-01-06,2024-07-04,"Regular","Still in Office","Still in Office","F",1947
 "2498","MYA-1853","82491a13-1e42-11e4-b4cd-db5882bf8def",775,"MYA","Myanmar","Asia","Mindon Min",1853-02-18,1878-10-01,"Irregular","Natural Death","Regular","M",1808
 "2499","MYA-1878","82491a14-1e42-11e4-b4cd-db5882bf8def",775,"MYA","Myanmar","Asia","Thibaw Min",1878-10-01,1885-11-29,"Regular","Foreign","Unknown","M",1859
 "2500","MYA-1948","82494ae4-1e42-11e4-b4cd-db5882bf8def",775,"MYA","Myanmar","Asia","U Nu",1948-01-04,1956-06-12,"Regular","Regular","Regular","M",1907
@@ -2508,7 +2508,7 @@
 "2507","MYA-2011","14a038b2-aae0-11e4-b3bc-29f2fa19767e",775,"MYA","Myanmar","Asia","Thein Sein",2011-03-30,2016-03-30,"Regular","Regular","Still in Office","M",1945
 "2508","MYA_2016_1",NA,775,"MYA","Myanmar","Asia","Htin Kyaw",2016-03-30,2018-03-21,"Regular","Retired Due to Ill Health","Retired Due to Ill Health","M",1946
 "2509","MYA_2018_2",NA,775,"MYA","Myanmar","Asia","Win Myint",2018-03-30,2021-02-01,"Regular","Irregular","Irregular","M",1951
-"2510","MYA_2021_1",NA,775,"MYA","Myanmar","Asia","Myint Swe",2021-02-01,2024-07-02,"Irregular","Still in Office","Still in Office","M",1951
+"2510","MYA_2021_1",NA,775,"MYA","Myanmar","Asia","Myint Swe",2021-02-01,2024-07-04,"Irregular","Still in Office","Still in Office","M",1951
 "2511","SRI-1948","82497bb9-1e42-11e4-b4cd-db5882bf8def",780,"SRI","Sri Lanka","Asia","Senanayake, Don",1948-02-04,1952-03-22,"Regular","Natural Death","Regular","M",1884
 "2512","SRI-1952","82497bba-1e42-11e4-b4cd-db5882bf8def",780,"SRI","Sri Lanka","Asia","Senanayake, Dudley",1952-03-26,1953-10-12,"Regular","Retired Due to Ill Health","Regular","M",1911
 "2513","SRI-1953","82497bbb-1e42-11e4-b4cd-db5882bf8def",780,"SRI","Sri Lanka","Asia","Kotelawala",1953-10-12,1956-04-11,"Regular","Regular","Regular","M",1897
@@ -2523,7 +2523,7 @@
 "2522","SRI-2005","82554f4e-1e42-11e4-b4cd-db5882bf8def",780,"SRI","Sri Lanka","Asia","Rajapakse",2005-11-19,2015-01-09,"Regular","Regular","Regular","F",1945
 "2523","SRI-2015","0eddfd20-df39-11e5-ba44-bb6d7c1a9a58",780,"SRI","Sri Lanka","Asia","Maithripala Sirisena",2015-01-09,2019-11-18,"Regular","Regular","Still in Office","F",1951
 "2524","SRI_2019_1",NA,780,"SRI","Sri Lanka","Asia","Gotabaya Rajapaksa",2019-11-18,2022-07-14,"Regular","Irregular","Irregular","M",1949
-"2525","SRI_2022_1",NA,780,"SRI","Sri Lanka","Asia","Ranil Wickremesinghe",2022-07-14,2024-07-02,"Regular","Still in Office","Still in Office","M",1949
+"2525","SRI_2022_1",NA,780,"SRI","Sri Lanka","Asia","Ranil Wickremesinghe",2022-07-14,2024-07-04,"Regular","Still in Office","Still in Office","M",1949
 "2526","MAD-1953","8249ac91-1e42-11e4-b4cd-db5882bf8def",781,"MAD","Maldives","Asia","Ali Didi",1953-09-02,1957-12-12,"Regular","Irregular","Popular Protest, without Foreign Support","M",1889
 "2527","MAD-1957","8249dd60-1e42-11e4-b4cd-db5882bf8def",781,"MAD","Maldives","Asia","Nasir",1957-12-12,1978-11-11,"Regular","Retired Due to Ill Health","Regular","M",1926
 "2528","MAD-1978","8249dd61-1e42-11e4-b4cd-db5882bf8def",781,"MAD","Maldives","Asia","Maumoon Abdul Gayoom",1978-11-11,2008-11-11,"Regular","Regular","Regular","M",1937
@@ -2561,7 +2561,7 @@
 "2560","NEP_2016_1",NA,790,"NEP","Nepal","Asia","Dahal",2016-08-04,2017-06-07,"Regular","Regular","Regular","M",1954
 "2561","NEP_2018_1",NA,790,"NEP","Nepal","Asia","Khadga Prasad Sharma Oli",2018-02-15,2021-07-13,"Regular","Regular","Regular","M",1952
 "2562","NEP_2021_1",NA,790,"NEP","Nepal","Asia","Sher Bahadur Deuba",2021-07-13,2022-12-26,"Regular","Regular","Regular","M",1946
-"2563","NEP_2022_1",NA,790,"NEP","Nepal","Asia","Pushpa Kamal Dahal",2022-12-26,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2563","NEP_2022_1",NA,790,"NEP","Nepal","Asia","Pushpa Kamal Dahal",2022-12-26,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2564","THI-1868","824a6fdd-1e42-11e4-b4cd-db5882bf8def",800,"THI","Thailand","Asia","Rama V",1868-10-01,1910-10-23,"Regular","Natural Death","Regular","M",1853
 "2565","THI-1910","824a6fde-1e42-11e4-b4cd-db5882bf8def",800,"THI","Thailand","Asia","Rama VI",1910-10-23,1925-11-26,"Regular","Natural Death","Regular","M",1881
 "2566","THI-1925","824a6fdf-1e42-11e4-b4cd-db5882bf8def",800,"THI","Thailand","Asia","Rama VII",1925-11-26,1932-12-10,"Regular","Irregular","Removed by Military, without Foreign Support","M",1893
@@ -2608,7 +2608,7 @@
 "2607","LAO-1998","824bc5b2-1e42-11e4-b4cd-db5882bf8def",812,"LAO","Laos","Asia","Siphandon",1998-02-24,2006-06-08,"Regular","Regular","Regular","M",1924
 "2608","LAO-2006","8255b0f8-1e42-11e4-b4cd-db5882bf8def",812,"LAO","Laos","Asia","Sayasone",2006-06-08,2016-04-20,"Regular","Regular","Still in Office","M",1936
 "2609","LAO_2016_1",NA,812,"LAO","Laos","Asia","Bounnhang Vorachit",2016-04-20,2021-03-22,"Regular","Regular","Regular","M",1937
-"2610","LAO_2021_1",NA,812,"LAO","Laos","Asia","Thongloun Sisoulith",2021-03-22,2024-07-02,"Regular","Still in Office","Still in Office","M",1945
+"2610","LAO_2021_1",NA,812,"LAO","Laos","Asia","Thongloun Sisoulith",2021-03-22,2024-07-04,"Regular","Still in Office","Still in Office","M",1945
 "2611","VNM-1847","824bc5b3-1e42-11e4-b4cd-db5882bf8def",815,"VNM",NA,NA,"Tu Duc",1847-11-10,1883-07-17,"Irregular","Natural Death","Regular","M",1829
 "2612","VIE-1883","824bc5b6-1e42-11e4-b4cd-db5882bf8def",815,"VIE",NA,NA,"Regency",1883-12-02,1885-10-14,"Irregular","Foreign","Unknown","M",-999
 "2613","VNM-1885","824bc5b7-1e42-11e4-b4cd-db5882bf8def",815,"VNM",NA,NA,"Dong Khanh",1885-10-14,1889-01-28,"Foreign Imposition","Natural Death","Regular","M",1864
@@ -2619,7 +2619,7 @@
 "2618","DRV-1991","824bf68b-1e42-11e4-b4cd-db5882bf8def",816,"DRV","Vietnam","Asia","Do Muoi",1991-06-27,1997-12-29,"Regular","Regular","Regular","M",1917
 "2619","DRV-1997","824c275a-1e42-11e4-b4cd-db5882bf8def",816,"DRV","Vietnam","Asia","Phieu",1997-12-29,2001-04-22,"Regular","Regular","Regular","M",1931
 "2620","DRV-2001","824c275b-1e42-11e4-b4cd-db5882bf8def",816,"DRV","Vietnam","Asia","Nong Duc Manh",2001-04-23,2011-01-19,"Regular","Regular","Regular","M",1940
-"2621","DRV-2011","8255b0f9-1e42-11e4-b4cd-db5882bf8def",816,"DRV","Vietnam","Asia","Phu Trong",2011-01-19,2024-07-02,"Regular","Still in Office","Still in Office","M",1944
+"2621","DRV-2011","8255b0f9-1e42-11e4-b4cd-db5882bf8def",816,"DRV","Vietnam","Asia","Phu Trong",2011-01-19,2024-07-04,"Regular","Still in Office","Still in Office","M",1944
 "2622","RVN-1954-3","824c275e-1e42-11e4-b4cd-db5882bf8def",817,"RVN",NA,NA,"Ngo Dinh Diem",1954-06-26,1963-11-01,"Irregular","Irregular","Removed by Military, without Foreign Support","M",1901
 "2623","RVN-1964-1","824c582e-1e42-11e4-b4cd-db5882bf8def",817,"RVN",NA,NA,"Khanh",1964-01-30,1964-11-04,"Irregular","Irregular","Popular Protest, without Foreign Support","M",1927
 "2624","RVN-1965-3","824c5830-1e42-11e4-b4cd-db5882bf8def",817,"RVN",NA,NA,"Van Thieu",1965-06-14,1975-04-21,"Irregular","Foreign","Removed through Threat of Foreign Force","M",1923
@@ -2633,11 +2633,11 @@
 "2632","MAL_2018_1",NA,820,"MAL","Malaysia","Asia","Mahatir Bin Mohammad",2018-05-10,2020-03-01,"Regular","Regular","Regular","M",1925
 "2633","MAL_2020_1",NA,820,"MAL","Malaysia","Asia","Muhyiddin Yassin",2020-03-01,2021-08-21,"Regular","Regular","Regular","M",1947
 "2634","MAL_2021_1",NA,820,"MAL","Malaysia","Asia","Ismail Sabri bin Yaakob",2021-08-21,2022-11-24,"Regular","Regular","Regular","M",1960
-"2635","MAL_2022_1",NA,820,"MAL","Malaysia","Asia","Anwar bin Ibrahim",2022-11-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1947
+"2635","MAL_2022_1",NA,820,"MAL","Malaysia","Asia","Anwar bin Ibrahim",2022-11-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1947
 "2636","SIN-1959","824c890e-1e42-11e4-b4cd-db5882bf8def",830,"SIN","Singapore","Asia","Lee Kuan Yew",1959-06-05,1990-11-28,"Regular","Regular","Regular","M",1923
 "2637","SIN-1990","824c890f-1e42-11e4-b4cd-db5882bf8def",830,"SIN","Singapore","Asia","Goh Chok Tong",1990-11-28,2004-08-12,"Regular","Regular","Regular","M",1941
-"2638","SIN-2004","824c8910-1e42-11e4-b4cd-db5882bf8def",830,"SIN","Singapore","Asia","Lee Hsien Loong",2004-08-12,2024-07-02,"Regular","Still in Office","Still in Office","M",1952
-"2639","BRU-1967","824c8911-1e42-11e4-b4cd-db5882bf8def",835,"BRU","Brunei","Asia","Hassanal Bolkiah",1967-10-04,2024-07-02,"Regular","Still in Office","Still in Office","M",1946
+"2638","SIN-2004","824c8910-1e42-11e4-b4cd-db5882bf8def",830,"SIN","Singapore","Asia","Lee Hsien Loong",2004-08-12,2024-07-04,"Regular","Still in Office","Still in Office","M",1952
+"2639","BRU-1967","824c8911-1e42-11e4-b4cd-db5882bf8def",835,"BRU","Brunei","Asia","Hassanal Bolkiah",1967-10-04,2024-07-04,"Regular","Still in Office","Still in Office","M",1946
 "2640","PHI-1946","824cb9e0-1e42-11e4-b4cd-db5882bf8def",840,"PHI","Philippines","Asia","Roxas",1946-07-04,1948-04-16,"Regular","Natural Death","Regular","M",1892
 "2641","PHI-1948","824cb9e1-1e42-11e4-b4cd-db5882bf8def",840,"PHI","Philippines","Asia","Quirrino",1948-04-16,1953-12-30,"Regular","Regular","Regular","M",1890
 "2642","PHI-1953","824cb9e2-1e42-11e4-b4cd-db5882bf8def",840,"PHI","Philippines","Asia","Magsaysay",1953-12-30,1957-03-17,"Regular","Natural Death","Regular","M",1907
@@ -2650,7 +2650,7 @@
 "2649","PHI-2001","824ceab7-1e42-11e4-b4cd-db5882bf8def",840,"PHI","Philippines","Asia","Gloria Macapagal-Arroyo",2001-01-21,2010-06-30,"Regular","Regular","Regular","F",1947
 "2650","PHI-2010","8255e1c9-1e42-11e4-b4cd-db5882bf8def",840,"PHI","Philippines","Asia","Benigno Aquino III",2010-06-30,2016-06-30,"Regular","Regular","Still in Office","M",1960
 "2651","PHI_2016_1",NA,840,"PHI","Philippines","Asia","Rodrigo Duterte",2016-06-30,2022-06-30,"Regular","Regular","Regular","M",1945
-"2652","PHI_2022_1",NA,840,"PHI","Philippines","Asia","Bongbong Marcos",2022-06-30,2024-07-02,"Regular","Still in Office","Still in Office","M",1957
+"2652","PHI_2022_1",NA,840,"PHI","Philippines","Asia","Bongbong Marcos",2022-06-30,2024-07-04,"Regular","Still in Office","Still in Office","M",1957
 "2653","INS-1945","824ceab8-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Sukarno",1945-08-17,1948-12-18,"Regular","Foreign","Removed through Threat of Foreign Force","M",1901
 "2654","INS-1949-2","824ceab8-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Sukarno",1949-12-27,1966-03-12,"Regular","Irregular","Removed by Military, without Foreign Support","M",1901
 "2655","INS-1966","824d1b88-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Suharto",1966-03-12,1998-05-21,"Irregular","Regular","Regular","M",1921
@@ -2658,12 +2658,12 @@
 "2657","INS-1999","824d1b8a-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Wahid",1999-10-20,2001-07-23,"Regular","Regular","Regular","M",1940
 "2658","INS-2001","824d1b8b-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Megawati Sukarnoputri",2001-07-24,2004-10-20,"Regular","Regular","Regular","F",1947
 "2659","INS-2004","824d1b8c-1e42-11e4-b4cd-db5882bf8def",850,"INS","Indonesia","Asia","Bambang Yudhoyono",2004-10-20,2014-10-20,"Regular","Regular","Regular","M",1949
-"2660","INS-2014","14a05fc3-aae0-11e4-b3bc-29f2fa19767e",850,"INS","Indonesia","Asia","Joko Widodo",2014-10-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1961
+"2660","INS-2014","14a05fc3-aae0-11e4-b3bc-29f2fa19767e",850,"INS","Indonesia","Asia","Joko Widodo",2014-10-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1961
 "2661","ETM-2002","824d1b8d-1e42-11e4-b4cd-db5882bf8def",860,"ETM","East Timor","Asia","Gusmao",2002-05-20,2007-05-20,"Regular","Regular","Regular","M",1946
 "2662","ETM-2008-2","8255e1ca-1e42-11e4-b4cd-db5882bf8def",860,"ETM","East Timor","Asia","Ramos-Horta",2008-04-17,2012-05-20,"Regular","Retired Due to Ill Health","Regular","M",1949
 "2663","ETM-2012","2b3ec880-3481-11e4-8dba-bbcd9ed46413",860,"ETM","East Timor","Asia","Ruak",2012-05-20,2017-05-20,"Regular","Regular","Still in Office","M",1956
 "2664","ETM_2017_1",NA,860,"ETM","East Timor","Asia","Guterres",2017-05-20,2022-05-20,"Regular","Regular","Regular","M",1954
-"2665","ETM_2022_1",NA,860,"ETM","East Timor","Asia","Jose Manuel Ramos-Horta",2022-05-20,2024-07-02,"Regular","Still in Office","Still in Office","M",1954
+"2665","ETM_2022_1",NA,860,"ETM","East Timor","Asia","Jose Manuel Ramos-Horta",2022-05-20,2024-07-04,"Regular","Still in Office","Still in Office","M",1954
 "2666","AUL-1901","824d4c5c-1e42-11e4-b4cd-db5882bf8def",900,"AUL","Australia","Oceania","Edmund Barton",1901-01-01,1903-09-24,"Regular","Regular","Regular","M",1849
 "2667","AUL-1904-2","824d7d31-1e42-11e4-b4cd-db5882bf8def",900,"AUL","Australia","Oceania","George Reid",1904-08-18,1905-07-05,"Regular","Regular","Regular","M",1848
 "2668","AUL-1905","824d4c5d-1e42-11e4-b4cd-db5882bf8def",900,"AUL","Australia","Oceania","Alfred Deakin",1905-07-05,1908-11-13,"Regular","Regular","Regular","M",1856
@@ -2692,7 +2692,7 @@
 "2691","AUL-2013-2","2b3ec881-3481-11e4-8dba-bbcd9ed46413",900,"AUL","Australia","Oceania","Abbott",2013-09-18,2015-09-15,"Regular","Regular","Regular","M",1957
 "2692","AUL_2015_1",NA,900,"AUL","Australia","Oceania","Malcolm Turnbull",2015-09-15,2018-08-24,"Regular","Regular","Regular","M",1954
 "2693","AUL_2018_1",NA,900,"AUL","Australia","Oceania","Scott Morrison",2018-08-24,2022-05-22,"Regular","Regular","Regular","M",1968
-"2694","AUL_2022_1",NA,900,"AUL","Australia","Oceania","Anthony Norman Albanese",2022-05-22,2024-07-02,"Regular","Still in Office","Still in Office","M",1963
+"2694","AUL_2022_1",NA,900,"AUL","Australia","Oceania","Anthony Norman Albanese",2022-05-22,2024-07-04,"Regular","Still in Office","Still in Office","M",1963
 "2695","PNG-1975","824e715f-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","Somare",1975-09-16,1980-03-11,"Regular","Regular","Regular","M",1936
 "2696","PNG-1980","824e7160-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","Chan",1980-03-11,1982-08-02,"Regular","Regular","Regular","M",1939
 "2697","PNG-1982","824e715f-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","Somare",1982-08-02,1985-11-21,"Regular","Regular","Regular","M",1936
@@ -2704,7 +2704,7 @@
 "2703","PNG-1999","824ea232-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","Morauta",1999-07-14,2002-08-05,"Regular","Regular","Regular","M",1946
 "2704","PNG-2002","824e715f-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","Somare",2002-08-06,2011-08-02,"Regular","Retired Due to Ill Health","Regular","M",1936
 "2705","PNG-2011","8255e1cd-1e42-11e4-b4cd-db5882bf8def",910,"PNG","Papua New Guinea","Oceania","O'Neil",2011-08-02,2019-05-29,"Regular","Regular","Still in Office","M",1965
-"2706","PNG_2019_1",NA,910,"PNG","Papua New Guinea","Oceania","James Marape",2019-05-29,2024-07-02,"Regular","Still in Office","Still in Office","M",1971
+"2706","PNG_2019_1",NA,910,"PNG","Papua New Guinea","Oceania","James Marape",2019-05-29,2024-07-04,"Regular","Still in Office","Still in Office","M",1971
 "2707","NEW-1906","824ea233-1e42-11e4-b4cd-db5882bf8def",920,"NEW","New Zealand","Oceania","Ward",1906-08-06,1912-03-28,"Regular","Regular","Regular","M",1856
 "2708","NEW-1912-2","824ea235-1e42-11e4-b4cd-db5882bf8def",920,"NEW","New Zealand","Oceania","Massey",1912-07-10,1925-05-10,"Regular","Natural Death","Regular","M",1856
 "2709","NEW-1925-2","824ea237-1e42-11e4-b4cd-db5882bf8def",920,"NEW","New Zealand","Oceania","Coates",1925-05-30,1928-12-07,"Regular","Regular","Regular","M",1878
@@ -2744,11 +2744,11 @@
 "2743","SOL-2011","825612aa-1e42-11e4-b4cd-db5882bf8def",940,"SOL","Solomon Islands","Oceania","Darcy Lilo",2011-11-16,2014-12-09,"Regular","Regular","Regular","M",1965
 "2744","SOL-2014","824f9658-1e42-11e4-b4cd-db5882bf8def",940,"SOL","Solomon Islands","Oceania","Sogavare",2014-12-09,2017-11-15,"Regular","Regular","Still in Office","M",1955
 "2745","SOL_2017_1",NA,940,"SOL","Solomon Islands","Oceania","Rick Houenipwela",2017-11-15,2019-04-24,"Regular","Regular","Regular","M",1958
-"2746","SOL_2019_1",NA,940,"SOL","Solomon Islands","Oceania","Manasseh Sogavare",2019-04-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1955
+"2746","SOL_2019_1",NA,940,"SOL","Solomon Islands","Oceania","Manasseh Sogavare",2019-04-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1955
 "2747","FJI-1970","824f965a-1e42-11e4-b4cd-db5882bf8def",950,"FJI","Fiji","Oceania","Mara",1970-10-10,1987-04-13,"Regular","Regular","Regular","M",1920
 "2748","FJI-1987-3","824f965a-1e42-11e4-b4cd-db5882bf8def",950,"FJI","Fiji","Oceania","Mara",1987-12-05,1992-06-02,"Regular","Regular","Regular","M",1920
 "2749","FJI-1992","824fc72a-1e42-11e4-b4cd-db5882bf8def",950,"FJI","Fiji","Oceania","Rabuka",1992-06-02,1999-05-19,"Regular","Regular","Regular","M",1948
 "2750","FJI-1999","824fc72b-1e42-11e4-b4cd-db5882bf8def",950,"FJI","Fiji","Oceania","Chaudhry",1999-05-19,2000-05-19,"Regular","Irregular","Removed by Rebels, without Foreign Support","M",1942
 "2751","FJI-2000-3","824fc72e-1e42-11e4-b4cd-db5882bf8def",950,"FJI","Fiji","Oceania","Laisenia Qarase",2000-07-14,2006-12-05,"Regular","Irregular","Removed by Military, without Foreign Support","M",1941
 "2752","FJI-2007","3671d6d8-3bbd-11e5-afeb-eb6f07f9fec7",950,"FJI","Fiji","Oceania","Bainimarama",2007-01-05,2022-12-24,"Irregular","Regular","Still in Office","M",1954
-"2753","FJI_2022_1",NA,950,"FJI","Fiji","Oceania","Sitiveni Rabuka",2022-12-24,2024-07-02,"Regular","Still in Office","Still in Office","M",1948
+"2753","FJI_2022_1",NA,950,"FJI","Fiji","Oceania","Sitiveni Rabuka",2022-12-24,2024-07-04,"Regular","Still in Office","Still in Office","M",1948

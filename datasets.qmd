@@ -116,6 +116,17 @@ write.csv(leaders, "leaders.csv")
 #   view()
 ```
 
+## Political Violence Dataset: MEPV
+
+```{r}
+#| label: violence
+
+download.file("http://www.systemicpeace.org/inscr/MEPVv2018.xls", "political_violence_2018.xls")
+
+political_violence <- read_excel("political_violence_2018.xls")
+write_csv(political_violence, "political_violence.csv")
+```
+
 ## Upload Datasets
 
 ```{bash}
