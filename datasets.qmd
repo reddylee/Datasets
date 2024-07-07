@@ -29,7 +29,11 @@ write_csv(autocoup, "autocoup.csv")
 download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLAD.xls")
 
 # read_data
-PLAD <- read_excel("PLAD.xls")
+PLAD <- read_excel("PLAD.xls") |> 
+  mutate(exit = case_when(
+    exit == "Still in office" ~ "Still in Office",
+    TRUE ~ exit
+  ))
 write_csv(PLAD, "PLAD.csv")
 
 plad <- PLAD |> 
