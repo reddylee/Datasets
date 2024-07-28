@@ -356,7 +356,13 @@ tstart = as.numeric(year(startdate) + (startdate - floor_date(startdate, "year")
          tstop = as.numeric(year(enddate) + (enddate - floor_date(enddate, "year"))/365)) |>
   select(ccode, country = country.x, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)
 
-write_csv(survival_data, "survival_cox_ph.csv")
+survival_cox_ph <- survival_data |> 
+  left_join(GDP, join_by(ccode, year == year)) |> 
+  left_join(polity5, join_by(ccode, year == year)) |>
+  left_join(political_violence, join_by(ccode, year == year)) |>
+  select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
+
+write_csv(survival_cox_ph, "survival_cox_ph.csv")
 ```
 
 ```{r}
@@ -380,8 +386,22 @@ mutate(first_year = startdate,
   left_join(polity5, join_by(ccode, tstart == year)) |>
   left_join(political_violence, join_by(ccode, tstart == year)) |>
   drop_na() |> 
-  select(id, ccode, country, leader, age, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
+  select(id, ccode, country, leader, age, T1, T2, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
 write_csv(survival_cox_td, "survival_cox_td.csv")
+```
+
+```{r}
+survival_cox_ph |> 
+mutate(group = factor(group, 
+                        labels = c("Overstay leaders", "Coup-entry leaders"))) |>
+  coxph(Surv(survival_days, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age, data = _) 
+```
+
+```{r}
+survival_cox_td |>
+mutate(group = factor(group, 
+                        labels = c("Overstay leaders", "Coup-entry leaders"))) |>
+coxph(Surv(T1, T2, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age + cluster(id), data = _)
 ```
 
 ## Upload Datasets
