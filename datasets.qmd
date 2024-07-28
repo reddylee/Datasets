@@ -6,47 +6,16 @@ library(tidyverse)
 library(janitor)
 library(data.table)
 library(readxl)
+library(vdemdata)
+library(zoo)
+library(democracyData)
+library(fuzzyjoin)
+library(survival)
 ```
 
-## Autocoup Dataset
+## leaders dataset
 
-```{r}
-#| label: autocoup
-# read_data
-Autocoup <- read_excel("Autocoup.xlsx")
-# str(Autocoup)
-# write_data
-autocoup <- Autocoup |> 
-  mutate(entry_date = as.Date(entry_date)) 
-
-write_csv(autocoup, "autocoup.csv")
-# str(autocoup)
-```
-
-## PLAD Dataset
-
-```{r}
-download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLAD.xls")
-
-# read_data
-PLAD <- read_excel("PLAD.xls") |> 
-  mutate(exit = case_when(
-    exit == "Still in office" ~ "Still in Office",
-    TRUE ~ exit
-  ))
-write_csv(PLAD, "PLAD.csv")
-
-plad <- PLAD |> 
-  select(country, continent, 1:6, entry, exit, gender, yrborn) |>
-  mutate(
-    startdate = dmy(startdate),
-    enddate = dmy(enddate)
-  ) |>
-  filter(enddate - startdate > 270)
-write_csv(plad, "plad.csv")
-```
-
-## Archigos Dataset
+### Archigos Dataset
 
 ```{r}
 #| label: archigos
@@ -75,7 +44,34 @@ archigos <- Archigos |>
 write_csv(archigos, "archigos.csv")
 ```
 
-## Leaders Dataset: Archigos and PLAD
+### PLAD Dataset
+
+```{r}
+download.file("https://dataverse.harvard.edu/api/access/datafile/10119324", "PLAD.xls")
+
+# read_data
+PLAD <- read_excel("PLAD.xls") |> 
+  mutate(exit = case_when(
+    exit == "Still in office" ~ "Still in Office",
+    TRUE ~ exit
+  ))
+write_csv(PLAD, "PLAD.csv")
+
+plad <- PLAD |> 
+  select(country, continent, 1:6, entry, exit, gender, yrborn, birthdate) |>
+  mutate(
+    startdate = dmy(startdate),
+    birthdate = dmy(birthdate),
+    enddate = case_when(exit == "Still in Office" ~ Sys.Date(),
+                             .default = dmy(enddate)),
+    yrborn = as.numeric(yrborn)
+  ) 
+# |>
+#   filter(enddate - startdate > 270)
+write_csv(plad, "plad.csv")
+```
+
+### Leaders Dataset: Archigos and PLAD
 
 ```{r}
 #| label: leaders_Reddy
@@ -95,40 +91,297 @@ leaders <- archigos |>
     enddate.archigos = if_else(exit.archigos == "Still in Office", Sys.Date(), enddate.archigos),
     gender.archigos = coalesce(gender.archigos, gender.plad),
     yrborn.archigos = coalesce(yrborn.archigos, as.numeric(yrborn.plad)),
-    exitcode = coalesce(exitcode, exit.archigos)
+    exitcode = case_when(
+      is.na(exitcode) ~ exit.archigos,
+      exitcode == "Still in Office" & exit.archigos != "Still in office" ~ exit.archigos,
+    TRUE ~ exitcode),
+    exitcode = case_when(
+      leader.archigos %in% c("Mugabe", "Al-Bashir", "Ibrahim Boubacar Keita", "Win Myint", "Deby", "Conde", "Bah Ndaw", "Roch Marc Christian Kabore", "Paul-Henri Sandaogo Damiba", "Ali Bongo Ondimba", "Mohamed Bazoum") ~ "Coup",
+      TRUE ~ exitcode
+    )
   ) |> 
   select(1:4, country, continent, leader = leader.archigos, startdate, enddate = enddate.archigos, entry = entry.archigos, exit = exit.archigos, exitcode, gender = gender.archigos, yrborn = yrborn.archigos) |>
   arrange(ccode, startdate)
 write.csv(leaders, "leaders.csv")
 ```
 
-## Country Codes Dataset
+## Coup analysis dataset
 
-```{r}
-#| label: country_codes
-
-# countrycode::codelist |>
-#   view()
-```
-
-## REIGN Dataset
-
-```{r}
-#| label: reign
-
-# regime <- democracyData::REIGN |> 
-#   view()
-```
-
-## Political Violence Dataset: MEPV
+### Political Violence Dataset: MEPV
 
 ```{r}
 #| label: violence
 
 download.file("http://www.systemicpeace.org/inscr/MEPVv2018.xls", "political_violence_2018.xls")
 
-political_violence <- read_excel("political_violence_2018.xls")
-write_csv(political_violence, "political_violence.csv")
+political_violence <- read_excel("political_violence_2018.xls") |> 
+  dplyr::select(ccode, year, violence = actotal)
+```
+
+### GDP and population Dataset
+
+```{r}
+#| label: GDP_pop
+GDP <- vdem |> 
+  select(ccode = COWcode, country = country_name, year, GDP_pc = e_gdppc, pop = e_pop) |>
+  filter(year >= 1900)|> 
+  # create a new variable for 5-year moving average of GDP growth
+  mutate(GDP_trend = GDP_pc / lag(rollapply(GDP_pc, width = 5, FUN = mean,
+                               align = 'right', fill = NA)),
+         .by = c(ccode)) |> 
+  mutate(pop_log = log(pop)) |>
+  select(ccode, year, GDP_pc, GDP_trend, pop_log)
+```
+
+### Regime Type Dataset
+
+```{r}
+#| label: regimes
+regimes <- REIGN |>
+  select(
+    ccode = GWn, 
+    country = extended_country_name, 
+    year, 
+    regime_type = gwf_regimetype) |> 
+  filter(year > 1900,
+         !str_detect(regime_type, "provisional"),
+         !regime_type  %in% c("warlordism", "foreign-occupied")) |>
+  distinct(ccode, year, .keep_all = T) |> 
+  mutate(
+    regime_coup = case_when(
+      regime_type %in% c(
+        "party-based",
+        "party-personal",
+        "party-military",
+        "party-personal-military",
+        "oligarchy"
+      ) ~ "dominant-party",
+      regime_type == "personal" ~ "personal",
+      regime_type %in% c("military", "military personal", "indirect military") ~ "military",
+      regime_type == "monarchy" ~ "monarchy",
+      regime_type %in% c("presidential", "parliamentary") ~ "democracy",
+      TRUE ~ "other"
+    ),
+    regime_autocoup = case_when(
+      regime_type %in% c(
+        "party-based",
+        "party-personal",
+        "party-military",
+        "party-personal-military",
+        "oligarchy"
+      ) ~ "dominant-party",
+      regime_type == "personal" ~ "personal",
+      regime_type %in% c("military", "military personal", "indirect military") ~ "military",
+      regime_type == "monarchy" ~ "monarchy",
+      regime_type == "presidential" ~ "presidential",
+      regime_type == "parliamentary" ~ "parliamentary",
+      TRUE ~ NA
+    )
+  ) |>
+  filter(year > 1944) |> 
+  dplyr::select(country, ccode, year, regime_coup, regime_autocoup)
+```
+
+### Coup_all Dataset
+
+```{r}
+#| label: coup_all
+
+# Coups1 <- fread("https://www.uky.edu/~clthyn2/coup_data/candidate_dataset.txt")
+# Coups2 <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups_final.txt")
+# Coups3 <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_ccode_year.txt")
+
+coup_all <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_ccode_year.txt") |> 
+  mutate(coup = case_when(
+    coup1 == 0 ~ 0,
+    coup1 == 2 | coup2 == 2 | coup3 == 2 | coup4 == 2 ~ 2,
+    TRUE ~ 1
+  )) |>
+  group_by(ccode) |> 
+  arrange(year) |> 
+  mutate(pre_coups = lag(cumsum(coup %in% c(1, 2)), default = 0),
+         last_coup_year = lag(case_when(coup %in% c(1, 2)  ~ year,
+                                        TRUE ~ NA_integer_)),
+         last_coup_year = case_when(year == min(year) ~ year,
+                                    TRUE ~ last_coup_year)) |> 
+  fill(last_coup_year, .direction = "down") |>
+  mutate(time_since_last_coup = year - last_coup_year,
+         coup_dummy = case_when(pre_coups == 0 ~ 0,
+                                TRUE ~ 1)) |>
+  dplyr::select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy) 
+```
+
+### Coup Analysis Dataset
+
+```{r}
+#| label: coup_analysis
+
+coup_model <- regimes |> 
+  filter(regime_coup != "other",
+         year > 1949) |>
+  left_join(coup_all, by = join_by(ccode, year)) |> 
+  left_join(political_violence, by = join_by(ccode, year)) |>
+  left_join(GDP, by = join_by(ccode, year)) |> 
+  filter(!is.na(GDP_pc)) |> 
+  mutate(violence = na.locf(violence, .by = ccode)) |>
+  mutate(regime = fct_relevel(regime_coup, "dominant-party"),
+         ect = (GDP_trend-1)*100) |> 
+  select(ccode, country, year, coup, regime = regime_coup, GDP_trend = ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)
+
+write.csv(coup_model, "coup_model.csv")
+```
+
+## Autocoup analysis Dataset
+
+### Autocoup Dataset
+
+```{r}
+#| label: autocoup
+# read_data
+Autocoup <- read_excel("Autocoup.xlsx", na = "Incumbent") |> 
+  mutate(exit_date = replace_na(exit_date, Sys.Date()))
+
+autocoup <- Autocoup |> 
+  select(1:14) |>
+  mutate(entry_date = as.Date(entry_date),
+         exit_date = as.Date(exit_date ))  |> 
+  mutate(extending_date = make_date(year = extending_date, 
+                                    month = month(entry_date), 
+                                    day = day(entry_date)))
+
+write_csv(autocoup, "autocoup.csv")
+```
+
+### Leader_autocoup Dataset
+
+```{r}
+leader_autocoup <- leaders |> 
+  left_join(autocoup, join_by(ccode, startdate == entry_date)) |>
+  mutate(autocoup_attempt = if_else(is.na(leader_name), 0, 1),
+         autocoup_success = if_else(!is.na(extending_date), 1,
+                                    if_else(!is.na(autocoup_attempt), 0, NA)),
+         base_year = year(startdate + as.numeric(difftime(enddate, startdate, units = "days")) / 2),
+         base_year = coalesce(autocoup_date, base_year),
+         age = base_year - yrborn) |>
+  select(1:2, leader, leader_name, age, everything())
+
+# leader_autocoup |> 
+#   select(leader, country.x, country.y) |>
+#   view()
+```
+
+### Polity5 Dataset
+
+```{r}
+polity5 <- democracyData::polity5 |> 
+  mutate(polity5 = ifelse(polity < -10, NA, polity)) |>
+  select(ccode = polity_annual_ccode, year, polity5) |> 
+  group_by(ccode) |>
+  fill(polity5, .direction = "up") |>
+  ungroup() |>
+  filter(year >= 1945)
+```
+
+### Autocoup Analysis Dataset
+
+```{r}
+#| label: autocoup_analysis
+
+autocoup_model <- leader_autocoup |> 
+  filter(base_year > 1949) |>
+  left_join(regimes, join_by(ccode, base_year == year)) |> 
+  group_by(ccode) |>
+  fill(regime_autocoup, .direction = "updown") |>
+  ungroup() |> 
+  left_join(political_violence, by = join_by(ccode, base_year == year)) |> 
+  mutate(violence = na.locf(violence, .by = ccode)) |> 
+  left_join(GDP, by = join_by(ccode, base_year == year)) |> 
+  filter(!is.na(GDP_pc)) |> 
+  left_join(polity5, by = join_by(ccode, base_year == year)) |> 
+  select(ccode, country, base_year, leader, autocoup_attempt, autocoup_outcome, regime = regime_autocoup, GDP_pc, GDP_trend, polity5, violence, age, pop_log)
+
+write_csv(autocoup_model, "autocoup_model.csv")
+```
+
+## Survival Analysis Dataset
+
+```{r}
+#| label: coup_data
+
+coup_success <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups_final.txt") |> 
+  mutate(coup_date = make_date(year = year,
+                               month = month, 
+                               day = day)) |>
+  select(ccode, country, coup_date, coup, year) |>
+  filter(coup == 2)
+# |> 
+#   group_by(ccode, year) |>
+#   filter(n() > 1) |> 
+#   ungroup() |>
+#   view()
+```
+
+```{r}
+#| label: survival
+
+overstay_leaders <- autocoup |> 
+  filter(autocoup_outcome == "Yes") |> 
+  select(1:14)
+
+survival_data <- leaders |> 
+  left_join(overstay_leaders, join_by(ccode, startdate == entry_date)) |>
+  mutate(coup_exit = ifelse(exitcode %in% c("Removed by Military, without Foreign Support","Removed by Other Government Actors, without Foreign Support", "Coup"), 1, 0)) |>
+  mutate(coup_entry=ifelse(lag(coup_exit==1),1,0),.by = ccode) |> 
+  filter(!is.na(extending_date) | coup_entry == 1,
+          year(enddate) > 1945) |> 
+mutate(group = case_when(!is.na(extending_date) ~ "A",
+                        .default = "B"),
+enddate = case_when(leader == "Azali Assoumani" ~ Sys.Date(),
+TRUE ~ enddate),
+       survival_days = case_when(
+         group == "A" ~ as.numeric(enddate - extending_date),
+TRUE ~ as.numeric(enddate - startdate)),
+year = if_else(group == "A", year(extending_date), year(startdate)),
+age = year - yrborn) |>
+filter(survival_days > 180 & survival_days < 18000) |>
+mutate(status = case_when(
+    exit %in% c(
+      "Regular",
+      "Natural Death",
+      "Still in Office",
+      "Retired Due to Ill Health") ~ 1,
+    .default = 2),
+startdate = coalesce(extending_date, startdate),
+tstart = as.numeric(year(startdate) + (startdate - floor_date(startdate, "year"))/365),
+         tstop = as.numeric(year(enddate) + (enddate - floor_date(enddate, "year"))/365)) |>
+  select(ccode, country = country.x, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)
+
+write_csv(survival_data, "survival_cox_ph.csv")
+```
+
+```{r}
+survival_cox_td <- survival_data |> 
+mutate(first_year = startdate,
+         last_year = enddate) |>
+  survSplit(Surv(year(startdate), year(enddate), status) ~ .,
+            data = _,
+            cut = 1945:2022,
+            id = "id",
+            ) |>
+  mutate(tstart = if_else(is.na(tstart), tstop, tstart)) |> 
+  mutate(T1 = 0,
+         T2 = ifelse(row_number() == 1, ceiling_date(first_year, "year") - first_year, 0),
+         T2 = first(T2) + 365 * (row_number() - 1),
+         T1 = lag(T2, default = 0),
+         T2 = ifelse(row_number() == n(), survival_days, T2),
+         age = age + row_number() - 1,
+         .by = id) |>
+  left_join(GDP, join_by(ccode, tstart == year)) |> 
+  left_join(polity5, join_by(ccode, tstart == year)) |>
+  left_join(political_violence, join_by(ccode, tstart == year)) |>
+  drop_na() |> 
+  select(id, ccode, country, leader, age, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
+write_csv(survival_cox_td, "survival_cox_td.csv")
 ```
 
 ## Upload Datasets
