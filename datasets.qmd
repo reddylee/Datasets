@@ -213,7 +213,7 @@ regimes <- REIGN |>
       regime_type == "monarchy" ~ "monarchy",
       regime_type == "presidential" ~ "presidential",
       regime_type == "parliamentary" ~ "parliamentary",
-      TRUE ~ NA
+      TRUE ~ "other"
     )
   ) |>
   select(country, ccode, year, regime_coup, regime_autocoup)
@@ -264,14 +264,14 @@ coup_all <- fread(coup_url) |>
 #| label: coup_analysis_model
 
 coup_model <- regimes |>
-  filter(regime_coup != "other") |>
+  #filter(regime_coup != "other") |>
   left_join(coup_all, by = join_by(ccode, year)) |>
   left_join(political_violence, by = join_by(ccode, year)) |>
   left_join(GDP, by = join_by(ccode, year)) |>
-  drop_na() |>
-  mutate(violence = na.locf(violence, .by = ccode)) |>
+  mutate(violence = na.locf(violence, .by = ccode, na.rm = FALSE)) |>
   mutate(regime = fct_relevel(regime_coup, "dominant-party"),
          ect = (GDP_trend - 1) * 100) |>
+  filter(year > 1949) |>
   select(ccode, country, year, coup, regime = regime_coup, GDP_trend = ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)
 
 # Save the coup analysis model
