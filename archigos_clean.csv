@@ -401,7 +401,6 @@ COS-1910,81ea7d5c-1e42-11e4-b4cd-db5882bf8def,94,COS,Jimenez Oreamuno,1910-05-08
 COS-1914,81ea7d5d-1e42-11e4-b4cd-db5882bf8def,94,COS,Alfredo Gonzalez Flores,1914-05-08,1917-01-27,Regular,Irregular,Unknown,0,Exile,M,1877,1962,1877-06-15,NA,NA,0,3,-999,1,NA,NA
 COS-1917,81eaae30-1e42-11e4-b4cd-db5882bf8def,94,COS,Federico Tinoco Granados,1917-01-27,1919-08-13,Irregular,Irregular,"Removed by Rebels, without Foreign Support",0,Exile,M,1870,1931,NA,NA,NA,1,3,4,1,NA,NA
 COS-1919-1,81eaae31-1e42-11e4-b4cd-db5882bf8def,94,COS,Juan Bautista Quiros Segura,1919-08-13,1919-09-06,Irregular,Irregular,"Popular Protest, with Foreign Support",0,OK,M,1853,1934,NA,NA,http://dbpedia.org/resource/Juan_Bautista_Quir%C3%B3s_Segura,1,3,1,0,NA,NA
-COS-1919-2,81eadf04-1e42-11e4-b4cd-db5882bf8def,94,COS,Barquero,1919-09-06,1919-09-06,Irregular,Regular,Regular,0,Missing: No Information Found,M,1857,1924,NA,NA,NA,1,1,0,-666,NA,NA
 COS-1920,81eadf05-1e42-11e4-b4cd-db5882bf8def,94,COS,Acosta Garcia,1920-05-08,1924-05-08,Regular,Regular,Regular,0,OK,M,1872,1954,1872-05-23,NA,NA,0,1,0,0,NA,NA
 COS-1924,81ea7d5c-1e42-11e4-b4cd-db5882bf8def,94,COS,Jimenez Oreamuno,1924-05-08,1928-05-08,Regular,Regular,Regular,1,OK,M,1859,1945,1859-02-06,NA,NA,0,1,0,0,NA,NA
 COS-1928,81ea4c89-1e42-11e4-b4cd-db5882bf8def,94,COS,Gonzalez Viquez,1928-05-08,1932-05-08,Regular,Regular,Regular,1,OK,M,1858,1937,1858-10-13,NA,http://dbpedia.org/resource/Cleto_Gonz%C3%A1lez_V%C3%ADquez,0,1,0,0,NA,NA
@@ -450,7 +449,6 @@ PAN-1932,81f24f78-1e42-11e4-b4cd-db5882bf8def,95,PAN,"Arias, H.",1932-10-01,1936
 PAN-1936,81f24f7a-1e42-11e4-b4cd-db5882bf8def,95,PAN,"Arosomena, Juan",1936-10-01,1939-12-16,Regular,Natural Death,Regular,0,Missing: Natural Death within Six Months of Losing Office,M,1879,1939,1879-06-24,1939-12-16,NA,0,2,0,-777,Brother of Florencio Harmodio Arosemena%81f21ea5-1e42-11e4-b4cd-db5882bf8def,1
 PAN-1939,81f24f7b-1e42-11e4-b4cd-db5882bf8def,95,PAN,Boyd,1939-12-18,1940-10-01,Regular,Regular,Regular,0,OK,M,1879,1957,NA,NA,NA,0,1,0,0,NA,NA
 PAN-1940,81f2804c-1e42-11e4-b4cd-db5882bf8def,95,PAN,"Arias, A.",1940-10-01,1941-10-09,Regular,Irregular,"Removed by Other Government Actors, without Foreign Support",0,Exile,M,1901,1988,1901-08-15,1988-08-10,NA,0,3,8,1,"Brother of Arias, H.%81f24f78-1e42-11e4-b4cd-db5882bf8def",1
-PAN-1941-1,81f2804d-1e42-11e4-b4cd-db5882bf8def,95,PAN,Ernesto Jaen Guardia,1941-10-09,1941-10-09,Regular,Regular,Regular,0,OK,M,1895,1961,NA,NA,NA,0,1,0,0,NA,NA
 PAN-1941-2,81f2804e-1e42-11e4-b4cd-db5882bf8def,95,PAN,"Guardia, R.",1941-10-09,1945-06-15,Irregular,Regular,Regular,0,OK,M,1899,1969,1899-06-14,NA,NA,1,1,0,0,NA,NA
 PAN-1945,81f2804f-1e42-11e4-b4cd-db5882bf8def,95,PAN,Jimenez,1945-06-15,1948-10-01,Regular,Irregular,"Removed by Other Government Actors, without Foreign Support",0,Exile,M,1888,1970,NA,NA,NA,0,3,8,1,NA,NA
 PAN-1948,81f2b120-1e42-11e4-b4cd-db5882bf8def,95,PAN,Diaz Arosomena,1948-10-01,1949-07-28,Irregular,Retired Due to Ill Health,Regular,0,Missing: Natural Death within Six Months of Losing Office,M,1873,1949,1873-09-17,1949-08-23,NA,1,2.1,0,-777,NA,NA
@@ -504,7 +502,6 @@ COL-1945,81f437cd-1e42-11e4-b4cd-db5882bf8def,100,COL,Lleras Camargo,1945-08-07,
 COL-1946,81f4689e-1e42-11e4-b4cd-db5882bf8def,100,COL,Ospina Perez,1946-08-07,1950-08-07,Regular,Regular,Regular,0,OK,M,1891,1976,1891-11-24,1976-04-14,http://dbpedia.org/resource/Mariano_Ospina_P%C3%A9rez,0,1,0,0,NA,NA
 COL-1950,81f4689f-1e42-11e4-b4cd-db5882bf8def,100,COL,Laureanco Gomez,1950-08-07,1951-11-05,Regular,Regular,Regular,0,OK,M,1889,1965,1889-02-20,1965-07-13,NA,0,1,0,0,NA,NA
 COL-1951,81f468a0-1e42-11e4-b4cd-db5882bf8def,100,COL,Roberto Urdaneta Arbelaez,1951-11-05,1953-06-13,Regular,Regular,Regular,0,OK,M,1890,1972,NA,NA,http://dbpedia.org/resource/Roberto_Urdaneta_Arbel%C3%A1ez,0,1,0,0,NA,NA
-COL-1953-1,81f4689f-1e42-11e4-b4cd-db5882bf8def,100,COL,Laureanco Gomez,1953-06-13,1953-06-13,Regular,Irregular,"Removed by Military, without Foreign Support",1,Exile,M,1889,1965,1889-02-20,1965-07-13,NA,0,3,6,1,NA,NA
 COL-1953-2,81f468a1-1e42-11e4-b4cd-db5882bf8def,100,COL,Rojas Pinillia,1953-06-13,1957-05-10,Irregular,Irregular,Removed in Military Power Struggle Short of Coup,0,Exile,M,1900,1975,1900-03-12,NA,http://dbpedia.org/resource/Gustavo_Rojas_Pinilla,1,3,16,1,NA,NA
 COL-1957,81f468a2-1e42-11e4-b4cd-db5882bf8def,100,COL,Paris,1957-05-10,1958-08-07,Irregular,Regular,Regular,0,OK,M,1910,2008,NA,NA,NA,1,1,0,0,NA,NA
 COL-1958,81f437cd-1e42-11e4-b4cd-db5882bf8def,100,COL,Lleras Camargo,1958-08-07,1962-08-07,Regular,Regular,Regular,1,OK,M,1906,1990,1906-07-03,1990-01-04,http://dbpedia.org/resource/Alberto_Lleras_Camargo,0,1,0,0,Cousin (distant) of Lleras Restropo%81f49973-1e42-11e4-b4cd-db5882bf8def,0
@@ -1480,7 +1477,6 @@ SPN-1935-1,8211c8c9-1e42-11e4-b4cd-db5882bf8def,230,SPN,Chapaprieta,1935-10-25,1
 SPN-1935-2,8211c8ca-1e42-11e4-b4cd-db5882bf8def,230,SPN,Portela,1935-12-31,1936-02-19,Regular,Regular,Regular,0,OK,M,1868,1952,NA,NA,NA,0,1,0,0,NA,NA
 SPN-1936-1,821197f6-1e42-11e4-b4cd-db5882bf8def,230,SPN,Azana y Diez,1936-02-19,1936-05-11,Regular,Regular,Regular,1,Exile,M,1880,1940,1880-11-10,NA,NA,0,1,0,1,NA,NA
 SPN-1936-2,8211c8cb-1e42-11e4-b4cd-db5882bf8def,230,SPN,Casares Quiroga,1936-05-13,1936-07-19,Regular,Regular,Regular,0,OK,M,1884,1950,NA,NA,NA,0,1,0,0,NA,NA
-SPN-1936-3,8211c8c7-1e42-11e4-b4cd-db5882bf8def,230,SPN,Martinez Barro,1936-07-19,1936-07-19,Regular,Regular,Regular,1,OK,M,1883,1962,1883-11-25,NA,NA,0,1,0,0,NA,NA
 SPN-1936-4,8211f99a-1e42-11e4-b4cd-db5882bf8def,230,SPN,Giral y Pereyra,1936-07-19,1936-09-04,Regular,Regular,Regular,0,OK,M,1879,1962,1879-10-22,NA,NA,0,1,0,0,NA,NA
 SPN-1936-5,8211f99b-1e42-11e4-b4cd-db5882bf8def,230,SPN,Largo Caballero,1936-09-04,1937-05-15,Regular,Regular,Regular,0,OK,M,1869,1946,1869-10-15,NA,NA,0,1,0,0,NA,NA
 SPN-1937,8211f99c-1e42-11e4-b4cd-db5882bf8def,230,SPN,Negrin,1937-05-18,1939-03-05,Regular,Irregular,"Removed by Military, without Foreign Support",0,Exile,M,1889,1956,NA,NA,NA,0,3,6,1,NA,NA
@@ -1565,7 +1561,6 @@ POL-1990,821537c2-1e42-11e4-b4cd-db5882bf8def,290,POL,Walesa,1990-12-22,1995-12-
 POL-1995,821537c3-1e42-11e4-b4cd-db5882bf8def,290,POL,Kwasniewski,1995-12-23,2005-12-23,Regular,Regular,Regular,0,OK,M,1954,-777,1954-11-15,NA,http://dbpedia.org/resource/Aleksander_Kwa%C5%9Bniewski,0,1,0,0,NA,NA
 POL-2005,82517eab-1e42-11e4-b4cd-db5882bf8def,290,POL,Kaczynski,2005-12-23,2010-04-10,Regular,Natural Death,Regular,0,Missing: Natural Death within Six Months of Losing Office,M,1949,2010,NA,2010-07-08,NA,0,2,0,-777,NA,NA
 POL-2010-1,82517eac-1e42-11e4-b4cd-db5882bf8def,290,POL,Komorowski,2010-04-10,2010-07-08,Regular,Regular,Regular,0,OK,M,1952,-777,1952-06-04,NA,NA,0,1,0,0,NA,NA
-POL-2010-2,82517ead-1e42-11e4-b4cd-db5882bf8def,290,POL,Borusewicz,2010-07-08,2010-07-08,Regular,Regular,Regular,0,OK,M,1949,-777,1949-01-11,NA,NA,0,1,0,0,NA,NA
 POL-2010-3,8251af7c-1e42-11e4-b4cd-db5882bf8def,290,POL,Schetyna,2010-07-08,2010-08-06,Regular,Regular,Regular,0,OK,M,1963,-777,NA,NA,NA,0,1,0,0,NA,NA
 POL-2010-4,82517eac-1e42-11e4-b4cd-db5882bf8def,290,POL,Komorowski,2010-08-06,2015-08-06,Regular,Regular,Regular,1,Missing: Left Office after 2014-12-31,M,1952,-777,1952-06-04,NA,NA,0,1,0,-999,NA,NA
 AUH-1848,82156896-1e42-11e4-b4cd-db5882bf8def,300,AUH,Francis Joseph I,1848-12-02,1916-11-21,Regular,Natural Death,Regular,0,Missing: Natural Death within Six Months of Losing Office,M,1830,1916,1830-08-18,1916-11-21,http://dbpedia.org/resource/Franz_Joseph_I_of_Austria,0,2,0,-777,NA,NA

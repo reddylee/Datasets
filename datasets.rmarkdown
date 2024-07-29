@@ -1,14 +1,20 @@
 ## Setup
 
+
+
 ```{r}
 #| label: setup
 
 pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, democracyData, fuzzyjoin, survival)
 ```
 
+
+
 ## leaders dataset
 
 ### Archigos Dataset
+
+
 
 ```{r}
 #| label: archigos_data
@@ -41,7 +47,11 @@ archigos <- archigos_raw |>
 write_csv(archigos, "archigos_clean.csv")
 ```
 
+
+
 ### PLAD Dataset
+
+
 
 ```{r}
 #| label: plad_data
@@ -79,7 +89,11 @@ plad <- plad_raw |>
 write_csv(plad, "plad_processed.csv")
 ```
 
+
+
 ### Leaders Dataset: Archigos and PLAD
+
+
 
 ```{r}
 #| label: leaders_combined
@@ -118,9 +132,13 @@ leaders <- archigos |>
 write_csv(leaders, "leaders_combined.csv")
 ```
 
+
+
 ## Coup analysis dataset
 
 ### Polity5 Dataset
+
+
 
 ```{r}
 #| label: polity5_data
@@ -134,7 +152,11 @@ polity5 <- democracyData::polity5 |>
   filter(year >= 1940)
 ```
 
+
+
 ### Political Violence Dataset: MEPV
+
+
 
 ```{r}
 #| label: violence_data
@@ -148,7 +170,11 @@ political_violence <- read_excel("political_violence_2018.xls") |>
 
 ```
 
+
+
 ### GDP and population Dataset
+
+
 
 ```{r}
 #| label: gdp_pop_data
@@ -167,7 +193,11 @@ GDP <- vdem |>
   select(ccode, year, GDP_pc, GDP_trend, pop_log)
 ```
 
+
+
 ### Regime Type Dataset
+
+
 
 ```{r}
 #| label: regimes_data
@@ -219,7 +249,11 @@ regimes <- REIGN |>
   select(country, ccode, year, regime_coup, regime_autocoup)
 ```
 
+
+
 ### Coup Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_data
@@ -258,7 +292,11 @@ coup_all <- fread(coup_url) |>
   select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)
 ```
 
+
+
 ### Coup Analysis Model
+
+
 
 ```{r}
 #| label: coup_analysis_model
@@ -278,9 +316,13 @@ coup_model <- regimes |>
 write_csv(coup_model, "coup_model.csv")
 ```
 
+
+
 ## Autocoup analysis Dataset
 
 ### Autocoup Dataset
+
+
 
 ```{r}
 #| label: autocoup_data
@@ -301,7 +343,11 @@ autocoup <- autocoup_raw |>
 write_csv(autocoup, "autocoup_clean.csv")
 ```
 
+
+
 ### Leader_autocoup Dataset
+
+
 
 ```{r}
 #| label: leader_autocoup_data
@@ -318,7 +364,11 @@ leader_autocoup <- leaders |>
   select(1:2, leader, leader_name, age, everything())
 ```
 
+
+
 ### Autocoup Analysis Model
+
+
 
 ```{r}
 #| label: autocoup_analysis_model
@@ -341,7 +391,11 @@ autocoup_model <- leader_autocoup |>
 write_csv(autocoup_model, "autocoup_model.csv")
 ```
 
+
+
 ## Survival Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_success_data
@@ -430,7 +484,11 @@ survival_cox_td <- survival_data |>
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
 ```
 
+
+
 ### Running Survival Models
+
+
 
 ```{r}
 #| label: run_survival_models
@@ -444,7 +502,11 @@ survival_cox_td |>
   coxph(Surv(T1, T2, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age + cluster(id), data = _)
 ```
 
+
+
 ## Upload Datasets
+
+
 
 ```{bash}
 #| label: upload
@@ -453,3 +515,4 @@ git add .
 git commit -m "Version $(date +%Y-%m-%d)"
 git push
 ```
+

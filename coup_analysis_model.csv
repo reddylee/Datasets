@@ -2623,7 +2623,7 @@ ccode,country,year,coup,regime,GDP_trend,GDP_pc,violence,pre_coups,coup_dummy,ti
 315,Czechoslovakia,1952,0,dominant-party,6.692963481358949,6.708,0,0,0,2
 315,Czechoslovakia,1953,0,dominant-party,5.241885337644558,6.77,0,0,0,3
 315,Czechoslovakia,1954,0,dominant-party,6.573341448569692,7.004,0,0,0,4
-315,Czechoslovakia,1955,0,dominant-party,9.73032503869511,7.373,0,0,0,5
+315,Czechoslovakia,1955,0,dominant-party,9.730325038695064,7.373,0,0,0,5
 315,Czechoslovakia,1956,0,dominant-party,12.207581122656297,7.732,0,0,0,6
 315,Czechoslovakia,1957,0,dominant-party,14.311405850450987,8.136,0,0,0,7
 315,Czechoslovakia,1958,0,dominant-party,16.35823314872349,8.614,0,0,0,8
@@ -3236,10 +3236,6 @@ ccode,country,year,coup,regime,GDP_trend,GDP_pc,violence,pre_coups,coup_dummy,ti
 365,Russia (Soviet Union),2016,0,personal,-0.298385448600047,24.392,1,1,1,25
 365,Russia (Soviet Union),2017,0,personal,1.1356148671184174,24.865,1,1,1,26
 365,Russia (Soviet Union),2018,0,personal,3.506594636686633,25.521,0,1,1,27
-366,Estonia,1991,0,democracy,55.62261834735685,12.17,0,0,0,0
-366,Estonia,1992,0,democracy,23.239986611625586,11.046,0,0,0,1
-366,Estonia,1993,0,democracy,6.819749279889642,10.532,0,0,0,2
-366,Estonia,1994,0,democracy,-1.4084507042253391,10.486,0,0,0,3
 366,Estonia,1995,0,democracy,-2.91202418192682,11.049,0,0,0,4
 366,Estonia,1996,0,democracy,5.936725575674262,11.713,0,0,0,5
 366,Estonia,1997,0,democracy,16.276948892861064,12.75,0,0,0,6
@@ -3264,10 +3260,6 @@ ccode,country,year,coup,regime,GDP_trend,GDP_pc,violence,pre_coups,coup_dummy,ti
 366,Estonia,2016,0,democracy,9.48818430115188,27.66,0,0,0,25
 366,Estonia,2017,0,democracy,12.4571990111628,29.296,0,0,0,26
 366,Estonia,2018,0,democracy,13.026848324018193,30.496,0,0,0,27
-367,Latvia,1991,0,democracy,23.35225363157698,13.213,0,0,0,0
-367,Latvia,1992,0,democracy,-4.851988088982296,10.864,0,0,0,1
-367,Latvia,1993,0,democracy,-16.619466900090973,9.716,0,0,0,2
-367,Latvia,1994,0,democracy,-20.44165664203471,9.259,0,0,0,3
 367,Latvia,1995,0,democracy,-21.546644417792148,9.027,0,0,0,4
 367,Latvia,1996,0,democracy,-11.413429597342484,9.227,0,0,0,5
 367,Latvia,1997,0,democracy,1.9275154388372462,9.804,0,0,0,6
@@ -3292,10 +3284,6 @@ ccode,country,year,coup,regime,GDP_trend,GDP_pc,violence,pre_coups,coup_dummy,ti
 367,Latvia,2016,0,democracy,12.62997531272083,24.545,0,0,0,25
 367,Latvia,2017,0,democracy,13.48987311636436,25.742,0,0,0,26
 367,Latvia,2018,0,democracy,13.933857147695328,26.913,0,0,0,27
-368,Lithuania,1991,0,democracy,22.459259259259245,12.399,0,0,0,0
-368,Lithuania,1992,0,democracy,0.14133224234760267,10.77,0,0,0,1
-368,Lithuania,1993,0,democracy,-13.73605511056466,9.542,0,0,0,2
-368,Lithuania,1994,0,democracy,-18.895071398987994,9.008,0,0,0,3
 368,Lithuania,1995,0,democracy,-16.86310063463281,9.17,0,0,0,4
 368,Lithuania,1996,0,democracy,-5.372477352669525,9.631,0,0,0,5
 368,Lithuania,1997,0,democracy,7.437501298809246,10.34,0,0,0,6
@@ -6267,8 +6255,6 @@ ccode,country,year,coup,regime,GDP_trend,GDP_pc,violence,pre_coups,coup_dummy,ti
 616,Tunisia,2016,0,democracy,1.0818120351588911,10.764,0,1,1,29
 616,Tunisia,2017,0,democracy,0.881863871606603,10.799,0,1,1,30
 616,Tunisia,2018,0,democracy,1.323554049777531,10.886,0,1,1,31
-620,Libya,1952,0,monarchy,2.3680036256514825,1.807,0,0,0,1
-620,Libya,1953,0,monarchy,4.199593587717332,1.846,0,0,0,2
 620,Libya,1954,0,monarchy,7.430617726051936,1.92,0,0,0,3
 620,Libya,1955,0,monarchy,15.913339931815695,2.108,0,0,0,4
 620,Libya,1956,0,monarchy,24.2055084745763,2.345,0,0,0,5
