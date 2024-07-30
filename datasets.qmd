@@ -179,11 +179,6 @@ regimes <- REIGN |>
     year,
     regime_type = gwf_regimetype
   ) |>
-  filter(
-    year > 1940,
-    !str_detect(regime_type, "provisional"),
-    !regime_type %in% c("warlordism", "foreign-occupied")
-  ) |>
   distinct(ccode, year, .keep_all = T) |>
   mutate(
     regime_coup = case_when(

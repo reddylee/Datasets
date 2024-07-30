@@ -1,0 +1,21 @@
+```{r}
+m <- matrix(c(1,1,-2,1), nrow = 2, byrow = TRUE)
+m
+solve(m) %*% c(5,2)
+```
+
+```{r}
+m <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE)
+m
+solve(m) %*% c(1,7)
+```
+
+```{r}
+solve(matrix(c(-8,-9,-1,4), nrow = 2, byrow = TRUE)) 
+```
+
+```{r}
+m <- matrix(c(2,-1,3,1), nrow = 2, byrow = TRUE)
+m
+solve(m) %*% c(7,8)
+```
