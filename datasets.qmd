@@ -325,7 +325,11 @@ autocoup_model <- leader_autocoup |>
   fill(regime_autocoup, .direction = "updown") |>
   ungroup() |>
   left_join(political_violence, by = join_by(ccode, base_year == year)) |>
-  mutate(violence = na.locf(violence, .by = ccode)) |>
+  mutate(violence = na.locf(violence, .by = ccode),
+         autocoup_outcome = case_when(autocoup_outcome == "Yes" ~ 2, 
+                                      autocoup_outcome == "No" ~ 1,
+                                      TRUE ~ NA_real_)
+                                      ) |>
   left_join(GDP, by = join_by(ccode, base_year == year)) |>
   filter(!is.na(GDP_pc),
          regime_autocoup != "parliamentary") |>
