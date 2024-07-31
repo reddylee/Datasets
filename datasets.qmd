@@ -397,6 +397,7 @@ survival_cox_ph <- survival_data |>
   left_join(GDP, by = c("ccode", "year" = "year")) |>
   left_join(polity5, by = c("ccode", "year" = "year")) |>
   left_join(political_violence, by = c("ccode", "year" = "year")) |>
+  drop_na() |> 
   select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
 
 # Save the survival Cox PH model
