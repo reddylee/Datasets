@@ -282,7 +282,8 @@ write_csv(coup_model, "coup_model.csv")
 
 # Read autocoup data
 autocoup_raw <- read_excel("Autocoup.xlsx", na = "Incumbent") |>
-  mutate(exit_date = replace_na(exit_date, Sys.Date()))
+  mutate(exit_date = replace_na(exit_date, Sys.Date()),
+         across(everything(),str_to_sentence))
 
 autocoup <- autocoup_raw |>
   select(1:14) |>
@@ -291,6 +292,11 @@ autocoup <- autocoup_raw |>
     exit_date = as.Date(exit_date),
     extending_date = make_date(year = extending_date, month = month(entry_date), day = day(entry_date))
   )
+
+# autocoup |> 
+#   select(8:13) |> 
+#   dfSummary() |> 
+#   stview()
 
 # Save cleaned autocoup data
 write_csv(autocoup, "autocoup_clean.csv")
