@@ -251,6 +251,8 @@ coup_all <- fread(coup_url) |>
     )
   ) |>
   select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)
+
+write.csv(coup_all, "coup_all.csv")
 ```
 
 ### Coup Analysis Model
@@ -288,9 +290,11 @@ autocoup_raw <- read_excel("Autocoup.xlsx", na = "Incumbent") |>
 autocoup <- autocoup_raw |>
   select(1:14) |>
   mutate(
+    ccode = as.integer(ccode),
     entry_date = as.Date(entry_date),
     exit_date = as.Date(exit_date),
-    extending_date = make_date(year = extending_date, month = month(entry_date), day = day(entry_date))
+    extending_date = make_date(year = extending_date, month = month(entry_date), day = day(entry_date)),
+    autocoup_date = as.integer(autocoup_date)
   )
 
 # autocoup |> 
