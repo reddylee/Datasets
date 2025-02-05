@@ -130,6 +130,8 @@ polity5 <- democracyData::polity5 |>
   select(ccode = polity_annual_ccode, year, polity5) |>
   group_by(ccode) |>
   fill(polity5, .direction = "up") |>
+  mutate(polity_lead3 = lead(polity5, 3),
+         polity_lead5 = lead(polity5, 5)) |> 
   ungroup() |>
   filter(year >= 1940)
 ```
@@ -212,6 +214,36 @@ regimes <- REIGN |>
     )
   ) |>
   select(country, ccode, year, regime_coup, regime_autocoup)
+
+regimes |> 
+  select(regime_coup,year) |> 
+  filter(year > 1940,
+         year < 2021,
+         regime_coup  %in% c("dominant-party", "military", "personal")
+         ) |> 
+  group_by(year, regime_coup) |>
+  summarise(count = n()) |>
+  mutate(share = count / sum(count)) |> 
+  #view()
+  #filter(regime_coup != "democracy") |>
+  ggplot(aes(x = year, y = count, color = regime_coup)) +
+  geom_line() +
+  labs(title = "Regime Type Over Time", x = "Year", y = "Share") +
+  theme_minimal()
+  
+regimes |> 
+  select(regime_coup, year) |> 
+  filter(year > 1940, year < 2021) |> 
+  count(year, regime_coup) |> 
+  pivot_wider(
+    names_from = regime_coup, 
+    values_from = n, 
+    values_fill = 0
+  ) |> 
+  rowwise() |>
+  mutate(total = sum(across(-year))) |>
+  rename_all(str_to_title) |>
+  tail(10)
 ```
 
 ### Coup Analysis Dataset
@@ -253,6 +285,13 @@ coup_all <- fread(coup_url) |>
   select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)
 
 write.csv(coup_all, "coup_all.csv")
+
+coup_all |> 
+  select(year, coup) |> 
+  group_by(year) |> 
+  summarise(count = sum(coup)) |> 
+  ggplot(aes(x = year, y = count)) +
+  geom_line() 
 ```
 
 ### Coup Analysis Model
@@ -344,7 +383,7 @@ autocoup_model <- leader_autocoup |>
   filter(!is.na(GDP_pc),
          regime_autocoup != "parliamentary") |>
   left_join(polity5, by = join_by(ccode, base_year == year)) |>
-  select(ccode, country, base_year, leader, autocoup_attempt, autocoup_outcome, regime = regime_autocoup, GDP_pc, GDP_trend, polity5, violence, age, pop_log)
+  select(ccode, country, base_year, leader, autocoup_attempt, autocoup_outcome, regime = regime_autocoup, GDP_pc, GDP_trend, polity5, polity_lead3, polity_lead5, violence, age, pop_log)
 
 # Save the autocoup analysis model
 write_csv(autocoup_model, "autocoup_model.csv")
@@ -408,7 +447,7 @@ survival_cox_ph <- survival_data |>
   left_join(polity5, by = c("ccode", "year" = "year")) |>
   left_join(political_violence, by = c("ccode", "year" = "year")) |>
   drop_na() |> 
-  select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
+  select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead3, polity_lead5, violence)
 
 # Save the survival Cox PH model
 write_csv(survival_cox_ph, "survival_cox_ph_model.csv")
@@ -434,7 +473,7 @@ survival_cox_td <- survival_data |>
   left_join(polity5, by = c("ccode", "tstart" = "year")) |>
   left_join(political_violence, by = c("ccode", "tstart" = "year")) |>
   drop_na() |>
-  select(id, ccode, country, leader, age, T1, T2, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, violence)
+  select(id, ccode, country, leader, age, T1, T2, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead3, polity_lead5, violence)
 
 # Save the survival Cox TD model
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
@@ -452,6 +491,12 @@ survival_cox_ph |>
 survival_cox_td |>
   mutate(group = factor(group, labels = c("Overstay leaders", "Coup-entry leaders"))) |>
   coxph(Surv(T1, T2, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age + cluster(id), data = _)
+```
+
+### Running Free_index Models
+
+```{r}
+
 ```
 
 ## Upload Datasets
