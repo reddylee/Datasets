@@ -3,7 +3,7 @@
 ```{r}
 #| label: setup
 
-pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, democracyData, fuzzyjoin, survival)
+pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer)
 ```
 
 ## leaders dataset
@@ -34,8 +34,10 @@ archigos <- archigos_raw |>
       TRUE ~ entry
     )
   ) |>
-  filter(!obsid %in% c("GAB-1960", "GAB-1964-1"),
-         startdate != enddate)
+  filter(
+    !obsid %in% c("GAB-1960", "GAB-1964-1"),
+    startdate != enddate
+  )
 
 # Save cleaned Archigos data
 write_csv(archigos, "archigos_clean.csv")
@@ -72,7 +74,7 @@ plad <- plad_raw |>
       TRUE ~ dmy(enddate)
     ),
     yrborn = as.numeric(yrborn)
-  ) |> 
+  ) |>
   filter(startdate != enddate)
 
 # Save processed PLAD data for further analysis
@@ -111,7 +113,7 @@ leaders <- archigos |>
     )
   ) |>
   select(1:4, country, continent, leader, startdate, enddate, entry, exit, exitcode, gender, yrborn) |>
-  arrange(ccode, startdate) |> 
+  arrange(ccode, startdate) |>
   filter(year(enddate) > 1940)
 
 # Save combined leaders dataset
@@ -125,15 +127,45 @@ write_csv(leaders, "leaders_combined.csv")
 ```{r}
 #| label: polity5_data
 
-polity5 <- democracyData::polity5 |>
+polity5 <- democracyData::polity5
+
+polity <- polity5 |>
   mutate(polity5 = ifelse(polity < -10, NA, polity)) |>
   select(ccode = polity_annual_ccode, year, polity5) |>
   group_by(ccode) |>
   fill(polity5, .direction = "up") |>
-  mutate(polity_lead3 = lead(polity5, 3),
-         polity_lead5 = lead(polity5, 5)) |> 
+  mutate(
+    diff1 = polity5 - dplyr::lag(polity5, 1),
+    diff2 = dplyr::lead(polity5, 1)- dplyr::lag(polity5, 1),
+    diff3 = dplyr::lead(polity5, 3) - polity5
+  ) |>
   ungroup() |>
   filter(year >= 1940)
+
+str(polity)
+```
+
+```{r}
+# polityIV |>
+#   filter(year > 1940) |>
+#   #view()
+#   group_by(year) |>
+#   summarise(
+#     polity5_avg = mean(polity, na.rm = T),
+#     polity2_avg = mean(polity2, na.rm = T)
+#   ) |>
+#   ggplot(aes(y = polity5_avg, x = year)) +
+#   geom_point()
+#
+# polityIV |>
+#   filter(year > 1940) |>
+#   group_by(year) |>
+#   summarise(
+#     polity5_avg = mean(polity, na.rm = T),
+#     polity2_avg = mean(polity2, na.rm = T)
+#   ) |>
+#   ggplot(aes(y = polity2_avg, x = year)) +
+#   geom_point()
 ```
 
 ### Political Violence Dataset: MEPV
@@ -147,7 +179,6 @@ download.file(violence_url, "political_violence_2018.xls")
 
 political_violence <- read_excel("political_violence_2018.xls") |>
   select(ccode, year, violence = actotal)
-
 ```
 
 ### GDP and population Dataset
@@ -159,14 +190,20 @@ GDP <- vdem |>
   select(ccode = COWcode, country = country_name, year, GDP_pc = e_gdppc, pop = e_pop) |>
   filter(year >= 1940) |>
   # Create a new variable for 5-year moving average of GDP growth
-  mutate(GDP_trend = GDP_pc / lag(rollapply(GDP_pc, 
-                                            width = 5, 
-                                            FUN = mean,
-                                            align = 'right', 
-                                            fill = NA)),
-         .by = c(ccode)) |>
+  mutate(
+    GDP_trend = GDP_pc / lag(rollapply(GDP_pc,
+      width = 5,
+      FUN = mean,
+      align = "right",
+      fill = NA
+    )),
+    .by = c(ccode)
+  ) |>
   mutate(pop_log = log(pop)) |>
   select(ccode, year, GDP_pc, GDP_trend, pop_log)
+
+# vdemdata::codebook |>
+#   view()
 ```
 
 ### Regime Type Dataset
@@ -215,31 +252,32 @@ regimes <- REIGN |>
   ) |>
   select(country, ccode, year, regime_coup, regime_autocoup)
 
-regimes |> 
-  select(regime_coup,year) |> 
-  filter(year > 1940,
-         year < 2021,
-         regime_coup  %in% c("dominant-party", "military", "personal")
-         ) |> 
+regimes |>
+  select(regime_coup, year) |>
+  filter(
+    year > 1940,
+    year < 2021,
+    regime_coup %in% c("dominant-party", "military", "personal")
+  ) |>
   group_by(year, regime_coup) |>
   summarise(count = n()) |>
-  mutate(share = count / sum(count)) |> 
-  #view()
-  #filter(regime_coup != "democracy") |>
+  mutate(share = count / sum(count)) |>
+  # view()
+  # filter(regime_coup != "democracy") |>
   ggplot(aes(x = year, y = count, color = regime_coup)) +
   geom_line() +
   labs(title = "Regime Type Over Time", x = "Year", y = "Share") +
   theme_minimal()
-  
-regimes |> 
-  select(regime_coup, year) |> 
-  filter(year > 1940, year < 2021) |> 
-  count(year, regime_coup) |> 
+
+regimes |>
+  select(regime_coup, year) |>
+  filter(year > 1940, year < 2021) |>
+  count(year, regime_coup) |>
   pivot_wider(
-    names_from = regime_coup, 
-    values_from = n, 
+    names_from = regime_coup,
+    values_from = n,
     values_fill = 0
-  ) |> 
+  ) |>
   rowwise() |>
   mutate(total = sum(across(-year))) |>
   rename_all(str_to_title) |>
@@ -253,6 +291,19 @@ regimes |>
 
 # Download coup data
 coup_url <- "https://www.uky.edu/~clthyn2/coup_data/powell_thyne_ccode_year.txt"
+coup_total <- fread(coup_url)
+coup_total <- coup_total |>
+  mutate(
+    coup = case_when(
+      coup1 == 0 ~ 0,
+      coup4 == 2 | (coup4 == 0 & coup3 == 2) | (coup4 == 0 & coup3 == 0 & coup2 == 2) | (coup4 == 0 & coup3 == 0 & coup2 == 0 & coup1 == 2) ~ 2,
+      TRUE ~ 1
+    )
+  ) |>
+  select(1:4, coup)
+```
+
+```{r}
 coup_all <- fread(coup_url) |>
   mutate(
     coup = case_when(
@@ -286,12 +337,12 @@ coup_all <- fread(coup_url) |>
 
 write.csv(coup_all, "coup_all.csv")
 
-coup_all |> 
-  select(year, coup) |> 
-  group_by(year) |> 
-  summarise(count = sum(coup)) |> 
+coup_all |>
+  select(year, coup) |>
+  group_by(year) |>
+  summarise(count = sum(coup)) |>
   ggplot(aes(x = year, y = count)) +
-  geom_line() 
+  geom_line()
 ```
 
 ### Coup Analysis Model
@@ -300,13 +351,15 @@ coup_all |>
 #| label: coup_analysis_model
 
 coup_model <- regimes |>
-  #filter(regime_coup != "other") |>
+  # filter(regime_coup != "other") |>
   left_join(coup_all, by = join_by(ccode, year)) |>
   left_join(political_violence, by = join_by(ccode, year)) |>
   left_join(GDP, by = join_by(ccode, year)) |>
   mutate(violence = na.locf(violence, .by = ccode, na.rm = FALSE)) |>
-  mutate(regime = fct_relevel(regime_coup, "dominant-party"),
-         ect = (GDP_trend - 1) * 100) |>
+  mutate(
+    regime = fct_relevel(regime_coup, "dominant-party"),
+    ect = (GDP_trend - 1) * 100
+  ) |>
   filter(year > 1949) |>
   select(ccode, country, year, coup, regime = regime_coup, GDP_trend = ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)
 
@@ -323,8 +376,10 @@ write_csv(coup_model, "coup_model.csv")
 
 # Read autocoup data
 autocoup_raw <- read_excel("Autocoup.xlsx", na = "Incumbent") |>
-  mutate(exit_date = replace_na(exit_date, Sys.Date()),
-         across(everything(),str_to_sentence))
+  mutate(
+    exit_date = replace_na(exit_date, Sys.Date()),
+    across(everything(), str_to_sentence)
+  )
 
 autocoup <- autocoup_raw |>
   select(1:14) |>
@@ -336,9 +391,9 @@ autocoup <- autocoup_raw |>
     autocoup_date = as.integer(autocoup_date)
   )
 
-# autocoup |> 
-#   select(8:13) |> 
-#   dfSummary() |> 
+# autocoup |>
+#   select(8:13) |>
+#   dfSummary() |>
 #   stview()
 
 # Save cleaned autocoup data
@@ -374,15 +429,20 @@ autocoup_model <- leader_autocoup |>
   fill(regime_autocoup, .direction = "updown") |>
   ungroup() |>
   left_join(political_violence, by = join_by(ccode, base_year == year)) |>
-  mutate(violence = na.locf(violence, .by = ccode),
-         autocoup_outcome = case_when(autocoup_outcome == "Yes" ~ 2, 
-                                      autocoup_outcome == "No" ~ 1,
-                                      TRUE ~ NA_real_)
-                                      ) |>
+  mutate(
+    violence = na.locf(violence, .by = ccode),
+    autocoup_outcome = case_when(
+      autocoup_outcome == "Yes" ~ 2,
+      autocoup_outcome == "No" ~ 1,
+      TRUE ~ NA_real_
+    )
+  ) |>
   left_join(GDP, by = join_by(ccode, base_year == year)) |>
-  filter(!is.na(GDP_pc),
-         regime_autocoup != "parliamentary") |>
-  left_join(polity5, by = join_by(ccode, base_year == year)) |>
+  filter(
+    !is.na(GDP_pc),
+    regime_autocoup != "parliamentary"
+  ) |>
+  left_join(polity, by = join_by(ccode, base_year == year)) |>
   select(ccode, country, base_year, leader, autocoup_attempt, autocoup_outcome, regime = regime_autocoup, GDP_pc, GDP_trend, polity5, polity_lead3, polity_lead5, violence, age, pop_log)
 
 # Save the autocoup analysis model
@@ -444,10 +504,10 @@ survival_data <- leaders |>
 
 survival_cox_ph <- survival_data |>
   left_join(GDP, by = c("ccode", "year" = "year")) |>
-  left_join(polity5, by = c("ccode", "year" = "year")) |>
+  left_join(polity, by = c("ccode", "year" = "year")) |>
   left_join(political_violence, by = c("ccode", "year" = "year")) |>
-  drop_na() |> 
-  select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead3, polity_lead5, violence)
+  drop_na() |>
+  select(ccode, country, year, leader, age, startdate, enddate, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead1, polity_lead3, polity_lead5, violence)
 
 # Save the survival Cox PH model
 write_csv(survival_cox_ph, "survival_cox_ph_model.csv")
@@ -470,10 +530,10 @@ survival_cox_td <- survival_data |>
     .by = id
   ) |>
   left_join(GDP, by = c("ccode", "tstart" = "year")) |>
-  left_join(polity5, by = c("ccode", "tstart" = "year")) |>
+  left_join(polity, by = c("ccode", "tstart" = "year")) |>
   left_join(political_violence, by = c("ccode", "tstart" = "year")) |>
   drop_na() |>
-  select(id, ccode, country, leader, age, T1, T2, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead3, polity_lead5, violence)
+  select(id, ccode, country, leader, age, T1, T2, tstart, tstop, group, survival_days, status, GDP_trend, GDP_pc, pop_log, polity5, polity_lead1, polity_lead3, polity_lead5, violence)
 
 # Save the survival Cox TD model
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
@@ -493,10 +553,381 @@ survival_cox_td |>
   coxph(Surv(T1, T2, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age + cluster(id), data = _)
 ```
 
-### Running Free_index Models
+## Running Free_index Models
+
+### Free_index data
 
 ```{r}
+decay_factor <- 0.5
+coup_autocoup <- coup_total |>
+  mutate(
+    coup_attemp = ifelse(coup == 0, 0, 1),
+    coup_succeed = ifelse(coup == 2, 1, 0)
+  ) |>
+  left_join(autocoup |>
+    select(ccode, year = autocoup_date, autocoup = autocoup_outcome)) |>
+  mutate(
+    autocoup = case_when(
+      autocoup == "Yes" ~ 2,
+      autocoup == "No" ~ 1,
+      TRUE ~ 0
+    ),
+    autocoup_attemp = ifelse(autocoup == 0, 0, 1),
+    autocoup_succeed = ifelse(autocoup == 2, 1, 0)
+  ) |>
+  left_join(polity) |>
+  left_join(GDP) |>
+  left_join(political_violence) |>
+  left_join(regimes |> select(2:3, regime = regime_coup)) |>
+  group_by(ccode) |>
+  mutate(
+    # polity_diff = dplyr::lead(polity5, 3) - polity5,
+    cold_war = ifelse(year > 1990, 0, 1),
+    non_democracy = ifelse(regime == "democracy", 0, 1),
+    coup_effect = coup_attemp + lag(coup_attemp, 1) * decay_factor + lag(coup_attemp, 2) * decay_factor^2 +
+      lag(coup_attemp, 3) * decay_factor^3 + lag(coup_attemp, 4) * decay_factor^4,
+    coup_seffect = coup_succeed + lag(coup_succeed, 1) * decay_factor + lag(coup_succeed, 2) * decay_factor^2 +
+      lag(coup_succeed, 3) * decay_factor^3 + lag(coup_succeed, 4) * decay_factor^4,
+    autocoup_effect = autocoup_attemp + lag(autocoup_attemp, 1) * decay_factor + lag(autocoup_attemp, 2) * decay_factor^2 +
+      lag(autocoup_attemp, 3) * decay_factor^3 + lag(autocoup_attemp, 4) * decay_factor^4,
+    autocoup_seffect = autocoup_succeed + lag(autocoup_succeed, 1) * decay_factor + lag(autocoup_succeed, 2) * decay_factor^2 +
+      lag(autocoup_succeed, 3) * decay_factor^3 + lag(autocoup_succeed, 4) * decay_factor^4
+  ) |>
+  ungroup() |>
+  distinct(ccode, year, .keep_all = TRUE)
+```
 
+### dummy effect
+
+```{r}
+# str(coup_autocoup)
+dependent <- coup_autocoup$diff2
+
+plm(dependent ~ factor(coup_attemp) + factor(autocoup_attemp) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+) |>
+  summary()
+
+plm(dependent ~ factor(coup_attemp) * factor(cold_war) + factor(autocoup_attemp) * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+) |>
+  summary()
+
+plm(dependent ~ factor(coup_succeed) + factor(autocoup_succeed) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+) |>
+  summary()
+
+plm(dependent ~ factor(coup_succeed) * factor(cold_war) + factor(autocoup_succeed) * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+) |>
+  summary()
+
+plm(dependent ~ factor(coup_succeed) * factor(cold_war) + factor(autocoup_succeed) * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+) |>
+  summary()
+
+plm(dependent ~ factor(coup_succeed) * factor(cold_war) + factor(autocoup_succeed) * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+) |>
+  summary()
+```
+
+### Coups and autocoups attempt effect
+
+```{r}
+dependent <- coup_autocoup$diff3
+attempt1 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+attempt2 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+
+attempt3 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
+```
+
+### successful effects
+
+```{r}
+dependent <- coup_autocoup$diff1
+successful1 <- plm(
+  dependent ~ autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+successful2 <- plm(
+  dependent ~ autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+successful3 <- plm(
+  dependent ~ autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(successful1, successful2, successful3, type = "text")
+```
+
+```{r}
+dependent <- coup_autocoup$diff1
+successful1 <- plm(
+  dependent ~ coup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+successful2 <- plm(
+  dependent ~ coup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+successful3 <- plm(
+  dependent ~ coup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(successful1, successful2, successful3, type = "text")
+```
+
+```{r}
+dependent <- coup_autocoup$diff3
+
+coup_model <- plm(
+  dependent ~ coup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+autocoup_model <- plm(
+  dependent ~ autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+
+both_coup <- plm(
+  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(coup_model, autocoup_model, both_coup, type = "text")
+```
+
+### interactive effect
+
+```{r}
+dependent <- coup_autocoup$diff3
+interactive1 <- plm(
+  dependent ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + pop_log + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+interactive2 <- plm(
+  dependent ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + pop_log + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+
+interactive3 <- plm(
+  dependent ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + pop_log + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(interactive1, interactive2, interactive3, type = "text")
+```
+
+```{r}
+coup_autocoup |>
+  filter(regime %in% c("democracy", "dominant-party", "military", "personal")) |>
+  group_by(year, regime) %>% # 按年份和政体类型分组
+  summarise(mean_polity5 = mean(polity5, na.rm = TRUE)) %>%
+  ungroup() |>
+  ggplot(aes(x = year, y = mean_polity5, color = regime)) +
+  geom_line(size = 1) + # 画趋势线
+  geom_point(size = 2) + # 标出数据点
+  labs(
+    title = "不同政体类型的 polity5 年均指数",
+    x = "年份",
+    y = "平均 polity5 指数",
+    color = "政体类型"
+  ) + # 图例
+  theme_minimal()
+```
+
+```{r}
+survival_cox_ph1 <- survival_cox_ph |>
+  mutate(cold_war = ifelse(year > 1991, 0, 1)) |>
+  mutate(group = fct_relevel(group, "B"))
+
+lm(polity_lead1 - polity5 ~ group + GDP_trend + GDP_pc + pop_log + violence + age + cold_war,
+  data = survival_cox_ph1
+) |>
+  summary()
+
+survival_cox_ph2 <- survival_cox_ph |>
+  mutate(cold_war = ifelse(year > 1991, 0, 1)) |>
+  filter(survival_days > 1065)
+
+survival_cox_ph3 <- survival_cox_ph |>
+  mutate(cold_war = ifelse(year > 1991, 0, 1)) |>
+  filter(survival_days > 1825)
+
+
+
+lm(polity_lead3 - polity5 ~ group * factor(cold_war) + GDP_trend + GDP_pc + pop_log + violence + age,
+  data = survival_cox_ph1
+) |>
+  summary()
+
+
+lm(polity_lead3 - polity5 ~ group * factor(cold_war) + GDP_trend + GDP_pc + age,
+  data = survival_cox_ph2
+) |>
+  summary()
+
+lm(polity_lead5 - polity5 ~ group * factor(cold_war) + GDP_trend + GDP_pc + age,
+  data = survival_cox_ph3
+) |>
+  summary()
+
+lm(polity_lead3 ~ group,
+  data = survival_cox_ph1
+) |>
+  summary()
+
+lm(polity_lead5 ~ group + year,
+  data = survival_cox_ph1
+) |>
+  summary()
+```
+
+```{r}
+lm(polity_lead3 - polity5 ~ group,
+  data = survival_cox_ph1
+) |>
+  summary()
+
+lm(polity_lead5 - polity5 ~ group,
+  data = survival_cox_ph1
+) |>
+  summary()
+
+summary(survival_cox_ph)
+
+t.test(polity_lead3 ~ group, data = survival_cox_ph1)
+```
+
+```{r}
+data <- polity5 |>
+  summarise(
+    avg_polity = mean(polity5, na.rm = T),
+    .by = year
+  )
+
+data |>
+  ggplot(aes(y = avg_polity, x = year)) +
+  geom_point()
+```
+
+```{r}
+library(plm)
+plm(polity_lead3 ~ group + GDP_trend + GDP_pc + pop_log + violence + age,
+  data = survival_cox_ph1,
+  index = "year",
+  model = "within"
+) |>
+  summary()
+
+plm(polity_lead3 ~ group + GDP_trend + GDP_pc + pop_log + violence + age,
+  data = survival_cox_ph1,
+  index = "year",
+  model = "random"
+) |>
+  summary()
+```
+
+```{r}
+autocoup_index <- autocoup |>
+  filter(autocoup_outcome == "Yes") |>
+  select(ccode, country, autocoup_date, exit_date) |>
+  mutate(exit_year = as.numeric(format(exit_date, "%Y"))) |>
+  rowwise() |>
+  mutate(years = list(seq(autocoup_date - 1, autocoup_date))) |>
+  unnest(years) |>
+  select(ccode, country, years, autocoup_date) |> 
+  rename(year = years)
+
+autocoup_index |> 
+  left_join(polity |> select(ccode, year, polity5)) |> 
+  
+  rowwise() |> 
+  mutate(diff = polity5 - lag(polity5, 1)) |> 
+  view()
 ```
 
 ## Upload Datasets
