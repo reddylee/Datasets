@@ -576,7 +576,10 @@ coup_autocoup <- coup_total |>
     autocoup_attemp = ifelse(autocoup == 0, 0, 1),
     autocoup_succeed = ifelse(autocoup == 2, 1, 0)
   ) |>
-  left_join(polity) |>
+  left_join(
+    polity |> select(-country),
+    # by = join_by(ccode, year)
+  ) |>
   left_join(GDP) |>
   left_join(political_violence) |>
   left_join(regimes |> select(2:3, regime = regime_coup)) |>
@@ -584,6 +587,8 @@ coup_autocoup <- coup_total |>
   mutate(
     # polity_diff = dplyr::lead(polity5, 3) - polity5,
     cold_war = ifelse(year > 1990, 0, 1),
+    coup_attemp_3 = dplyr::lead(coup_attemp, 3),
+    autocoup_attemp_3 = dplyr::lead(autocoup_attemp, 3),
     non_democracy = ifelse(regime == "democracy", 0, 1),
     coup_effect = coup_attemp + lag(coup_attemp, 1) * decay_factor + lag(coup_attemp, 2) * decay_factor^2 +
       lag(coup_attemp, 3) * decay_factor^3 + lag(coup_attemp, 4) * decay_factor^4,
@@ -596,13 +601,21 @@ coup_autocoup <- coup_total |>
   ) |>
   ungroup() |>
   distinct(ccode, year, .keep_all = TRUE)
+
+# coup_autocoup |>
+#   filter(is.na(polity5)) |>
+#   view()
+
+coup_autocoup |>
+  select(ccode, country, year, coup_attemp, coup_attemp_3, autocoup_attemp, autocoup_attemp_3) |>
+  view()
 ```
 
 ### dummy effect
 
 ```{r}
 # str(coup_autocoup)
-dependent <- coup_autocoup$diff0
+dependent <- coup_autocoup$diff1
 
 plm(dependent ~ factor(coup_attemp) + factor(autocoup_attemp) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
   index = c("ccode", "year"),
@@ -656,36 +669,7 @@ plm(dependent ~ factor(coup_succeed) * factor(cold_war) + factor(autocoup_succee
 ### Coups and autocoups attempt effect
 
 ```{r}
-dependent <- coup_autocoup$diff0
-attempt1 <- plm(
-  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup
-)
-
-attempt2 <- plm(
-  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "time",
-  data = coup_autocoup
-)
-
-attempt3 <- plm(
-  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "twoways",
-  data = coup_autocoup
-)
-
-stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
-```
-
-```{r}
-dependent <- coup_autocoup$diff0
+dependent <- coup_autocoup$diff2
 attempt1 <- plm(
   dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
   index = c("ccode", "year"),
@@ -715,6 +699,35 @@ stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
 
 ```{r}
 dependent <- coup_autocoup$diff3
+attempt1 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+attempt2 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+
+attempt3 <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
+```
+
+```{r}
+dependent <- coup_autocoup$diff1
 attempt1 <- plm(
   dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
   index = c("ccode", "year"),
@@ -745,33 +758,6 @@ stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
 ### successful effects
 
 ```{r}
-dependent <- coup_autocoup$diff0
-successful1 <- plm(
-  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup
-)
-successful2 <- plm(
-  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "time",
-  data = coup_autocoup
-)
-successful3 <- plm(
-  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "twoways",
-  data = coup_autocoup
-)
-
-stargazer::stargazer(successful1, successful2, successful3, type = "text")
-```
-
-```{r}
 dependent <- coup_autocoup$diff2
 successful1 <- plm(
   dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
@@ -800,6 +786,33 @@ stargazer::stargazer(successful1, successful2, successful3, type = "text")
 
 ```{r}
 dependent <- coup_autocoup$diff3
+successful1 <- plm(
+  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+successful2 <- plm(
+  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "time",
+  data = coup_autocoup
+)
+successful3 <- plm(
+  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "twoways",
+  data = coup_autocoup
+)
+
+stargazer::stargazer(successful1, successful2, successful3, type = "text")
+```
+
+```{r}
+dependent <- coup_autocoup$diff1
 
 coup_model <- plm(
   dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
@@ -832,7 +845,7 @@ stargazer(coup_model, autocoup_model, both_coup, type = "text")
 ### interactive effect
 
 ```{r}
-dependent <- coup_autocoup$diff0
+dependent <- coup_autocoup$diff2
 interactive1 <- plm(
   dependent ~ coup_effect * factor(cold_war) + autocoup_effect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
   index = c("ccode", "year"),
@@ -861,7 +874,7 @@ stargazer::stargazer(interactive1, interactive2, interactive3, type = "text")
 ```
 
 ```{r}
-dependent <- coup_autocoup$diff0
+dependent <- coup_autocoup$diff3
 interactive1 <- plm(
   dependent ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
   index = c("ccode", "year"),
@@ -887,6 +900,148 @@ interactive3 <- plm(
 )
 
 stargazer::stargazer(interactive1, interactive2, interactive3, type = "text")
+```
+
+### Final models for democratization
+
+```{r}
+dependent <- coup_autocoup$diff1
+
+attempt_model <- plm(
+  dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+successful_model <- plm(
+  dependent ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+interactive <- plm(
+  dependent ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(attempt_model, successful_model, interactive, type = "text")
+```
+
+```{r}
+coup_autocoup |>
+  filter(is.na(polity5)) |>
+  view()
+```
+
+```{r}
+diff1 <- plm(
+  diff1 ~ coup_attemp_3 + autocoup_attemp_3 + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff2 <- plm(
+  diff2 ~ coup_attemp_3 + autocoup_attemp_3 + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff3 <- plm(
+  diff3 ~ coup_attemp_3 + autocoup_attemp_3 + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(diff1, diff2, diff3, type = "text")
+```
+
+```{r}
+diff1 <- plm(
+  diff1 ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff2 <- plm(
+  diff2 ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff3 <- plm(
+  diff3 ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(diff1, diff2, diff3, type = "text")
+```
+
+```{r}
+diff1 <- plm(
+  diff1 ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff2 <- plm(
+  diff2 ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff3 <- plm(
+  diff3 ~ coup_seffect + autocoup_seffect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(diff1, diff2, diff3, type = "text")
+```
+
+```{r}
+diff1 <- plm(
+  diff1 ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff2 <- plm(
+  diff2 ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+diff3 <- plm(
+  diff3 ~ coup_seffect * factor(cold_war) + autocoup_seffect * factor(cold_war) + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy),
+  index = c("ccode", "year"),
+  model = "within", # fixed effect
+  effect = "individual",
+  data = coup_autocoup
+)
+
+stargazer(diff1, diff2, diff3, type = "text")
 ```
 
 ```{r}
@@ -944,24 +1099,24 @@ autocoup_index <- autocoup |>
 ```
 
 ```{r}
-autocoup |> 
-  select(ccode) |> 
-  distinct() |> 
-  left_join(polity) |> 
-  left_join(autocoup |> 
-              select(ccode, autocoup_date) |> 
-              mutate(year = autocoup_date)) |> 
-  select(1:3, autocoup = autocoup_date, polity5) |> 
-  left_join(coup_all |> 
-              select(ccode, year, coup) |> 
-              filter(coup > 0)) |> 
+autocoup |>
+  select(ccode) |>
+  distinct() |>
+  left_join(polity) |>
+  left_join(autocoup |>
+    select(ccode, autocoup_date) |>
+    mutate(year = autocoup_date)) |>
+  select(1:3, autocoup = autocoup_date, polity5) |>
+  left_join(coup_all |>
+    select(ccode, year, coup) |>
+    filter(coup > 0)) |>
   view()
 
-coup_total |> 
+coup_total |>
   filter(coup > 0)
 
-polity |> 
-  left_join(autocoup |> mutate(year = autocoup_date)) |> 
+polity |>
+  left_join(autocoup |> mutate(year = autocoup_date)) |>
   view()
 ```
 
