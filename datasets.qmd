@@ -118,6 +118,9 @@ leaders <- archigos |>
 
 # Save combined leaders dataset
 write_csv(leaders, "leaders_combined.csv")
+
+leaders |> 
+  view()
 ```
 
 ## Coup analysis dataset
@@ -914,7 +917,7 @@ stargazer::stargazer(interactive1, interactive2, interactive3, type = "text")
 ### Final models for democratization
 
 ```{r}
-dependent <- coup_autocoup$diff3
+dependent <- coup_autocoup$diff5
 
 attempt_model <- plm(
   dependent ~ coup_effect + autocoup_effect + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
