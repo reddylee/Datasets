@@ -1,14 +1,20 @@
 ## Setup
 
+
+
 ```{r}
 #| label: setup
 
 pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer)
 ```
 
+
+
 ## leaders dataset
 
 ### Archigos Dataset
+
+
 
 ```{r}
 #| label: archigos_data
@@ -43,7 +49,11 @@ archigos <- archigos_raw |>
 write_csv(archigos, "archigos_clean.csv")
 ```
 
+
+
 ### PLAD Dataset
+
+
 
 ```{r}
 #| label: plad_data
@@ -81,7 +91,11 @@ plad <- plad_raw |>
 write_csv(plad, "plad_processed.csv")
 ```
 
+
+
 ### Leaders Dataset: Archigos and PLAD
+
+
 
 ```{r}
 #| label: leaders_combined
@@ -160,9 +174,13 @@ leader_year <- df_expanded |>
 write.csv(leader_year, "leader_year.csv", row.names = FALSE)
 ```
 
+
+
 ## Autocoup analysis dataset
 
 ### Polity5 Dataset
+
+
 
 ```{r}
 #| label: polity5_data
@@ -208,7 +226,11 @@ polity <- polity5 |>
 #   geom_point()
 ```
 
+
+
 ### Political Violence Dataset: MEPV
+
+
 
 ```{r}
 #| label: violence_data
@@ -221,7 +243,11 @@ political_violence <- read_excel("political_violence_2018.xls") |>
   select(ccode, year, violence = actotal)
 ```
 
+
+
 ### GDP and population Dataset
+
+
 
 ```{r}
 #| label: gdp_pop_data
@@ -246,7 +272,11 @@ GDP <- vdem |>
 #   view()
 ```
 
+
+
 ### Regime Type Dataset
+
+
 
 ```{r}
 #| label: regimes_data
@@ -324,7 +354,11 @@ regimes |>
   tail(10)
 ```
 
+
+
 ### Coup Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_data
@@ -385,7 +419,11 @@ coup_all |>
   geom_line()
 ```
 
+
+
 ### Coup Analysis Model
+
+
 
 ```{r}
 #| label: coup_analysis_model
@@ -411,9 +449,13 @@ coup_model <- regimes |>
 write_csv(coup_model, "coup_model.csv")
 ```
 
+
+
 ## Autocoup analysis Dataset
 
 ### Autocoup Dataset
+
+
 
 ```{r}
 #| label: autocoup_data
@@ -444,7 +486,11 @@ autocoup <- autocoup_raw |>
 write_csv(autocoup, "autocoup_clean.csv")
 ```
 
+
+
 ### Leader_autocoup Dataset
+
+
 
 ```{r}
 #| label: leader_autocoup_data
@@ -467,7 +513,11 @@ leader_autocoup <- leader_year |>
 #   view()
 ```
 
+
+
 ### Autocoup Analysis Model
+
+
 
 ```{r}
 #| label: autocoup_analysis_model
@@ -572,7 +622,11 @@ stargazer(attempt1, attempt2, attempt3,
 )
 ```
 
+
+
 ## Survival Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_success_data
@@ -665,7 +719,11 @@ survival_cox_td <- survival_data |>
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
 ```
 
+
+
 ### Running Survival Models
+
+
 
 ```{r}
 #| label: run_survival_models
@@ -679,9 +737,13 @@ survival_cox_td |>
   coxph(Surv(T1, T2, status) ~ group + GDP_trend + GDP_pc + pop_log + polity5 + violence + age + cluster(id), data = _)
 ```
 
+
+
 ## Running Free_index Models
 
 ### Free_index data
+
+
 
 ```{r}
 decay_factor <- 0.5
@@ -739,7 +801,11 @@ coup_autocoup <- coup_total |>
 write_csv(coup_autocoup, "coup_autocoup.csv")
 ```
 
+
+
 ### dummy effect
+
+
 
 ```{r}
 # str(coup_autocoup)
@@ -794,7 +860,11 @@ plm(dependent ~ factor(coup_succeed) * factor(cold_war) + factor(autocoup_succee
   summary()
 ```
 
+
+
 ### Coups and autocoups attempt effect
+
+
 
 ```{r}
 dependent <- coup_autocoup$diff2
@@ -883,7 +953,11 @@ attempt3 <- plm(
 stargazer::stargazer(attempt1, attempt2, attempt3, type = "text")
 ```
 
+
+
 ### successful effects
+
+
 
 ```{r}
 dependent <- coup_autocoup$diff2
@@ -970,7 +1044,11 @@ both_coup <- plm(
 stargazer(coup_model, autocoup_model, both_coup, type = "text")
 ```
 
+
+
 ### interactive effect
+
+
 
 ```{r}
 dependent <- coup_autocoup$diff2
@@ -1030,7 +1108,11 @@ interactive3 <- plm(
 stargazer::stargazer(interactive1, interactive2, interactive3, type = "text")
 ```
 
+
+
 ### Final models for democratization
+
+
 
 ```{r}
 dependent <- coup_autocoup$diff5
@@ -1308,7 +1390,11 @@ coup_autocoup |>
 #   view()
 ```
 
+
+
 ## Upload Datasets
+
+
 
 ```{bash}
 #| label: upload
@@ -1317,3 +1403,4 @@ git add .
 git commit -m "Version $(date +%Y-%m-%d)"
 git push
 ```
+
