@@ -260,40 +260,46 @@ regimes <- REIGN |>
   ) |>
   distinct(ccode, year, .keep_all = T) |>
   mutate(
-    regime_coup = case_when(
+    regime = case_when(
       regime_type %in% c(
         "party-based",
         "party-personal",
         "party-military",
-        "party-personal-military",
-        "oligarchy"
+        "party-personal-military"
       ) ~ "dominant-party",
       regime_type == "personal" ~ "personal",
       regime_type %in% c("military", "military personal", "indirect military") ~ "military",
-      regime_type == "monarchy" ~ "monarchy",
-      regime_type %in% c("presidential", "parliamentary") ~ "democracy",
+      regime_type == "presidential" ~ "presidential",
+      regime_type == "parliamentary" ~ "parliamentary",
       TRUE ~ "other"
     ),
     regime_autocoup = case_when(
       regime_type %in% c(
         "party-based",
-        "party-personal",
-        "party-military",
-        "party-personal-military",
-        "oligarchy"
+        "party-military"
       ) ~ "dominant-party",
       regime_type == "personal" ~ "personal",
-      regime_type %in% c("military", "military personal", "indirect military") ~ "military",
-      regime_type == "monarchy" ~ "monarchy",
+      regime_type %in% c(
+        "party-personal",
+        "party-personal-military",
+        "military personal"
+      ) ~ "semi-personal",
+      regime_type %in% c("military", "provisional military", "indirect military") ~ "military",
       regime_type == "presidential" ~ "presidential",
       regime_type == "parliamentary" ~ "parliamentary",
       TRUE ~ "other"
+    ),
+    regime_three = case_when(
+      grepl("personal", regime_type) ~ "personal",
+      regime_type == "presidential" ~ "presidential",
+      TRUE ~ "other"
     )
   ) |>
-  select(country, ccode, year, regime_coup, regime_autocoup, regime_type)
+  select(country, ccode, year, regime, regime_autocoup, regime_three, regime_type)
 
 regimes |>
-  select(regime_coup, year) |>
+  view()
+select(regime_coup, year) |>
   filter(
     year > 1940,
     year < 2021,
@@ -397,11 +403,11 @@ coup_model <- regimes |>
   left_join(GDP, by = join_by(ccode, year)) |>
   mutate(violence = na.locf(violence, .by = ccode, na.rm = FALSE)) |>
   mutate(
-    regime = fct_relevel(regime_coup, "dominant-party"),
+    regime = fct_relevel(regime, "dominant-party"),
     ect = (GDP_trend - 1) * 100
   ) |>
   filter(year > 1949) |>
-  select(ccode, country, year, coup, regime = regime_coup, GDP_trend = ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)
+  select(ccode, country, year, coup, regime, GDP_trend = ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)
 
 # coup_model |>
 #   drop_na() |>
@@ -489,10 +495,10 @@ autocoup_model <- leader_autocoup |>
     )
   ) |>
   left_join(GDP, by = join_by(ccode, year)) |>
-  filter(
-    !is.na(GDP_pc),
-    regime_autocoup %in% c("dominant-party", "personal", "military", "presidential"),
-  ) |>
+  # filter(
+  #   !is.na(GDP_pc),
+  #   regime_autocoup %in% c("dominant-party", "personal", "military", "presidential"),
+  # ) |>
   left_join(polity, by = join_by(ccode, year)) |>
   mutate(cold_war = ifelse(year > 1990, 0, 1))
 
@@ -508,35 +514,54 @@ write_csv(autocoup_model, "autocoup_model.csv")
 # autocoup_model
 
 autocoup_model |>
+  select(regime_autocoup) |>
+  distinct(regime_autocoup, .keep_all = TRUE)
+autocoup_model |>
   select(entry) |>
-  distinct(entry, .keep_all = TRUE)
+  tabyl(entry)
 
 attempt1 <-
   glm(
-    autocoup_attempt ~ regime_autocoup + GDP_pc + GDP_trend + pop_log + violence + entry + log(cumulative_days_in_office) + age + factor(cold_war),
+    autocoup_attempt ~ regime + GDP_pc + GDP_trend + pop_log + violence + log(cumulative_days_in_office) + factor(cold_war),
     family = binomial(link = "probit"),
     data = autocoup_model |>
-      filter(
-        regime_autocoup %in% c("dominant-party", "personal", "military"),
-        entry != "Foreign Imposition"
-      ) |>
-      mutate(regime_autocoup = relevel(factor(regime_autocoup), ref = "dominant-party"))
+      # filter(
+      #   regime != "other"
+      # ) |>
+      mutate(regime = relevel(factor(regime), ref = "dominant-party"))
   )
+attempt1 |>
+  summary()
 
 attempt2 <-
   glm(
-    autocoup_attempt ~ regime_autocoup + GDP_pc + GDP_trend + pop_log + violence + entry + log(cumulative_days_in_office) + age + factor(cold_war),
-    family = binomial(link = "probit"),
+    autocoup_attempt ~ regime + GDP_pc + GDP_trend + pop_log + violence + log(cumulative_days_in_office) + factor(cold_war),
+    family = binomial,
     data = autocoup_model |>
-      mutate(regime_autocoup = relevel(factor(regime_autocoup), ref = "dominant-party")) |>
-      filter(entry != "Foreign Imposition")
+      # filter(
+      #   regime != "other"
+      # ) |>
+      mutate(regime = relevel(factor(regime), ref = "dominant-party"))
   )
+
+attempt2 |>
+  summary()
 
 stargazer(attempt1, attempt2,
   warning = FALSE,
   header = FALSE,
   type = "text"
 )
+
+autocoup_model |>
+  select(regime_type) |>
+  tabyl(regime_type)
+distinct(regime_coup, .keep_all = TRUE)
+
+autocoup_model |>
+  select(regime_autocoup) |>
+  tabyl(regime_autocoup)
+distinct(regime_autocoup, .keep_all = TRUE)
 ```
 
 ```{r}
@@ -545,16 +570,16 @@ library(logistf)
 
 attempt3 <-
   glm(
-    autocoup_attempt ~ regime_autocoup + GDP_pc + GDP_trend + pop_log + violence + entry + log(cumulative_days_in_office) + age + factor(cold_war),
+    autocoup_attempt ~ regime + GDP_pc + GDP_trend + pop_log + violence + log(cumulative_days_in_office) + factor(cold_war),
     family = binomial(link = "logit"),
     method = "brglmFit",
     data = autocoup_model |>
-      mutate(regime_autocoup = relevel(factor(regime_autocoup), ref = "dominant-party")) |>
-      filter(entry != "Foreign Imposition")
+      mutate(regime = relevel(factor(regime), ref = "dominant-party"))
   )
+summary(attempt3)
 
 attempt4 <- logistf(
-  autocoup_attempt ~ regime_autocoup + GDP_pc + GDP_trend + pop_log + violence + entry + log(cumulative_days_in_office) + age + factor(cold_war),
+  autocoup_attempt ~ regime_autocoup + GDP_pc + GDP_trend + pop_log + violence + log(cumulative_days_in_office) + age + factor(cold_war),
   data = autocoup_model |>
     filter(
       regime_autocoup %in% c("dominant-party", "personal", "military"),
@@ -563,7 +588,6 @@ attempt4 <- logistf(
     mutate(regime_autocoup = relevel(factor(regime_autocoup), ref = "dominant-party")),
 )
 
-summary(attempt3)
 
 stargazer(attempt1, attempt2, attempt3,
   warning = FALSE,
