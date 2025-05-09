@@ -1,14 +1,20 @@
 ## Setup
 
+
+
 ```{r}
 #| label: setup
 
 pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit, )
 ```
 
+
+
 ## leaders dataset
 
 ### Archigos Dataset
+
+
 
 ```{r}
 #| label: archigos_data
@@ -43,7 +49,11 @@ archigos <- archigos_raw |>
 write_csv(archigos, "archigos_clean.csv")
 ```
 
+
+
 ### PLAD Dataset
+
+
 
 ```{r}
 #| label: plad_data
@@ -81,7 +91,11 @@ plad <- plad_raw |>
 write_csv(plad, "plad_processed.csv")
 ```
 
+
+
 ### Leaders Dataset: Archigos and PLAD
+
+
 
 ```{r}
 #| label: leaders_combined
@@ -161,9 +175,13 @@ leader_year <- df_expanded |>
 write.csv(leader_year, "leader_year.csv", row.names = FALSE)
 ```
 
+
+
 ## Autocoup analysis dataset
 
 ### Polity5 Dataset
+
+
 
 ```{r}
 #| label: polity5_data
@@ -186,7 +204,11 @@ polity <- polity5 |>
   filter(year >= 1940)
 ```
 
+
+
 ### Political Violence Dataset: MEPV
+
+
 
 ```{r}
 #| label: violence_data
@@ -199,7 +221,11 @@ political_violence <- read_excel("political_violence_2018.xls") |>
   select(ccode, year, violence = actotal)
 ```
 
+
+
 ### GDP and population Dataset
+
+
 
 ```{r}
 #| label: gdp_pop_data
@@ -224,7 +250,11 @@ GDP <- vdem |>
 #   view()
 ```
 
+
+
 ### Regime Type Dataset
+
+
 
 ```{r}
 #| label: regimes_data
@@ -276,7 +306,11 @@ regimes <- REIGN |>
   select(country, ccode, year, regime, regime_autocoup, regime_three, regime_type)
 ```
 
+
+
 ### Coup Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_data
@@ -330,7 +364,11 @@ coup_all <- fread(coup_url) |>
 write.csv(coup_all, "coup_all.csv")
 ```
 
+
+
 ### Coup Analysis Model
+
+
 
 ```{r}
 #| label: coup_analysis_model
@@ -352,9 +390,13 @@ coup_model <- regimes |>
 write_csv(coup_model, "coup_model.csv")
 ```
 
+
+
 ## Autocoup analysis Dataset
 
 ### Autocoup Dataset
+
+
 
 ```{r}
 #| label: autocoup_data
@@ -380,7 +422,11 @@ autocoup <- autocoup_raw |>
 write_csv(autocoup, "autocoup_clean.csv")
 ```
 
+
+
 ### Leader_autocoup Dataset
+
+
 
 ```{r}
 #| label: leader_autocoup_data
@@ -400,7 +446,11 @@ leader_autocoup <- leader_year |>
   select(1:5, leader_name, everything())
 ```
 
+
+
 ### Autocoup Analysis Model
+
+
 
 ```{r}
 #| label: autocoup_analysis_model
@@ -475,7 +525,11 @@ stargazer(attempt1, attempt2,
 )
 ```
 
+
+
 ## Survival Analysis Dataset
+
+
 
 ```{r}
 #| label: coup_success_data
@@ -682,12 +736,16 @@ survival_cox_td <- survival_cox_td1 |>
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
 ```
 
+
+
 ### Running Survival Models
 
 https://stats.oarc.ucla.edu/r/seminars/introduction-to-survival-analysis-in-r/
 https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_full.html
 https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/intro_survival_r_code.r
 https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_slides.html#/references
+
+
 
 ```{r}
 #| label: run_survival_models
@@ -722,9 +780,13 @@ ggsurvplot(fit,
 )
 ```
 
+
+
 ## Running Free_index Models
 
 ### Free_index data
+
+
 
 ```{r}
 decay_factor <- 0.5
@@ -774,7 +836,11 @@ coup_autocoup <- coup_total |>
 write_csv(coup_autocoup, "coup_autocoup.csv")
 ```
 
+
+
 ### Fixed effect model
+
+
 
 ```{r}
 #| label: tbl-demomodel
@@ -839,9 +905,13 @@ stargazer(demo_model1, demo_model2, demo_model3, demo_model4,
 )
 ```
 
+
+
 ### Robustness tests
 
 #### One to five years
+
+
 
 ```{r}
 #| label: tbl-demomodel1
@@ -906,7 +976,11 @@ stargazer(demo_model1, demo_model2, demo_model3, demo_model4, demo_model5,
 )
 ```
 
+
+
 #### Dummy autocoups
+
+
 
 ```{r}
 #| label: tbl-demomodel2
@@ -989,7 +1063,11 @@ coup_autocoup |>
   theme_minimal()
 ```
 
+
+
 ## Upload Datasets
+
+
 
 ```{bash}
 #| label: upload
@@ -998,3 +1076,4 @@ git add .
 git commit -m "Version $(date +%Y-%m-%d)"
 git push
 ```
+
