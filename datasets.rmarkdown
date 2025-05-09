@@ -5,7 +5,7 @@
 ```{r}
 #| label: setup
 
-pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit, )
+pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit)
 ```
 
 
