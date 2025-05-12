@@ -5,7 +5,7 @@
 ```{r}
 #| label: setup
 
-pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit)
+pacman::p_load(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit, broom)
 ```
 
 
@@ -436,14 +436,18 @@ leader_autocoup <- leader_year |>
   left_join(
     autocoup |>
       select(ccode, leader_name, autocoup_date, autocoup_outcome, extending_date) |>
-      mutate(year = year(extending_date)),
+      mutate(year = autocoup_date),
     by = join_by(ccode, year)
   ) |>
+  filter(days_in_office > 180) |>
   mutate(
     autocoup_attempt = if_else(is.na(leader_name), 0, 1),
     autocoup_success = if_else(!is.na(extending_date), 1, if_else(!is.na(autocoup_attempt), 0, NA))
   ) |>
   select(1:5, leader_name, everything())
+
+# leader_autocoup |>
+#   tabyl(autocoup_attempt)
 ```
 
 
@@ -486,13 +490,16 @@ autocoup_model <- leader_autocoup |>
   mutate(cold_war = ifelse(year > 1990, 0, 1))
 
 write_csv(autocoup_model, "autocoup_model.csv")
+
+# autocoup_model |>
+#   tabyl(regime, autocoup_attempt) |>
+#   view()
 ```
 
 ```{r}
 # autocoup_model
 
 attempt1 <- autocoup_model |>
-  filter(days_in_office > 180) |>
   mutate(regime = factor(regime,
     levels = c("dominant-party", "personal", "presidential", "military", "parliamentary", "other")
   )) |>
@@ -505,7 +512,6 @@ attempt1 |>
   summary()
 
 attempt2 <- autocoup_model |>
-  filter(days_in_office > 180) |>
   mutate(regime = factor(regime,
     levels = c("dominant-party", "personal", "presidential", "military", "parliamentary", "other")
   )) |>
@@ -532,64 +538,41 @@ stargazer(attempt1, attempt2,
 
 
 ```{r}
-#| label: coup_success_data
+#| label: leader_autocoup
+
+# Join leader_year and autocoup data
+leader_autocoup <- leader_year |>
+  left_join(
+    autocoup |>
+      select(ccode, leader_name, autocoup_date, autocoup_outcome, extending_date) |>
+      mutate(year = autocoup_date),
+    by = join_by(ccode, year)
+  ) |>
+  # filter(days_in_office > 180) |>
+  mutate(
+    autocoup_attempt = if_else(is.na(leader_name), 0, 1),
+    autocoup_success = if_else(!is.na(extending_date), 1, if_else(!is.na(autocoup_attempt), 0, NA))
+  ) |>
+  select(1:5, leader_name, everything())
+```
+
+```{r}
+#| label: leader_coup_autocoup
 
 coup_success <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups_final.txt") |>
   mutate(coup_date = make_date(year = year, month = month, day = day)) |>
   select(ccode, country, coup_date, coup, year) |>
   filter(coup == 2)
 
-# targets <- tibble(
-#   leader = c(
-#     "Avril",
-#     "Cabral",
-#     "Bouterse",
-#     "Castello Branco",
-#     "Padilla Aranciba",
-#     "Aramburu",
-#     "Mendez Manfredini",
-#     "Dioncounda Traore",
-#     "Soglo",
-#     "Ahomadegbe",
-#     "Ironsi",
-#     "Ironsi",
-#     "Gowon",
-#     "Micombero",
-#     "Salem Aref",
-#     "Ziaur Rahman",
-#     "Boun Oum",
-#     "Van Thieu"
-#   ),
-#   coup_date = ymd(c(
-#     "1988-06-20",
-#     "1963-09-25",
-#     "1980-02-25",
-#     "1964-03-30",
-#     "1978-07-21",
-#     "1955-09-16",
-#     "1976-06-12",
-#     "2012-03-22",
-#     "1965-11-29",
-#     "1972-10-26",
-#     "1966-01-15",
-#     "1966-07-29",
-#     "1966-01-15",
-#     "1966-07-08",
-#     "1963-11-18",
-#     "1975-08-15",
-#     "1960-08-09",
-#     "1965-01-27"
-#   ))
-# )
 
-leaders_coup <- autocoup_model |>
+leader_coup_autocoup <- leader_autocoup |>
   left_join(
     coup_success |>
       select(ccode, year, coup_date),
     by = join_by(ccode, year)
   ) |>
   select(1:6, coup_date, everything()) |>
-  filter(!is.na(coup_date) | autocoup_outcome == 2) |>
+  filter(!is.na(coup_date) | autocoup_success == 1) |>
   group_by(ccode, coup_date) |>
   slice_min(order_by = abs(as.numeric(coup_date - startdate)), n = 1, with_ties = T) |>
   ungroup() |>
@@ -604,7 +587,7 @@ leaders_coup <- autocoup_model |>
   ) |>
   mutate(
     group = case_when(
-      autocoup_outcome == 2 ~ "A",
+      autocoup_success == 1 ~ "A",
       TRUE ~ "B"
     ),
     status = case_when(
@@ -617,20 +600,58 @@ leaders_coup <- autocoup_model |>
     tstart = as.numeric(year(startdate) + (startdate - floor_date(startdate, "year")) / 365),
     tstop = as.numeric(year(enddate) + (enddate - floor_date(enddate, "year")) / 365)
   ) |>
-  select(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age, regime, violence, GDP_pc, GDP_trend, pop_log, polity5, cold_war)
+  select(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)
+
+# leaders_coup |>
+#   tabyl(group)
 ```
 
 ```{r}
-#| label: survival_model_data
+#| label: coup_autocoup_data
 
-survival_data <- leaders_coup |>
+coup_autocoup_data <- leader_coup_autocoup |>
+  left_join(
+    regimes |>
+      select(-country),
+    by = join_by(ccode, year)
+  ) |>
+  left_join(political_violence,
+    by = join_by(ccode, year)
+  ) |>
+  # mutate(
+  #   autocoup_outcome = case_when(
+  #     autocoup_outcome == "Yes" ~ 2,
+  #     autocoup_outcome == "No" ~ 1,
+  #     TRUE ~ 0
+  #   )
+  # ) |>
+  left_join(GDP, by = join_by(ccode, year)) |>
+  left_join(
+    polity |>
+      select(-country),
+    by = join_by(ccode, year)
+  ) |>
+  group_by(ccode) |>
+  fill(regime, .direction = "downup") |>
+  ungroup() |>
   filter(
-    !(ccode == "500" & leader == "Okello"),
-    !(enddate == "2019-02-03" & leader == "Azali Assoumani"),
-    !(startdate == "1967-08-17" & leader == "Bongo"),
+    year > 1944
+  ) |>
+  mutate(cold_war = ifelse(year > 1990, 0, 1))
+```
+
+```{r}
+#| label: coup_autocoup_data_clean
+
+survival_data <- coup_autocoup_data |>
+  filter(
+    # !(ccode == "500" & leader == "Okello"),
+    # !(enddate == "2019-02-03" & leader == "Azali Assoumani"),
+    # !(startdate == "1967-08-17" & leader == "Bongo"),
     !(ccode == "698" & leader == "Qabus Bin Said"),
     survival_days > 180
   ) |>
+  mutate(enddate = ifelse(leader == "Azali Assoumani", Sys.Date(), enddate)) |>
   group_by(ccode) |>
   # 向下填充 categorical 或 ordinal 变量
   tidyr::fill(regime, polity5, violence, .direction = "updown") |>
@@ -653,7 +674,10 @@ survival_data <- leaders_coup |>
     )
   ) |>
   ungroup()
+```
 
+```{r}
+#| label: survival_cox_ph_model
 
 survival_cox_ph <- survival_data |>
   mutate(
@@ -684,7 +708,6 @@ survival_cox_td1 <- survival_data |>
     age = age + row_number() - 1,
     .by = id
   )
-
 
 
 survival_cox_td <- survival_cox_td1 |>
@@ -750,14 +773,18 @@ https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_slides.html#/r
 ```{r}
 #| label: run_survival_models
 
-survival_cox_ph |>
+model_cox1 <- survival_cox_ph |>
   mutate(group = factor(group, labels = c("Autocoup leaders", "Coup-installed leaders"))) |>
-  coxph(Surv(survival_days, status) ~ group + regime + GDP_trend + GDP_pc + pop_log + polity5 + violence, data = _) |>
+  coxph(Surv(survival_days, status) ~ group + regime + GDP_trend + GDP_pc + polity5 + age + pop_log + violence, data = _)
+
+model_cox1 |>
   summary()
 
-survival_cox_td |>
+model_cox2 <- survival_cox_td |>
   mutate(group = factor(group, labels = c("Autocoup leaders", "Coup-installed leaders"))) |>
-  coxph(Surv(T1, T2, status) ~ group + regime + GDP_trend + GDP_pc + pop_log + polity5 + violence + cluster(id), data = _) |>
+  coxph(Surv(T1, T2, status) ~ group + regime + GDP_trend + GDP_pc + polity5 + age + pop_log + violence + cluster(id), data = _)
+
+model_cox2 |>
   summary()
 
 fit <- survfit(Surv(survival_year, status) ~ group,
@@ -778,6 +805,179 @@ ggsurvplot(fit,
   # title = "Survival Curves of overstay and coup-installed leaders",
   font.title = 12
 )
+```
+
+
+
+### Survival curves for Cox Model
+
+
+
+```{r}
+#| label: fig-coxSurv
+#| fig-cap: Survival curves for Cox Model
+#| fig-subcap:
+#|  - Cox PH Model
+#|  - Time-dependent Cox Model
+#| layout-ncol: 2
+#| echo: false
+
+Mydata1 <- survival_cox_ph |>
+  mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    ),
+    group = factor(group,
+      labels = c("Autocoup leaders", "Coup-installed leaders")
+    )
+  ) |>
+  drop_na()
+
+testdata1 <- Mydata1 |>
+  summarise(
+    .by = group,
+    GDP_trend = mean(GDP_trend),
+    GDP_pc = mean(GDP_pc),
+    pop_log = mean(pop_log),
+    polity5 = mean(polity5),
+    violence = mean(violence),
+    age = mean(age),
+    regime = factor("dominant-party",
+      levels = c(
+        "dominant-party", "military", "personal",
+        "presidential", "parliamentary", "other"
+      )
+    )
+  )
+
+model_cox1 |>
+  survfit(newdata = testdata1) |>
+  ggsurvplot(
+    data = testdata1,
+    xlab = "Days",
+    surv.median.line = "hv",
+    legend.title = "Leader Type",
+    legend.labs = c("Autocoup leaders", "Coup-installed leaders")
+  )
+
+Mydata2 <- survival_cox_td |>
+  mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    ),
+    group = factor(group,
+      labels = c("Autocoup leaders", "Coup-installed leaders")
+    ),
+    survt = (tstop - tstart) * 365
+  ) |>
+  drop_na()
+
+testdata2 <- Mydata2 |>
+  summarise(
+    .by = group,
+    GDP_trend = mean(GDP_trend),
+    GDP_pc = mean(GDP_pc),
+    pop_log = mean(pop_log),
+    polity5 = mean(polity5),
+    violence = mean(violence),
+    age = mean(age),
+    regime = factor("dominant-party",
+      levels = c(
+        "dominant-party", "military", "personal",
+        "presidential", "parliamentary", "other"
+      )
+    )
+  )
+
+model_cox2 |>
+  survfit(newdata = testdata2) |>
+  ggsurvplot(
+    data = testdata2,
+    xlab = "Days",
+    surv.median.line = "hv",
+    legend.title = "Leader Type",
+    legend.labs = c("Autocoup leaders", "Coup-installed leaders")
+  )
+```
+
+
+
+### Hazard ratios and 95% CIs for Leader Ousting
+
+
+
+```{r}
+#| label: fig-coxHR
+#| fig-cap: Hazard ratios and 95% CIs for Leader Ousting
+#| fig-subcap:
+#|  - Cox PH Model
+#|  - Time-dependent Cox Model
+#| layout-ncol: 2
+#| echo: false
+
+coxplottidy <- tidy(model_cox1, exponentiate = T, conf.int = T) |>
+  mutate(term = c(
+    "Coup-installed leaders",
+    "Military",
+    "Personal",
+    "Presidential",
+    "Parliamentary",
+    "Ohter",
+    "GDP Growth Trend",
+    "GDP per capita",
+    "Population: log",
+    "Age",
+    "Polity 5",
+    "Political stability"
+  ))
+
+coxplottidy |>
+  ggplot(aes(
+    y = term,
+    x = estimate,
+    xmin = conf.low,
+    xmax = conf.high
+  )) +
+  geom_pointrange() +
+  geom_vline(
+    xintercept = 1,
+    linetype = "dashed",
+    color = "skyblue"
+  ) +
+  labs(x = "Hazard ratios", y = NULL, title = "") +
+  theme_bw()
+
+coxplottidy <- tidy(model_cox2, exponentiate = T, conf.int = T) |>
+  mutate(term = c(
+    "Coup-installed leaders",
+    "Military",
+    "Personal",
+    "Presidential",
+    "Parliamentary",
+    "Ohter",
+    "GDP Growth Trend",
+    "GDP per capita",
+    "Population: log",
+    "Age",
+    "Polity 5",
+    "Political stability"
+  ))
+
+coxplottidy |>
+  ggplot(aes(
+    y = term,
+    x = estimate,
+    xmin = conf.low,
+    xmax = conf.high
+  )) +
+  geom_pointrange() +
+  geom_vline(
+    xintercept = 1,
+    linetype = "dashed",
+    color = "skyblue"
+  ) +
+  labs(x = "Hazard ratios", y = "", title = "") +
+  theme_bw()
 ```
 
 
@@ -1061,6 +1261,52 @@ coup_autocoup |>
     color = "政体类型"
   ) + # 图例
   theme_minimal()
+```
+
+```{r}
+#| label: backup_code
+# targets <- tibble(
+#   leader = c(
+#     "Avril",
+#     "Cabral",
+#     "Bouterse",
+#     "Castello Branco",
+#     "Padilla Aranciba",
+#     "Aramburu",
+#     "Mendez Manfredini",
+#     "Dioncounda Traore",
+#     "Soglo",
+#     "Ahomadegbe",
+#     "Ironsi",
+#     "Ironsi",
+#     "Gowon",
+#     "Micombero",
+#     "Salem Aref",
+#     "Ziaur Rahman",
+#     "Boun Oum",
+#     "Van Thieu"
+#   ),
+#   coup_date = ymd(c(
+#     "1988-06-20",
+#     "1963-09-25",
+#     "1980-02-25",
+#     "1964-03-30",
+#     "1978-07-21",
+#     "1955-09-16",
+#     "1976-06-12",
+#     "2012-03-22",
+#     "1965-11-29",
+#     "1972-10-26",
+#     "1966-01-15",
+#     "1966-07-29",
+#     "1966-01-15",
+#     "1966-07-08",
+#     "1963-11-18",
+#     "1975-08-15",
+#     "1960-08-09",
+#     "1965-01-27"
+#   ))
+# )
 ```
 
 
