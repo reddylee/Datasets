@@ -7,7 +7,7 @@ ccode,country,leader_name,entry_date,exit_date,autocoup_date,extending_date,entr
 42,Dominican rep.,Rafael trujillo,1930-08-16,1961-05-30,1952,1952-08-16,Election,Regular,Assassinated,Irregular,Figurehead,Yes,Author
 91,Honduras,Juan orlando hernández,2014-01-27,2022-01-27,2015,2015-01-27,Election,Regular,Arrested,Irregular,Removing term limits,Yes,Ccp & presidential; baturo
 93,Nicaragua,Anastasio somoza garcía,1937-01-01,1956-09-29,1955,1955-01-01,Force+fraud election,Irregular,Assassinated,Irregular,Delaying elections,Yes,Marsteintredet; baturo
-93,Nicaragua,Daniel ortega,2007-01-10,2025-05-12,2009,2014-01-10,Election,Regular,Incumbent,Regular,Removing term limits,Yes,Presidential; baturo
+93,Nicaragua,Daniel ortega,2007-01-10,2025-05-14,2009,2014-01-10,Election,Regular,Incumbent,Regular,Removing term limits,Yes,Presidential; baturo
 93,Nicaragua,Somoza debayle,1967-05-01,1979-07-17,1971,1972-05-01,Succeeded relative,Regular,Coup,Irregular,Figurehead,Yes,Archigos; baturo
 100,Colombia,Uribe,2002-08-08,2010-08-07,2004,2005-08-08,Election,Regular,Step down,Regular,Enabling re-election,Yes,Baturo
 101,Venezuela,Chavez,1999-02-02,2013-03-05,1999,2009-02-02,Election,Regular,Died in office,Regular,Enabling re-election,Yes,Archigos; baturo
@@ -24,11 +24,11 @@ ccode,country,leader_name,entry_date,exit_date,autocoup_date,extending_date,entr
 165,Uruguay,Pacheco areco,1967-12-06,1972-03-01,1971,NA,Succeeded,Regular,Lost in election,Regular,Enabling re-election,No,Archigos
 345,Yugoslavia,Milosevic,1989-05-15,2000-10-07,1990,NA,Election,Regular,Resignation due to demonstrations and arrested,Irregular,Enabling re-election,No,Wiki; baturo
 345,Yugoslavia,Tito,1945-03-06,1980-05-04,1974,1974-03-06,Election,Regular,Died in office,Regular,Leader for life,Yes,Head of state & ccp; baturo
-365,Russia,Putin,1999-12-31,2025-05-12,2008,2012-12-31,Succeeded,Regular,Incumbent,Regular,Figurehead,Yes,Baturo
-370,Belarus,Lukashenko,1994-07-20,2025-05-12,2004,2004-07-20,Independence,Regular,Incumbent,Regular,Removing term limits,Yes,Ccp; baturo
+365,Russia,Putin,1999-12-31,2025-05-14,2008,2012-12-31,Succeeded,Regular,Incumbent,Regular,Figurehead,Yes,Baturo
+370,Belarus,Lukashenko,1994-07-20,2025-05-14,2004,2004-07-20,Independence,Regular,Incumbent,Regular,Removing term limits,Yes,Ccp; baturo
 371,Armenia,Serzh sargsyan,2008-04-09,2018-04-09,2018,NA,Election,Regular,Stepp down under pressure,Irregular,Reassigning power role,No,NA
 373,Azerbaijan,H. Aliyev,1993-06-24,2003-08-04,2002,2002-06-24,Independence,Regular,Died in office,Regular,Enabling re-election,Yes,Archigos
-373,Azerbaijan,Ilham aliyev,2003-08-04,2025-05-12,2009,2016-08-04,Succeeded relative,Regular,Incumbent,Regular,Removing term limits,Yes,Presidential & ccp; baturo
+373,Azerbaijan,Ilham aliyev,2003-08-04,2025-05-14,2009,2016-08-04,Succeeded relative,Regular,Incumbent,Regular,Removing term limits,Yes,Presidential & ccp; baturo
 375,Finland,Urho kekkonen,1956-03-01,1982-01-27,1973,1973-03-01,Election,Regular,Step down,Regular,One-time arrangement,Yes,NA
 411,Equatorial guinea,Macias nguema,1968-10-12,1979-08-03,1972,1973-10-12,Independence,Regular,Coup,Irregular,Leader for life,Yes,Baturo
 433,Senegal,Wade,2000-04-02,2012-04-02,2008,NA,Election,Regular,Lost in election,Regular,Enabling re-election,No,Wiki & ccp; baturo
@@ -44,17 +44,17 @@ ccode,country,leader_name,entry_date,exit_date,autocoup_date,extending_date,entr
 481,Gabon,Mba,1960-08-17,1967-11-28,1961,1967-08-17,Independence,Regular,Natural death in office,Regular,Removing term limits,Yes,Ccp; baturo
 482,Car,Dacko,1960-08-13,1966-01-01,1962,NA,Independence,Regular,Coup,Irregular,Changing term length,No,Ccp; baturo
 483,Chad,François tombalbaye,1960-08-11,1975-04-13,1961,1963-08-11,Independence,Regular,Coup,Irregular,Delaying elections,Yes,NA
-484,Congo,Denis sassou nguesso,1997-10-15,2025-05-12,2001,2015-10-15,Rebellion,Irregular,Incumbent,Regular,Changing term length,Yes,Wiki & ccp
+484,Congo,Denis sassou nguesso,1997-10-15,2025-05-14,2001,2015-10-15,Rebellion,Irregular,Incumbent,Regular,Changing term length,Yes,Wiki & ccp
 484,Congo,Ngouabi,1969-01-01,1977-03-18,1969,1970-01-01,Installed,Regular,Assassinated,Irregular,Cancelling elections,Yes,Ccp; baturo
 490,Drc,Joseph kabila,2001-01-17,2019-01-01,2016,2016-01-17,Succeeded relative,Regular,Step down,Regular,Delaying elections,Yes,Wiki & ccp; baturo
-500,Uganda,Yoweri museveni,1986-01-29,2025-05-12,2005,1986-01-29,War,Irregular,Incumbent,Regular,Enabling re-election,Yes,Ccp & wiki; baturo
+500,Uganda,Yoweri museveni,1986-01-29,2025-05-14,2005,1986-01-29,War,Irregular,Incumbent,Regular,Enabling re-election,Yes,Ccp & wiki; baturo
 516,Burundi,Pierre nkurunziza,2005-08-26,2020-06-08,2015,2015-08-26,Election,Regular,Died in office before hand over,Regular,Enabling re-election,Yes,Wiki; baturo
 517,Rwanda,Kayibanda,1961-10-26,1973-07-05,1973,NA,Independence,Regular,Coup,Irregular,One-time arrangement,No,Archigos; ccp; wiki
-517,Rwanda,Paul kagame,1994-07-19,2025-05-12,2003,2003-07-19,War,Irregular,Incumbent,Regular,Enabling re-election,Yes,Wiki & ccp
+517,Rwanda,Paul kagame,1994-07-19,2025-05-14,2003,2003-07-19,War,Irregular,Incumbent,Regular,Enabling re-election,Yes,Wiki & ccp
 520,Somalia,Siad barre,1969-10-21,1991-01-26,1979,1984-10-21,Independence,Regular,Stepp down and pass power to nephew,Regular,Enabling re-election,Yes,Presidential
-522,Djibouti,Guelleh,1999-05-08,2025-05-12,2010,2010-05-08,Succeeded relative,Regular,Incumbent,Regular,Removing term limits,Yes,Ccp; baturo
+522,Djibouti,Guelleh,1999-05-08,2025-05-14,2010,2010-05-08,Succeeded relative,Regular,Incumbent,Regular,Removing term limits,Yes,Ccp; baturo
 522,Djibouti,Hassan gouled aptidon,1977-06-27,1999-05-08,1981,1982-06-27,Independence,Regular,Retired,Regular,Enabling re-election,Yes,NA
-531,Eritrea,Isaias afwerki,1993-05-24,2025-05-12,2000,2003-05-24,Independence,Regular,Incumbent,Regular,Cancelling elections,Yes,Presidential
+531,Eritrea,Isaias afwerki,1993-05-24,2025-05-14,2000,2003-05-24,Independence,Regular,Incumbent,Regular,Cancelling elections,Yes,Presidential
 540,Angola,Dos santos,1979-09-10,2017-09-25,1992,1992-09-10,Election,Regular,Retired,Regular,Cancelling elections,Yes,Ccp; baturo
 551,Zambia,Chiluba,1991-11-02,2002-01-02,1996,NA,Election,Regular,Step down,Regular,Rigging elections,No,Baturo: chapter 16
 552,Zimbabwe,Mugabe,1980-03-04,2017-11-21,1987,1987-03-04,Election,Regular,Coup,Irregular,Reassigning power role,Yes,Ccp & wiki; nelda
@@ -63,21 +63,21 @@ ccode,country,leader_name,entry_date,exit_date,autocoup_date,extending_date,entr
 553,Malawi,Joyce banda,2012-04-07,2014-05-31,2014,NA,Succeed,Regular,Lost in election,Regular,Refusing election results,No,NA
 565,Namibia,Nujoma,1990-03-21,2005-03-21,1998,1998-03-21,Independence,Regular,Step down,Regular,Enabling re-election,Yes,Archigos; baturo
 581,Comoros,Ahmed abdallah mohamed sambi,2006-05-26,2011-05-26,2010,2010-05-26,Election,Regular,Step down,Regular,One-time arrangement,Yes,NA
-581,Comoros,Azali assoumani,2016-05-26,2025-05-12,2018,2019-05-26,Election,Regular,Incumbent,Regular,Enabling re-election,Yes,NA
+581,Comoros,Azali assoumani,2016-05-26,2025-05-14,2018,2019-05-26,Election,Regular,Incumbent,Regular,Enabling re-election,Yes,NA
 615,Algeria,Bouteflika,1999-04-27,2014-12-31,2008,2008-04-27,Election,Regular,Forced to resign,Irregular,Removing term limits,Yes,Ccp; baturo
 616,Tunisia,Bourguiba,1957-07-25,1987-11-07,1975,1975-07-25,Independence,Regular,Coup,Irregular,Leader for life,Yes,Head of state; baturo
-640,Turkey,Recep tayyip erdoğan,2003-03-14,2025-05-12,2017,2017-03-14,Election,Regular,Incumbent,Regular,Reassigning power role,Yes,NA
+640,Turkey,Recep tayyip erdoğan,2003-03-14,2025-05-14,2017,2017-03-14,Election,Regular,Incumbent,Regular,Reassigning power role,Yes,NA
 652,Syria,Kuwatli,1943-08-17,1949-05-30,1947,1947-08-17,Election,Regular,Coup,Irregular,Enabling re-election,Yes,Ccp
 660,Lebanon,El khoury,1943-11-22,1952-09-18,1948,1948-11-22,Election,Regular,Forced to resign,Irregular,Enabling re-election,Yes,Archigos
 660,Lebanon,Elias hrawi,1989-11-23,1998-11-24,1995,1995-11-23,Succeeded,Regular,Step down,Regular,One-time arrangement,Yes,Wiki & ccp
 660,Lebanon,Émile lahoud,1998-11-24,2007-11-24,2004,2004-11-24,Election,Regular,Step down,Regular,One-time arrangement,Yes,NA
 678,Yemen,Saleh,1978-07-17,2012-02-25,2001,2001-07-17,Election,Regular,Ousted,Irregular,Changing term length,Yes,Ccp
 701,Turkmenistan,Niyazov,1990-10-27,2006-12-21,1999,1999-10-27,Independence,Regular,Died in office,Regular,Leader for life,Yes,Archigos; baturo
-702,Tajikistan,Rakhmonov,1992-11-20,2025-05-12,1999,2003-11-20,Independence,Regular,Incumbent,Regular,Enabling re-election,Yes,Wiki; baturo
+702,Tajikistan,Rakhmonov,1992-11-20,2025-05-14,1999,2003-11-20,Independence,Regular,Incumbent,Regular,Enabling re-election,Yes,Wiki; baturo
 703,Kyrgyzstan,Akayev,1990-10-27,2005-03-24,1998,2000-10-27,Independence,Regular,Revolution,Irregular,Enabling re-election,Yes,NA
 704,Uzbekistan,Karimov,1990-03-24,2016-09-02,1992,2002-03-24,Independence,Regular,Died in office,Regular,Enabling re-election,Yes,Archigos; baturo
 705,Kazakhstan,Nazarbaev,1990-04-24,2019-03-20,1998,2007-04-24,Independence,Regular,Forced to resign,Regular,Changing term length,Yes,Ccp & wiki; baturo
-710,China,Xi jinping,2012-11-15,2025-05-12,2018,2022-11-15,Installed,Regular,Incumbent,Regular,Removing term limits,Yes,Baturo
+710,China,Xi jinping,2012-11-15,2025-05-14,2018,2022-11-15,Installed,Regular,Incumbent,Regular,Removing term limits,Yes,Baturo
 732,South korea,Syngman rhee,1948-08-15,1960-04-27,1952,1954-08-15,Election,Regular,Forced to resign,Irregular,Enabling re-election,Yes,Archigos; baturo
 780,Sri lanka,Rajapaksa,2005-11-19,2015-01-09,2010,NA,Election,Regular,Lost in election,Regular,Enabling re-election,No,Archigos; baturo
 840,Philippines,Marcos,1965-12-30,1986-02-25,1972,1976-12-30,Election,Regular,Revolution,Irregular,Delaying elections,Yes,Ccp; baturo
