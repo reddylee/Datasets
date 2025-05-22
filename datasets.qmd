@@ -101,7 +101,6 @@ leaders <- archigos |>
     enddate = if_else(exit == "Still in Office", Sys.Date(), enddate),
     gender = coalesce(gender.archigos, gender.plad),
     yrborn = coalesce(yrborn.archigos, as.numeric(yrborn.plad)),
-    age = year(enddate) - yrborn,
     exitcode = case_when(
       is.na(exitcode) ~ exit,
       exitcode == "Still in Office" & exit != "Still in office" ~ exit,
@@ -153,7 +152,7 @@ df_expanded <- df |>
   select(-year_start_date, -year_end_date) # Remove unnecessary columns
 
 leader_year <- df_expanded |>
-  mutate(age = year - yrborn) |>
+  mutate(age = if_else(yrborn > 0, year - yrborn, NA)) |>
   select(1:3, year, everything())
 
 
@@ -181,12 +180,6 @@ polity <- polity5 |>
     diff3 = polity5 - dplyr::lag(polity5, 3, default = 0), # for post-event year
     diff4 = polity5 - dplyr::lag(polity5, 4, default = 0), # for post-event year
     diff5 = polity5 - dplyr::lag(polity5, 5, default = 0) # for post-event year
-    # diff3 = dplyr::lead(polity5, 1) - polity5,
-    # diff2 = dplyr::lead(polity5, 2) - polity5,
-    # diff3 = dplyr::lead(polity5, 3) - polity5,
-    # diff_three = polity5 - dplyr::lag(polity5, 3),
-    # diff4 = dplyr::lead(polity5, 4) - polity5,
-    # diff5 = dplyr::lead(polity5, 5) - polity5
   ) |>
   ungroup() |>
   filter(year >= 1940)
@@ -198,8 +191,8 @@ polity <- polity5 |>
 #| label: violence_data
 
 # Download MEPV data
-violence_url <- "http://www.systemicpeace.org/inscr/MEPVv2018.xls"
-download.file(violence_url, "political_violence_2018.xls")
+# violence_url <- "http://www.systemicpeace.org/inscr/MEPVv2018.xls"
+# download.file(violence_url, "political_violence_2018.xls")
 
 political_violence <- read_excel("political_violence_2018.xls") |>
   select(ccode, year, violence = actotal)
@@ -334,15 +327,6 @@ coup_all <- fread(coup_url) |>
   select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)
 
 write.csv(coup_all, "coup_all.csv")
-
-# coup_raw |> 
-#   summarise(
-#     coup1 = sum(coup1 > 0, na.rm = TRUE),
-#     coup2 = sum(coup2 > 0, na.rm = TRUE),
-#     coup3 = sum(coup3 > 0, na.rm = TRUE),
-#     coup4 = sum(coup4 > 0, na.rm = TRUE)
-#   ) |> 
-#   view()
 ```
 
 ### Coup Analysis Model
@@ -365,11 +349,6 @@ coup_model <- regimes |>
 
 # Save the coup analysis model
 write_csv(coup_model, "coup_model.csv")
-
-# coup_model |>
-#   filter(coup > 0) |> 
-#   tabyl(regime) |>
-#   view()
 ```
 
 ## Autocoup analysis Dataset
@@ -406,7 +385,7 @@ write_csv(autocoup, "autocoup_clean.csv")
 #| label: leader_autocoup_data
 
 # Join leader_year and autocoup data
-leader_autocoup <- leader_year |>
+leader_autocoup1 <- leader_year |>
   left_join(
     autocoup |>
       select(ccode, leader_name, autocoup_date, autocoup_outcome, extending_date) |>
@@ -419,9 +398,6 @@ leader_autocoup <- leader_year |>
     autocoup_success = if_else(!is.na(extending_date), 1, if_else(!is.na(autocoup_attempt), 0, NA))
   ) |>
   select(1:5, leader_name, everything())
-
-# leader_autocoup |>
-#   tabyl(autocoup_attempt)
 ```
 
 ### Autocoup Analysis Model
@@ -429,7 +405,7 @@ leader_autocoup <- leader_year |>
 ```{r}
 #| label: autocoup_analysis_model
 
-autocoup_model <- leader_autocoup |>
+autocoup_model <- leader_autocoup1 |>
   left_join(
     regimes |>
       select(-country),
@@ -460,14 +436,6 @@ autocoup_model <- leader_autocoup |>
   mutate(cold_war = ifelse(year > 1990, 0, 1))
 
 write_csv(autocoup_model, "autocoup_model.csv")
-
-# autocoup_model |>
-#   tabyl(regime, autocoup_attempt) |>
-#   view()
-
-# autocoup_model |> 
-#   tabyl(autocoup_attempt, regime) |>
-#   view()
 ```
 
 ```{r}
@@ -511,7 +479,7 @@ stargazer(attempt1, attempt2,
 #| label: leader_autocoup
 
 # Join leader_year and autocoup data
-leader_autocoup <- leader_year |>
+leader_autocoup2 <- leader_year |>
   left_join(
     autocoup |>
       select(ccode, leader_name, autocoup_date, autocoup_outcome, extending_date) |>
@@ -534,15 +502,13 @@ coup_success <- fread("https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups
   select(ccode, country, coup_date, coup, year) |>
   filter(coup == 2)
 
-
-leader_coup_autocoup <- leader_autocoup |>
+leader_coup_autocoup <- leader_autocoup2 |>
   left_join(
     coup_success |>
       select(ccode, year, coup_date),
     by = join_by(ccode, year)
   ) |>
   select(1:6, coup_date, everything()) |>
-  filter(!is.na(coup_date) | autocoup_success == 1) |>
   group_by(ccode, coup_date) |>
   slice_min(order_by = abs(as.numeric(coup_date - startdate)), n = 1, with_ties = T) |>
   ungroup() |>
@@ -557,23 +523,20 @@ leader_coup_autocoup <- leader_autocoup |>
   ) |>
   mutate(
     group = case_when(
-      autocoup_success == 1 ~ "A",
-      TRUE ~ "B"
+      autocoup_success == 1 ~ "B",
+      !is.na(coup_date) ~ "C",
+      TRUE ~ "A"
     ),
     status = case_when(
-      exit %in% c("Foreign", "Irregular") ~ 1,
+      exit %in% c("Assassination", "Foreign", "Irregular", "Suicide") ~ 1,
       TRUE ~ 0
     ),
     startdate = coalesce(extending_date, startdate),
     survival_days = as.numeric(enddate - startdate),
-    year = year(startdate),
     tstart = as.numeric(year(startdate) + (startdate - floor_date(startdate, "year")) / 365),
     tstop = as.numeric(year(enddate) + (enddate - floor_date(enddate, "year")) / 365)
   ) |>
   select(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)
-
-# leaders_coup |>
-#   tabyl(group)
 ```
 
 ```{r}
@@ -588,13 +551,6 @@ coup_autocoup_data <- leader_coup_autocoup |>
   left_join(political_violence,
     by = join_by(ccode, year)
   ) |>
-  # mutate(
-  #   autocoup_outcome = case_when(
-  #     autocoup_outcome == "Yes" ~ 2,
-  #     autocoup_outcome == "No" ~ 1,
-  #     TRUE ~ 0
-  #   )
-  # ) |>
   left_join(GDP, by = join_by(ccode, year)) |>
   left_join(
     polity |>
@@ -621,7 +577,7 @@ survival_data <- coup_autocoup_data |>
     !(ccode == "698" & leader == "Qabus Bin Said"),
     survival_days > 180
   ) |>
-  mutate(enddate = ifelse(leader == "Azali Assoumani", Sys.Date(), enddate)) |>
+  # mutate(enddate = ifelse(leader == "Azali Assoumani", Sys.Date(), ymd(enddate))) |>
   group_by(ccode) |>
   # 向下填充 categorical 或 ordinal 变量
   tidyr::fill(regime, polity5, violence, .direction = "updown") |>
@@ -643,7 +599,10 @@ survival_data <- coup_autocoup_data |>
       pop_log
     )
   ) |>
-  ungroup()
+  ungroup() |> 
+  distinct(ccode, leader, startdate, enddate, 
+           .keep_all = TRUE) |>
+  filter(regime_type != "monarchy") 
 ```
 
 ```{r}
@@ -727,6 +686,11 @@ survival_cox_td <- survival_cox_td1 |>
 
 # Save the survival Cox TD model
 write_csv(survival_cox_td, "survival_cox_td_model.csv")
+
+# survival_cox_td |>
+#   tabyl(regime, group)
+# survival_cox_ph |>
+#   tabyl(regime, group)
 ```
 
 ### Running Survival Models
@@ -740,14 +704,14 @@ https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_slides.html#/r
 #| label: run_survival_models
 
 model_cox1 <- survival_cox_ph |>
-  mutate(group = factor(group, labels = c("Autocoup leaders", "Coup-installed leaders"))) |>
+  mutate(group = factor(group, labels = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders"))) |>
   coxph(Surv(survival_days, status) ~ group + regime + GDP_trend + GDP_pc + polity5 + age + pop_log + violence, data = _)
 
 model_cox1 |>
   summary()
 
 model_cox2 <- survival_cox_td |>
-  mutate(group = factor(group, labels = c("Autocoup leaders", "Coup-installed leaders"))) |>
+  mutate(group = factor(group, labels = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders"))) |>
   coxph(Surv(T1, T2, status) ~ group + regime + GDP_trend + GDP_pc + polity5 + age + pop_log + violence + cluster(id), data = _)
 
 model_cox2 |>
@@ -766,7 +730,7 @@ ggsurvplot(fit,
   surv.median.line = "hv",
   break.x.by = 5,
   legend.title = "Leader Type",
-  legend.labs = c("Autocoup leaders", "Coup-installed leaders"),
+  legend.labs = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders"),
   xlab = "Survival Years",
   # title = "Survival Curves of overstay and coup-installed leaders",
   font.title = 12
@@ -790,7 +754,7 @@ Mydata1 <- survival_cox_ph |>
       levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
     ),
     group = factor(group,
-      labels = c("Autocoup leaders", "Coup-installed leaders")
+      labels = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders")
     )
   ) |>
   drop_na()
@@ -819,7 +783,7 @@ model_cox1 |>
     xlab = "Days",
     surv.median.line = "hv",
     legend.title = "Leader Type",
-    legend.labs = c("Autocoup leaders", "Coup-installed leaders")
+    legend.labs = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders")
   )
 
 Mydata2 <- survival_cox_td |>
@@ -828,7 +792,7 @@ Mydata2 <- survival_cox_td |>
       levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
     ),
     group = factor(group,
-      labels = c("Autocoup leaders", "Coup-installed leaders")
+      labels = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders")
     ),
     survt = (tstop - tstart) * 365
   ) |>
@@ -858,7 +822,7 @@ model_cox2 |>
     xlab = "Days",
     surv.median.line = "hv",
     legend.title = "Leader Type",
-    legend.labs = c("Autocoup leaders", "Coup-installed leaders")
+    legend.labs = c("Non-Coup leaders", "Autocoup leaders", "Coup-installed leaders")
   )
 ```
 
@@ -875,6 +839,7 @@ model_cox2 |>
 
 coxplottidy <- tidy(model_cox1, exponentiate = T, conf.int = T) |>
   mutate(term = c(
+    "Autocoup leaders",
     "Coup-installed leaders",
     "Military",
     "Personal",
@@ -907,6 +872,7 @@ coxplottidy |>
 
 coxplottidy <- tidy(model_cox2, exponentiate = T, conf.int = T) |>
   mutate(term = c(
+    "Autocoup leaders",
     "Coup-installed leaders",
     "Military",
     "Personal",
@@ -990,12 +956,14 @@ coup_autocoup <- coup_total |>
       dplyr::lag(autocoup_attemp, 3, default = 0) * decay_factor^3 + dplyr::lag(autocoup_attemp, 4, default = 0) * decay_factor^4,
     autocoup_seffect = autocoup_succeed + dplyr::lag(autocoup_succeed, 1, default = 0) * decay_factor + dplyr::lag(autocoup_succeed, 2, default = 0) * decay_factor^2 +
       dplyr::lag(autocoup_succeed, 3, default = 0) * decay_factor^3 + dplyr::lag(autocoup_succeed, 4, default = 0) * decay_factor^4,
+    coup_effect_lag2 = dplyr::lag(coup_effect, 2, default = 0),
     coup_effect_lag3 = dplyr::lag(coup_effect, 3, default = 0),
     coup_seffect_lag1 = dplyr::lag(coup_seffect, 1, default = 0),
     coup_seffect_lag2 = dplyr::lag(coup_seffect, 2, default = 0),
     coup_seffect_lag3 = dplyr::lag(coup_seffect, 3, default = 0),
     coup_seffect_lag4 = dplyr::lag(coup_seffect, 4, default = 0),
     coup_seffect_lag5 = dplyr::lag(coup_seffect, 5, default = 0),
+    autocoup_effect_lag2 = dplyr::lag(autocoup_effect, 2, default = 0),
     autocoup_effect_lag3 = dplyr::lag(autocoup_effect, 3, default = 0),
     autocoup_seffect_lag1 = dplyr::lag(autocoup_seffect, 1, default = 0),
     autocoup_seffect_lag2 = dplyr::lag(autocoup_seffect, 2, default = 0),
@@ -1032,10 +1000,22 @@ coup_autocoup <- coup_autocoup |>
     .by = ccode
   )
 
-demo_model1 <- coup_autocoup |>
-  rename(Attemp = diff2, Autocoup = autocoup_attemp_lead1, Coup = coup_attemp_lead1) |>
+demo_model0 <- coup_autocoup |>
+  rename(Attempt = diff1, Autocoup = autocoup_attemp, Coup = coup_attemp) |>
   plm(
-    Attemp ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+    Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+    index = c("ccode", "year"),
+    model = "within", # fixed effect
+    effect = "individual",
+    data = _
+  )
+demo_model0 |>
+  summary()
+
+demo_model1 <- coup_autocoup |>
+  rename(Attempt = diff2, Autocoup = autocoup_effect_lag2, Coup = coup_effect_lag2) |>
+  plm(
+    Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
     index = c("ccode", "year"),
     model = "within", # fixed effect
     effect = "individual",
@@ -1045,9 +1025,9 @@ demo_model1 |>
   summary()
 
 demo_model2 <- coup_autocoup |>
-  rename(Attemp = diff1, Autocoup = autocoup_attemp, Coup = coup_attemp) |>
+  rename(Succeed = diff1, Autocoup = autocoup_succeed, Coup = coup_succeed) |>
   plm(
-    Attemp ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+    Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
     index = c("ccode", "year"),
     model = "within", # fixed effect
     effect = "individual",
@@ -1057,7 +1037,7 @@ demo_model2 |>
   summary()
 
 demo_model3 <- coup_autocoup |>
-  rename(Succeed = diff3, Autocoup = autocoup_effect_lag3, Coup = coup_effect_lag3) |>
+  rename(Succeed = diff2, Autocoup = autocoup_seffect_lag2, Coup = coup_seffect_lag2) |>
   plm(
     Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
     index = c("ccode", "year"),
@@ -1068,24 +1048,12 @@ demo_model3 <- coup_autocoup |>
 demo_model3 |>
   summary()
 
-demo_model4 <- coup_autocoup |>
-  rename(Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3) |>
-  plm(
-    Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-    index = c("ccode", "year"),
-    model = "within", # fixed effect
-    effect = "individual",
-    data = _
-  )
-demo_model4 |>
-  summary()
-
-stargazer(demo_model1, demo_model2, demo_model3, demo_model4,
+stargazer(demo_model0, demo_model1, demo_model2, demo_model3, 
   type = "text",
   float = F,
   header = F,
   dep.var.caption = "Dependent variable: Differences of Polity scores",
-  dep.var.labels = c("Pre-event effects", "Post-event effects"),
+  dep.var.labels = c("Attempt", "Succeed"),
   covariate.labels = c(
     "Autocoup", "Coup", "GDP per Capita",
     "Economic Trend", "Log Population", "Political Violence",
@@ -1107,62 +1075,62 @@ stargazer(demo_model1, demo_model2, demo_model3, demo_model4,
 #| tbl-cap: "The Impact of Autocoups on Democratization: one to five years"
 #| results: asis
 
-demo_model1 <- plm(
-  Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup |> rename(Succeed = diff1, Autocoup = autocoup_seffect_lag1, Coup = coup_seffect_lag1)
-)
-
-demo_model2 <- plm(
-  Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup |> rename(Succeed = diff2, Autocoup = autocoup_seffect_lag2, Coup = coup_seffect_lag2)
-)
-
-demo_model3 <- plm(
-  Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup |> rename(Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3)
-)
-
-demo_model4 <- plm(
-  Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup |> rename(Succeed = diff4, Autocoup = autocoup_seffect_lag4, Coup = coup_seffect_lag4)
-)
-
-demo_model5 <- plm(
-  Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
-  index = c("ccode", "year"),
-  model = "within", # fixed effect
-  effect = "individual",
-  data = coup_autocoup |> rename(Succeed = diff5, Autocoup = autocoup_seffect_lag5, Coup = coup_seffect_lag5)
-)
-
-stargazer(demo_model1, demo_model2, demo_model3, demo_model4, demo_model5,
-  type = "text",
-  float = F,
-  header = F,
-  dep.var.caption = "Dependent variable: Differences of Polity scores",
-  dep.var.labels = "Years after the event",
-  covariate.labels = c(
-    "Autocoup", "Coup", "GDP per Capita",
-    "Economic Trend", "Log Population", "Political Violence",
-    "Non-Democracy", "Cold War"
-  ),
-  summary.logical = F,
-  column.sep.width = "10pt",
-  # font.size = "footnotesize",
-  df = F
-)
+# demo_model1 <- plm(
+#   Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+#   index = c("ccode", "year"),
+#   model = "within", # fixed effect
+#   effect = "individual",
+#   data = coup_autocoup |> rename(Succeed = diff1, Autocoup = autocoup_seffect_lag1, Coup = coup_seffect_lag1)
+# )
+# 
+# demo_model2 <- plm(
+#   Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+#   index = c("ccode", "year"),
+#   model = "within", # fixed effect
+#   effect = "individual",
+#   data = coup_autocoup |> rename(Succeed = diff2, Autocoup = autocoup_seffect_lag2, Coup = coup_seffect_lag2)
+# )
+# 
+# demo_model3 <- plm(
+#   Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+#   index = c("ccode", "year"),
+#   model = "within", # fixed effect
+#   effect = "individual",
+#   data = coup_autocoup |> rename(Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3)
+# )
+# 
+# demo_model4 <- plm(
+#   Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+#   index = c("ccode", "year"),
+#   model = "within", # fixed effect
+#   effect = "individual",
+#   data = coup_autocoup |> rename(Succeed = diff4, Autocoup = autocoup_seffect_lag4, Coup = coup_seffect_lag4)
+# )
+# 
+# demo_model5 <- plm(
+#   Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
+#   index = c("ccode", "year"),
+#   model = "within", # fixed effect
+#   effect = "individual",
+#   data = coup_autocoup |> rename(Succeed = diff5, Autocoup = autocoup_seffect_lag5, Coup = coup_seffect_lag5)
+# )
+# 
+# stargazer(demo_model1, demo_model2, demo_model3, demo_model4, demo_model5,
+#   type = "text",
+#   float = F,
+#   header = F,
+#   dep.var.caption = "Dependent variable: Differences of Polity scores",
+#   dep.var.labels = "Years after the event",
+#   covariate.labels = c(
+#     "Autocoup", "Coup", "GDP per Capita",
+#     "Economic Trend", "Log Population", "Political Violence",
+#     "Non-Democracy", "Cold War"
+#   ),
+#   summary.logical = F,
+#   column.sep.width = "10pt",
+#   # font.size = "footnotesize",
+#   df = F
+# )
 ```
 
 #### Dummy autocoups
@@ -1172,26 +1140,36 @@ stargazer(demo_model1, demo_model2, demo_model3, demo_model4, demo_model5,
 #| tbl-cap: "The Impact of Autocoups on Democratization: Dummy autocoups"
 #| results: asis
 
-
+  
 demo_model1 <- plm(
-  Attempted ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
+  Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
   index = c("ccode", "year"),
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Attempted = diff2, Autocoup = autocoup_attemp_lag2, Coup = coup_attemp_lag2) |>
-    filter(regime != "other")
+    rename(Attempt = diff1, Autocoup = autocoup_attemp, Coup = coup_attemp) |>
+    mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    )
+  )
 )
+summary(demo_model1)
 
 demo_model2 <- plm(
-  Attempted ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
+  Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
   index = c("ccode", "year"),
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Attempted = diff3, Autocoup = autocoup_attemp_lag3, Coup = coup_attemp_lag3) |>
-    filter(regime != "other")
+    rename(Attempt = diff2, Autocoup = autocoup_attemp_lag2, Coup = coup_attemp_lag2) |>
+    mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    )
+  )
 )
+summary(demo_model2)
 
 demo_model3 <- plm(
   Succeeded ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
@@ -1199,8 +1177,12 @@ demo_model3 <- plm(
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Succeeded = diff2, Autocoup = autocoup_succeed_lag2, Coup = coup_succeed_lag2) |>
-    filter(regime != "other")
+    rename(Succeeded = diff1, Autocoup = autocoup_succeed, Coup = coup_succeed) |>
+    mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    )
+  )
 )
 demo_model4 <- plm(
   Succeeded ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war),
@@ -1208,8 +1190,12 @@ demo_model4 <- plm(
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Succeeded = diff3, Autocoup = autocoup_succeed_lag3, Coup = coup_succeed_lag3) |>
-    filter(regime != "other")
+    rename(Succeeded = diff2, Autocoup = autocoup_succeed_lag2, Coup = coup_succeed_lag2) |>
+    mutate(
+    regime = factor(regime,
+      levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
+    )
+  )
 )
 
 
@@ -1221,7 +1207,7 @@ stargazer(demo_model1, demo_model2, demo_model3, demo_model4,
   covariate.labels = c(
     "Autocoup", "Coup", "GDP per Capita",
     "Economic Trend", "Log Population", "Political Violence",
-    "Regime: Dominant-party", "\\hspace{1.5cm} Military", "\\hspace{1.5cm} Monarchy", "\\hspace{1.5cm} Personal", "Cold War"
+    "Regime: Military", "\\hspace{1.5cm} Personal", "\\hspace{1.5cm} Presidential", "\\hspace{1.5cm} Parliamentary", "\\hspace{1.5cm} Other", "Cold War"
   ),
   summary.logical = F,
   column.sep.width = "20pt",
