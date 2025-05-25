@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="datasets_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="datasets_files/libs/quarto-html/anchor.min.js"></script>
 <link href="datasets_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="datasets_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="datasets_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="datasets_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="datasets_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="datasets_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -527,18 +527,18 @@ glm(formula = autocoup_attempt ~ regime + GDP_pc + GDP_trend +
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.691379   1.859273  -2.523 0.011628 *  
+(Intercept)                    -4.691374   1.859273  -2.523 0.011628 *  
 regimepersonal                  0.743024   0.310044   2.397 0.016552 *  
-regimepresidential              1.609975   0.482776   3.335 0.000854 ***
-regimemilitary                 -0.803885   0.752557  -1.068 0.285428    
-regimeparliamentary            -1.707856   1.114029  -1.533 0.125265    
+regimepresidential              1.609974   0.482776   3.335 0.000854 ***
+regimemilitary                 -0.803886   0.752557  -1.068 0.285427    
+regimeparliamentary            -1.707857   1.114029  -1.533 0.125265    
 regimeother                    -1.175062   0.641216  -1.833 0.066869 .  
 GDP_pc                         -0.013301   0.008350  -1.593 0.111164    
-GDP_trend                       0.922711   1.393346   0.662 0.507826    
+GDP_trend                       0.922712   1.393346   0.662 0.507826    
 pop_log                        -0.141980   0.092594  -1.533 0.125188    
-violence                        0.012010   0.068269   0.176 0.860359    
+violence                        0.012010   0.068269   0.176 0.860360    
 polity5                        -0.089124   0.033386  -2.670 0.007596 ** 
-log(cumulative_days_in_office)  0.009239   0.126888   0.073 0.941958    
+log(cumulative_days_in_office)  0.009238   0.126888   0.073 0.941962    
 factor(cold_war)1              -0.792090   0.268952  -2.945 0.003229 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -579,19 +579,19 @@ Deviance Residuals:
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.637552   1.774391  -2.614 0.008959 ** 
+(Intercept)                    -4.637547   1.774391  -2.614 0.008959 ** 
 regimepersonal                  0.735703   0.300139   2.451 0.014238 *  
-regimepresidential              1.581688   0.465383   3.399 0.000677 ***
-regimemilitary                 -0.621434   0.668637  -0.929 0.352679    
+regimepresidential              1.581687   0.465383   3.399 0.000677 ***
+regimemilitary                 -0.621435   0.668637  -0.929 0.352679    
 regimeparliamentary            -1.355814   0.924394  -1.467 0.142456    
-regimeother                    -1.038094   0.581679  -1.785 0.074318 .  
+regimeother                    -1.038095   0.581679  -1.785 0.074318 .  
 GDP_pc                         -0.011324   0.007517  -1.506 0.131947    
 GDP_trend                       0.980123   1.326310   0.739 0.459916    
 pop_log                        -0.146620   0.088335  -1.660 0.096952 .  
 violence                        0.024717   0.064050   0.386 0.699565    
 polity5                        -0.089177   0.031970  -2.789 0.005281 ** 
-log(cumulative_days_in_office)  0.003658   0.121684   0.030 0.976018    
-factor(cold_war)1              -0.791357   0.257943  -3.068 0.002155 ** 
+log(cumulative_days_in_office)  0.003657   0.121683   0.030 0.976022    
+factor(cold_war)1              -0.791358   0.257943  -3.068 0.002155 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -903,19 +903,19 @@ coxph(formula = Surv(survival_days, status) ~ group + regime +
    (151 observations deleted due to missingness)
 
                                   coef  exp(coef)   se(coef)      z Pr(&gt;|z|)
-groupAutocoup leaders        0.1932168  1.2131457  0.2552243  0.757 0.449022
-groupCoup-installed leaders  0.5653744  1.7601067  0.1559362  3.626 0.000288
-regimemilitary               0.9714588  2.6417954  0.1942902  5.000 5.73e-07
-regimepersonal               0.5316885  1.7018035  0.1807552  2.941 0.003266
-regimepresidential           0.3532925  1.4237475  0.2294339  1.540 0.123598
-regimeparliamentary          0.2568643  1.2928696  0.2446894  1.050 0.293830
-regimeother                  0.8252699  2.2824967  0.2264300  3.645 0.000268
-GDP_trend                   -0.4482387  0.6387522  0.9868362 -0.454 0.649672
-GDP_pc                      -0.0414467  0.9594005  0.0075412 -5.496 3.88e-08
-polity5                     -0.0227465  0.9775103  0.0136758 -1.663 0.096259
-age                         -0.0007359  0.9992644  0.0061852 -0.119 0.905297
-pop_log                     -0.0091978  0.9908444  0.0436973 -0.210 0.833286
-violence                    -0.0181371  0.9820264  0.0301320 -0.602 0.547227
+groupAutocoup leaders        0.1932766  1.2132183  0.2552223  0.757 0.448878
+groupCoup-installed leaders  0.5653911  1.7601360  0.1559366  3.626 0.000288
+regimemilitary               0.9714553  2.6417863  0.1942905  5.000 5.73e-07
+regimepersonal               0.5316275  1.7016995  0.1807542  2.941 0.003270
+regimepresidential           0.3532957  1.4237520  0.2294343  1.540 0.123596
+regimeparliamentary          0.2568728  1.2928806  0.2446895  1.050 0.293814
+regimeother                  0.8252742  2.2825066  0.2264301  3.645 0.000268
+GDP_trend                   -0.4481875  0.6387849  0.9868426 -0.454 0.649711
+GDP_pc                      -0.0414478  0.9593994  0.0075412 -5.496 3.88e-08
+polity5                     -0.0227454  0.9775114  0.0136758 -1.663 0.096277
+age                         -0.0007374  0.9992628  0.0061852 -0.119 0.905098
+pop_log                     -0.0091958  0.9908463  0.0436976 -0.210 0.833322
+violence                    -0.0181358  0.9820276  0.0301320 -0.602 0.547254
                                
 groupAutocoup leaders          
 groupCoup-installed leaders ***
@@ -934,14 +934,14 @@ violence
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
                             exp(coef) exp(-coef) lower .95 upper .95
-groupAutocoup leaders          1.2131     0.8243   0.73564    2.0006
-groupCoup-installed leaders    1.7601     0.5681   1.29660    2.3893
-regimemilitary                 2.6418     0.3785   1.80517    3.8662
-regimepersonal                 1.7018     0.5876   1.19413    2.4253
-regimepresidential             1.4237     0.7024   0.90811    2.2322
-regimeparliamentary            1.2929     0.7735   0.80034    2.0885
-regimeother                    2.2825     0.4381   1.46444    3.5575
-GDP_trend                      0.6388     1.5656   0.09233    4.4190
+groupAutocoup leaders          1.2132     0.8243   0.73569    2.0007
+groupCoup-installed leaders    1.7601     0.5681   1.29662    2.3893
+regimemilitary                 2.6418     0.3785   1.80517    3.8661
+regimepersonal                 1.7017     0.5876   1.19406    2.4252
+regimepresidential             1.4238     0.7024   0.90811    2.2322
+regimeparliamentary            1.2929     0.7735   0.80035    2.0885
+regimeother                    2.2825     0.4381   1.46445    3.5575
+GDP_trend                      0.6388     1.5655   0.09233    4.4193
 GDP_pc                         0.9594     1.0423   0.94532    0.9737
 polity5                        0.9775     1.0230   0.95166    1.0041
 age                            0.9993     1.0007   0.98722    1.0115
@@ -1582,13 +1582,10 @@ factor(cold_war)1 -0.1430875 0.0906643 -1.5782 0.114552<br>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Version </span><span class="va">$(</span><span class="fu">date</span> +%Y-%m-%d<span class="va">)</span><span class="st">"</span></span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[main 4982331] Version 2025-05-22
- 20 files changed, 29645 insertions(+), 18982 deletions(-)
- create mode 100644 datasets_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css
- create mode 100644 datasets_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css
- create mode 100644 datasets_files/libs/quarto-html/tabsets/tabsets.js
+<pre><code>[main 14f81bb] Version 2025-05-24
+ 11 files changed, 5678 insertions(+), 5732 deletions(-)
 To https://github.com/reddylee/Datasets.git
-   fa7e1ad..4982331  main -&gt; main</code></pre>
+   4982331..14f81bb  main -&gt; main</code></pre>
 </div>
 </div>
 </section>

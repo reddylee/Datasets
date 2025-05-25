@@ -1013,7 +1013,7 @@ demo_model0 |>
   summary()
 
 demo_model1 <- coup_autocoup |>
-  rename(Attempt = diff2, Autocoup = autocoup_effect_lag2, Coup = coup_effect_lag2) |>
+  rename(Attempt = diff3, Autocoup = autocoup_effect_lag3, Coup = coup_effect_lag3) |>
   plm(
     Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
     index = c("ccode", "year"),
@@ -1037,7 +1037,7 @@ demo_model2 |>
   summary()
 
 demo_model3 <- coup_autocoup |>
-  rename(Succeed = diff2, Autocoup = autocoup_seffect_lag2, Coup = coup_seffect_lag2) |>
+  rename(Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3) |>
   plm(
     Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war),
     index = c("ccode", "year"),
