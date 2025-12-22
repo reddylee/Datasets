@@ -527,18 +527,18 @@ glm(formula = autocoup_attempt ~ regime + GDP_pc + GDP_trend +
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.691374   1.859273  -2.523 0.011628 *  
+(Intercept)                    -4.691372   1.859273  -2.523 0.011628 *  
 regimepersonal                  0.743024   0.310044   2.397 0.016552 *  
 regimepresidential              1.609974   0.482776   3.335 0.000854 ***
 regimemilitary                 -0.803886   0.752557  -1.068 0.285427    
 regimeparliamentary            -1.707857   1.114029  -1.533 0.125265    
 regimeother                    -1.175062   0.641216  -1.833 0.066869 .  
 GDP_pc                         -0.013301   0.008350  -1.593 0.111164    
-GDP_trend                       0.922712   1.393346   0.662 0.507826    
+GDP_trend                       0.922712   1.393346   0.662 0.507825    
 pop_log                        -0.141980   0.092594  -1.533 0.125188    
 violence                        0.012010   0.068269   0.176 0.860360    
 polity5                        -0.089124   0.033386  -2.670 0.007596 ** 
-log(cumulative_days_in_office)  0.009238   0.126888   0.073 0.941962    
+log(cumulative_days_in_office)  0.009238   0.126887   0.073 0.941964    
 factor(cold_war)1              -0.792090   0.268952  -2.945 0.003229 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -579,7 +579,7 @@ Deviance Residuals:
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.637547   1.774391  -2.614 0.008959 ** 
+(Intercept)                    -4.637544   1.774391  -2.614 0.008959 ** 
 regimepersonal                  0.735703   0.300139   2.451 0.014238 *  
 regimepresidential              1.581687   0.465383   3.399 0.000677 ***
 regimemilitary                 -0.621435   0.668637  -0.929 0.352679    
@@ -590,7 +590,7 @@ GDP_trend                       0.980123   1.326310   0.739 0.459916
 pop_log                        -0.146620   0.088335  -1.660 0.096952 .  
 violence                        0.024717   0.064050   0.386 0.699565    
 polity5                        -0.089177   0.031970  -2.789 0.005281 ** 
-log(cumulative_days_in_office)  0.003657   0.121683   0.030 0.976022    
+log(cumulative_days_in_office)  0.003657   0.121683   0.030 0.976024    
 factor(cold_war)1              -0.791358   0.257943  -3.068 0.002155 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -903,19 +903,19 @@ coxph(formula = Surv(survival_days, status) ~ group + regime +
    (151 observations deleted due to missingness)
 
                                   coef  exp(coef)   se(coef)      z Pr(&gt;|z|)
-groupAutocoup leaders        0.1932766  1.2132183  0.2552223  0.757 0.448878
-groupCoup-installed leaders  0.5653911  1.7601360  0.1559366  3.626 0.000288
-regimemilitary               0.9714553  2.6417863  0.1942905  5.000 5.73e-07
-regimepersonal               0.5316275  1.7016995  0.1807542  2.941 0.003270
-regimepresidential           0.3532957  1.4237520  0.2294343  1.540 0.123596
-regimeparliamentary          0.2568728  1.2928806  0.2446895  1.050 0.293814
-regimeother                  0.8252742  2.2825066  0.2264301  3.645 0.000268
-GDP_trend                   -0.4481875  0.6387849  0.9868426 -0.454 0.649711
-GDP_pc                      -0.0414478  0.9593994  0.0075412 -5.496 3.88e-08
-polity5                     -0.0227454  0.9775114  0.0136758 -1.663 0.096277
-age                         -0.0007374  0.9992628  0.0061852 -0.119 0.905098
-pop_log                     -0.0091958  0.9908463  0.0436976 -0.210 0.833322
-violence                    -0.0181358  0.9820276  0.0301320 -0.602 0.547254
+groupAutocoup leaders        0.1932742  1.2132154  0.2552223  0.757 0.448884
+groupCoup-installed leaders  0.5653917  1.7601371  0.1559367  3.626 0.000288
+regimemilitary               0.9714490  2.6417695  0.1942904  5.000 5.73e-07
+regimepersonal               0.5316265  1.7016978  0.1807542  2.941 0.003270
+regimepresidential           0.3533003  1.4237586  0.2294344  1.540 0.123591
+regimeparliamentary          0.2568255  1.2928196  0.2446905  1.050 0.293905
+regimeother                  0.8252733  2.2825045  0.2264302  3.645 0.000268
+GDP_trend                   -0.4481738  0.6387937  0.9868453 -0.454 0.649722
+GDP_pc                      -0.0414485  0.9593987  0.0075413 -5.496 3.88e-08
+polity5                     -0.0227467  0.9775100  0.0136758 -1.663 0.096257
+age                         -0.0007371  0.9992632  0.0061852 -0.119 0.905138
+pop_log                     -0.0091936  0.9908486  0.0436978 -0.210 0.833364
+violence                    -0.0181355  0.9820280  0.0301320 -0.602 0.547263
                                
 groupAutocoup leaders          
 groupCoup-installed leaders ***
@@ -935,17 +935,17 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
                             exp(coef) exp(-coef) lower .95 upper .95
 groupAutocoup leaders          1.2132     0.8243   0.73569    2.0007
-groupCoup-installed leaders    1.7601     0.5681   1.29662    2.3893
-regimemilitary                 2.6418     0.3785   1.80517    3.8661
-regimepersonal                 1.7017     0.5876   1.19406    2.4252
-regimepresidential             1.4238     0.7024   0.90811    2.2322
-regimeparliamentary            1.2929     0.7735   0.80035    2.0885
+groupCoup-installed leaders    1.7601     0.5681   1.29662    2.3894
+regimemilitary                 2.6418     0.3785   1.80516    3.8661
+regimepersonal                 1.7017     0.5876   1.19405    2.4252
+regimepresidential             1.4238     0.7024   0.90812    2.2322
+regimeparliamentary            1.2928     0.7735   0.80031    2.0884
 regimeother                    2.2825     0.4381   1.46445    3.5575
-GDP_trend                      0.6388     1.5655   0.09233    4.4193
+GDP_trend                      0.6388     1.5655   0.09233    4.4194
 GDP_pc                         0.9594     1.0423   0.94532    0.9737
 polity5                        0.9775     1.0230   0.95166    1.0041
 age                            0.9993     1.0007   0.98722    1.0115
-pop_log                        0.9908     1.0092   0.90952    1.0794
+pop_log                        0.9908     1.0092   0.90952    1.0795
 violence                       0.9820     1.0183   0.92571    1.0418
 
 Concordance= 0.745  (se = 0.016 )
@@ -1276,7 +1276,7 @@ violence 0.0150339 0.0139954 1.0742 0.2827616<br>
 factor(non_democracy)1 0.8093349 0.0624618 12.9573 &lt; 2.2e-16 <strong><em> factor(cold_war)1 -0.2346913 0.0627910 -3.7377 0.0001869 </em></strong> — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 26328 Residual Sum of Squares: 25082 R-Squared: 0.047329 Adj. R-Squared: 0.028546 F-statistic: 55.4364 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>demo_model1 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Attempt =</span> diff2, <span class="at">Autocoup =</span> autocoup_effect_lag2, <span class="at">Coup =</span> coup_effect_lag2) <span class="sc">|&gt;</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Attempt =</span> diff3, <span class="at">Autocoup =</span> autocoup_effect_lag3, <span class="at">Coup =</span> coup_effect_lag3) <span class="sc">|&gt;</span></span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
 <span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    Attempt <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">factor</span>(non_democracy) <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
 <span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">index =</span> <span class="fu">c</span>(<span class="st">"ccode"</span>, <span class="st">"year"</span>),</span>
@@ -1287,17 +1287,16 @@ factor(non_democracy)1 0.8093349 0.0624618 12.9573 &lt; 2.2e-16 <strong><em> fac
 <span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>demo_model1 <span class="sc">|&gt;</span></span>
 <span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Oneway (individual) effect Within Model</p>
-<p>Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Attempt = diff2, Autocoup = autocoup_effect_lag2, Coup = coup_effect_lag2), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
+<p>Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Attempt = diff3, Autocoup = autocoup_effect_lag3, Coup = coup_effect_lag3), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
-<p>Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.112986 -0.408968 -0.091624 0.155118 16.625368</p>
+<p>Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.966160 -0.572847 -0.084047 0.320592 17.667668</p>
 <p>Coefficients: Estimate Std. Error t-value Pr(&gt;|t|)<br>
-Autocoup -0.2870139 0.2663713 -1.0775 0.281288<br>
-Coup 0.8497088 0.1062069 8.0005 1.394e-15 <em><strong> GDP_pc -0.0062865 0.0019486 -3.2262 0.001259 </strong> GDP_trend -0.3085322 0.4002670 -0.7708 0.440836<br>
-pop_log 0.5739907 0.1016948 5.6442 1.710e-08 </em>** violence 0.0202681 0.0202094 1.0029 0.315935<br>
-factor(non_democracy)1 0.0367012 0.0904647 0.4057 0.684975<br>
-factor(cold_war)1 -0.1290495 0.0906615 -1.4234 0.154649<br>
+Autocoup -0.3382475 0.3215862 -1.0518 0.2929<br>
+Coup 1.2028467 0.1269884 9.4721 &lt; 2.2e-16 <strong><em> GDP_pc -0.0094586 0.0023414 -4.0397 5.397e-05 </em></strong> GDP_trend -0.5629137 0.4803856 -1.1718 0.2413<br>
+pop_log 0.7550592 0.1219893 6.1896 6.299e-10 <strong><em> violence 0.0329474 0.0242827 1.3568 0.1749<br>
+factor(non_democracy)1 -0.7761964 0.1086219 -7.1459 9.646e-13 </em></strong> factor(cold_war)1 -0.0923589 0.1089377 -0.8478 0.3966<br>
 — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
-<p>Total Sum of Squares: 53100 Residual Sum of Squares: 52281 R-Squared: 0.01542 Adj. R-Squared: -0.0039916 F-statistic: 17.4761 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
+<p>Total Sum of Squares: 77703 Residual Sum of Squares: 75492 R-Squared: 0.028461 Adj. R-Squared: 0.009307 F-statistic: 32.6896 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>demo_model2 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Succeed =</span> diff1, <span class="at">Autocoup =</span> autocoup_succeed, <span class="at">Coup =</span> coup_succeed) <span class="sc">|&gt;</span></span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
@@ -1320,7 +1319,7 @@ pop_log 0.1877870 0.0700028 2.6826 0.0073195 ** violence 0.0120427 0.0139374 0.8
 factor(non_democracy)1 0.7972067 0.0621896 12.8190 &lt; 2.2e-16 <strong><em> factor(cold_war)1 -0.2242355 0.0625403 -3.5855 0.0003383 </em></strong> — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 26328 Residual Sum of Squares: 24879 R-Squared: 0.05502 Adj. R-Squared: 0.036389 F-statistic: 64.97 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Succeed =</span> diff2, <span class="at">Autocoup =</span> autocoup_seffect_lag2, <span class="at">Coup =</span> coup_seffect_lag2) <span class="sc">|&gt;</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Succeed =</span> diff3, <span class="at">Autocoup =</span> autocoup_seffect_lag3, <span class="at">Coup =</span> coup_seffect_lag3) <span class="sc">|&gt;</span></span>
 <span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
 <span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    Succeed <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">factor</span>(non_democracy) <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
 <span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">index =</span> <span class="fu">c</span>(<span class="st">"ccode"</span>, <span class="st">"year"</span>),</span>
@@ -1331,17 +1330,16 @@ factor(non_democracy)1 0.7972067 0.0621896 12.8190 &lt; 2.2e-16 <strong><em> fac
 <span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="sc">|&gt;</span></span>
 <span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Oneway (individual) effect Within Model</p>
-<p>Call: plm(formula = Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Succeed = diff2, Autocoup = autocoup_seffect_lag2, Coup = coup_seffect_lag2), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
+<p>Call: plm(formula = Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
-<p>Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.221101 -0.403977 -0.090262 0.155796 16.877219</p>
+<p>Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.466415 -0.549493 -0.083627 0.326658 17.619708</p>
 <p>Coefficients: Estimate Std. Error t-value Pr(&gt;|t|)<br>
-Autocoup -0.1386827 0.2980060 -0.4654 0.641679<br>
-Coup 1.2498331 0.1530817 8.1645 3.667e-16 <strong><em> GDP_pc -0.0066123 0.0019489 -3.3927 0.000695 </em></strong> GDP_trend -0.3921726 0.3996526 -0.9813 0.326479<br>
-pop_log 0.5543350 0.1014740 5.4628 4.812e-08 *** violence 0.0218063 0.0202033 1.0793 0.280463<br>
-factor(non_democracy)1 0.0337180 0.0904871 0.3726 0.709434<br>
-factor(cold_war)1 -0.1430875 0.0906643 -1.5782 0.114552<br>
+Autocoup -0.1297078 0.3599967 -0.3603 0.7186<br>
+Coup 1.8684394 0.1830812 10.2055 &lt; 2.2e-16 <strong><em> GDP_pc -0.0099742 0.0023406 -4.2613 2.053e-05 </em></strong> GDP_trend -0.6345026 0.4797265 -1.3226 0.1860<br>
+pop_log 0.7342653 0.1217301 6.0319 1.685e-09 <strong><em> violence 0.0333497 0.0242623 1.3745 0.1693<br>
+factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> factor(cold_war)1 -0.1162353 0.1089058 -1.0673 0.2859<br>
 — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
-<p>Total Sum of Squares: 53100 Residual Sum of Squares: 52268 R-Squared: 0.015654 Adj. R-Squared: -0.003753 F-statistic: 17.7455 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
+<p>Total Sum of Squares: 77703 Residual Sum of Squares: 75376 R-Squared: 0.029958 Adj. R-Squared: 0.010833 F-statistic: 34.462 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(demo_model0, demo_model1, demo_model2, demo_model3, </span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"text"</span>,</span>
 <span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">float =</span> F,</span>
@@ -1361,29 +1359,29 @@ factor(cold_war)1 -0.1430875 0.0906643 -1.5782 0.114552<br>
 <p>====================================================================== Dependent variable: Differences of Polity scores<br>
 ————————————————— Attempt Succeed<br>
 (1) (2) (3) (4)<br>
-———————————————————————- Autocoup -1.276*** -0.287 -1.290*** -0.139<br>
-(0.201) (0.266) (0.226) (0.298)</p>
-<p>Coup -1.312*** 0.850*** -2.120*** 1.250***<br>
-(0.091) (0.106) (0.124) (0.153)</p>
-<p>GDP per Capita -0.003** -0.006*** -0.003** -0.007***<br>
+———————————————————————- Autocoup -1.276*** -0.338 -1.290*** -0.130<br>
+(0.201) (0.322) (0.226) (0.360)</p>
+<p>Coup -1.312*** 1.203*** -2.120*** 1.868***<br>
+(0.091) (0.127) (0.124) (0.183)</p>
+<p>GDP per Capita -0.003** -0.009*** -0.003** -0.010***<br>
 (0.001) (0.002) (0.001) (0.002)</p>
-<p>Economic Trend -0.428 -0.309 -0.329 -0.392<br>
-(0.277) (0.400) (0.275) (0.400)</p>
-<p>Log Population 0.178** 0.574*** 0.188*** 0.554***<br>
-(0.070) (0.102) (0.070) (0.101)</p>
-<p>Political Violence 0.015 0.020 0.012 0.022<br>
-(0.014) (0.020) (0.014) (0.020)</p>
-<p>Non-Democracy 0.809*** 0.037 0.797*** 0.034<br>
-(0.062) (0.090) (0.062) (0.090)</p>
-<p>Cold War -0.235*** -0.129 -0.224*** -0.143<br>
-(0.063) (0.091) (0.063) (0.091)</p>
+<p>Economic Trend -0.428 -0.563 -0.329 -0.635<br>
+(0.277) (0.480) (0.275) (0.480)</p>
+<p>Log Population 0.178** 0.755*** 0.188*** 0.734***<br>
+(0.070) (0.122) (0.070) (0.122)</p>
+<p>Political Violence 0.015 0.033 0.012 0.033<br>
+(0.014) (0.024) (0.014) (0.024)</p>
+<p>Non-Democracy 0.809*** -0.776*** 0.797*** -0.775***<br>
+(0.062) (0.109) (0.062) (0.109)</p>
+<p>Cold War -0.235*** -0.092 -0.224*** -0.116<br>
+(0.063) (0.109) (0.063) (0.109)</p>
 <table class="cell caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 5%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Observations 9,104 9,104 9,104 9,104 R2 0.047 0.015 0.055 0.016 Adjusted R2 0.029 -0.004 0.036 -0.004 F Statistic 55.436*** 17.476*** 64.970*** 17.745<strong><em> ====================================================================== Note: </em>p&lt;0.1; </strong>p&lt;0.05; ***p&lt;0.01</th>
+<th style="text-align: left;">Observations 9,104 9,104 9,104 9,104 R2 0.047 0.028 0.055 0.030 Adjusted R2 0.029 0.009 0.036 0.011 F Statistic 55.436*** 32.690*** 64.970*** 34.462<strong><em> ====================================================================== Note: </em>p&lt;0.1; </strong>p&lt;0.05; ***p&lt;0.01</th>
 </tr>
 </thead>
 <tbody>
@@ -1582,10 +1580,11 @@ factor(cold_war)1 -0.1430875 0.0906643 -1.5782 0.114552<br>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Version </span><span class="va">$(</span><span class="fu">date</span> +%Y-%m-%d<span class="va">)</span><span class="st">"</span></span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[main 14f81bb] Version 2025-05-24
- 11 files changed, 5678 insertions(+), 5732 deletions(-)
+<pre><code>[main f7d800c] Version 2025-05-25
+ 14 files changed, 5274 insertions(+), 5041 deletions(-)
+ create mode 100644 datasets_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css
 To https://github.com/reddylee/Datasets.git
-   4982331..14f81bb  main -&gt; main</code></pre>
+   14f81bb..f7d800c  main -&gt; main</code></pre>
 </div>
 </div>
 </section>

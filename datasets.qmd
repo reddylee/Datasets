@@ -326,6 +326,8 @@ coup_all <- fread(coup_url) |>
   ) |>
   select(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)
 
+write.csv(coup_raw, "coup_raw.csv")
+write.csv(coup_total, "coup_total.csv")
 write.csv(coup_all, "coup_all.csv")
 ```
 
@@ -1162,7 +1164,7 @@ demo_model2 <- plm(
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Attempt = diff2, Autocoup = autocoup_attemp_lag2, Coup = coup_attemp_lag2) |>
+    rename(Attempt = diff3, Autocoup = autocoup_attemp_lag3, Coup = coup_attemp_lag3) |>
     mutate(
     regime = factor(regime,
       levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
@@ -1190,7 +1192,7 @@ demo_model4 <- plm(
   model = "within", # fixed effect
   effect = "individual",
   data = coup_autocoup |>
-    rename(Succeeded = diff2, Autocoup = autocoup_succeed_lag2, Coup = coup_succeed_lag2) |>
+    rename(Succeeded = diff3, Autocoup = autocoup_succeed_lag3, Coup = coup_succeed_lag3) |>
     mutate(
     regime = factor(regime,
       levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other")
