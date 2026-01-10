@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -61,14 +61,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="datasets_files/libs/clipboard/clipboard.min.js"></script>
 <script src="datasets_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="datasets_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="datasets_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="datasets_files/libs/quarto-html/popper.min.js"></script>
 <script src="datasets_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="datasets_files/libs/quarto-html/anchor.min.js"></script>
 <link href="datasets_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="datasets_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="datasets_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="datasets_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="datasets_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="datasets_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="datasets_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -85,7 +86,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit, broom)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, janitor, data.table, readxl, vdemdata, zoo, plm, democracyData, fuzzyjoin, survival, stargazer, brglm2, survminer, ggsurvfit, broom)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="leaders-dataset" class="level2">
@@ -93,7 +94,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="archigos-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="archigos-dataset">Archigos Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download Archigos data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download Archigos data</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>archigos_url <span class="ot">&lt;-</span> <span class="st">"http://ksgleditsch.com/data/1March_Archigos_4.1.txt"</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>archigos_raw <span class="ot">&lt;-</span> <span class="fu">fread</span>(archigos_url, <span class="at">encoding =</span> <span class="st">"Latin-1"</span>)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -120,13 +121,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Save cleaned Archigos data</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(archigos, <span class="st">"archigos_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(archigos, <span class="st">"archigos_clean.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="plad-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="plad-dataset">PLAD Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download PLAD data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download PLAD data</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># plad_url &lt;- "https://dataverse.harvard.edu/api/access/datafile/10119324"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file(plad_url, "PLAD.xls")</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -153,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    ),</span>
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">yrborn =</span> <span class="fu">as.numeric</span>(yrborn)</span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(startdate <span class="sc">!=</span> enddate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(startdate <span class="sc">!=</span> enddate)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: There were 2 warnings in `mutate()`.
 The first warning was:
@@ -162,14 +163,14 @@ Caused by warning:
 !  402 failed to parse.
 ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save processed PLAD data for further analysis</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(plad, <span class="st">"plad_processed.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save processed PLAD data for further analysis</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(plad, <span class="st">"plad_processed.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="leaders-dataset-archigos-and-plad" class="level3">
 <h3 class="anchored" data-anchor-id="leaders-dataset-archigos-and-plad">Leaders Dataset: Archigos and PLAD</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine Archigos and PLAD data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine Archigos and PLAD data</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>leaders <span class="ot">&lt;-</span> archigos <span class="sc">|&gt;</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(plad, <span class="at">by =</span> <span class="fu">join_by</span>(idacr, startdate), <span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">".archigos"</span>, <span class="st">".plad"</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(idacr) <span class="sc">|&gt;</span></span>
@@ -199,10 +200,10 @@ Caused by warning:
 <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">year</span>(enddate) <span class="sc">&gt;</span> <span class="dv">1940</span>)</span>
 <span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Save combined leaders dataset</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(leaders, <span class="st">"leaders_combined.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(leaders, <span class="st">"leaders_combined.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter out leaders with less than 180 days in office</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter out leaders with less than 180 days in office</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> leaders <span class="sc">|&gt;</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>), <span class="sc">-</span>continent) <span class="sc">|&gt;</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">total_days_in_office =</span> <span class="fu">as.numeric</span>(<span class="fu">difftime</span>(enddate, startdate, <span class="at">units =</span> <span class="st">"days"</span>)))</span>
@@ -239,7 +240,7 @@ Caused by warning:
 <span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the cleaned dataset</span></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(leader_year, <span class="st">"leader_year.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(leader_year, <span class="st">"leader_year.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -248,7 +249,7 @@ Caused by warning:
 <section id="polity5-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="polity5-dataset">Polity5 Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>polity5 <span class="ot">&lt;-</span> democracyData<span class="sc">::</span>polity5</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>polity5 <span class="ot">&lt;-</span> democracyData<span class="sc">::</span>polity5</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>polity <span class="ot">&lt;-</span> polity5 <span class="sc">|&gt;</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">polity5 =</span> <span class="fu">ifelse</span>(polity <span class="sc">&lt;</span> <span class="sc">-</span><span class="dv">10</span>, <span class="cn">NA</span>, polity)) <span class="sc">|&gt;</span></span>
@@ -263,24 +264,24 @@ Caused by warning:
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">diff5 =</span> polity5 <span class="sc">-</span> dplyr<span class="sc">::</span><span class="fu">lag</span>(polity5, <span class="dv">5</span>, <span class="at">default =</span> <span class="dv">0</span>) <span class="co"># for post-event year</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1940</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1940</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="political-violence-dataset-mepv" class="level3">
 <h3 class="anchored" data-anchor-id="political-violence-dataset-mepv">Political Violence Dataset: MEPV</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download MEPV data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download MEPV data</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># violence_url &lt;- "http://www.systemicpeace.org/inscr/MEPVv2018.xls"</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file(violence_url, "political_violence_2018.xls")</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>political_violence <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"political_violence_2018.xls"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, year, <span class="at">violence =</span> actotal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, year, <span class="at">violence =</span> actotal)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="gdp-and-population-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="gdp-and-population-dataset">GDP and population Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>GDP <span class="ot">&lt;-</span> vdem <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>GDP <span class="ot">&lt;-</span> vdem <span class="sc">|&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">ccode =</span> COWcode, <span class="at">country =</span> country_name, year, <span class="at">GDP_pc =</span> e_gdppc, <span class="at">pop =</span> e_pop) <span class="sc">|&gt;</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1940</span>) <span class="sc">|&gt;</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a new variable for 5-year moving average of GDP growth</span></span>
@@ -297,13 +298,13 @@ Caused by warning:
 <span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, year, GDP_pc, GDP_trend, pop_log)</span>
 <span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co"># vdemdata::codebook |&gt;</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co">#   view()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co">#   view()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="regime-type-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="regime-type-dataset">Regime Type Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>regimes <span class="ot">&lt;-</span> REIGN <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>regimes <span class="ot">&lt;-</span> REIGN <span class="sc">|&gt;</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ccode =</span> GWn,</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">country =</span> extended_country_name,</span>
@@ -347,13 +348,13 @@ Caused by warning:
 <span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"other"</span></span>
 <span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(country, ccode, year, regime, regime_autocoup, regime_three, regime_type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(country, ccode, year, regime, regime_autocoup, regime_three, regime_type)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="coup-analysis-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="coup-analysis-dataset">Coup Analysis Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download coup data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download coup data</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>coup_url <span class="ot">&lt;-</span> <span class="st">"https://www.uky.edu/~clthyn2/coup_data/powell_thyne_ccode_year.txt"</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>coup_raw <span class="ot">&lt;-</span> <span class="fu">fread</span>(coup_url)</span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>coup_total <span class="ot">&lt;-</span> coup_raw <span class="sc">|&gt;</span></span>
@@ -364,10 +365,10 @@ Caused by warning:
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="dv">1</span></span>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, coup)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, coup)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>coup_all <span class="ot">&lt;-</span> <span class="fu">fread</span>(coup_url) <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>coup_all <span class="ot">&lt;-</span> <span class="fu">fread</span>(coup_url) <span class="sc">|&gt;</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">coup =</span> <span class="fu">case_when</span>(</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>      coup1 <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
@@ -398,13 +399,15 @@ Caused by warning:
 <span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, year, coup, pre_coups, time_since_last_coup, coup_dummy)</span>
 <span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(coup_all, <span class="st">"coup_all.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(coup_raw, <span class="st">"coup_raw.csv"</span>)</span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(coup_total, <span class="st">"coup_total.csv"</span>)</span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(coup_all, <span class="st">"coup_all.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="coup-analysis-model" class="level3">
 <h3 class="anchored" data-anchor-id="coup-analysis-model">Coup Analysis Model</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>coup_model <span class="ot">&lt;-</span> regimes <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>coup_model <span class="ot">&lt;-</span> regimes <span class="sc">|&gt;</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># filter(regime_coup != "other") |&gt;</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(coup_all, <span class="at">by =</span> <span class="fu">join_by</span>(ccode, year)) <span class="sc">|&gt;</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(political_violence, <span class="at">by =</span> <span class="fu">join_by</span>(ccode, year)) <span class="sc">|&gt;</span></span>
@@ -418,7 +421,7 @@ Caused by warning:
 <span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, country, year, coup, regime, <span class="at">GDP_trend =</span> ect, GDP_pc, violence, pre_coups, coup_dummy, time_since_last_coup)</span>
 <span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the coup analysis model</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(coup_model, <span class="st">"coup_model.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(coup_model, <span class="st">"coup_model.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -427,7 +430,7 @@ Caused by warning:
 <section id="autocoup-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="autocoup-dataset">Autocoup Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read autocoup data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read autocoup data</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>autocoup_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Autocoup.xlsx"</span>, <span class="at">na =</span> <span class="st">"Incumbent"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">exit_date =</span> <span class="fu">replace_na</span>(exit_date, <span class="fu">Sys.Date</span>()),</span>
@@ -445,13 +448,13 @@ Caused by warning:
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Save cleaned autocoup data</span></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(autocoup, <span class="st">"autocoup_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(autocoup, <span class="st">"autocoup_clean.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="leader_autocoup-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="leader_autocoup-dataset">Leader_autocoup Dataset</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Join leader_year and autocoup data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Join leader_year and autocoup data</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>leader_autocoup1 <span class="ot">&lt;-</span> leader_year <span class="sc">|&gt;</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    autocoup <span class="sc">|&gt;</span></span>
@@ -464,13 +467,13 @@ Caused by warning:
 <span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">autocoup_attempt =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(leader_name), <span class="dv">0</span>, <span class="dv">1</span>),</span>
 <span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">autocoup_success =</span> <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(extending_date), <span class="dv">1</span>, <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(autocoup_attempt), <span class="dv">0</span>, <span class="cn">NA</span>))</span>
 <span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, leader_name, <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, leader_name, <span class="fu">everything</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="autocoup-analysis-model" class="level3">
 <h3 class="anchored" data-anchor-id="autocoup-analysis-model">Autocoup Analysis Model</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>autocoup_model <span class="ot">&lt;-</span> leader_autocoup1 <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>autocoup_model <span class="ot">&lt;-</span> leader_autocoup1 <span class="sc">|&gt;</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    regimes <span class="sc">|&gt;</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>country),</span>
@@ -500,10 +503,10 @@ Caused by warning:
 <span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cold_war =</span> <span class="fu">ifelse</span>(year <span class="sc">&gt;</span> <span class="dv">1990</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span>
 <span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(autocoup_model, <span class="st">"autocoup_model.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(autocoup_model, <span class="st">"autocoup_model.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># autocoup_model</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># autocoup_model</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>attempt1 <span class="ot">&lt;-</span> autocoup_model <span class="sc">|&gt;</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">regime =</span> <span class="fu">factor</span>(regime,</span>
@@ -515,7 +518,7 @@ Caused by warning:
 <span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>attempt1 <span class="sc">|&gt;</span></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -527,19 +530,19 @@ glm(formula = autocoup_attempt ~ regime + GDP_pc + GDP_trend +
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.691372   1.859273  -2.523 0.011628 *  
-regimepersonal                  0.743024   0.310044   2.397 0.016552 *  
-regimepresidential              1.609974   0.482776   3.335 0.000854 ***
-regimemilitary                 -0.803886   0.752557  -1.068 0.285427    
-regimeparliamentary            -1.707857   1.114029  -1.533 0.125265    
-regimeother                    -1.175062   0.641216  -1.833 0.066869 .  
-GDP_pc                         -0.013301   0.008350  -1.593 0.111164    
-GDP_trend                       0.922712   1.393346   0.662 0.507825    
-pop_log                        -0.141980   0.092594  -1.533 0.125188    
-violence                        0.012010   0.068269   0.176 0.860360    
-polity5                        -0.089124   0.033386  -2.670 0.007596 ** 
-log(cumulative_days_in_office)  0.009238   0.126887   0.073 0.941964    
-factor(cold_war)1              -0.792090   0.268952  -2.945 0.003229 ** 
+(Intercept)                    -4.690847   1.859276  -2.523 0.011638 *  
+regimepersonal                  0.743033   0.310043   2.397 0.016550 *  
+regimepresidential              1.609931   0.482775   3.335 0.000854 ***
+regimemilitary                 -0.803930   0.752558  -1.068 0.285402    
+regimeparliamentary            -1.707900   1.114027  -1.533 0.125255    
+regimeother                    -1.175070   0.641217  -1.833 0.066867 .  
+GDP_pc                         -0.013301   0.008350  -1.593 0.111171    
+GDP_trend                       0.922759   1.393337   0.662 0.507801    
+pop_log                        -0.141978   0.092594  -1.533 0.125194    
+violence                        0.012005   0.068269   0.176 0.860412    
+polity5                        -0.089127   0.033386  -2.670 0.007594 ** 
+log(cumulative_days_in_office)  0.009163   0.126874   0.072 0.942424    
+factor(cold_war)1              -0.792116   0.268956  -2.945 0.003228 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -547,12 +550,12 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
     Null deviance: 902.26  on 9363  degrees of freedom
 Residual deviance: 818.26  on 9351  degrees of freedom
-  (2099 observations deleted due to missingness)
+  (2276 observations deleted due to missingness)
 AIC: 844.26
 
 Number of Fisher Scoring iterations: 10</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>attempt2 <span class="ot">&lt;-</span> autocoup_model <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>attempt2 <span class="ot">&lt;-</span> autocoup_model <span class="sc">|&gt;</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">regime =</span> <span class="fu">factor</span>(regime,</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"dominant-party"</span>, <span class="st">"personal"</span>, <span class="st">"presidential"</span>, <span class="st">"military"</span>, <span class="st">"parliamentary"</span>, <span class="st">"other"</span>)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span></span>
@@ -562,7 +565,7 @@ Number of Fisher Scoring iterations: 10</code></pre>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">method =</span> <span class="st">"brglmFit"</span>,</span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(attempt2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(attempt2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -579,19 +582,19 @@ Deviance Residuals:
 
 Coefficients:
                                 Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                    -4.637544   1.774391  -2.614 0.008959 ** 
-regimepersonal                  0.735703   0.300139   2.451 0.014238 *  
-regimepresidential              1.581687   0.465383   3.399 0.000677 ***
-regimemilitary                 -0.621435   0.668637  -0.929 0.352679    
-regimeparliamentary            -1.355814   0.924394  -1.467 0.142456    
-regimeother                    -1.038095   0.581679  -1.785 0.074318 .  
-GDP_pc                         -0.011324   0.007517  -1.506 0.131947    
-GDP_trend                       0.980123   1.326310   0.739 0.459916    
-pop_log                        -0.146620   0.088335  -1.660 0.096952 .  
-violence                        0.024717   0.064050   0.386 0.699565    
-polity5                        -0.089177   0.031970  -2.789 0.005281 ** 
-log(cumulative_days_in_office)  0.003657   0.121683   0.030 0.976024    
-factor(cold_war)1              -0.791358   0.257943  -3.068 0.002155 ** 
+(Intercept)                    -4.637038   1.774396  -2.613 0.008967 ** 
+regimepersonal                  0.735705   0.300138   2.451 0.014237 *  
+regimepresidential              1.581645   0.465383   3.399 0.000677 ***
+regimemilitary                 -0.621480   0.668639  -0.929 0.352645    
+regimeparliamentary            -1.355854   0.924392  -1.467 0.142444    
+regimeother                    -1.038108   0.581679  -1.785 0.074314 .  
+GDP_pc                         -0.011324   0.007517  -1.506 0.131956    
+GDP_trend                       0.980149   1.326303   0.739 0.459902    
+pop_log                        -0.146618   0.088335  -1.660 0.096957 .  
+violence                        0.024714   0.064049   0.386 0.699604    
+polity5                        -0.089180   0.031970  -2.789 0.005279 ** 
+log(cumulative_days_in_office)  0.003588   0.121670   0.029 0.976472    
+factor(cold_war)1              -0.791387   0.257946  -3.068 0.002155 ** 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -599,17 +602,17 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
     Null deviance: 902.27  on 9363  degrees of freedom
 Residual deviance: 819.19  on 9351  degrees of freedom
-  (2099 observations deleted due to missingness)
+  (2276 observations deleted due to missingness)
 AIC:  845.19
 
 Type of estimator: AS_mixed (mixed bias-reducing adjusted score equations)
 Number of Fisher Scoring iterations: 6</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(attempt1, attempt2,</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(attempt1, attempt2,</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">warning =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"text"</span></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 ===========================================================
@@ -654,7 +657,7 @@ log(cumulative_days_in_office)     0.009          0.004
 factor(cold_war)1                -0.792***      -0.791***  
                                   (0.269)        (0.258)   
                                                            
-Constant                          -4.691**      -4.638***  
+Constant                          -4.691**      -4.637***  
                                   (1.859)        (1.774)   
                                                            
 -----------------------------------------------------------
@@ -674,7 +677,7 @@ FALSE
 <section id="survival-analysis-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="survival-analysis-dataset">Survival Analysis Dataset</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Join leader_year and autocoup data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Join leader_year and autocoup data</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>leader_autocoup2 <span class="ot">&lt;-</span> leader_year <span class="sc">|&gt;</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    autocoup <span class="sc">|&gt;</span></span>
@@ -687,10 +690,10 @@ FALSE
 <span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">autocoup_attempt =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(leader_name), <span class="dv">0</span>, <span class="dv">1</span>),</span>
 <span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">autocoup_success =</span> <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(extending_date), <span class="dv">1</span>, <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(autocoup_attempt), <span class="dv">0</span>, <span class="cn">NA</span>))</span>
 <span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, leader_name, <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, leader_name, <span class="fu">everything</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>coup_success <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">"https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups_final.txt"</span>) <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>coup_success <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">"https://www.uky.edu/~clthyn2/coup_data/powell_thyne_coups_final.txt"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">coup_date =</span> <span class="fu">make_date</span>(<span class="at">year =</span> year, <span class="at">month =</span> month, <span class="at">day =</span> day)) <span class="sc">|&gt;</span></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, country, coup_date, coup, year) <span class="sc">|&gt;</span></span>
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(coup <span class="sc">==</span> <span class="dv">2</span>)</span>
@@ -729,7 +732,7 @@ FALSE
 <span id="cb25-37"><a href="#cb25-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">tstart =</span> <span class="fu">as.numeric</span>(<span class="fu">year</span>(startdate) <span class="sc">+</span> (startdate <span class="sc">-</span> <span class="fu">floor_date</span>(startdate, <span class="st">"year"</span>)) <span class="sc">/</span> <span class="dv">365</span>),</span>
 <span id="cb25-38"><a href="#cb25-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">tstop =</span> <span class="fu">as.numeric</span>(<span class="fu">year</span>(enddate) <span class="sc">+</span> (enddate <span class="sc">-</span> <span class="fu">floor_date</span>(enddate, <span class="st">"year"</span>)) <span class="sc">/</span> <span class="dv">365</span>)</span>
 <span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in left_join(leader_autocoup2, select(coup_success, ccode, year, : Detected an unexpected many-to-many relationship between `x` and `y`.
 ℹ Row 399 of `x` matches multiple rows in `y`.
@@ -739,7 +742,7 @@ FALSE
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup_data <span class="ot">&lt;-</span> leader_coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup_data <span class="ot">&lt;-</span> leader_coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    regimes <span class="sc">|&gt;</span></span>
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>country),</span>
@@ -760,10 +763,10 @@ FALSE
 <span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
 <span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>    year <span class="sc">&gt;</span> <span class="dv">1944</span></span>
 <span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cold_war =</span> <span class="fu">ifelse</span>(year <span class="sc">&gt;</span> <span class="dv">1990</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cold_war =</span> <span class="fu">ifelse</span>(year <span class="sc">&gt;</span> <span class="dv">1990</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>survival_data <span class="ot">&lt;-</span> coup_autocoup_data <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>survival_data <span class="ot">&lt;-</span> coup_autocoup_data <span class="sc">|&gt;</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># !(ccode == "500" &amp; leader == "Okello"),</span></span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># !(enddate == "2019-02-03" &amp; leader == "Azali Assoumani"),</span></span>
@@ -796,10 +799,10 @@ FALSE
 <span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
 <span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(ccode, leader, startdate, enddate, </span>
 <span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a>           <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(regime_type <span class="sc">!=</span> <span class="st">"monarchy"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(regime_type <span class="sc">!=</span> <span class="st">"monarchy"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>survival_cox_ph <span class="ot">&lt;-</span> survival_data <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>survival_cox_ph <span class="ot">&lt;-</span> survival_data <span class="sc">|&gt;</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">survival_year =</span> survival_days <span class="sc">/</span> <span class="dv">365</span>,</span>
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">regime =</span> <span class="fu">factor</span>(regime,</span>
@@ -808,10 +811,10 @@ FALSE
 <span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the survival Cox PH model</span></span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(survival_cox_ph, <span class="st">"survival_cox_ph_model.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(survival_cox_ph, <span class="st">"survival_cox_ph_model.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>survival_cox_td1 <span class="ot">&lt;-</span> survival_data <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>survival_cox_td1 <span class="ot">&lt;-</span> survival_data <span class="sc">|&gt;</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ccode, country, year, leader, startdate, enddate, tstart, tstop, status, group, survival_days, age) <span class="sc">|&gt;</span></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">first_year =</span> startdate, <span class="at">last_year =</span> enddate) <span class="sc">|&gt;</span></span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">survSplit</span>(<span class="fu">Surv</span>(<span class="fu">year</span>(startdate), <span class="fu">year</span>(enddate), status) <span class="sc">~</span> ., <span class="at">data =</span> _, <span class="at">cut =</span> <span class="dv">1946</span><span class="sc">:</span><span class="dv">2026</span>, <span class="at">id =</span> <span class="st">"id"</span>) <span class="sc">|&gt;</span></span>
@@ -824,12 +827,12 @@ FALSE
 <span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">T2 =</span> <span class="fu">ifelse</span>(<span class="fu">row_number</span>() <span class="sc">==</span> <span class="fu">n</span>(), survival_days, T2),</span>
 <span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> age <span class="sc">+</span> <span class="fu">row_number</span>() <span class="sc">-</span> <span class="dv">1</span>,</span>
 <span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">.by =</span> id</span>
-<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in Surv(year(startdate), year(enddate), status): Stop time must be &gt;
 start time, NA created</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>survival_cox_td <span class="ot">&lt;-</span> survival_cox_td1 <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>survival_cox_td <span class="ot">&lt;-</span> survival_cox_td1 <span class="sc">|&gt;</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    regimes <span class="sc">|&gt;</span> <span class="fu">select</span>(ccode, year, regime),</span>
 <span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">join_by</span>(ccode, tstart <span class="sc">==</span> year)</span>
@@ -880,18 +883,18 @@ start time, NA created</code></pre>
 <span id="cb32-49"><a href="#cb32-49" aria-hidden="true" tabindex="-1"></a><span class="co"># survival_cox_td |&gt;</span></span>
 <span id="cb32-50"><a href="#cb32-50" aria-hidden="true" tabindex="-1"></a><span class="co">#   tabyl(regime, group)</span></span>
 <span id="cb32-51"><a href="#cb32-51" aria-hidden="true" tabindex="-1"></a><span class="co"># survival_cox_ph |&gt;</span></span>
-<span id="cb32-52"><a href="#cb32-52" aria-hidden="true" tabindex="-1"></a><span class="co">#   tabyl(regime, group)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb32-52"><a href="#cb32-52" aria-hidden="true" tabindex="-1"></a><span class="co">#   tabyl(regime, group)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="running-survival-models" class="level3">
 <h3 class="anchored" data-anchor-id="running-survival-models">Running Survival Models</h3>
 <p>https://stats.oarc.ucla.edu/r/seminars/introduction-to-survival-analysis-in-r/ https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_full.html https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/intro_survival_r_code.r https://stats.oarc.ucla.edu/wp-content/uploads/2025/02/survival_r_slides.html#/references</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>model_cox1 <span class="ot">&lt;-</span> survival_cox_ph <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>model_cox1 <span class="ot">&lt;-</span> survival_cox_ph <span class="sc">|&gt;</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">group =</span> <span class="fu">factor</span>(group, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Non-Coup leaders"</span>, <span class="st">"Autocoup leaders"</span>, <span class="st">"Coup-installed leaders"</span>))) <span class="sc">|&gt;</span></span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(survival_days, status) <span class="sc">~</span> group <span class="sc">+</span> regime <span class="sc">+</span> GDP_trend <span class="sc">+</span> GDP_pc <span class="sc">+</span> polity5 <span class="sc">+</span> age <span class="sc">+</span> pop_log <span class="sc">+</span> violence, <span class="at">data =</span> _)</span>
 <span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>model_cox1 <span class="sc">|&gt;</span></span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Call:
 coxph(formula = Surv(survival_days, status) ~ group + regime + 
@@ -903,19 +906,19 @@ coxph(formula = Surv(survival_days, status) ~ group + regime +
    (151 observations deleted due to missingness)
 
                                   coef  exp(coef)   se(coef)      z Pr(&gt;|z|)
-groupAutocoup leaders        0.1932742  1.2132154  0.2552223  0.757 0.448884
-groupCoup-installed leaders  0.5653917  1.7601371  0.1559367  3.626 0.000288
-regimemilitary               0.9714490  2.6417695  0.1942904  5.000 5.73e-07
-regimepersonal               0.5316265  1.7016978  0.1807542  2.941 0.003270
-regimepresidential           0.3533003  1.4237586  0.2294344  1.540 0.123591
-regimeparliamentary          0.2568255  1.2928196  0.2446905  1.050 0.293905
-regimeother                  0.8252733  2.2825045  0.2264302  3.645 0.000268
-GDP_trend                   -0.4481738  0.6387937  0.9868453 -0.454 0.649722
-GDP_pc                      -0.0414485  0.9593987  0.0075413 -5.496 3.88e-08
-polity5                     -0.0227467  0.9775100  0.0136758 -1.663 0.096257
-age                         -0.0007371  0.9992632  0.0061852 -0.119 0.905138
-pop_log                     -0.0091936  0.9908486  0.0436978 -0.210 0.833364
-violence                    -0.0181355  0.9820280  0.0301320 -0.602 0.547263
+groupAutocoup leaders        0.1916537  1.2112510  0.2551433  0.751 0.452556
+groupCoup-installed leaders  0.5649796  1.7594120  0.1558741  3.625 0.000289
+regimemilitary               0.9728612  2.6455028  0.1942951  5.007 5.52e-07
+regimepersonal               0.5289621  1.6971698  0.1807083  2.927 0.003421
+regimepresidential           0.3512816  1.4208875  0.2294635  1.531 0.125798
+regimeparliamentary          0.2585969  1.2951117  0.2446895  1.057 0.290586
+regimeother                  0.8234498  2.2783461  0.2263337  3.638 0.000275
+GDP_trend                   -0.4514292  0.6367175  0.9872604 -0.457 0.647488
+GDP_pc                      -0.0415054  0.9593441  0.0075380 -5.506 3.67e-08
+polity5                     -0.0231146  0.9771505  0.0136725 -1.691 0.090916
+age                         -0.0007692  0.9992311  0.0061844 -0.124 0.901013
+pop_log                     -0.0099639  0.9900855  0.0437030 -0.228 0.819652
+violence                    -0.0179039  0.9822554  0.0301254 -0.594 0.552304
                                
 groupAutocoup leaders          
 groupCoup-installed leaders ***
@@ -934,31 +937,31 @@ violence
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
                             exp(coef) exp(-coef) lower .95 upper .95
-groupAutocoup leaders          1.2132     0.8243   0.73569    2.0007
-groupCoup-installed leaders    1.7601     0.5681   1.29662    2.3894
-regimemilitary                 2.6418     0.3785   1.80516    3.8661
-regimepersonal                 1.7017     0.5876   1.19405    2.4252
-regimepresidential             1.4238     0.7024   0.90812    2.2322
-regimeparliamentary            1.2928     0.7735   0.80031    2.0884
-regimeother                    2.2825     0.4381   1.46445    3.5575
-GDP_trend                      0.6388     1.5655   0.09233    4.4194
-GDP_pc                         0.9594     1.0423   0.94532    0.9737
-polity5                        0.9775     1.0230   0.95166    1.0041
-age                            0.9993     1.0007   0.98722    1.0115
-pop_log                        0.9908     1.0092   0.90952    1.0795
-violence                       0.9820     1.0183   0.92571    1.0418
+groupAutocoup leaders          1.2113     0.8256   0.73461    1.9972
+groupCoup-installed leaders    1.7594     0.5684   1.29625    2.3881
+regimemilitary                 2.6455     0.3780   1.80769    3.8716
+regimepersonal                 1.6972     0.5892   1.19098    2.4185
+regimepresidential             1.4209     0.7038   0.90623    2.2278
+regimeparliamentary            1.2951     0.7721   0.80173    2.0921
+regimeother                    2.2783     0.4389   1.46206    3.5504
+GDP_trend                      0.6367     1.5706   0.09196    4.4086
+GDP_pc                         0.9593     1.0424   0.94527    0.9736
+polity5                        0.9772     1.0234   0.95131    1.0037
+age                            0.9992     1.0008   0.98719    1.0114
+pop_log                        0.9901     1.0100   0.90881    1.0786
+violence                       0.9823     1.0181   0.92594    1.0420
 
 Concordance= 0.745  (se = 0.016 )
-Likelihood ratio test= 187.4  on 13 df,   p=&lt;2e-16
-Wald test            = 142.7  on 13 df,   p=&lt;2e-16
-Score (logrank) test = 184.5  on 13 df,   p=&lt;2e-16</code></pre>
+Likelihood ratio test= 188.5  on 13 df,   p=&lt;2e-16
+Wald test            = 143.5  on 13 df,   p=&lt;2e-16
+Score (logrank) test = 185.8  on 13 df,   p=&lt;2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>model_cox2 <span class="ot">&lt;-</span> survival_cox_td <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>model_cox2 <span class="ot">&lt;-</span> survival_cox_td <span class="sc">|&gt;</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">group =</span> <span class="fu">factor</span>(group, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Non-Coup leaders"</span>, <span class="st">"Autocoup leaders"</span>, <span class="st">"Coup-installed leaders"</span>))) <span class="sc">|&gt;</span></span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(T1, T2, status) <span class="sc">~</span> group <span class="sc">+</span> regime <span class="sc">+</span> GDP_trend <span class="sc">+</span> GDP_pc <span class="sc">+</span> polity5 <span class="sc">+</span> age <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">cluster</span>(id), <span class="at">data =</span> _)</span>
 <span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>model_cox2 <span class="sc">|&gt;</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Call:
 coxph(formula = Surv(T1, T2, status) ~ group + regime + GDP_trend + 
@@ -1023,7 +1026,7 @@ Score (logrank) test = 221.8  on 13 df,   p=&lt;2e-16,   Robust = 165.2  p=&lt;2
   (Note: the likelihood ratio and score tests assume independence of
      observations within a cluster, the Wald and robust score tests do not).</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(survival_year, status) <span class="sc">~</span> group,</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(survival_year, status) <span class="sc">~</span> group,</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> survival_cox_ph <span class="sc">|&gt;</span></span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(status, group, survival_year)</span>
 <span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>)</span>
@@ -1040,20 +1043,16 @@ Score (logrank) test = 221.8  on 13 df,   p=&lt;2e-16,   Robust = 165.2  p=&lt;2
 <span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Survival Years"</span>,</span>
 <span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># title = "Survival Curves of overstay and coup-installed leaders",</span></span>
 <span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">font.title =</span> <span class="dv">12</span></span>
-<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_segment(aes(x = 0, y = max(y2), xend = max(x1), yend = max(y2)), : All aesthetics have length 1, but the data has 3 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.
-All aesthetics have length 1, but the data has 3 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.
-All aesthetics have length 1, but the data has 3 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.
-All aesthetics have length 1, but the data has 3 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.</code></pre>
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+ℹ The deprecated feature was likely used in the ggpubr package.
+  Please report the issue at &lt;https://github.com/kassambara/ggpubr/issues&gt;.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Ignoring unknown labels:
+• colour : "Leader Type"</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -1066,12 +1065,6 @@ All aesthetics have length 1, but the data has 3 rows.
 </section>
 <section id="survival-curves-for-cox-model" class="level3">
 <h3 class="anchored" data-anchor-id="survival-curves-for-cox-model">Survival curves for Cox Model</h3>
-<pre><code>Warning in geom_segment(aes(x = 0, y = max(y2), xend = max(x1), yend = max(y2)), : All aesthetics have length 1, but the data has 2 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.
-All aesthetics have length 1, but the data has 2 rows.
-ℹ Please consider using `annotate()` or provide this layer with data containing
-  a single row.</code></pre>
 <div id="fig-coxSurv" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-coxSurv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1152,7 +1145,7 @@ Figure&nbsp;2: Hazard ratios and 95% CIs for Leader Ousting
 <section id="free_index-data" class="level3">
 <h3 class="anchored" data-anchor-id="free_index-data">Free_index data</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>decay_factor <span class="ot">&lt;-</span> <span class="fl">0.5</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>decay_factor <span class="ot">&lt;-</span> <span class="fl">0.5</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>coup_autocoup <span class="ot">&lt;-</span> coup_total <span class="sc">|&gt;</span></span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">coup_attemp =</span> <span class="fu">ifelse</span>(coup <span class="sc">==</span> <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>),</span>
@@ -1216,7 +1209,7 @@ Figure&nbsp;2: Hazard ratios and 95% CIs for Leader Ousting
 <span id="cb40-62"><a href="#cb40-62" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb40-63"><a href="#cb40-63" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb40-64"><a href="#cb40-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
-<span id="cb40-65"><a href="#cb40-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(ccode, year, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb40-65"><a href="#cb40-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(ccode, year, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Joining with `by = join_by(ccode, year)`
 Joining with `by = join_by(ccode, year)`
@@ -1224,12 +1217,12 @@ Joining with `by = join_by(ccode, year)`
 Joining with `by = join_by(ccode, year)`
 Joining with `by = join_by(ccode, year)`</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save democraitzation model</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save democraitzation model</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(coup_autocoup, <span class="st">"coup_autocoup.csv"</span>)</span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co"># coup_autocoup |&gt;</span></span>
 <span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   select(ccode, country, year, coup, coup_attemp, coup_effect,coup_attemp_lead1, coup_effect_lag3) |&gt;</span></span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   view()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   view()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="fixed-effect-model" class="level3">
@@ -1238,13 +1231,13 @@ Joining with `by = join_by(ccode, year)`</code></pre>
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-demomodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Observations 9,036 9,036 9,036 9,036<br>
-R2 0.060 0.020 0.068 0.019<br>
-Adjusted R2 0.041 0.0004 0.049 -0.001<br>
-F Statistic 47.043*** 15.237*** 53.742*** 14.407***<br>
+R2 0.060 0.033 0.068 0.033<br>
+Adjusted R2 0.041 0.014 0.049 0.014<br>
+F Statistic 47.043*** 25.244*** 53.742*** 25.364***<br>
 ======================================================================= Note: <em>p&lt;0.1; <strong>p&lt;0.05; </strong></em>p&lt;0.01
 </figcaption>
 <div aria-describedby="tbl-demomodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">GDP_pc =</span> dplyr<span class="sc">::</span><span class="fu">lag</span>(GDP_pc, <span class="dv">1</span>),</span>
 <span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">GDP_trend =</span> dplyr<span class="sc">::</span><span class="fu">lag</span>(GDP_trend, <span class="dv">1</span>),</span>
@@ -1263,7 +1256,7 @@ F Statistic 47.043*** 15.237*** 53.742*** 14.407***<br>
 <span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>demo_model0 <span class="sc">|&gt;</span></span>
-<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Oneway (individual) effect Within Model</p>
 <p>Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Attempt = diff1, Autocoup = autocoup_attemp, Coup = coup_attemp), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
@@ -1275,7 +1268,7 @@ pop_log 0.1780742 0.0704096 2.5291 0.0114520 *<br>
 violence 0.0150339 0.0139954 1.0742 0.2827616<br>
 factor(non_democracy)1 0.8093349 0.0624618 12.9573 &lt; 2.2e-16 <strong><em> factor(cold_war)1 -0.2346913 0.0627910 -3.7377 0.0001869 </em></strong> — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 26328 Residual Sum of Squares: 25082 R-Squared: 0.047329 Adj. R-Squared: 0.028546 F-statistic: 55.4364 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>demo_model1 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>demo_model1 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Attempt =</span> diff3, <span class="at">Autocoup =</span> autocoup_effect_lag3, <span class="at">Coup =</span> coup_effect_lag3) <span class="sc">|&gt;</span></span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
 <span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    Attempt <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">factor</span>(non_democracy) <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
@@ -1285,7 +1278,7 @@ factor(non_democracy)1 0.8093349 0.0624618 12.9573 &lt; 2.2e-16 <strong><em> fac
 <span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>demo_model1 <span class="sc">|&gt;</span></span>
-<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Oneway (individual) effect Within Model</p>
 <p>Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Attempt = diff3, Autocoup = autocoup_effect_lag3, Coup = coup_effect_lag3), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
@@ -1297,7 +1290,7 @@ pop_log 0.7550592 0.1219893 6.1896 6.299e-10 <strong><em> violence 0.0329474 0.0
 factor(non_democracy)1 -0.7761964 0.1086219 -7.1459 9.646e-13 </em></strong> factor(cold_war)1 -0.0923589 0.1089377 -0.8478 0.3966<br>
 — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 77703 Residual Sum of Squares: 75492 R-Squared: 0.028461 Adj. R-Squared: 0.009307 F-statistic: 32.6896 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>demo_model2 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>demo_model2 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Succeed =</span> diff1, <span class="at">Autocoup =</span> autocoup_succeed, <span class="at">Coup =</span> coup_succeed) <span class="sc">|&gt;</span></span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
 <span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>    Succeed <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">factor</span>(non_democracy) <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
@@ -1307,7 +1300,7 @@ factor(non_democracy)1 -0.7761964 0.1086219 -7.1459 9.646e-13 </em></strong> fac
 <span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>demo_model2 <span class="sc">|&gt;</span></span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Oneway (individual) effect Within Model</p>
 <p>Call: plm(formula = Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Succeed = diff1, Autocoup = autocoup_succeed, Coup = coup_succeed), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
@@ -1318,7 +1311,7 @@ GDP_trend -0.3285683 0.2754432 -1.1929 0.2329516<br>
 pop_log 0.1877870 0.0700028 2.6826 0.0073195 ** violence 0.0120427 0.0139374 0.8641 0.3875816<br>
 factor(non_democracy)1 0.7972067 0.0621896 12.8190 &lt; 2.2e-16 <strong><em> factor(cold_war)1 -0.2242355 0.0625403 -3.5855 0.0003383 </em></strong> — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 26328 Residual Sum of Squares: 24879 R-Squared: 0.05502 Adj. R-Squared: 0.036389 F-statistic: 64.97 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="ot">&lt;-</span> coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Succeed =</span> diff3, <span class="at">Autocoup =</span> autocoup_seffect_lag3, <span class="at">Coup =</span> coup_seffect_lag3) <span class="sc">|&gt;</span></span>
 <span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plm</span>(</span>
 <span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    Succeed <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> <span class="fu">factor</span>(non_democracy) <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
@@ -1328,7 +1321,7 @@ factor(non_democracy)1 0.7972067 0.0621896 12.8190 &lt; 2.2e-16 <strong><em> fac
 <span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> _</span>
 <span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="sc">|&gt;</span></span>
-<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Oneway (individual) effect Within Model</p>
 <p>Call: plm(formula = Succeed ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + factor(non_democracy) + factor(cold_war), data = rename(coup_autocoup, Succeed = diff3, Autocoup = autocoup_seffect_lag3, Coup = coup_seffect_lag3), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</p>
 <p>Unbalanced Panel: n = 169, T = 3-69, N = 9104</p>
@@ -1340,7 +1333,7 @@ pop_log 0.7342653 0.1217301 6.0319 1.685e-09 <strong><em> violence 0.0333497 0.0
 factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> factor(cold_war)1 -0.1162353 0.1089058 -1.0673 0.2859<br>
 — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
 <p>Total Sum of Squares: 77703 Residual Sum of Squares: 75376 R-Squared: 0.029958 Adj. R-Squared: 0.010833 F-statistic: 34.462 on 8 and 8927 DF, p-value: &lt; 2.22e-16</p>
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(demo_model0, demo_model1, demo_model2, demo_model3, </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(demo_model0, demo_model1, demo_model2, demo_model3, </span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"text"</span>,</span>
 <span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">float =</span> F,</span>
 <span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> F,</span>
@@ -1355,7 +1348,7 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 <span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">column.sep.width =</span> <span class="st">"30pt"</span>,</span>
 <span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># font.size = "footnotesize",</span></span>
 <span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">df =</span> F</span>
-<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>====================================================================== Dependent variable: Differences of Polity scores<br>
 ————————————————— Attempt Succeed<br>
 (1) (2) (3) (4)<br>
@@ -1392,28 +1385,28 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 <td style="text-align: left;">Total Sum of Squares: 26229 Residual Sum of Squares: 24657 R-Squared: 0.059925 Adj. R-Squared: 0.040923 F-statistic: 47.0434 on 12 and 8856 DF, p-value: &lt; 2.22e-16</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><code>{.r .cell-code} demo_model2 &lt;- plm( Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war), index = c("ccode", "year"), model = "within", # fixed effect effect = "individual", data = coup_autocoup |&gt; rename(Attempt = diff2, Autocoup = autocoup_attemp_lag2, Coup = coup_attemp_lag2) |&gt; mutate( regime = factor(regime, levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other") ) ) ) summary(demo_model2)</code></td>
+<td style="text-align: left;"><code>{.r .cell-code} demo_model2 &lt;- plm( Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war), index = c("ccode", "year"), model = "within", # fixed effect effect = "individual", data = coup_autocoup |&gt; rename(Attempt = diff3, Autocoup = autocoup_attemp_lag3, Coup = coup_attemp_lag3) |&gt; mutate( regime = factor(regime, levels = c("dominant-party", "military", "personal", "presidential", "parliamentary", "other") ) ) ) summary(demo_model2)</code></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Oneway (individual) effect Within Model</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war), data = mutate(rename(coup_autocoup, Attempt = diff2, Autocoup = autocoup_attemp_lag2, Coup = coup_attemp_lag2), regime = factor(regime, levels = c(“dominant-party”, “military”, “personal”, “presidential”, “parliamentary”, “other”))), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</td>
+<td style="text-align: left;">Call: plm(formula = Attempt ~ Autocoup + Coup + GDP_pc + GDP_trend + pop_log + violence + regime + factor(cold_war), data = mutate(rename(coup_autocoup, Attempt = diff3, Autocoup = autocoup_attemp_lag3, Coup = coup_attemp_lag3), regime = factor(regime, levels = c(“dominant-party”, “military”, “personal”, “presidential”, “parliamentary”, “other”))), effect = “individual”, model = “within”, index = c(“ccode”, “year”))</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Unbalanced Panel: n = 168, T = 3-69, N = 9036</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.297460 -0.403346 -0.074261 0.178544 16.617399</td>
+<td style="text-align: left;">Residuals: Min. 1st Qu. Median 3rd Qu. Max. -16.60367 -0.60174 -0.08811 0.33946 16.90661</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Coefficients: Estimate Std. Error t-value Pr(&gt;|t|) Autocoup -0.0933347 0.2984665 -0.3127 0.754505 Coup 0.8137518 0.1315318 6.1867 6.415e-10 <em><strong> GDP_pc -0.0059505 0.0019843 -2.9987 0.002719 </strong> GDP_trend -0.3370751 0.4018221 -0.8389 0.401567 pop_log 0.6674233 0.1049926 6.3569 2.161e-10 </em><strong> violence 0.0267274 0.0203004 1.3166 0.188008 regimemilitary -0.1223521 0.1480940 -0.8262 0.408725 regimepersonal -0.3425106 0.1364120 -2.5109 0.012062 <em> regimepresidential -0.1530497 0.1317167 -1.1620 0.245283 regimeparliamentary 0.1310382 0.1515372 0.8647 0.387212 regimeother 1.0769072 0.1653124 6.5144 7.697e-11 </em></strong> factor(cold_war)1 -0.0482486 0.0920688 -0.5240 0.600257</td>
+<td style="text-align: left;">Coefficients: Estimate Std. Error t-value Pr(&gt;|t|) Autocoup -0.1483147 0.3585078 -0.4137 0.679104 Coup 1.2399431 0.1572235 7.8865 3.477e-15 <strong><em> GDP_pc -0.0096415 0.0023835 -4.0451 5.275e-05 </em></strong> GDP_trend -0.5692672 0.4823171 -1.1803 0.237922 pop_log 0.8901101 0.1259868 7.0651 1.726e-12 <em><strong> violence 0.0439762 0.0243836 1.8035 0.071341 . regimemilitary -0.5446504 0.1772816 -3.0722 0.002131 </strong> regimepersonal -0.5317256 0.1638351 -3.2455 0.001177 <strong> regimepresidential 0.3985300 0.1582149 2.5189 0.011789 <em> regimeparliamentary 0.9648984 0.1820114 5.3013 1.177e-07 </em></strong> regimeother 1.0943552 0.1985388 5.5120 3.646e-08 </em>** factor(cold_war)1 -0.0020359 0.1105870 -0.0184 0.985312</td>
 </tr>
 </tbody>
 </table>
 <p>Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
-<p>Total Sum of Squares: 52909 Residual Sum of Squares: 51838 R-Squared: 0.020229 Adj. R-Squared: 0.0004256 F-statistic: 15.2372 on 12 and 8856 DF, p-value: &lt; 2.22e-16</p>
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="ot">&lt;-</span> <span class="fu">plm</span>(</span>
+<p>Total Sum of Squares: 77355 Residual Sum of Squares: 74796 R-Squared: 0.033075 Adj. R-Squared: 0.013531 F-statistic: 25.2441 on 12 and 8856 DF, p-value: &lt; 2.22e-16</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>demo_model3 <span class="ot">&lt;-</span> <span class="fu">plm</span>(</span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  Succeeded <span class="sc">~</span> Autocoup <span class="sc">+</span> Coup <span class="sc">+</span> GDP_pc <span class="sc">+</span> GDP_trend <span class="sc">+</span> pop_log <span class="sc">+</span> violence <span class="sc">+</span> regime <span class="sc">+</span> <span class="fu">factor</span>(cold_war),</span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">index =</span> <span class="fu">c</span>(<span class="st">"ccode"</span>, <span class="st">"year"</span>),</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"within"</span>, <span class="co"># fixed effect</span></span>
@@ -1432,7 +1425,7 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 <span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"within"</span>, <span class="co"># fixed effect</span></span>
 <span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">effect =</span> <span class="st">"individual"</span>,</span>
 <span id="cb48-19"><a href="#cb48-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> coup_autocoup <span class="sc">|&gt;</span></span>
-<span id="cb48-20"><a href="#cb48-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">Succeeded =</span> diff2, <span class="at">Autocoup =</span> autocoup_succeed_lag2, <span class="at">Coup =</span> coup_succeed_lag2) <span class="sc">|&gt;</span></span>
+<span id="cb48-20"><a href="#cb48-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">Succeeded =</span> diff3, <span class="at">Autocoup =</span> autocoup_succeed_lag3, <span class="at">Coup =</span> coup_succeed_lag3) <span class="sc">|&gt;</span></span>
 <span id="cb48-21"><a href="#cb48-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
 <span id="cb48-22"><a href="#cb48-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">regime =</span> <span class="fu">factor</span>(regime,</span>
 <span id="cb48-23"><a href="#cb48-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"dominant-party"</span>, <span class="st">"military"</span>, <span class="st">"personal"</span>, <span class="st">"presidential"</span>, <span class="st">"parliamentary"</span>, <span class="st">"other"</span>)</span>
@@ -1455,40 +1448,40 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 <span id="cb48-40"><a href="#cb48-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">column.sep.width =</span> <span class="st">"20pt"</span>,</span>
 <span id="cb48-41"><a href="#cb48-41" aria-hidden="true" tabindex="-1"></a>  <span class="co"># font.size = "footnotesize",</span></span>
 <span id="cb48-42"><a href="#cb48-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">df =</span> F</span>
-<span id="cb48-43"><a href="#cb48-43" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb48-43"><a href="#cb48-43" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>======================================================================= Dependent variable: Differences of Polity scores<br>
 ————————————————— Attempt Succeeded<br>
 (1) (2) (3) (4)<br>
-———————————————————————– Autocoup -1.236*** -0.093 -1.234*** -0.043<br>
-(0.200) (0.298) (0.226) (0.335)</p>
-<p>Coup -1.366*** 0.814*** -2.190*** 0.959***<br>
-(0.091) (0.132) (0.123) (0.180)</p>
-<p>GDP per Capita -0.003** -0.006*** -0.003** -0.006***<br>
+———————————————————————– Autocoup -1.236*** -0.148 -1.234*** -0.057<br>
+(0.200) (0.359) (0.226) (0.402)</p>
+<p>Coup -1.366*** 1.240*** -2.190*** 1.712***<br>
+(0.091) (0.157) (0.123) (0.215)</p>
+<p>GDP per Capita -0.003** -0.010*** -0.003** -0.010***<br>
 (0.001) (0.002) (0.001) (0.002)</p>
-<p>Economic Trend -0.387 -0.337 -0.282 -0.405<br>
-(0.277) (0.402) (0.276) (0.402)</p>
-<p>Log Population 0.247*** 0.667*** 0.262*** 0.650***<br>
-(0.072) (0.105) (0.072) (0.105)</p>
-<p>Political Violence 0.015 0.027 0.012 0.028<br>
-(0.014) (0.020) (0.014) (0.020)</p>
-<p>Regime: Military 0.602*** -0.122 0.574*** -0.118<br>
-(0.101) (0.148) (0.101) (0.148)</p>
-<p>1.5cm Personal -0.042 -0.343** -0.065 -0.330**<br>
-(0.094) (0.136) (0.094) (0.136)</p>
-<p>1.5cm Presidential -0.576*** -0.153 -0.578*** -0.152<br>
-(0.091) (0.132) (0.090) (0.132)</p>
-<p>1.5cm Parliamentary -0.475*** 0.131 -0.468*** 0.136<br>
-(0.105) (0.152) (0.104) (0.152)</p>
-<p>1.5cm Other 0.999*** 1.077*** 1.013*** 1.086***<br>
-(0.114) (0.165) (0.114) (0.165)</p>
-<p>Cold War -0.168*** -0.048 -0.156** -0.054<br>
-(0.064) (0.092) (0.063) (0.092)</p>
+<p>Economic Trend -0.387 -0.569 -0.282 -0.629<br>
+(0.277) (0.482) (0.276) (0.482)</p>
+<p>Log Population 0.247*** 0.890*** 0.262*** 0.879***<br>
+(0.072) (0.126) (0.072) (0.126)</p>
+<p>Political Violence 0.015 0.044* 0.012 0.046*<br>
+(0.014) (0.024) (0.014) (0.024)</p>
+<p>Regime: Military 0.602*** -0.545*** 0.574*** -0.584***<br>
+(0.101) (0.177) (0.101) (0.178)</p>
+<p>1.5cm Personal -0.042 -0.532*** -0.065 -0.526***<br>
+(0.094) (0.164) (0.094) (0.164)</p>
+<p>1.5cm Presidential -0.576*** 0.399** -0.578*** 0.381**<br>
+(0.091) (0.158) (0.090) (0.158)</p>
+<p>1.5cm Parliamentary -0.475*** 0.965*** -0.468*** 0.966***<br>
+(0.105) (0.182) (0.104) (0.182)</p>
+<p>1.5cm Other 0.999*** 1.094*** 1.013*** 1.115***<br>
+(0.114) (0.199) (0.114) (0.199)</p>
+<p>Cold War -0.168*** -0.002 -0.156** -0.011<br>
+(0.064) (0.111) (0.063) (0.111)</p>
 <hr>
 </div>
 </figure>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>coup_autocoup <span class="sc">|&gt;</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(regime <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"democracy"</span>, <span class="st">"dominant-party"</span>, <span class="st">"military"</span>, <span class="st">"personal"</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year, regime) <span class="sc">|&gt;</span> <span class="co"># 按年份和政体类型分组</span></span>
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_polity5 =</span> <span class="fu">mean</span>(polity5, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span></span>
@@ -1502,14 +1495,10 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 <span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"平均 polity5 指数"</span>,</span>
 <span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"政体类型"</span></span>
 <span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> <span class="co"># 图例</span></span>
-<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'year'. You can override using the
 `.groups` argument.</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-ℹ Please use `linewidth` instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 8 rows containing missing values or values outside the scale range
@@ -1528,63 +1517,64 @@ factor(non_democracy)1 -0.7747345 0.1085117 -7.1396 1.009e-12 </em></strong> fac
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># targets &lt;- tibble(</span></span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   leader = c(</span></span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Avril",</span></span>
-<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Cabral",</span></span>
-<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Bouterse",</span></span>
-<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Castello Branco",</span></span>
-<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Padilla Aranciba",</span></span>
-<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Aramburu",</span></span>
-<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Mendez Manfredini",</span></span>
-<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Dioncounda Traore",</span></span>
-<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Soglo",</span></span>
-<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ahomadegbe",</span></span>
-<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ironsi",</span></span>
-<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ironsi",</span></span>
-<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Gowon",</span></span>
-<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Micombero",</span></span>
-<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Salem Aref",</span></span>
-<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ziaur Rahman",</span></span>
-<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Boun Oum",</span></span>
-<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Van Thieu"</span></span>
-<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a><span class="co">#   ),</span></span>
-<span id="cb54-22"><a href="#cb54-22" aria-hidden="true" tabindex="-1"></a><span class="co">#   coup_date = ymd(c(</span></span>
-<span id="cb54-23"><a href="#cb54-23" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1988-06-20",</span></span>
-<span id="cb54-24"><a href="#cb54-24" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1963-09-25",</span></span>
-<span id="cb54-25"><a href="#cb54-25" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1980-02-25",</span></span>
-<span id="cb54-26"><a href="#cb54-26" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1964-03-30",</span></span>
-<span id="cb54-27"><a href="#cb54-27" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1978-07-21",</span></span>
-<span id="cb54-28"><a href="#cb54-28" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1955-09-16",</span></span>
-<span id="cb54-29"><a href="#cb54-29" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1976-06-12",</span></span>
-<span id="cb54-30"><a href="#cb54-30" aria-hidden="true" tabindex="-1"></a><span class="co">#     "2012-03-22",</span></span>
-<span id="cb54-31"><a href="#cb54-31" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1965-11-29",</span></span>
-<span id="cb54-32"><a href="#cb54-32" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1972-10-26",</span></span>
-<span id="cb54-33"><a href="#cb54-33" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-01-15",</span></span>
-<span id="cb54-34"><a href="#cb54-34" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-07-29",</span></span>
-<span id="cb54-35"><a href="#cb54-35" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-01-15",</span></span>
-<span id="cb54-36"><a href="#cb54-36" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-07-08",</span></span>
-<span id="cb54-37"><a href="#cb54-37" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1963-11-18",</span></span>
-<span id="cb54-38"><a href="#cb54-38" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1975-08-15",</span></span>
-<span id="cb54-39"><a href="#cb54-39" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1960-08-09",</span></span>
-<span id="cb54-40"><a href="#cb54-40" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1965-01-27"</span></span>
-<span id="cb54-41"><a href="#cb54-41" aria-hidden="true" tabindex="-1"></a><span class="co">#   ))</span></span>
-<span id="cb54-42"><a href="#cb54-42" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># targets &lt;- tibble(</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   leader = c(</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Avril",</span></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Cabral",</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Bouterse",</span></span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Castello Branco",</span></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Padilla Aranciba",</span></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Aramburu",</span></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Mendez Manfredini",</span></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Dioncounda Traore",</span></span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Soglo",</span></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ahomadegbe",</span></span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ironsi",</span></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ironsi",</span></span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Gowon",</span></span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Micombero",</span></span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Salem Aref",</span></span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Ziaur Rahman",</span></span>
+<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Boun Oum",</span></span>
+<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a><span class="co">#     "Van Thieu"</span></span>
+<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a><span class="co">#   ),</span></span>
+<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a><span class="co">#   coup_date = ymd(c(</span></span>
+<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1988-06-20",</span></span>
+<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1963-09-25",</span></span>
+<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1980-02-25",</span></span>
+<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1964-03-30",</span></span>
+<span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1978-07-21",</span></span>
+<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1955-09-16",</span></span>
+<span id="cb53-29"><a href="#cb53-29" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1976-06-12",</span></span>
+<span id="cb53-30"><a href="#cb53-30" aria-hidden="true" tabindex="-1"></a><span class="co">#     "2012-03-22",</span></span>
+<span id="cb53-31"><a href="#cb53-31" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1965-11-29",</span></span>
+<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1972-10-26",</span></span>
+<span id="cb53-33"><a href="#cb53-33" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-01-15",</span></span>
+<span id="cb53-34"><a href="#cb53-34" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-07-29",</span></span>
+<span id="cb53-35"><a href="#cb53-35" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-01-15",</span></span>
+<span id="cb53-36"><a href="#cb53-36" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1966-07-08",</span></span>
+<span id="cb53-37"><a href="#cb53-37" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1963-11-18",</span></span>
+<span id="cb53-38"><a href="#cb53-38" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1975-08-15",</span></span>
+<span id="cb53-39"><a href="#cb53-39" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1960-08-09",</span></span>
+<span id="cb53-40"><a href="#cb53-40" aria-hidden="true" tabindex="-1"></a><span class="co">#     "1965-01-27"</span></span>
+<span id="cb53-41"><a href="#cb53-41" aria-hidden="true" tabindex="-1"></a><span class="co">#   ))</span></span>
+<span id="cb53-42"><a href="#cb53-42" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
 <section id="upload-datasets" class="level2">
 <h2 class="anchored" data-anchor-id="upload-datasets">Upload Datasets</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Version </span><span class="va">$(</span><span class="fu">date</span> +%Y-%m-%d<span class="va">)</span><span class="st">"</span></span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Version </span><span class="va">$(</span><span class="fu">date</span> +%Y-%m-%d<span class="va">)</span><span class="st">"</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[main f7d800c] Version 2025-05-25
- 14 files changed, 5274 insertions(+), 5041 deletions(-)
- create mode 100644 datasets_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css
+<pre><code>[main 7d7d9be] Version 2025-12-22
+ 18 files changed, 29627 insertions(+), 5063 deletions(-)
+ create mode 100644 coup_raw.csv
+ create mode 100644 coup_total.csv
 To https://github.com/reddylee/Datasets.git
-   14f81bb..f7d800c  main -&gt; main</code></pre>
+   f7d800c..7d7d9be  main -&gt; main</code></pre>
 </div>
 </div>
 </section>
@@ -1642,13 +1632,14 @@ To https://github.com/reddylee/Datasets.git
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
